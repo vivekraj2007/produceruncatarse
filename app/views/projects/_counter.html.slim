@@ -1,2 +1,2 @@
 .counter_panel
-  .counter[data-max="10000000" data-initial="0" data-rate="1"]
+  .counter[data-max="10000000" data-initial="#{backer_stats['sum'].to_i}" data-rate="#{backer_stats['rate'] || 1}"]

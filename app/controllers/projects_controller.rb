@@ -7,6 +7,18 @@ class ProjectsController < ApplicationController
   respond_to :html
   respond_to :json, only: [:index, :show, :update]
 
+  # code fot the 10M celebration will soon be removed
+  helper_method :backer_stats
+  def backer_stats
+    @backer_stats ||= ActiveRecord::Base.connection.select_one(
+      "SELECT 
+          sum(value), 
+          sum(CASE WHEN confirmed_at BETWEEN (current_timestamp - '6 hours'::interval) AND (current_timestamp) THEN value ELSE NULL END)::numeric / (6*60*60) as rate 
+       FROM backers 
+       WHERE state NOT IN ('waiting_confirmation'::character varying::text, 'pending'::character varying::text, 'canceled'::character varying::text, 'deleted'::text)"
+    )
+  end
+
   def index
     index! do |format|
       format.html do
