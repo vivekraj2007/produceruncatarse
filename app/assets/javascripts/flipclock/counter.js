@@ -24,6 +24,7 @@ App.addChild('Counter', {
 
     _.each(this.max.toString(), function(digit, index){
       that.$el.append(that.createDigit(currentDigits[index]));
+      that.select(this.$('ul.flip:last'));
     });
 
     this.digits = this.$('ul.flip');
