@@ -1,10 +1,6 @@
 App.addChild('Counter', {
   el: ".counter",
 
-  onIncrement: function(event){
-    this.select(event.digit)
-  },
-
   initialize: function(){
     function lpad(str, padString, length) {
       while (str.length < length)
@@ -24,26 +20,42 @@ App.addChild('Counter', {
 
     _.each(this.max.toString(), function(digit, index){
       that.$el.append(that.createDigit(currentDigits[index]));
+      if(index == 1 || index == 4){
+        that.$el.append($('<div class="spacer">&nbsp;</div>'));
+      }
       that.select(this.$('ul.flip:last'));
     });
 
     this.digits = this.$('ul.flip');
     this.digits.addClass("play");
 
-    this.on('increment', this.onIncrement);
     this.setTimer();
   },
 
   setTimer: function(){
     var that = this;
-    window.setInterval(function(){ that.incrementCounter() }, 1000);
+    this.timer = window.setInterval(function(){ that.incrementCounter() }, 1000);
+  },
+
+  fetchCounter: function(){
   },
 
   incrementCounter: function(){
+    var that = this;
     var old = this.current;
     this.current += this.rate;
+
+    // We need to wait for real backer sum if we are to close to max
+    if(this.max - this.current < 50){
+      window.clearTimeout(this.timer);
+      this.timer = window.setInterval(function(){ that.fetchCounter() }, 5000);
+    }
+
     var delta = parseInt(this.current) - parseInt(old);
     this.incrementDigit((this.digits.length - 1), delta);
+    this.digits.each(function(){
+      that.select($(this));
+    });
   },
 
   incrementDigit: function(digitIndex, delta){
@@ -55,7 +67,6 @@ App.addChild('Counter', {
     }
     var digit = $(this.digits[digitIndex]);
     digit.data('value', ((digit.data('value') + 1) % 10));
-    this.trigger('increment', {digit: digit});
     if(digit.data('value') == 0){
       this.incrementDigit(digitIndex - 1, 1);
     }
@@ -68,16 +79,27 @@ App.addChild('Counter', {
       digit = 0;
     }
 
+    var active = $obj.find('.flip-clock-active');
+    if(active.data('digit') == digit){
+      return;
+    }
+
     var target = $obj.find('[data-digit="'+digit+'"]');
-    var active = $obj.find('.flip-clock-active').removeClass("flip-clock-active");
+    active.removeClass("flip-clock-active");
     var before = $obj.find('.flip-clock-before').removeClass("flip-clock-before");
 
-    if(target.is(':first-child')) {
-      $obj.find(':last-child').addClass("flip-clock-before");
+    if(before.length > 0 && active.length > 0){
+      active.addClass('flip-clock-before');
     }
-    else {
-      target.prev().addClass("flip-clock-before");
+    else{
+      if(target.is(':first-child')) {
+        $obj.find(':last-child').addClass("flip-clock-before");
+      }
+      else {
+        target.prev().addClass("flip-clock-before");
+      }
     }
+
     target.addClass("flip-clock-active");
   },
 

@@ -1,9 +1,22 @@
 .counter_panel
-  width: 960px
+  background: image-url('flipclock/bg_counter.png') left top no-repeat
+  width: 980px
+  height: 360px
   margin: 2em auto
   overflow: hidden
+  +border-radius(4px)
+
+  .counter_title
+    text-transform: uppercase
+    font-size: 15px
+    color: white
+    margin-top: 70px
+    text-align: center
 
   .counter
     overflow: hidden
-    margin: 2em auto
-    width: 600px
+    margin: 40px auto 0 auto
+    width: 750px
+    .spacer
+      float: left
+      width: 20px
