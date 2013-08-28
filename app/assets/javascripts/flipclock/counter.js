@@ -10,9 +10,9 @@ App.addChild('Counter', {
 
     // Start by creating the digits
     this.$el.addClass('flip-clock-wrapper');
-    this.max = this.$el.data('max');
-    this.initial = this.$el.data('initial');
-    this.rate = this.$el.data('rate');
+    this.max = parseFloat(this.$el.data('max'));
+    this.initial = parseFloat(this.$el.data('initial'));
+    this.rate = parseFloat(this.$el.data('rate'));
     this.current = this.initial;
 
     var that = this;
