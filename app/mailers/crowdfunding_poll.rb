@@ -4,7 +4,7 @@ class CrowdfundingPoll < ActionMailer::Base
     @user = user
     address = Mail::Address.new(::Configuration[:email_contact])
     address.display_name = ::Configuration[:company_name]
-    subject = "Vamos juntos retratar o financiamento coletivo no Brasil?"
+    subject = "Qual a cara do financiamento coletivo no Brasil?"
     mail({
       from: address.format,
       to: @user.email,
