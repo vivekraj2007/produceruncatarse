@@ -90,6 +90,7 @@ Catarse::Application.routes.draw do
     end
     collection do
       get 'video'
+      get 'total_backed'
     end
     member do
       put 'pay'

@@ -19,6 +19,10 @@ class ProjectsController < ApplicationController
     )
   end
 
+  def total_backed
+    render json: backer_stats["sum"]
+  end
+
   def index
     index! do |format|
       format.html do

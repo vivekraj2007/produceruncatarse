@@ -14,6 +14,11 @@ App.addChild('Counter', {
     this.initial = parseFloat(this.$el.data('initial'));
     this.rate = parseFloat(this.$el.data('rate'));
     this.current = this.initial;
+    if(this.current >= this.max){
+      $('.counter_panel.dynamic').hide();
+      $('.counter_panel.static').fadeIn(5000);
+      return;
+    }
 
     var that = this;
     var currentDigits = lpad(this.current.toString(), "0", this.max.toString().length);
@@ -37,7 +42,26 @@ App.addChild('Counter', {
     this.timer = window.setInterval(function(){ that.incrementCounter() }, 1000);
   },
 
+  changeBanner: function(){
+    $('.counter_panel.dynamic').fadeOut('slow', function(){
+      $('.counter_panel.static').fadeIn('slow');
+    });
+  },
+
   fetchCounter: function(){
+    var that = this;
+    $.get("/pt/projects/total_backed").success(function(data){
+      var value = parseInt(data);
+      if(value >= that.max){
+        window.clearTimeout(that.timer);
+        var delta = that.max - that.current;
+        that.incrementDigit((that.digits.length - 1), delta);
+        that.digits.each(function(){
+          that.select($(this));
+        });
+        window.setTimeout(that.changeBanner, 3500);
+      }
+    });
   },
 
   incrementCounter: function(){
@@ -62,7 +86,7 @@ App.addChild('Counter', {
     if(digitIndex < 0){
       console.log('out of digits');
     }
-    if(delta == 0){
+    if(delta <= 0){
       return;
     }
     var digit = $(this.digits[digitIndex]);
