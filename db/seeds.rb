@@ -26,7 +26,7 @@ puts 'Seeding the database...'
 
 {
   company_name: 'ProduceRun',
-  company_logo: 'http://catarse.me/assets/catarse_bootstrap/logo_icon_catarse.png',
+  company_logo: 'http://www.producerun.com/wp-content/uploads/2014/11/rsz_producerun-green.png',
   host: 'producerun.com',
   base_url: "http://www.producerun.com",
 
@@ -53,7 +53,8 @@ puts 'Seeding the database...'
   instagram_url: 'http://instagram.com/producerun_',
   blog_url: "http://blog.producerun.com",
   github_url: 'http://github.com/producerun',
-  contato_url: 'http://suporte.catarse.me/'
+  contato_url: 'http://suporte.catarse.me/',
+  mixpanel_token: 'e0e80f9f416708ba621aaf3d6aff3b85',
 }.each do |name, value|
    conf = CatarseSettings.find_or_initialize_by(name: name)
    conf.update_attributes({
@@ -69,9 +70,7 @@ end
 
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-#  o.key = '866987556654483'
   o.key = '39410167937'
-#  o.secret = 'b68b25331704a65aced29084bab866ce'
   o.secret = 'e55126b947fccbff9a86d9716c179860'
   o.path = 'facebook'
 end
