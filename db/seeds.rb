@@ -100,6 +100,19 @@ CatarseSettings.all.each do |conf|
   puts "  #{a['name']}: #{a['value']}"
 end
 
+
+user = User.first_or_initialize( name: 'Asd Name', email: 'asd@asd.asd') do |user|
+  user.password = 'asdasd'
+  user.admin = true
+  user.save!
+end
+
+user.projects.where(name: "Example project name", category: Category.first, goal: 100, about: "This is about text", video_url: 'https://www.youtube.com/watch?v=IexoJu3TMWM', permalink: 'example_permalink', online_days: 30, headline: 'Example headline').first_or_create do |p|
+  puts  "example project created"
+  p.send_to_analysis!
+  p.approve!
+end
+
 Rails.cache.clear
 
 puts '---------------------------------------------'
