@@ -1,14 +1,14 @@
-# Catarse [![Build Status](https://secure.travis-ci.org/catarse/catarse.png?branch=master)](https://travis-ci.org/catarse/catarse) [![Coverage Status](https://coveralls.io/repos/catarse/catarse/badge.png?branch=channels)](https://coveralls.io/r/catarse/catarse) [![Dependency Status](https://gemnasium.com/catarse/catarse.png)](https://gemnasium.com/catarse/catarse) [![Code Climate](https://codeclimate.com/github/catarse/catarse.png)](https://codeclimate.com/github/catarse/catarse)
+# ProduceRun [![Build Status](https://secure.travis-ci.org/catarse/catarse.png?branch=master)](https://travis-ci.org/catarse/catarse) [![Coverage Status](https://coveralls.io/repos/catarse/catarse/badge.png?branch=channels)](https://coveralls.io/r/catarse/catarse) [![Dependency Status](https://gemnasium.com/catarse/catarse.png)](https://gemnasium.com/catarse/catarse) [![Code Climate](https://codeclimate.com/github/catarse/catarse.png)](https://codeclimate.com/github/catarse/catarse)
 
-The first crowdfunding platform from Brazil
+The first crowdfunding platform for USA farmers preselling their goods
 
-## An open source crowdfunding platform for creative projects
+## An open source crowdfunding platform for local food
 
-Welcome to Catarse's source code repository.
+Welcome to ProduceRun's source code repository.
 Our goal with opening the source code is to stimulate the creation of a community of developers around a high-quality crowdfunding platform.
 
-You can see the software in action in http://catarse.me.
-The official repo is https://github.com/catarse/catarse
+You can see the software in action in http://www.producerun.com.
+The official repo is https://github.com/producerun/produceruncatarse
 
 ## Getting started
 
@@ -96,9 +96,9 @@ After that, just fork the project, change what you want, and send us a pull requ
 
 ## Credits
 
-Author: Daniel Weinmann
+Author: William Pattison
 
-Contributors: You know who you are ;) The commit history can help, but the list was getting bigger and pointless to keep in the README.
+Contributors: Dusan , Vivek
 
 
 ## License
