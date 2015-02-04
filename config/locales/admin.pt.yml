@@ -29,14 +29,14 @@ pt:
         by_progress: Por progresso %
         details:
           name: 'Razão social'
-          bank_data: 'Dados bancarios'
+          bank_data: bancarios
           document: 'CPF / CNPJ'
           email: 'E-mail'
           permalink: 'Permalink do projeto'
     projects:
       index:
         with_state: 'Por estado'
-        by_category: 'Por categoria'
+        by_category: 'categoria'
         project: 'Projeto'
         user: 'Usuário'
         between_created_at: 'Criados entre'

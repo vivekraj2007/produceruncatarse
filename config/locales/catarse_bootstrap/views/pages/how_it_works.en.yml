@@ -1,0 +1,28 @@
+--- 
+en: 
+  pages: 
+    how_it_works: 
+      header: 
+        money: "were invested" #i18n-GT
+        people: "People have supported at least 01 project in Catharsis" #i18n-GT
+        success: "Projects have been successful here" #i18n-GT
+      learn-more: "Learn more" #i18n-GT
+      page-title: "As the Catharsis work?" #i18n-GT
+      people: 
+        content: "At least 50 % of supporters will come from your own network of contacts." #i18n-GT
+        link: "Learn how many supporters you will need to mobilize" #i18n-GT
+        title: "Mobilize stakeholders" #i18n-GT
+      start: 
+        content: "Start the draft of your project now !" #i18n-GT
+        link: "Learn more about the first steps of a project" #i18n-GT
+        title: "Start your project" #i18n-GT
+      submit: "Start your project" #i18n-GT
+      time: 
+        content: "You can choose a time between 1 and 60 days to achieve the purpose of storage, the system we call All or Nothing ." #i18n-GT
+        link: "Learn how our rate helps keep Catharsis" #i18n-GT
+        title: "All or nothing" #i18n-GT
+      title: "Makes possible their collective project" #i18n-GT
+      work: 
+        content: "Study projects similar to yours." #i18n-GT
+        link: "Receive successful campaigns advice on Catarse" #i18n-GT
+        title: "Work hard at before , during and after the collection period" #i18n-GT

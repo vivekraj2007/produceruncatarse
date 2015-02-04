@@ -1,0 +1,26 @@
+--- 
+en: 
+  shared: 
+    accept_terms_html: "I have read and agree with the % {link } ." #i18n-GT
+    footer_channel: 
+      contact: "contact" #i18n-GT
+      how_channels_work: "Understand the Channels in Catharsis" #i18n-GT
+      how_it_works: "As the works % {name}" #i18n-GT
+      how_works: "How it works" #i18n-GT
+      privacy_policy: "Privacy Policy" #i18n-GT
+      terms: "Terms of use" #i18n-GT
+      what_is_channel: "What are channels ?" #i18n-GT
+    header_big: 
+      projects: "my Projects" #i18n-GT
+    header_channel: 
+      contact: "contact" #i18n-GT
+      how_work: "How it works" #i18n-GT
+      logout: "Sign Out" #i18n-GT
+      my_credits: "my credits" #i18n-GT
+      partners: "partners" #i18n-GT
+      posts: "news" #i18n-GT
+      profile: "my profile" #i18n-GT
+      signin: "Login" #i18n-GT
+      signup: "Register" #i18n-GT
+      submit: "Send project" #i18n-GT
+    terms: "terms of use" #i18n-GT

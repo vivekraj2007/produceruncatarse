@@ -1,23 +1,23 @@
-en:
-  devise:
-    registrations:
-      new:
+--- 
+en: 
+  devise: 
+    registrations: 
+      new: 
+        form: 
+          hint: 
+            password_length: "Must be at least 6 characters."
+          inputs: 
+            facebook: "Sign up with Facebook"
+            submit: "Sign me up"
+          labels: 
+            accept: "When you register , you are accepting our <a class=\"alt - link\" href=\"%{terms_url}\" target=\"_blank\"> terms of use and </a> <a class = \"alt -link \" href =" #i18n-GT
+            name: Name
+            newsletter: "I want to subscribe to Catarse newsletter"
+            password: Password
+            show_password: "Show password"
         have_account_html: "Have an account? <strong>%{link}</strong>"
-        titles:
-          site: 'Sign up'
-          header: 'Sign up'
-        links:
+        links: 
           login: "Log in"
-        form:
-          labels:
-            show_password: 'Show password'
-            name: 'Name'
-            password: 'Password'
-            newsletter: 'I want to subscribe to Catarse newsletter'
-          hint:
-            password_length: 'Must be at least 6 characters.'
-          inputs:
-            submit: 'Sign me up'
-            facebook: 'Sign up with Facebook'
-
-
+        titles: 
+          header: "Sign up"
+          site: "Sign up"

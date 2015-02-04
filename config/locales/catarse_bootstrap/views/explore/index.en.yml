@@ -1,0 +1,20 @@
+--- 
+en: 
+  explore: 
+    index: 
+      categories: "Categories" #i18n-GT
+      expiring: "In the final stretch" #i18n-GT
+      follow: "follow" #i18n-GT
+      following: "following" #i18n-GT
+      in_funding: "from to" #i18n-GT
+      near: "Near Me" #i18n-GT
+      quick_explore: "qUICK SEARCH" #i18n-GT
+      recent: "recent" #i18n-GT
+      recommended: "recommended" #i18n-GT
+      subtitle: "Explore the projects , find those that touch your heart and make it happen !" #i18n-GT
+      success_follow: "Now you follow the category and will receive weekly a list of new projects % {name }" #i18n-GT
+      success_unfollow: "You failed to follow this category % {name }" #i18n-GT
+      successful: "Successful" #i18n-GT
+      title: "Find amazing projects" #i18n-GT
+      unfollow: "Unfollow" #i18n-GT
+    title: "Explore the projects" #i18n-GT
