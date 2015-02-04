@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
 
   def should_show_beta_banner?
     current_user.nil? || current_user.projects.empty?
-    false
+   # false
   end
 
   private
