@@ -1,0 +1,38 @@
+en:
+  simple_form:
+    collections:
+      project:
+        traffic_sources:
+          one:  " I've had another project in Catharsis "
+          two:  " indication of a person who has had a project in Catharsis "
+          three:  " indication colleague / friend / professional contact "
+          four:  " from a project that was picking up on the platform "
+          five:  " article in a blog "
+          six:  " a story in the press (news portal on the internet, TV, newspaper, magazine) "
+          seven:  " in a class / course / lecture / event "
+          eight:  " I did an internet search on collective funding / alternative forms of funding "
+          nine:  " Other "
+    validation_texts:
+      contribution:
+        PAYER_NAME:  " Please enter the name of supporter "
+        payer_email:  " Please enter a valid email address "
+        address_street:  " Enter the street name "
+        address_number:  " Enter the address number "
+        address_city:  " Enter city name "
+        address_zip_code:  " Enter the zip code "
+        address_phone_number:  " Enter the phone number "
+    prompts:
+      project:
+        category:  " Select a category "
+        select:  " Select an option "
+        traffic_sources:  " How did you meet Catharsis? "
+    hints:
+      project:
+        name:  " . The more direct better not exceed 50 characters "
+        permalink:  " . It is the address of your project, let the simple Try not to use underscore, hyphen, etc. "
+        category:  " Before sending, explore and inspire other projects in the same category. "
+        goal:  " Much of the support will be close to you Think how to get at least 50% of the target within your network of contacts Do not forget the rate of 13% charged by Catharsis if your project is successful.. . "
+        online_days:  " On average the projects are in the air for 40 days Maximum campaign period is 60 days.. "
+        video_url:  " . Enter here the link of your video It must be hosted on Youtube or Vimeo If you have not already, okay, you can add it later The video is very important to the success of your campaign and binding.. for projects with R targets $ 5,000 or more. "
+        about:  " . Talk about what will take place, how the money will be used, who is behind the project, as and when the project will be delivered Be informal and direct, this is a conversation between people who want to share an idea, not a edict project. Remember that <a class = 'alt-link' target = '_ blank'> you can use images and videos </a> to better illustrate your project in the description. "
+        headline:  " A maximum of 100 characters. "
