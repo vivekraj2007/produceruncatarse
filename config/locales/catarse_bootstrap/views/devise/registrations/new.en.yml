@@ -5,19 +5,19 @@ en:
       new: 
         form: 
           hint: 
-            password_length: "Must be at least 6 characters."
+            password_length: "Minimum of 6 characters" #i18n-GT
           inputs: 
-            facebook: "Sign up with Facebook"
-            submit: "Sign me up"
+            facebook: "Login with Facebook" #i18n-GT
+            submit: "you register" #i18n-GT
           labels: 
             accept: "When you register , you are accepting our <a class=\"alt - link\" href=\"%{terms_url}\" target=\"_blank\"> terms of use and </a> <a class = \"alt -link \" href =" #i18n-GT
-            name: Name
-            newsletter: "I want to subscribe to Catarse newsletter"
-            password: Password
-            show_password: "Show password"
-        have_account_html: "Have an account? <strong>%{link}</strong>"
+            name: "full Name" #i18n-GT
+            newsletter: "I want to receive news from Catharsis in my email" #i18n-GT
+            password: "password" #i18n-GT
+            show_password: "View password" #i18n-GT
+        have_account_html: "Already have an account?" #i18n-GT
         links: 
-          login: "Log in"
+          login: "Sign in" #i18n-GT
         titles: 
-          header: "Sign up"
-          site: "Sign up"
+          header: "Register" #i18n-GT
+          site: "Register" #i18n-GT

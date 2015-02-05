@@ -5,12 +5,12 @@ en:
       new: 
         form: 
           inputs: 
-            submit: "Reset password"
+            submit: "redefine" #i18n-GT
           labels: 
-            email: "We'll send password reset instructions to the email address associated with your account"
+            email: "After entering your email address , we will send a notification with instructions on how to reset your password" #i18n-GT
         links: 
-          register: "Sign up"
-        no_account_html: "Need an account?"
+          register: "Register" #i18n-GT
+        no_account_html: "No account ?" #i18n-GT
         titles: 
-          header: "Forgot your password?"
-          site: "Forgot your password?"
+          header: "Reset password" #i18n-GT
+          site: "Reset password" #i18n-GT

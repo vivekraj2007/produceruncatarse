@@ -5,16 +5,16 @@ en:
       new: 
         form: 
           inputs: 
-            facebook: "Log in with Facebook"
+            facebook: "Login with Facebook" #i18n-GT
             password: "password" #i18n-GT
-            submit: "Log me in"
+            submit: "log in" #i18n-GT
           labels: 
-            remember_me: "Remember me"
+            remember_me: "Stay logged" #i18n-GT
         links: 
-          forgot_password: "I forgot my password"
+          forgot_password: "I forgot my password" #i18n-GT
           password: "password" #i18n-GT
-          register: "Sign up"
-        no_account_html: "Need an account?"
+          register: "Register" #i18n-GT
+        no_account_html: "No account ?" #i18n-GT
         titles: 
-          header: "Log in"
-          site: "Log in"
+          header: "Login" #i18n-GT
+          site: "Login" #i18n-GT

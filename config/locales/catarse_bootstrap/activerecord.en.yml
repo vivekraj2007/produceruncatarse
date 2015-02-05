@@ -69,7 +69,7 @@ en:
         address_zip_code: "MOBILE" #i18n-GT
         bio: "Mini Bio" #i18n-GT
         cpf: "CPF / CNPJ" #i18n-GT
-        cpf_hint: "( ? )" #i18n-GT
+        cpf_hint: "(?)" #i18n-GT
         cpf_hint_title: "Invoice will be issued for this document" #i18n-GT
         current_password: "current Password" #i18n-GT
         email: "Email" #i18n-GT
@@ -107,15 +107,15 @@ en:
               not_a_number: "The deadline for collection should be a number of days" #i18n-GT
             permalink: 
               blank: "The URL of the project can not be blank" #i18n-GT
-              invalid: "Invalid project URL"
+              invalid: "The URL of the design is invalid" #i18n-GT
               taken: "This project URL already exists" #i18n-GT
         user: 
           attributes: 
             email: 
               blank: "Email can not be blank" #i18n-GT
               invalid: "This email address is invalid" #i18n-GT
-              not_found: "Email not found, please sign up"
-              taken: "Email has already been taken"
+              not_found: "The email is not registered , check the address or register yourself" #i18n-GT
+              taken: "The email is already registered , login" #i18n-GT
             password: 
               blank: "The password can not be blank" #i18n-GT
               confirmation: "The password and the password confirmation met are not equal" #i18n-GT
