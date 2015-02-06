@@ -1,3 +1,56 @@
+.container
+  hr/
+  footer
+    .row
+      .col-md-9.footer-links
+        .row
+          .col-md-2
+            h5 Help
+            ul.vertical-list
+              li
+                a href="#"  How It Works?
+              li
+                a href="#"  Why
+              li
+                a href="#"  FAQ's
+          .col-md-2
+            h5 About Us
+            ul.vertical-list
+              li
+                a href="#"  Press
+              li
+                a href="#"  Careers
+              li
+                a href="#"  Global
+          .col-md-4
+            h5 Get Latest Producerun Updates
+            = render 'layouts/newsletter'
+          .col-md-3
+            h5 Connect with us
+            ul.vertical-list
+              li
+                a href="#"  Blog
+              li
+                a href="#"  Facebook
+              li
+                a href="#"  Farmers Blog &amp; Forum
+      .col-md-3.footer-social-links
+        a href="#" 
+          i.fa.fa-facebook
+        a href="#" 
+          i.fa.fa-twitter
+        a href="#" 
+          i.fa.fa-linkedin
+        a href="#" 
+          i.fa.fa-google
+    hr/
+    p
+      | &copy; Producerun 2015
+      a href="#"  Terms of Use
+      | 
+      a href="#"  Privacy Policy
+
+
 footer.footer
   .centered
     .row
@@ -36,7 +89,7 @@ footer.footer
       .footer-div
         h3.footer-title= t('.titles.newsletter')
         .newsletter-footer
-          = render 'layouts/newsletter'
+          //= render 'layouts/newsletter'
         h3.footer-title= t('.titles.social')
         .twitter-box
           = link_to "Follow @#{CatarseSettings[:twitter_username]}", "http://twitter.com/#{CatarseSettings[:twitter_username]}", :class => 'twitter-follow-button', :"data-button"=>"blue", :"data-text-color" => "#ffffff", :"data-link-color"=>"#fffffff", :"data-width" => "224px"

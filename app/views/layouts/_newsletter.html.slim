@@ -1,3 +1,5 @@
-= form_tag CatarseSettings['mailchimp_url'], id: 'mailee-form', method: 'post', class: "newsletter" do
-  = email_field_tag 'EMAIL', nil, placeholder: t('projects.index.sidebar.placeholders.email'), label: 'email', class: 'newsletter-input'
-  = submit_tag t('projects.index.sidebar.buttons.newsletter'), class: 'newsletter-submit'
+= form_tag CatarseSettings['mailchimp_url'], id: 'mailee-form', method: 'post', class: "newsletter form-inline" do
+  .form-group
+    //= email_field_tag 'EMAIL', nil, placeholder: t('projects.index.sidebar.placeholders.email'), label: 'email', class: 'form-control'
+    = email_field_tag 'EMAIL', nil, placeholder: 'email@gmail.com', label: 'email', class: 'form-control'
+  = submit_tag t('projects.index.sidebar.buttons.newsletter'), value: 'GO' ,class: 'btn btn-default'

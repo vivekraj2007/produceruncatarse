@@ -1,6 +1,293 @@
-.banner
-  .content
-    = link_to t('.explore'), explore_path( ref: 'banner_home', anchor: 'recommended' ), class: "more-projects"
+.jumbotron
+  .container
+    h1 Welcome to Producerun
+    p Join your community in buying fresh food straight from the farm
+    p  
+      = link_to "Create a Producerun", explore_path( ref: 'banner_home', anchor: 'recommended' ), class: "btn btn-success btn-lg"
+      = link_to "Buy Farm Fresh Now", explore_path( ref: 'banner_home', anchor: 'recommended' ), class: "btn btn-orange btn-lg"
+.container
+  /! Example row of columns
+  .row.stepper-style
+    .col-md-2
+      h2
+        | Step
+        span 1
+      .thumbnail
+        img alt="100%x200" data-holder-rendered="true" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjkzIiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTFwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4yNDJ4MjAwPC90ZXh0PjwvZz48L3N2Zz4=" style=("height: 200px; width: 100%; display: block;") /
+        .caption
+          p Farmer lists the good they have available and the amount they needed to pre-scale to cover their cost to the city.
+    .col-md-2
+      h2
+        | Step
+        span 2
+      .thumbnail
+        img alt="100%x200" data-holder-rendered="true" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjkzIiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTFwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4yNDJ4MjAwPC90ZXh0PjwvZz48L3N2Zz4=" style=("height: 200px; width: 100%; display: block;") /
+        .caption
+          p You Back the ProduceRuns you want to buy and share with your friends to make them happen.
+    .col-md-2
+      h2
+        | Step
+        span 3
+      .thumbnail
+        img alt="100%x200" data-holder-rendered="true" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjkzIiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTFwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4yNDJ4MjAwPC90ZXh0PjwvZz48L3N2Zz4=" style=("height: 200px; width: 100%; display: block;") /
+        .caption
+          p Once the farmers tipping point has been reached, the farmer will deliver the goods as specified in the ProduceRun.
+    .col-md-6
+      h2 How Producerun Works?
+      .fit-video
+        iframe allowfullscreen="" frameborder="0" height="400" src="http://www.youtube.com/embed/37EirEMMixc?feature=oembed" width="100%" 
+  hr/
+  .row
+    .col-md-4
+      h2 Convenient Location
+      .thumbnail
+        img alt="100%x200" data-holder-rendered="true" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjkzIiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTFwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4yNDJ4MjAwPC90ZXh0PjwvZz48L3N2Zz4=" style=("width: 100%; display: block;") /
+        .caption
+          p Meet the farmer at specified location which could be your local farmers market, your work place or central location.
+    .col-md-4
+      h2 Meet who grew food
+      .thumbnail
+        img alt="100%x200" data-holder-rendered="true" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjkzIiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTFwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4yNDJ4MjAwPC90ZXh0PjwvZz48L3N2Zz4=" style=("width: 100%; display: block;") /
+        .caption
+          p Not only do you support the grower and the community but you get food at it's best freshest straight from the farm to you.
+    .col-md-4
+      h2 Buying directly is now easy
+      .thumbnail
+        img alt="100%x200" data-holder-rendered="true" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjkzIiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTFwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4yNDJ4MjAwPC90ZXh0PjwvZz48L3N2Zz4=" style=(" width: 100%; display: block;") /
+        .caption
+          p No lines, no shipping carts, and no waiting - plus, it's cheaper than many supermarket.
+  .row
+    .col-md-6
+      h2 Discover farm fresh food around you!
+    .col-md-6.search-input.search
+      = form_tag explore_path, :method => 'GET', :class=>'discover-form' do
+        = text_field_tag :pg_search, nil, autocomplete: "off", value: params[:pg_search], class: "discover-form-input search-input"
+        = submit_tag
+        .search-pre-result data-searchpath=auto_complete_projects_path
+          ul.result
+            li style='text-align: center' = image_tag('loading.gif')
+              .see-more-projects
+            = link_to 'ver todos', 'javascript:void(0);'
+  hr/
+  .category-icons
+    ul
+      li.category-button.category-bundles
+        a.selected href="/sfbay/bundles" 
+          .glyphs
+            .category-icon.base
+            .category-icon.background.bundles_fills
+            .category-icon.highlight.bundles_shading
+            .category-icon.outline.bundles_lines
+          .label Bundles
+      li.category-button.category-summer.fruit
+        a href="/sfbay/produce" 
+          .glyphs
+            .category-icon.base
+            .category-icon.background.produce_fills
+            .category-icon.highlight.produce_shading
+            .category-icon.outline.produce_lines
+          .label Produce
+      li.category-button.category-eggs.dairy class=("<br />&amp;amp;") 
+        a href="/sfbay/dairy" 
+          .glyphs
+            .category-icon.base
+            .category-icon.background.dairy_fills
+            .category-icon.highlight.dairy_shading
+            .category-icon.outline.dairy_lines
+          .label Eggs &amp; Dairy
+      li.category-button.category-meats.seafood class=("<br />&amp;amp;") 
+        a href="/sfbay/meat" 
+          .glyphs
+            .category-icon.base
+            .category-icon.background.meat_fills
+            .category-icon.highlight.meat_shading
+            .category-icon.outline.meat_lines
+          .label Meat &amp; Fish
+      li.category-button.category-baked.goods.sweets class=("<br />&amp;amp;") 
+        a href="/sfbay/bakery" 
+          .glyphs
+            .category-icon.base
+            .category-icon.background.bakery_fills
+            .category-icon.highlight.bakery_shading
+            .category-icon.outline.bakery_lines
+          .label Bakery
+      li.category-button.category-pantry.staples.drinks class=("<br />&amp;amp;") 
+        a href="/sfbay/kitchen" 
+          .glyphs
+            .category-icon.base
+            .category-icon.background.kitchen_fills
+            .category-icon.highlight.kitchen_shading
+            .category-icon.outline.kitchen_lines
+          .label Pantry
+      li.category-button.category-snacks
+        a href="/sfbay/snacks" 
+          .glyphs
+            .category-icon.base
+            .category-icon.background.snacks_fills
+            .category-icon.highlight.snacks_shading
+            .category-icon.outline.snacks_lines
+          .label Snacks
+      li.category-button.category-drinks
+        a href="/sfbay/drinks" 
+          .glyphs
+            .category-icon.base
+            .category-icon.background.drinks_fills
+            .category-icon.highlight.drinks_shading
+            .category-icon.outline.drinks_lines
+          .label Drinks
+      li.category-button.category-floral.home class="&amp;" 
+        a href="/sfbay/floral" 
+          .glyphs
+            .category-icon.base
+            .category-icon.background.floral_fills
+            .category-icon.highlight.floral_shading
+            .category-icon.outline.floral_lines
+          .label Floral &amp; Home
+  hr/
+  .row
+    .col-md-8
+      .row
+        .col-md-6.produce-item-wrapper
+          .produce-listing-item
+            .produce-item-img
+              img src="assets/item-img/black-angas-706x366.jpg" /
+            .progress
+              .progress-bar.progress-bar-success aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" style=("width: 40%") 
+                span.sr-only 40% Complete (success)
+            .row.produce-item-content
+              .col-md-12
+                h3 200 Organic beef cattle
+              .col-md-8.produce-info-content.pull-left
+                p 13 sold
+                p Needs 5 more items to be sold
+              .col-md-4.produce-info-price.pull-left
+                .produce-item-price 20lb
+        .col-md-6.produce-item-wrapper
+          .produce-listing-item
+            .produce-item-img
+              img height="472" src="assets/item-img/black-angus-cattle-grazing-kolob-area-markagunt-plateau-utah-robert-ford-706x472.jpg" width="706" /
+            .progress
+              .progress-bar.progress-bar-success aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" style=("width: 40%") 
+                span.sr-only 40% Complete (success)
+            .row.produce-item-content
+              .col-md-12
+                h3 200 Organic beef cattle
+              .col-md-8.produce-info-content.pull-left
+                p 13 sold
+                p Needs 5 more items to be sold
+              .col-md-4.produce-info-price.pull-left
+                .produce-item-price 20lb
+        .col-md-6.produce-item-wrapper
+          .produce-listing-item
+            .produce-item-img
+              img height="450" src="assets/item-img/a-simple-roast-turkey-706x450.jpg" width="706" /
+            .progress
+              .progress-bar.progress-bar-success aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" style=("width: 40%") 
+                span.sr-only 40% Complete (success)
+            .row.produce-item-content
+              .col-md-12
+                h3 200 Organic beef cattle
+              .col-md-8.produce-info-content.pull-left
+                p 13 sold
+                p Needs 5 more items to be sold
+              .col-md-4.produce-info-price.pull-left
+                .produce-item-price 20lb
+        .col-md-6.produce-item-wrapper
+          .produce-listing-item
+            .produce-item-img
+              img height="427" src="assets/item-img/whole-lamb-706x427.jpg" width="706" /
+            .progress
+              .progress-bar.progress-bar-success aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" style=("width: 40%") 
+                span.sr-only 40% Complete (success)
+            .row.produce-item-content
+              .col-md-12
+                h3 200 Organic beef cattle
+              .col-md-8.produce-info-content.pull-left
+                p 13 sold
+                p Needs 5 more items to be sold
+              .col-md-4.produce-info-price.pull-left
+                .produce-item-price 20lb
+    .col-md-4
+      h4 Filter by Progress
+      .filter-by-progress.clearfix
+        p
+          span.orange.pull-left
+          | Orange progress bar means the tipping point hasn't reached yet.
+        p
+          span.orange.pull-left
+            i.orange-yellow
+          | Yellow marker in the progress bar is the tipping point.
+        p
+          span.orange.green.pull-left
+          | Green progress bar means it's running
+      hr/
+      .produce-delivery-date
+        h5 Delivery Date
+        ul.checkbox.vertical-list
+          li
+            input type="checkbox" /
+            | Tuesday 12/30
+          li
+            input type="checkbox" /
+            | Wed 12/30
+          li
+            input type="checkbox" /
+            | THursday 12/30
+        hr/
+        h5 Filter By
+        ul.checkbox.vertical-list
+          li
+            input type="checkbox" /
+            | Certified Organic
+          li
+            input type="checkbox" /
+            | Locally Grown
+          li
+            input type="checkbox" /
+            | Vegetarian
+          li
+            input type="checkbox" /
+            | Grass Feed
+          li
+            input type="checkbox" /
+            | Synthetic Pesticide &amp; Fertilizer Free
+          li
+            input type="checkbox" /
+            | Raised with Non-GMO Feed
+          li
+            input type="checkbox" /
+            | Made with Vegetarian Rennet
+          li
+            input type="checkbox" /
+            | Organic Ingredients
+        hr/
+        h5 Producer
+        ul.checkbox.vertical-list
+          li
+            input type="checkbox" /
+            | Certified Organic
+          li
+            input type="checkbox" /
+            | Locally Grown
+          li
+            input type="checkbox" /
+            | Vegetarian
+          li
+            input type="checkbox" /
+            | Grass Feed
+          li
+            input type="checkbox" /
+            | Synthetic Pesticide &amp; Fertilizer Free
+          li
+            input type="checkbox" /
+            | Raised with Non-GMO Feed
+          li
+            input type="checkbox" /
+            | Made with Vegetarian Rennet
+          li
+            input type="checkbox" /
+            | Organic Ingredients
+
 #page_content
   .container
     .main
@@ -42,7 +329,7 @@
         h3.title= t('.sidebar.titles.blog')
         ul
           - (Blog.fetch_last_posts rescue [])[0..2].each do |post|
-            li.post
+            /!li.post
               h2
                 = link_to post.url, target: '__blank', class: 'post-title' do
                   = truncate(post.title, length: 80)
@@ -50,16 +337,16 @@
               = link_to post.url, target: '__blank', class: 'post-resume' do
                 = truncate(post.summary, length: 130).html_safe
 
-      section.main-sidebar-division
+      /!section.main-sidebar-division
         h3.title= t('.sidebar.titles.newsletter')
         = render 'layouts/newsletter'
 
 
-      section.main-sidebar-division
+      /!section.main-sidebar-division
         .fb-like-box data-href="#{CatarseSettings['facebook_url']}" data-width="200" data-height="300" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"
 
 
-      section.main-sidebar-division
+      /!section.main-sidebar-division
         = link_to t('.sidebar.titles.twitter'), "https://twitter.com/#{CatarseSettings['twitter_username']}", class: 'twitter-timeline', data:{widget_id:"375343843308089345", chrome:"nofooter"}
 
     .clearfix
