@@ -1,0 +1,9 @@
+--- 
+en: 
+  channels: 
+    profiles: 
+      show: 
+        accessibility: 
+          link_to_facebook: "Link to facebook channel" #i18n-GT
+          link_to_twitter: "Link to twitter channel" #i18n-GT
+          link_to_website: "Link to external channel site" #i18n-GT

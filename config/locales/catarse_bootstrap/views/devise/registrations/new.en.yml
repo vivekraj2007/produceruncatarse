@@ -1,23 +1,23 @@
-en:
-  devise:
-    registrations:
-      new:
-        have_account_html: "Have an account? <strong>%{link}</strong>"
-        titles:
-          site: 'Sign up'
-          header: 'Sign up'
-        links:
-          login: "Log in"
-        form:
-          labels:
-            show_password: 'Show password'
-            name: 'Name'
-            password: 'Password'
-            newsletter: 'I want to subscribe to Catarse newsletter'
-          hint:
-            password_length: 'Must be at least 6 characters.'
-          inputs:
-            submit: 'Sign me up'
-            facebook: 'Sign up with Facebook'
-
-
+--- 
+en: 
+  devise: 
+    registrations: 
+      new: 
+        form: 
+          hint: 
+            password_length: "Minimum of 6 characters" #i18n-GT
+          inputs: 
+            facebook: "Login with Facebook" #i18n-GT
+            submit: "you register" #i18n-GT
+          labels: 
+            accept: "When you register , you are accepting our <a class=\"alt - link\" href=\"%{terms_url}\" target=\"_blank\"> terms of use and </a> <a class = \"alt -link \" href =" #i18n-GT
+            name: "full Name" #i18n-GT
+            newsletter: "I want to receive news from Catharsis in my email" #i18n-GT
+            password: "password" #i18n-GT
+            show_password: "View password" #i18n-GT
+        have_account_html: "Already have an account?" #i18n-GT
+        links: 
+          login: "Sign in" #i18n-GT
+        titles: 
+          header: "Register" #i18n-GT
+          site: "Register" #i18n-GT

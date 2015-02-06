@@ -1,109 +1,379 @@
-en:
-  admin: &admin
-    confirm_dialog: 'You are sure?'
-    projects:
-      index:
-        by_state: 'By state'
-        between_created_at: 'Created at between'
-        submit: 'Filter'
-        send_to_trash: 'Delete'
-        send_to_draft: 'Send to DRAFT!'
-        reject: 'Reject!'
-        approve: 'Approve!'
-        order_asc: 'Goal asc'
-        order_desc: 'Goal desc'
-        order_created_at: 'Submission date'
-        last_modification: 'Last update'
-    financials:
-      index:
-        submit: 'Filter'
-        by_state: 'By state'
-        by_progress: By progress %
-    users:
-      index:
-        title: "Management contributions"
-        menu: Users
-        credits: Credits
-        credits_view: "Calculated credits"
-        id: ID
-        key: Key
-        submit: Search
-        has_credits_difference: "Discrepancy in credits"
-        total_contributed: contributed
-        total_contributors: contributors
-        total_contributions: contributions
-        total_users: users
-        total_credits: credits
-        total_credits_view: "calculated credits"
-        user: User
-        value: Value
-        provider: Provider
-    contributions:
-      messages:
-        successful:
-          confirm: 'Contribution confirmed!'
-          pendent: 'Contribution unconfirmed!'
-          refund: 'Contribution refunded!'
-          change_reward: 'Reward changed!'
-          hide: 'Contribution hidden!'
-          cancel: 'Contribution canceled!'
-          push_to_trash: 'Contribution deleted!'
-      index:
-        send_refund_request_contribution: 'Send refund request'
-        push_to_trash: 'Delete contribution'
-        cancel: 'Cancel contribution'
-        refund_and_hide: 'Refund and hide'
-        contribution_info: 'Info of contribution %{key}'
-        payment_id: 'Payment ID'
-        payment_method: 'Payment method'
-        payment_fee: 'Payment method fee'
-        payment_choice: 'Payment choice'
-        payer_email: 'Payer email'
-        user_email: 'Catarse user email'
-        pending_to_refund: 'Pending to refund'
-        created_at: 'Created at'
-        title: "Contributions management"
-        menu: Contributions
-        anonymous: Anonymous?
-        confirmed: Confirmed?
-        credits: "Used credits?"
-        id: ID
-        key: Key
-        no_contributions: "No contributions found."
-        project: Project
-        refunded: Refunded?
-        requested_refund: "Requested refund?"
-        reward: Reward
-        no_reward: "No reward"
-        submit: Search
-        total_contributed: contributed
-        total_contributors: contributors
-        total_contributions: contributions
-        total_users: Users
-        user: User
-        value: Value
-    statistics:
-      index:
-        menu: "Statistics"
-        title: "Statistics"
-        total_users: "Users"
-        total_contributions: "Contributions"
-        total_contributors: "Contributors"
-        total_contributed: "Contributed"
-        total_projects: "Projects"
-        total_projects_success: "Successful"
-        total_projects_online: "Online"
-      projects_by_week:
-        title: "Projects sent per week"
-        current_period: "Last 8 weeks"
-        previous_period: "Previous 8 weeks"
-        last_year: "Last year"
-      contributions_by_week:
-        title: "Contributed value confirmed per week"
-        current_period: "Last 8 weeks"
-        previous_period: "Previous 8 weeks"
-        last_year: "Last year"
-
-  channels:
-    admin:
-      <<: *admin
+--- 
+en: 
+  admin: 
+    actions: 
+      confirm: "confirm" #i18n-GT
+    confirm_dialog: "Are you sure?" #i18n-GT
+    contributions: 
+      index: 
+        acquirer: "operator" #i18n-GT
+        anonymous: "Anonymous ?" #i18n-GT
+        between_values: "values ​​between" #i18n-GT
+        by_state: "state" #i18n-GT
+        cancel: "Cancel support" #i18n-GT
+        confirm_contribution: "confirm support" #i18n-GT
+        confirmed: "Confirmed ?" #i18n-GT
+        contribution: "support" #i18n-GT
+        credits_html: "Used credits ?" #i18n-GT
+        details: 
+          acquirer_name: "Card company" #i18n-GT
+          acquirer_tid: "TID Operator" #i18n-GT
+          created_at: "started in" #i18n-GT
+          installments: "plots" #i18n-GT
+          normal_email: "Email the Catharsis" #i18n-GT
+          payer_email: "Email the means of payment" #i18n-GT
+          payment_choice: "Payment Option" #i18n-GT
+          payment_id: "Payment ID" #i18n-GT
+          payment_method: "Method of payment" #i18n-GT
+        id: "Id" #i18n-GT
+        key: "key" #i18n-GT
+        menu: "supports" #i18n-GT
+        no_contributions: "No supporter found." #i18n-GT
+        no_reward: "unrewarded" #i18n-GT
+        payer_email: "Email the means of payment" #i18n-GT
+        payment_id: "Id de Payment" #i18n-GT
+        payment_tax: "Fee payment method" #i18n-GT
+        pending_to_refund: "chargebacks pending" #i18n-GT
+        placeholders: 
+          acquirer: "Card company name" #i18n-GT
+          payment_id: "Key, the means of payment ID or TID operator '" #i18n-GT
+          project: "Permalink or project name" #i18n-GT
+          user: "ID , Name , Email or Mail payment" #i18n-GT
+        project: "project" #i18n-GT
+        project_state: "State project" #i18n-GT
+        push_to_trash: "delete support" #i18n-GT
+        refund_and_hide: "Reversal and do not display support." #i18n-GT
+        refund_contribution: "Reverse support" #i18n-GT
+        refunded: "Reversal done ?" #i18n-GT
+        request_refund: "To request direct reimbursement" #i18n-GT
+        requested_refund: "Asked reversal ?" #i18n-GT
+        reward: "reward" #i18n-GT
+        send_refund_request_contribution: "Send refund request" #i18n-GT
+        state: "state" #i18n-GT
+        submit: "research" #i18n-GT
+        title: "Support management" #i18n-GT
+        total_contributed: "collected" #i18n-GT
+        total_contribution: "support" #i18n-GT
+        total_contributions: "supporters" #i18n-GT
+        total_users: "users" #i18n-GT
+        unconfirm_contribution: "disconfirm support" #i18n-GT
+        user: "User" #i18n-GT
+        user_email: "Email used in catharsis" #i18n-GT
+        value: "value" #i18n-GT
+      messages: 
+        successful: 
+          cancel: "Successfully canceled support!" #i18n-GT
+          change_reward: "Successfully modified reward!" #i18n-GT
+          confirm: "Successfully confirmed support!" #i18n-GT
+          hide: "Successfully hidden support!" #i18n-GT
+          pendent: "Successfully desconfirmado support!" #i18n-GT
+          push_to_trash: "Successfully deleted support!" #i18n-GT
+          refund: "Successfully reversed support!" #i18n-GT
+      show: 
+        contribution_info: "% Contribution of information { key}" #i18n-GT
+        created_at: "started in" #i18n-GT
+        payer_email: "Email means of payment used in" #i18n-GT
+        payment_choice: "Payment Option" #i18n-GT
+        payment_fee: "Rate of means of payment" #i18n-GT
+        payment_id: "ID of payment" #i18n-GT
+        payment_method: "Method of payment" #i18n-GT
+        successful: "successful" #i18n-GT
+        user_email: "Email used in catharsis" #i18n-GT
+    filter: 
+      title: "Filters" #i18n-GT
+    financials: 
+      index: 
+        between_expires_at: "expire between" #i18n-GT
+        by_progress: "For progress %" #i18n-GT
+        by_state: "by state" #i18n-GT
+        contribution_report: "Supporters Report" #i18n-GT
+        details: 
+          bank_data: "banking" #i18n-GT
+          document: "CPF / CNPJ" #i18n-GT
+          email: "E -mail" #i18n-GT
+          name: "corporate name" #i18n-GT
+          permalink: "Permalink design" #i18n-GT
+        expires_at: "Ends" #i18n-GT
+        goal: "where" #i18n-GT
+        id: "ID" #i18n-GT
+        menu: "Rel . Financial" #i18n-GT
+        name: "Title" #i18n-GT
+        online_date: "Went on the air" #i18n-GT
+        pledged: "reached" #i18n-GT
+        recommended: "Recommended ?" #i18n-GT
+        repass_value: "Vl." #i18n-GT
+        search_report: "Search report" #i18n-GT
+        state: "state" #i18n-GT
+        submit: "filter" #i18n-GT
+        title: "financial Reports" #i18n-GT
+        total_catarse_fee: "Catharsis rate" #i18n-GT
+        total_payment_service_fee: "MP rate" #i18n-GT
+        total_projects: "projects" #i18n-GT
+        user: "User MoIP" #i18n-GT
+        user_id: "User ID" #i18n-GT
+    projects: 
+      index: 
+        approve: "Approve !" #i18n-GT
+        between_created_at: "created between" #i18n-GT
+        between_expires_at: "expire between" #i18n-GT
+        between_online_date: "Entered the air between" #i18n-GT
+        between_updated_at: "updated between" #i18n-GT
+        by_category: "category" #i18n-GT
+        by_user_email: "Email the director" #i18n-GT
+        category: "category" #i18n-GT
+        expires_at: "Finishes on" #i18n-GT
+        goal: "where" #i18n-GT
+        goal_between: "meta between" #i18n-GT
+        id: "ID" #i18n-GT
+        last_modification: "Last updated" #i18n-GT
+        menu: "Admin projects" #i18n-GT
+        name: "Title" #i18n-GT
+        no_projects: "No projects found" #i18n-GT
+        online_date: "Went on the air" #i18n-GT
+        order_asc: "minor goal" #i18n-GT
+        order_created_at: "Date of dispatch" #i18n-GT
+        order_date: "Date of dispatch" #i18n-GT
+        order_desc: "highest goal" #i18n-GT
+        order_table: "Sort table" #i18n-GT
+        pledged: "reached" #i18n-GT
+        project: "project" #i18n-GT
+        recommended: "Recommended ?" #i18n-GT
+        reject: "Turn Up One'S Nose At!" #i18n-GT
+        send_to_draft: "Tell DRAFT !" #i18n-GT
+        send_to_trash: "delete" #i18n-GT
+        state: "state" #i18n-GT
+        submit: "filter" #i18n-GT
+        title: "Project management" #i18n-GT
+        total_contributions: "supports" #i18n-GT
+        total_projects: "projects" #i18n-GT
+        user: "User" #i18n-GT
+        user_id: "User ID" #i18n-GT
+        with_state: "by state" #i18n-GT
+    statistics: 
+      charts: 
+        current_period: "Last 8 without ." #i18n-GT
+        last_year: "previous year" #i18n-GT
+      contributions_by_week: 
+        title: "Support value confirmed by week" #i18n-GT
+      index: 
+        menu: "statistics" #i18n-GT
+        title: "statistics" #i18n-GT
+        total_contributed: "collection" #i18n-GT
+        total_contributions: "supports" #i18n-GT
+        total_contributors: "supporters" #i18n-GT
+        total_projects: "projects" #i18n-GT
+        total_projects_online: "Online" #i18n-GT
+        total_projects_success: "successful" #i18n-GT
+        total_users: "users" #i18n-GT
+      projects_by_week: 
+        title: "Created drafts a week" #i18n-GT
+      projects_in_analysis_by_week: 
+        title: "Projects submitted for curating a week" #i18n-GT
+    users: 
+      index: 
+        credits: "credits" #i18n-GT
+        credits_view: "credits calculated" #i18n-GT
+        has_credits_difference: "Discrepancy in the credits" #i18n-GT
+        id: "Id" #i18n-GT
+        key: "key" #i18n-GT
+        menu: "supporters" #i18n-GT
+        payer_email: "Email payment" #i18n-GT
+        provider: "provider" #i18n-GT
+        submit: "research" #i18n-GT
+        title: "Supporters management" #i18n-GT
+        total_contributed: "Total support" #i18n-GT
+        total_contributions: "support" #i18n-GT
+        total_credits: "credits" #i18n-GT
+        total_credits_view: "calculated credits" #i18n-GT
+        total_users: "users" #i18n-GT
+        user: "User" #i18n-GT
+        value: "value" #i18n-GT
+  channels: 
+    admin: 
+      actions: 
+        confirm: "confirm" #i18n-GT
+      confirm_dialog: "Are you sure?" #i18n-GT
+      contributions: 
+        index: 
+          acquirer: "operator" #i18n-GT
+          anonymous: "Anonymous ?" #i18n-GT
+          between_values: "values ​​between" #i18n-GT
+          by_state: "state" #i18n-GT
+          cancel: "Cancel support" #i18n-GT
+          confirm_contribution: "confirm support" #i18n-GT
+          confirmed: "Confirmed ?" #i18n-GT
+          contribution: "support" #i18n-GT
+          credits_html: "Used credits ?" #i18n-GT
+          details: 
+            acquirer_name: "Card company" #i18n-GT
+            acquirer_tid: "TID Operator" #i18n-GT
+            created_at: "started in" #i18n-GT
+            installments: "plots" #i18n-GT
+            normal_email: "Email the Catharsis" #i18n-GT
+            payer_email: "Email the means of payment" #i18n-GT
+            payment_choice: "Payment Option" #i18n-GT
+            payment_id: "Payment ID" #i18n-GT
+            payment_method: "Method of payment" #i18n-GT
+          id: "Id" #i18n-GT
+          key: "key" #i18n-GT
+          menu: "supports" #i18n-GT
+          no_contributions: "No supporter found." #i18n-GT
+          no_reward: "unrewarded" #i18n-GT
+          payer_email: "Email the means of payment" #i18n-GT
+          payment_id: "Id de Payment" #i18n-GT
+          payment_tax: "Fee payment method" #i18n-GT
+          pending_to_refund: "chargebacks pending" #i18n-GT
+          placeholders: 
+            acquirer: "Card company name" #i18n-GT
+            payment_id: "Key, the means of payment ID or TID operator '" #i18n-GT
+            project: "Permalink or project name" #i18n-GT
+            user: "ID , Name , Email or Mail payment" #i18n-GT
+          project: "project" #i18n-GT
+          project_state: "State project" #i18n-GT
+          push_to_trash: "delete support" #i18n-GT
+          refund_and_hide: "Reversal and do not display support." #i18n-GT
+          refund_contribution: "Reverse support" #i18n-GT
+          refunded: "Reversal done ?" #i18n-GT
+          request_refund: "To request direct reimbursement" #i18n-GT
+          requested_refund: "Asked reversal ?" #i18n-GT
+          reward: "reward" #i18n-GT
+          send_refund_request_contribution: "Send refund request" #i18n-GT
+          state: "state" #i18n-GT
+          submit: "research" #i18n-GT
+          title: "Support management" #i18n-GT
+          total_contributed: "collected" #i18n-GT
+          total_contribution: "support" #i18n-GT
+          total_contributions: "supporters" #i18n-GT
+          total_users: "users" #i18n-GT
+          unconfirm_contribution: "disconfirm support" #i18n-GT
+          user: "User" #i18n-GT
+          user_email: "Email used in catharsis" #i18n-GT
+          value: "value" #i18n-GT
+        messages: 
+          successful: 
+            cancel: "Successfully canceled support!" #i18n-GT
+            change_reward: "Successfully modified reward!" #i18n-GT
+            confirm: "Successfully confirmed support!" #i18n-GT
+            hide: "Successfully hidden support!" #i18n-GT
+            pendent: "Successfully desconfirmado support!" #i18n-GT
+            push_to_trash: "Successfully deleted support!" #i18n-GT
+            refund: "Successfully reversed support!" #i18n-GT
+        show: 
+          contribution_info: "% Contribution of information { key}" #i18n-GT
+          created_at: "started in" #i18n-GT
+          payer_email: "Email means of payment used in" #i18n-GT
+          payment_choice: "Payment Option" #i18n-GT
+          payment_fee: "Rate of means of payment" #i18n-GT
+          payment_id: "ID of payment" #i18n-GT
+          payment_method: "Method of payment" #i18n-GT
+          successful: "successful" #i18n-GT
+          user_email: "Email used in catharsis" #i18n-GT
+      filter: 
+        title: "Filters" #i18n-GT
+      financials: 
+        index: 
+          between_expires_at: "expire between" #i18n-GT
+          by_progress: "For progress %" #i18n-GT
+          by_state: "by state" #i18n-GT
+          contribution_report: "Supporters Report" #i18n-GT
+          details: 
+            bank_data: "banking" #i18n-GT
+            document: "CPF / CNPJ" #i18n-GT
+            email: "E -mail" #i18n-GT
+            name: "corporate name" #i18n-GT
+            permalink: "Permalink design" #i18n-GT
+          expires_at: "Ends" #i18n-GT
+          goal: "where" #i18n-GT
+          id: "ID" #i18n-GT
+          menu: "Rel . Financial" #i18n-GT
+          name: "Title" #i18n-GT
+          online_date: "Went on the air" #i18n-GT
+          pledged: "reached" #i18n-GT
+          recommended: "Recommended ?" #i18n-GT
+          repass_value: "Vl." #i18n-GT
+          search_report: "Search report" #i18n-GT
+          state: "state" #i18n-GT
+          submit: "filter" #i18n-GT
+          title: "financial Reports" #i18n-GT
+          total_catarse_fee: "Catharsis rate" #i18n-GT
+          total_payment_service_fee: "MP rate" #i18n-GT
+          total_projects: "projects" #i18n-GT
+          user: "User MoIP" #i18n-GT
+          user_id: "User ID" #i18n-GT
+      projects: 
+        index: 
+          approve: "Approve !" #i18n-GT
+          between_created_at: "created between" #i18n-GT
+          between_expires_at: "expire between" #i18n-GT
+          between_online_date: "Entered the air between" #i18n-GT
+          between_updated_at: "updated between" #i18n-GT
+          by_category: "category" #i18n-GT
+          by_user_email: "Email the director" #i18n-GT
+          category: "category" #i18n-GT
+          expires_at: "Finishes on" #i18n-GT
+          goal: "where" #i18n-GT
+          goal_between: "meta between" #i18n-GT
+          id: "ID" #i18n-GT
+          last_modification: "Last updated" #i18n-GT
+          menu: "Admin projects" #i18n-GT
+          name: "Title" #i18n-GT
+          no_projects: "No projects found" #i18n-GT
+          online_date: "Went on the air" #i18n-GT
+          order_asc: "minor goal" #i18n-GT
+          order_created_at: "Date of dispatch" #i18n-GT
+          order_date: "Date of dispatch" #i18n-GT
+          order_desc: "highest goal" #i18n-GT
+          order_table: "Sort table" #i18n-GT
+          pledged: "reached" #i18n-GT
+          project: "project" #i18n-GT
+          recommended: "Recommended ?" #i18n-GT
+          reject: "Turn Up One'S Nose At!" #i18n-GT
+          send_to_draft: "Tell DRAFT !" #i18n-GT
+          send_to_trash: "delete" #i18n-GT
+          state: "state" #i18n-GT
+          submit: "filter" #i18n-GT
+          title: "Project management" #i18n-GT
+          total_contributions: "supports" #i18n-GT
+          total_projects: "projects" #i18n-GT
+          user: "User" #i18n-GT
+          user_id: "User ID" #i18n-GT
+          with_state: "by state" #i18n-GT
+      statistics: 
+        charts: 
+          current_period: "Last 8 without ." #i18n-GT
+          last_year: "previous year" #i18n-GT
+        contributions_by_week: 
+          title: "Support value confirmed by week" #i18n-GT
+        index: 
+          menu: "statistics" #i18n-GT
+          title: "statistics" #i18n-GT
+          total_contributed: "collection" #i18n-GT
+          total_contributions: "supports" #i18n-GT
+          total_contributors: "supporters" #i18n-GT
+          total_projects: "projects" #i18n-GT
+          total_projects_online: "Online" #i18n-GT
+          total_projects_success: "successful" #i18n-GT
+          total_users: "users" #i18n-GT
+        projects_by_week: 
+          title: "Created drafts a week" #i18n-GT
+        projects_in_analysis_by_week: 
+          title: "Projects submitted for curating a week" #i18n-GT
+      users: 
+        index: 
+          credits: "credits" #i18n-GT
+          credits_view: "credits calculated" #i18n-GT
+          has_credits_difference: "Discrepancy in the credits" #i18n-GT
+          id: "Id" #i18n-GT
+          key: "key" #i18n-GT
+          menu: "supporters" #i18n-GT
+          payer_email: "Email payment" #i18n-GT
+          provider: "provider" #i18n-GT
+          submit: "research" #i18n-GT
+          title: "Supporters management" #i18n-GT
+          total_contributed: "Total support" #i18n-GT
+          total_contributions: "support" #i18n-GT
+          total_credits: "credits" #i18n-GT
+          total_credits_view: "calculated credits" #i18n-GT
+          total_users: "users" #i18n-GT
+          user: "User" #i18n-GT
+          value: "value" #i18n-GT

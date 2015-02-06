@@ -1,5 +1,6 @@
-en:
-  will_paginate:
-    next: "Next »"
-    page_gap: "..."
-    previous: "« Previous"
+--- 
+en: 
+  will_paginate: 
+    next: "next »" #i18n-GT
+    page_gap: "..." #i18n-GT
+    previous: "«Previous" #i18n-GT

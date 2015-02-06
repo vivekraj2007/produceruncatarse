@@ -20,7 +20,7 @@ pt:
         contribute: Apoie
         unavailable_contribute: este projeto para visualizá-la.
         destroy: Remover Novidade
-        destroy_confirmation: Deseja remover esta novidade?
+        destroy_confirmation: Deseja remover
       new:
         notice: Novidade enviada com sucesso!
         comment: Texto da sua Novidade

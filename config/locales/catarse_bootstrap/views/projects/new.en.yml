@@ -1,56 +1,50 @@
-en:
-  projects:
-    new:
-      page-title: "Comece seu projeto"
-
-      faq:
-        titles:
-          support: "Suporte"
-          know_more: "Saiba mais"
-
-        links:
-          criteria: "Critérios de seleção"
-          suport_central: "Central de suporte"
-          support_contact: "Entre em contato com a gente"
-          how_it_works: "Como o Catarse funciona?"
-          money: "Como receberei o dinheiro?"
-          selection: "Como os projetos são selecionados?"
-          all_or_nothing: "Por que Tudo ou Nada?"
-
-      form:
-        blocks:
-          first:
-            title: "1. Informações básicas"
-            description: "Você está criando o rascunho de seu projeto. As informações preenchidas nesse primeiro bloco não podem ser  alteradas após o seu projeto entrar no ar."
-          second:
-            title: "2. História do projeto"
-            description: "As informações abaixo poderão ser editadas por você a qualquer momento, até quando seu projeto estiver no ar."
-          disclaimer: "Nem todos os projetos enviados vão ao ar, nosso atendimento irá avaliar o foco, a viabilidade, a consistência e a apresentação do seu projeto. Se ele não está de acordo com os <a href='http://suporte.catarse.me/hc/pt-br/articles/202387638-Diretrizes-para-a-cria%C3%A7%C3%A3o-de-projetos' class='alt-link' target='_blank'>Critérios de Seleção da Plataforma</a>, ele poderá ser recusado."
-
-        labels:
-          name: "Nome do projeto"
-          permalink: "URL do projeto"
-          category: "Escolha a categoria"
-          goal: "Valor a ser arrecadado"
-          online_days: "Prazo para arrecadação"
-          video_url: "URL do vídeo"
-          about: "Descrição do projeto"
-          headline: "Frase de efeito"
-          traffic_sources: "Como você conheceu o Catarse?"
-
-        hints:
-          name: "Quanto mais direto melhor. Não ultrapasse 50 caracteres"
-          permalink: "É o endereço do seu projeto, deve ser fácil de memorizar. Tente não usar underline, hífen e etc."
-          category: "Antes de enviar, explore e se inspire em outros projetos da mesma categoria que o seu."
-          goal: "Grande parte dos apoios serão de pessoas próximas a você. Pense como conseguir pelo menos 50% do valor da meta dentro da sua rede de contatos. Não se esqueça da taxa de 13% cobrada pelo Catarse caso seu projeto seja bem-sucedido."
-          online_days: "Em média os projetos ficam no ar por 40 dias. O prazo máximo da campanha é de 60 dias."
-          video_url: "Insira aqui o link do seu vídeo. Ele deve estar hospedado no Youtube ou no Vimeo. Se ainda não o tiver, tudo bem, você pode adicioná-lo depois. O vídeo é muito importante para o sucesso de sua campanha e obrigatório para projetos com metas de R$ 5.000 ou mais."
-          about: "Fale sobre o que será realizado, como o dinheiro será utilizado, quem está por trás do projeto, como e quando o projeto será entregue. Seja informal e direto, essa é uma conversa entre pessoas que querem compartilhar uma ideia, não um projeto de edital. Lembre-se que <a href=http://suporte.catarse.me/hc/pt-br/articles/203083017-Adicionar-imagens-e-v%C3%ADdeos-na-descri%C3%A7%C3%A3o-do-projeto class='alt-link' target='_blank'>você pode utilizar imagens e vídeos</a> para ilustrar melhor o seu projeto na descrição."
-          headline: "No máximo 100 caracteres."
-
-        info:
-          permalink: http://catarse.me/
-          goal: R$
-          online_days: dias
-
-        submit: "Salvar e continuar"
+--- 
+en: 
+  projects: 
+    new: 
+      faq: 
+        links: 
+          all_or_nothing: "Why All or Nothing ?" #i18n-GT
+          criteria: "Selection Criteria" #i18n-GT
+          how_it_works: "As the Catharsis work?" #i18n-GT
+          money: "How will I get the money ?" #i18n-GT
+          selection: "How are projects selected ?" #i18n-GT
+          suport_central: "Support Center" #i18n-GT
+          support_contact: "Contact us" #i18n-GT
+        titles: 
+          know_more: "Learn more" #i18n-GT
+          support: "holder" #i18n-GT
+      form: 
+        blocks: 
+          disclaimer: "Not all projects submitted will air , our service will evaluate the focus , the feasibility , consistency and the presentation of your project." #i18n-GT
+          first: 
+            description: "You are creating a draft of your project." #i18n-GT
+            title: "1. Basic information" #i18n-GT
+          second: 
+            description: "Information may be edited below for you at any time , even when your project is in the air." #i18n-GT
+            title: "2. History of the project" #i18n-GT
+        hints: 
+          about: "Talk about what will take place , how the money will be used , who is behind the project, as and when the project will be delivered ." #i18n-GT
+          category: "Before sending , explore and inspire other projects in the same category as yours." #i18n-GT
+          goal: "Much of the support will be close to you ." #i18n-GT
+          headline: "No more than 100 characters ." #i18n-GT
+          name: "The more direct the better." #i18n-GT
+          online_days: "On average the projects are in the air for 40 days." #i18n-GT
+          permalink: "It is the address of your project should be easy to remember ." #i18n-GT
+          video_url: "Enter here the link of your video." #i18n-GT
+        info: 
+          goal: "R$" #i18n-GT
+          online_days: "days" #i18n-GT
+          permalink: "http://catarse.me/" #i18n-GT
+        labels: 
+          about: "Project Description" #i18n-GT
+          category: "Choose a category" #i18n-GT
+          goal: "Amount to be raised" #i18n-GT
+          headline: "Catchphrase" #i18n-GT
+          name: "Project Name" #i18n-GT
+          online_days: "Deadline for collection" #i18n-GT
+          permalink: "URL design" #i18n-GT
+          traffic_sources: "How did you meet Catharsis ?" #i18n-GT
+          video_url: "Video URL" #i18n-GT
+        submit: "Save and Continue" #i18n-GT
+      page-title: "Start your project" #i18n-GT

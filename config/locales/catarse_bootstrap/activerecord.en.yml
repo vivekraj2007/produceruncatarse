@@ -1,13 +1,177 @@
-en:
-  activerecord:
-    errors:
-      models:
-        project:
-          attributes:
-            permalink:
-              invalid: Invalid project URL
-        user:
-          attributes:
-            email:
-              not_found: "Email not found, please sign up"
-              taken: "Email has already been taken"
+--- 
+en: 
+  activerecord: 
+    attributes: 
+      bank_account: 
+        account: "Account Number" #i18n-GT
+        account_digit: "digit" #i18n-GT
+        agency: "agency" #i18n-GT
+        agency_digit: "digit" #i18n-GT
+        bank: "Bank" #i18n-GT
+        bank_id: "Bank" #i18n-GT
+        owner_document: "CPF / CNPJ of the holder" #i18n-GT
+        owner_name: "Cardholder Name" #i18n-GT
+      channel: 
+        description: "description" #i18n-GT
+        ga_code: "Code Analytics" #i18n-GT
+        how_it_works: "How it works" #i18n-GT
+        image: "New image" #i18n-GT
+        name: "name" #i18n-GT
+        video_url: "video" #i18n-GT
+      channel_partner: 
+        image: "image" #i18n-GT
+        name: "name" #i18n-GT
+        url: "Site" #i18n-GT
+      channel_post: 
+        body: "content" #i18n-GT
+        title: "title" #i18n-GT
+        visible: "Post (Check if you want to publish this news )" #i18n-GT
+      contribution: 
+        address_city: "city" #i18n-GT
+        address_complement: "complement" #i18n-GT
+        address_neighbourhood: "neighborhood" #i18n-GT
+        address_number: "number" #i18n-GT
+        address_phone_number: "phone" #i18n-GT
+        address_state: "state" #i18n-GT
+        address_street: "street" #i18n-GT
+        address_zip_code: "MOBILE" #i18n-GT
+        country: "country" #i18n-GT
+        payer_email: "Email" #i18n-GT
+        payer_name: "Full Name" #i18n-GT
+        project: "project" #i18n-GT
+        reward: "reward" #i18n-GT
+        value: "support value" #i18n-GT
+      project: 
+        about: "Tell the story of your project and how you want to spend the money raised ." #i18n-GT
+        category: "category" #i18n-GT
+        channels: "channels" #i18n-GT
+        expires_at: "time Frame" #i18n-GT
+        first_contributions: "Who are the first people you will ask to support your project?" #i18n-GT
+        goal: "How much you want to raise ?" #i18n-GT
+        headline: "A sound bite about your project ." #i18n-GT
+        image_url: "Image URL" #i18n-GT
+        more_links: "Tell links for people to know more about your project and its history ." #i18n-GT
+        name: "Project Name" #i18n-GT
+        online_days: "How many days you need to achieve your goal?" #i18n-GT
+        permalink: "URL of your project" #i18n-GT
+        traffic_sources: "How did you meet Catharsis ?" #i18n-GT
+        user_id: "User ID" #i18n-GT
+        video_url: "Video URL" #i18n-GT
+      reward: 
+        deliver_at: "Estimated delivery" #i18n-GT
+      user: 
+        address_city: "city" #i18n-GT
+        address_complement: "complement" #i18n-GT
+        address_neighbourhood: "neighborhood" #i18n-GT
+        address_number: "number" #i18n-GT
+        address_state: "state" #i18n-GT
+        address_street: "address" #i18n-GT
+        address_zip_code: "MOBILE" #i18n-GT
+        bio: "Mini Bio" #i18n-GT
+        cpf: "CPF / CNPJ" #i18n-GT
+        cpf_hint: "(?)" #i18n-GT
+        cpf_hint_title: "Invoice will be issued for this document" #i18n-GT
+        current_password: "current Password" #i18n-GT
+        email: "Email" #i18n-GT
+        full_name: "Full Name / Company Name" #i18n-GT
+        id: "ID" #i18n-GT
+        moip_login: "Login MoIP" #i18n-GT
+        moip_login_hint: "( How to create an account )" #i18n-GT
+        name: "nickname" #i18n-GT
+        newsletter: "I want to receive news from Catharsis" #i18n-GT
+        password: "password" #i18n-GT
+        password_confirmation: "Password confirmation" #i18n-GT
+        phone_number: "Telephone (fixed or mobile)" #i18n-GT
+        reset_password_token: "Link to recreate password" #i18n-GT
+        state_inscription: "State Registration" #i18n-GT
+    errors: 
+      models: 
+        contribution: "Error saving support" #i18n-GT
+        project: 
+          attributes: 
+            about: 
+              blank: "The project description can not be blank" #i18n-GT
+            category: 
+              blank: "You must choose a category for your project" #i18n-GT
+            goal: 
+              blank: "The value of the goal can not be blank" #i18n-GT
+              greater_than: "The goal must be greater than 9" #i18n-GT
+              not_a_number: "Collection target only accepts numbers" #i18n-GT
+            headline: 
+              blank: "The catchphrase of the project can not be blank" #i18n-GT
+              too_long: "The catch phrase is too long." #i18n-GT
+            name: 
+              blank: "The project name can not be blank" #i18n-GT
+            online_days: 
+              greater_than: "The deadline for collection must be greater than 0 days" #i18n-GT
+              not_a_number: "The deadline for collection should be a number of days" #i18n-GT
+            permalink: 
+              blank: "The URL of the project can not be blank" #i18n-GT
+              invalid: "The URL of the design is invalid" #i18n-GT
+              taken: "This project URL already exists" #i18n-GT
+        user: 
+          attributes: 
+            email: 
+              blank: "Email can not be blank" #i18n-GT
+              invalid: "This email address is invalid" #i18n-GT
+              not_found: "The email is not registered , check the address or register yourself" #i18n-GT
+              taken: "The email is already registered , login" #i18n-GT
+            password: 
+              blank: "The password can not be blank" #i18n-GT
+              confirmation: "The password and the password confirmation met are not equal" #i18n-GT
+              too_short: "The password you chose is too short" #i18n-GT
+            reset_password_token: 
+              invalid: "expired ." #i18n-GT
+    models: 
+      bank_account: "bank details" #i18n-GT
+      category: "category" #i18n-GT
+      channel: "channel" #i18n-GT
+      contribution: "Sketchpad" #i18n-GT
+      project: "project" #i18n-GT
+      reward: "reward" #i18n-GT
+  channels: 
+    back_to_news: "← Back to news" #i18n-GT
+    edit: "Update Channel" #i18n-GT
+    follow: "Follow the channel" #i18n-GT
+    following: "Following" #i18n-GT
+    image_hint: "Maximum size ( 600x121px )" #i18n-GT
+    subscribed: "% {count } following the channel" #i18n-GT
+    unfollow: "Unfollow" #i18n-GT
+  channels_subscribers: 
+    created: "Now you follow the % { channel }" #i18n-GT
+    deleted: "You failed to follow the % { channel }" #i18n-GT
+  contribution: 
+    project_should_be_online: "You can not support a project that is not in the air" #i18n-GT
+    reward_must_be_from_project: "must be of the same design" #i18n-GT
+    should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum number of supporters" #i18n-GT
+    value_must_be_at_least_rewards_value: "should be at least minimum_value { % } to the selected reward" #i18n-GT
+  contribution_report_to_project_owner: 
+    address_number: "number" #i18n-GT
+    address_state: "state" #i18n-GT
+    anonymous: "anonymous" #i18n-GT
+    city: "city" #i18n-GT
+    complement: "complement" #i18n-GT
+    confirmed_at: "Payment confirmation date" #i18n-GT
+    contribution_value: "Support amount" #i18n-GT
+    cpf: "Cpf the supporter" #i18n-GT
+    deliver_at: "Delivery date of the reward" #i18n-GT
+    neighbourhood: "neighborhood" #i18n-GT
+    payer_email: "Email the means of payment" #i18n-GT
+    payment_method: "Method of payment" #i18n-GT
+    reward_description: "Reward description" #i18n-GT
+    service_fee: "Catharsis rate" #i18n-GT
+    street: "street" #i18n-GT
+    user_email: "Email profile Catharsis" #i18n-GT
+    user_full_name: "Full name of the supporter" #i18n-GT
+    user_name: "Last name supporter" #i18n-GT
+    zip_code: "MOBILE" #i18n-GT
+  project: 
+    update: 
+      success: "The information has been updated" #i18n-GT
+    video_regex_validation: "only Vimeo URLs are accepted" #i18n-GT
+  user: 
+    contributions_text: 
+      many: "Supported this and more other % { Total } projects" #i18n-GT
+      one: "Only supported this project so far" #i18n-GT
+      two: "Supported this and 1 other project" #i18n-GT
+    no_name: "nameless" #i18n-GT
