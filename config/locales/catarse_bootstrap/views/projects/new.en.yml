@@ -6,7 +6,7 @@ en:
         links: 
           all_or_nothing: "Why All or Nothing ?" #i18n-GT
           criteria: "Selection Criteria" #i18n-GT
-          how_it_works: "As the Catharsis work?" #i18n-GT
+          how_it_works: "As the ProduceRun work?" #i18n-GT
           money: "How will I get the money ?" #i18n-GT
           selection: "How are projects selected ?" #i18n-GT
           suport_central: "Support Center" #i18n-GT
@@ -35,7 +35,7 @@ en:
         info: 
           goal: "R$" #i18n-GT
           online_days: "days" #i18n-GT
-          permalink: "http://catarse.me/" #i18n-GT
+          permalink: "http://ProduceRun.me/" #i18n-GT
         labels: 
           about: "Project Description" #i18n-GT
           category: "Choose a category" #i18n-GT
@@ -44,7 +44,7 @@ en:
           name: "Project Name" #i18n-GT
           online_days: "Deadline for collection" #i18n-GT
           permalink: "URL design" #i18n-GT
-          traffic_sources: "How did you meet Catharsis ?" #i18n-GT
+          traffic_sources: "How did you meet ProduceRun ?" #i18n-GT
           video_url: "Video URL" #i18n-GT
         submit: "Save and Continue" #i18n-GT
       page-title: "Start your project" #i18n-GT

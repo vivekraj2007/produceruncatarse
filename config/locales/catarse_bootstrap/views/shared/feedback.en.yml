@@ -10,7 +10,7 @@ en:
         email: "Email" #i18n-GT
         text: "Type your feedback" #i18n-GT
       texts: 
-        content: "In recent months we have been working day and night in a series of changes in the platform, which are detailed in this <a target = ' _ blank ' href = ' http : //blog.catarse.me/os-passos-para-um-novo-" #i18n-GT
+        content: "In recent months we have been working day and night in a series of changes in the platform, which are detailed in this <a target = ' _ blank ' href = ' http : //blog.ProduceRun.me/os-passos-para-um-novo-" #i18n-GT
         response: 
           content: "We value every feedback received." #i18n-GT
           title: "Wow!" #i18n-GT

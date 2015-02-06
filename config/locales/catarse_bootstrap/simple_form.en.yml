@@ -8,11 +8,11 @@ en:
           five: "article in a blog" #i18n-GT
           four: "from a project that was picking up on the platform" #i18n-GT
           nine: "other" #i18n-GT
-          one: "I 've had another project in Catharsis" #i18n-GT
+          one: "I 've had another project in ProduceRun" #i18n-GT
           seven: "in a class / course / lecture / event" #i18n-GT
           six: "a story in the press ( news portal on the internet, TV, newspaper, magazine )" #i18n-GT
           three: "indication friend / colleague / professional contact" #i18n-GT
-          two: "indication of a person who has had a project in Catharsis" #i18n-GT
+          two: "indication of a person who has had a project in ProduceRun" #i18n-GT
     hints: 
       project: 
         about: "Talk about what will take place , how the money will be used , who is behind the project, as and when the project will be delivered ." #i18n-GT
@@ -27,7 +27,7 @@ en:
       project: 
         category: "Select a category" #i18n-GT
         select: "Select an option" #i18n-GT
-        traffic_sources: "How did you meet Catharsis ?" #i18n-GT
+        traffic_sources: "How did you meet ProduceRun ?" #i18n-GT
     validation_texts: 
       contribution: 
         address_city: "Enter the city name" #i18n-GT

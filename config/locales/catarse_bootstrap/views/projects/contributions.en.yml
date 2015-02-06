@@ -16,7 +16,7 @@ en:
         choose_payment_subtitle: "Select below a form of payment" #i18n-GT
         cpf: "To prosseguir , please report :" #i18n-GT
         credits_notice_html: "This will be paid with their claims." #i18n-GT
-        credits_preview_html: "You have < strong> % { credits } < / strong > in credits to make this support < strong> until the day 10/11 < / strong > as <a href = ' http : //blog.catarse.me/simplificacao" #i18n-GT
+        credits_preview_html: "You have < strong> % { credits } < / strong > in credits to make this support < strong> until the day 10/11 < / strong > as <a href = ' http : //blog.ProduceRun.me/simplificacao" #i18n-GT
         credits_submit: "make Payment" #i18n-GT
         credits_title: "Pay with credits" #i18n-GT
         form_labels: 
@@ -31,7 +31,7 @@ en:
         live_in_brazil: "I live in Brazil ." #i18n-GT
         number_card: "Card data" #i18n-GT
         owner_card: "Cardholder data" #i18n-GT
-        pagarme_warning_html: "The Catharsis is in testing phase of a new means of payment that facilitate financial support and the possible repayment of the amounts to supporters ." #i18n-GT
+        pagarme_warning_html: "The ProduceRun is in testing phase of a new means of payment that facilitate financial support and the possible repayment of the amounts to supporters ." #i18n-GT
         payment_account: "Payment by Direct Debit" #i18n-GT
         payment_boleto: "Payment with boletus" #i18n-GT
         payment_card: "Payment with credit card" #i18n-GT

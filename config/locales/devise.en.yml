@@ -20,7 +20,7 @@ en:
       blog_button: "Read more on the blog" #i18n-GT
       contact_link: "Contact" #i18n-GT
       form_feedback_link: "Send feedback" #i18n-GT
-      header_html: "Welcome to <br/> new login Catharsis" #i18n-GT
+      header_html: "Welcome to <br/> new login ProduceRun" #i18n-GT
       title: "Feedback and Help" #i18n-GT
     links: 
       forgot_password: "I forgot my password" #i18n-GT
@@ -39,7 +39,7 @@ en:
         label_new_password: "new Password" #i18n-GT
         site_title: "Set a new password" #i18n-GT
         submit: "Set new password" #i18n-GT
-        subtitle: "Set a new password to use your email and password when you want to enter the Catharsis ." #i18n-GT
+        subtitle: "Set a new password to use your email and password when you want to enter the ProduceRun ." #i18n-GT
         title: "Set a new password" #i18n-GT
       new: 
         site_title: "I forgot my password" #i18n-GT
@@ -71,7 +71,7 @@ en:
         submit: "login" #i18n-GT
         title: "Login using your email address" #i18n-GT
         with_another_social: "Twitter will be removed in a week" #i18n-GT
-        with_another_social_subtitle: "<a target=\"_blank\" href=\"http://blog.catarse.me/mudanca - in - system - of - login/\"> Read this post for more information </a>" #i18n-GT
+        with_another_social_subtitle: "<a target=\"_blank\" href=\"http://blog.ProduceRun.me/mudanca - in - system - of - login/\"> Read this post for more information </a>" #i18n-GT
         with_facebook: "Log in using Facebook" #i18n-GT
         with_facebook_subtitle: "A very quick way to access" #i18n-GT
       signed_in: "" #i18n-GT

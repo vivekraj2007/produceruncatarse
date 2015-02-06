@@ -4,7 +4,7 @@ en:
     accept_terms_html: "I have read and agree with the % {link } ." #i18n-GT
     footer_channel: 
       contact: "contact" #i18n-GT
-      how_channels_work: "Understand the Channels in Catharsis" #i18n-GT
+      how_channels_work: "Understand the Channels in ProduceRun" #i18n-GT
       how_it_works: "As the works % {name}" #i18n-GT
       how_works: "How it works" #i18n-GT
       privacy_policy: "Privacy Policy" #i18n-GT

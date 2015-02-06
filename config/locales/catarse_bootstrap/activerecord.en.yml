@@ -54,7 +54,7 @@ en:
         name: "Project Name" #i18n-GT
         online_days: "How many days you need to achieve your goal?" #i18n-GT
         permalink: "URL of your project" #i18n-GT
-        traffic_sources: "How did you meet Catharsis ?" #i18n-GT
+        traffic_sources: "How did you meet ProduceRun ?" #i18n-GT
         user_id: "User ID" #i18n-GT
         video_url: "Video URL" #i18n-GT
       reward: 
@@ -78,7 +78,7 @@ en:
         moip_login: "Login MoIP" #i18n-GT
         moip_login_hint: "( How to create an account )" #i18n-GT
         name: "nickname" #i18n-GT
-        newsletter: "I want to receive news from Catharsis" #i18n-GT
+        newsletter: "I want to receive news from ProduceRun" #i18n-GT
         password: "password" #i18n-GT
         password_confirmation: "Password confirmation" #i18n-GT
         phone_number: "Telephone (fixed or mobile)" #i18n-GT
@@ -159,9 +159,9 @@ en:
     payer_email: "Email the means of payment" #i18n-GT
     payment_method: "Method of payment" #i18n-GT
     reward_description: "Reward description" #i18n-GT
-    service_fee: "Catharsis rate" #i18n-GT
+    service_fee: "ProduceRun rate" #i18n-GT
     street: "street" #i18n-GT
-    user_email: "Email profile Catharsis" #i18n-GT
+    user_email: "Email profile ProduceRun" #i18n-GT
     user_full_name: "Full name of the supporter" #i18n-GT
     user_name: "Last name supporter" #i18n-GT
     zip_code: "MOBILE" #i18n-GT

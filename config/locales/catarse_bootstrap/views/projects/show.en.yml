@@ -70,6 +70,6 @@ en:
         contributions: "support" #i18n-GT
         goal: "achieved in % { Total }" #i18n-GT
     twitter: 
-      take_a_look: "Check out the project % {name } in catarse" #i18n-GT
+      take_a_look: "Check out the project % {name } in ProduceRun" #i18n-GT
     video_embed: 
       a_project_by_html: "A project % {link } in" #i18n-GT

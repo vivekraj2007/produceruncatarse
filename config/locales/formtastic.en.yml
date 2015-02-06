@@ -8,7 +8,7 @@ en:
         about: "Tell us a little about your inspiration to undertake the project , its history and what will be delivered to the end ." #i18n-GT
         category: "Before sending your design , explore and be inspired with other projects that have gone through the site ." #i18n-GT
         first_contributions: "For your campaign to succeed , it is essential to bring your closer contact network." #i18n-GT
-        goal: "It is important to remember that much of the support will come from those close to you (1st and 2nd level of relationship ) : <a href = ' http : //blog.catarse.me/sua-campanha-no-catarse-precisa-de-" #i18n-GT
+        goal: "It is important to remember that much of the support will come from those close to you (1st and 2nd level of relationship ) : <a href = ' http : //blog.ProduceRun.me/sua-campanha-no-ProduceRun-precisa-de-" #i18n-GT
         headline: "Summarize in 140 characters your project." #i18n-GT
         more_links: "What will be the mobilization of channels used ?" #i18n-GT
         name: "The more direct the better." #i18n-GT
@@ -35,7 +35,7 @@ en:
         headline: "Catchphrase *" #i18n-GT
         more_links: "Links list related to your project *" #i18n-GT
         name: "Project Name *" #i18n-GT
-        traffic_sources: "How did you meet Catharsis ?" #i18n-GT
+        traffic_sources: "How did you meet ProduceRun ?" #i18n-GT
         video_url: "video" #i18n-GT
       reward: 
         days_to_delivery: "Estimated delivery" #i18n-GT

@@ -20,7 +20,7 @@ en:
           acquirer_tid: "TID Operator" #i18n-GT
           created_at: "started in" #i18n-GT
           installments: "plots" #i18n-GT
-          normal_email: "Email the Catharsis" #i18n-GT
+          normal_email: "Email the ProduceRun" #i18n-GT
           payer_email: "Email the means of payment" #i18n-GT
           payment_choice: "Payment Option" #i18n-GT
           payment_id: "Payment ID" #i18n-GT
@@ -58,7 +58,7 @@ en:
         total_users: "users" #i18n-GT
         unconfirm_contribution: "disconfirm support" #i18n-GT
         user: "User" #i18n-GT
-        user_email: "Email used in catharsis" #i18n-GT
+        user_email: "Email used in ProduceRun" #i18n-GT
         value: "value" #i18n-GT
       messages: 
         successful: 
@@ -78,7 +78,7 @@ en:
         payment_id: "ID of payment" #i18n-GT
         payment_method: "Method of payment" #i18n-GT
         successful: "successful" #i18n-GT
-        user_email: "Email used in catharsis" #i18n-GT
+        user_email: "Email used in ProduceRun" #i18n-GT
     filter: 
       title: "Filters" #i18n-GT
     financials: 
@@ -106,7 +106,7 @@ en:
         state: "state" #i18n-GT
         submit: "filter" #i18n-GT
         title: "financial Reports" #i18n-GT
-        total_catarse_fee: "Catharsis rate" #i18n-GT
+        total_catarse_fee: "ProduceRun rate" #i18n-GT
         total_payment_service_fee: "MP rate" #i18n-GT
         total_projects: "projects" #i18n-GT
         user: "User MoIP" #i18n-GT
@@ -209,7 +209,7 @@ en:
             acquirer_tid: "TID Operator" #i18n-GT
             created_at: "started in" #i18n-GT
             installments: "plots" #i18n-GT
-            normal_email: "Email the Catharsis" #i18n-GT
+            normal_email: "Email the ProduceRun" #i18n-GT
             payer_email: "Email the means of payment" #i18n-GT
             payment_choice: "Payment Option" #i18n-GT
             payment_id: "Payment ID" #i18n-GT
@@ -247,7 +247,7 @@ en:
           total_users: "users" #i18n-GT
           unconfirm_contribution: "disconfirm support" #i18n-GT
           user: "User" #i18n-GT
-          user_email: "Email used in catharsis" #i18n-GT
+          user_email: "Email used in ProduceRun" #i18n-GT
           value: "value" #i18n-GT
         messages: 
           successful: 
@@ -267,7 +267,7 @@ en:
           payment_id: "ID of payment" #i18n-GT
           payment_method: "Method of payment" #i18n-GT
           successful: "successful" #i18n-GT
-          user_email: "Email used in catharsis" #i18n-GT
+          user_email: "Email used in ProduceRun" #i18n-GT
       filter: 
         title: "Filters" #i18n-GT
       financials: 
@@ -295,7 +295,7 @@ en:
           state: "state" #i18n-GT
           submit: "filter" #i18n-GT
           title: "financial Reports" #i18n-GT
-          total_catarse_fee: "Catharsis rate" #i18n-GT
+          total_catarse_fee: "ProduceRun rate" #i18n-GT
           total_payment_service_fee: "MP rate" #i18n-GT
           total_projects: "projects" #i18n-GT
           user: "User MoIP" #i18n-GT
