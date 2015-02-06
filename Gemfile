@@ -134,6 +134,7 @@ group :test, :development do
   gem 'rspec-collection_matchers'
   gem 'pry'
   gem 'jasmine-rails'
+  gem 'quiet_assets'
 end
 
 group :test do

@@ -1,7 +1,7 @@
 header.header
   .centered
     h1
-      = link_to "#{CatarseSettings[:company_name]}", root_url(host: CatarseSettings[:base_domain] || request.domain, protocol: 'http'), :class => 'logo', :title => CatarseSettings[:company_name]
+      = link_to "#{CatarseSettings[:company_name]}", root_path, :class => 'logo', :title => CatarseSettings[:company_name]
     nav.header-nav
       ul
         li.header-nav-li
