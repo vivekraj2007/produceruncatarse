@@ -135,16 +135,16 @@ en:
     follow: "Follow the channel" #i18n-GT
     following: "Following" #i18n-GT
     image_hint: "Maximum size ( 600x121px )" #i18n-GT
-    subscribed: "% {count } following the channel" #i18n-GT
+    subscribed: "%{count} following the channel" #i18n-GT
     unfollow: "Unfollow" #i18n-GT
   channels_subscribers: 
-    created: "Now you follow the % { channel }" #i18n-GT
-    deleted: "You failed to follow the % { channel }" #i18n-GT
+    created: "Now you follow the %{channel}" #i18n-GT
+    deleted: "You failed to follow the %{channel}" #i18n-GT
   contribution: 
     project_should_be_online: "You can not support a project that is not in the air" #i18n-GT
     reward_must_be_from_project: "must be of the same design" #i18n-GT
     should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum number of supporters" #i18n-GT
-    value_must_be_at_least_rewards_value: "should be at least minimum_value { % } to the selected reward" #i18n-GT
+    value_must_be_at_least_rewards_value: "should be at least %{minimum_value} to the selected reward" #i18n-GT
   contribution_report_to_project_owner: 
     address_number: "number" #i18n-GT
     address_state: "state" #i18n-GT
@@ -171,7 +171,7 @@ en:
     video_regex_validation: "only Vimeo URLs are accepted" #i18n-GT
   user: 
     contributions_text: 
-      many: "Supported this and more other % { Total } projects" #i18n-GT
+      many: "Supported this and more other %{total} projects" #i18n-GT
       one: "Only supported this project so far" #i18n-GT
       two: "Supported this and 1 other project" #i18n-GT
     no_name: "nameless" #i18n-GT

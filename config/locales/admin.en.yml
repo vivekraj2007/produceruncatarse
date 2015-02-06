@@ -70,7 +70,7 @@ en:
           push_to_trash: "Successfully deleted support!" #i18n-GT
           refund: "Successfully reversed support!" #i18n-GT
       show: 
-        contribution_info: "% Contribution of information { key}" #i18n-GT
+        contribution_info: "%Contribution of information { key}" #i18n-GT
         created_at: "started in" #i18n-GT
         payer_email: "Email means of payment used in" #i18n-GT
         payment_choice: "Payment Option" #i18n-GT
@@ -259,7 +259,7 @@ en:
             push_to_trash: "Successfully deleted support!" #i18n-GT
             refund: "Successfully reversed support!" #i18n-GT
         show: 
-          contribution_info: "% Contribution of information { key}" #i18n-GT
+          contribution_info: "Contribution of information %{key}" #i18n-GT
           created_at: "started in" #i18n-GT
           payer_email: "Email means of payment used in" #i18n-GT
           payment_choice: "Payment Option" #i18n-GT

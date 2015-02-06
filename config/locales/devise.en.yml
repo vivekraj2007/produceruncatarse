@@ -32,7 +32,7 @@ en:
       unlock_instructions: 
         subject: "Release instructions" #i18n-GT
     omniauth_callbacks: 
-      failure: "Could not authorize an account % { kind } because \" % { reason} \" ." #i18n-GT
+      failure: "Could not authorize an account %{kind} because \" %{reason} \" ." #i18n-GT
       success: "" #i18n-GT
     passwords: 
       edit: 
@@ -60,7 +60,7 @@ en:
       updated: "Your account has been successfully updated." #i18n-GT
     sessions: 
       new: 
-        google_step_1: "1 - Click % {link }" #i18n-GT
+        google_step_1: "1 - Click %{link}" #i18n-GT
         google_step_2: "2 - Follow the next steps to create a new password." #i18n-GT
         google_warning_html: "If you used an account of the < strong> Google < / strong > :" #i18n-GT
         login_subtitle: "If you already have an account" #i18n-GT
@@ -83,7 +83,7 @@ en:
   errors: 
     messages: 
       already_confirmed: "already confirmed" #i18n-GT
-      confirmation_period_expired: "You must be confirmed detro of % { period } period , please request a new user." #i18n-GT
+      confirmation_period_expired: "You must be confirmed detro of %{ period} period , please request a new user." #i18n-GT
       expired: "has expired, please request a new" #i18n-GT
       not_found: "not found" #i18n-GT
       not_locked: "was not blocked" #i18n-GT

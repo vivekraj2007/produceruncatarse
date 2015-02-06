@@ -4,12 +4,12 @@ en:
     index: 
       contributions_to_confirm: 
         one: "1 support in term of confirmation." #i18n-GT
-        other: "% {count } -term support confirmation ." #i18n-GT
-      display_remaining: "{ % remaining % } of { maximum } available" #i18n-GT
+        other: "%{count} -term support confirmation ." #i18n-GT
+      display_remaining: "%{remaining} of %{maximum} available" #i18n-GT
       dont_want: "I do not want reward" #i18n-GT
       edit_reward: "edit reward" #i18n-GT
       limited: "limited" #i18n-GT
       new_reward: "Sign reward" #i18n-GT
-      reward_deliver_time: "< b> Delivery Estimates: < / b>% { estimate }" #i18n-GT
-      reward_title: "% { } For minimum or more" #i18n-GT
+      reward_deliver_time: "< b> Delivery Estimates: < / b>%{estimate}" #i18n-GT
+      reward_title: "For %{minimum} or more" #i18n-GT
       sold_out: "exhausted" #i18n-GT

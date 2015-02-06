@@ -16,7 +16,7 @@ en:
         choose_payment_subtitle: "Select below a form of payment" #i18n-GT
         cpf: "To prosseguir , please report :" #i18n-GT
         credits_notice_html: "This will be paid with their claims." #i18n-GT
-        credits_preview_html: "You have < strong> % { credits } < / strong > in credits to make this support < strong> until the day 10/11 < / strong > as <a href = ' http : //blog.ProduceRun.me/simplificacao" #i18n-GT
+        credits_preview_html: "You have < strong> %{credits} < / strong > in credits to make this support < strong> until the day 10/11 < / strong > as <a href = ' http : //blog.ProduceRun.me/simplificacao" #i18n-GT
         credits_submit: "make Payment" #i18n-GT
         credits_title: "Pay with credits" #i18n-GT
         form_labels: 
@@ -27,7 +27,7 @@ en:
           payment_card_number: "Credit Card Number" #i18n-GT
           payment_card_source: "Security code" #i18n-GT
         installment_with_tax: "without interest" #i18n-GT
-        insufficient_credits: "You have% { credits } credits." #i18n-GT
+        insufficient_credits: "You have%{credits} credits." #i18n-GT
         live_in_brazil: "I live in Brazil ." #i18n-GT
         number_card: "Card data" #i18n-GT
         owner_card: "Cardholder data" #i18n-GT
@@ -36,8 +36,8 @@ en:
         payment_boleto: "Payment with boletus" #i18n-GT
         payment_card: "Payment with credit card" #i18n-GT
         payment_save_card: "I want to save my credit card to facilitate future support ." #i18n-GT
-        review_with_reward_html: "You will support with < strong> % {value } < / strong > and earn the following rewards :" #i18n-GT
-        review_without_reward_html: "You will support with < strong> % {value } < / strong > and do not want any reward for their support." #i18n-GT
+        review_with_reward_html: "You will support with < strong> %{value} < / strong > and earn the following rewards :" #i18n-GT
+        review_without_reward_html: "You will support with < strong> %{value} < / strong > and do not want any reward for their support." #i18n-GT
         reward_sold_out: "This reward is exhausted ." #i18n-GT
         select_account: "You will be redirected to your bank's website :" #i18n-GT
         select_boleto: "To continue, please select :" #i18n-GT
@@ -47,22 +47,22 @@ en:
         subtitle: "These data will be reported to the project organizer." #i18n-GT
         title: "Complete and review the data for payment" #i18n-GT
         transaction_error: "Transaction refused, please double check your data or contact the bank / card issuer for more information." #i18n-GT
-        you_are_about_html: "You are about to join the group that does everything for% {link } happen." #i18n-GT
+        you_are_about_html: "You are about to join the group that does everything for%{link} happen." #i18n-GT
       new: 
         header: 
           subtitle: "You are a few steps to make a difference and become part of this project ." #i18n-GT
           title: "Oohh yeah !" #i18n-GT
         no_reward: "Thank U." #i18n-GT
         submit: "Review and make pagamento" #i18n-GT
-        title: "Support the % {name }" #i18n-GT
+        title: "Support the %{name}" #i18n-GT
       review: 
         Credits: "credits" #i18n-GT
         error: "Ooops ." #i18n-GT
       show: 
         header_subtitle: "Without you maybe this project did not have a chance ." #i18n-GT
         header_title: "Thank you very much!" #i18n-GT
-        moip_message: "The verification of your transaction is in progress and MoIP code is \"% {code }\". Filmography If you have any questions regarding the transaction , please contact MoIP ." #i18n-GT
+        moip_message: "The verification of your transaction is in progress and MoIP code is \"%{code}\". Filmography If you have any questions regarding the transaction , please contact MoIP ." #i18n-GT
         recommended_projects: "You may also enjoy these projects :" #i18n-GT
         text_subtitle: "Tell everyone what you just did" #i18n-GT
-        text_title_html: "You are now part of the group that does everything for% {link } happen." #i18n-GT
+        text_title_html: "You are now part of the group that does everything for%{link} happen." #i18n-GT
         title: "thank you very much" #i18n-GT
