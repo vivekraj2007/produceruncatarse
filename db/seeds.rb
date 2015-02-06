@@ -3,19 +3,19 @@
 puts 'Seeding the database...'
 
 [
-  { en: 'Bundles' },
-  { en: 'Produce' },
-  { en: 'Eggs & Dairy' },
-  { en: 'Meat & Fish' },
-  { en: 'Bakery' },
-  { en: 'Pantry' },
-  { en: 'Snacks' },
-  { en: 'Drinks' },
-  { en: 'Floral & Home' },
-  { en: 'Prepared Foods' },
-  { en: 'CSA' },
-  { en: 'Misc' },
-  { en: '' },
+  { pt: 'Opt1', en: 'Bundles' },
+  { pt: 'Opt1',en: 'Produce' },
+  { pt: 'Opt1',en: 'Eggs & Dairy' },
+  { pt: 'Opt1',en: 'Meat & Fish' },
+  { pt: 'Opt1',en: 'Bakery' },
+  { pt: 'Opt1',en: 'Pantry' },
+  { pt: 'Opt1',en: 'Snacks' },
+  { pt: 'Opt1',en: 'Drinks' },
+  { pt: 'Opt1',en: 'Floral & Home' },
+  { pt: 'Opt1',en: 'Prepared Foods' },
+  { pt: 'Opt1',en: 'CSA' },
+  { pt: 'Opt1',en: 'Misc' },
+  { pt: 'Opt1',en: '' },
 
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])
@@ -101,11 +101,13 @@ CatarseSettings.all.each do |conf|
   puts "  #{a['name']}: #{a['value']}"
 end
 
+Rails.cache.clear
 
 user = User.first_or_initialize( name: 'Asd Name', email: 'asd@asd.asd') do |user|
   user.password = 'asdasd'
   user.admin = true
-  user.save!
+  puts "User #{user.email} created"
+  user.save
 end
 
 user.projects.where(name: "Example project name", category: Category.first, goal: 100, about: "This is about text", video_url: 'https://www.youtube.com/watch?v=IexoJu3TMWM', permalink: 'example_permalink', online_days: 30, headline: 'Example headline').first_or_create do |p|
@@ -114,7 +116,6 @@ user.projects.where(name: "Example project name", category: Category.first, goal
   p.approve!
 end
 
-Rails.cache.clear
 
 puts '---------------------------------------------'
 puts 'Done!'
