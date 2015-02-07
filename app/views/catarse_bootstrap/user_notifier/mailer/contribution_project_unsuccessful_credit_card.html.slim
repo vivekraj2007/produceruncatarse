@@ -1,19 +1,19 @@
-- contribution = @notification.contribution
+- contribution =  notification .contribution
 
-|Olá, #{contribution.user.name}!
+| Hello, # { contribution.user.name } !
 br
 br
-| Infelizmente o projeto #{link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))} que você apoiou não atingiu a meta estabelecida e não foi financiado no #{CatarseSettings[:company_name]}.
+| Unfortunately the ProduceRun # { link_to (contribution.project.name, project_by_slug_url ( permalink: contribution.project.permalink)) } that you supported did not reach the target set and was not funded in # { ProduceRunSettings [ : company_name ] } .
 br
 br
-| Em até 5 dias úteis faremos o reembolso do valor do seu apoio, que <strong>virá como crédito na próxima ou 
-| subsequente fatura do seu cartão</strong>. Assim que o reembolso for feito, você receberá um e-mail de confirmação da operação.
+| Within 5 working days we will refund the value of your support that < strong > will come as the next credit or
+| Subsequent bill your card </ strong >. Once the refund has been made, you will receive an email confirmation of the operation.
 br
 br
-| Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_contact]} 
-| e nos informe a chave de identificação do seu apoio, que é: #{contribution.payment_id}
+| If you got any questions, please contact us replying to this message or by e-mail # { mail_to ProduceRunSettings [ : email_contact ] } 
+| And inform your support identification key, which is: # { contribution.payment_id }
 br
 br
-|Um abraço,
+| A hug,
 br
-| #{CatarseSettings[:company_name]}
+| # { ProduceRunSettings [ : company_name ] }
