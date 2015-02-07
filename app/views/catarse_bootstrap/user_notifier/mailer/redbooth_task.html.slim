@@ -1,38 +1,38 @@
-- project = @notification.project
-- project_link = project_by_slug_url(permalink: project.permalink)
-- bank_account = project.user.bank_account
-|#diegoreeberg
-br/
+- Project = @ notification.project
+- Project_link = project_by_slug_url (permalink : project.permalink )
+- Bank_account = project.user.bank_account
+| #diegoreeberg
+br /
 = project.name
-br/
-= link_to project_link, project_link
-br/
-| Arrecadado:
+br /
+= Link_to project_link , project_link
+br /
+| REVENUE :
 = project.display_pledged
-br/
-| Usuario moip:
+br /
+| User MoIP :
 = project.user.moip_login
-br/
-| CPF/CNPJ do realizador:
+br /
+| CPF / CNPJ director :
 = project.user.cpf
-br/
-| Data de expiração:
+br /
+| Expiration date :
 = project.display_expires_at
-br/
-| Telefone:
+br /
+| Phone:
 = project.user.phone_number
-br/
-| Usando pagar.me?
-= (project.using_pagarme? ? 'Sim' : 'Não')
-br/
-| Dados Bancarios:
-br/
-| Banco: #{bank_account.try(:name)}
-br/
-| Agência: #{bank_account.try(:agency)}- #{bank_account.try(:agency_digit)}
-br/
-| Conta: #{bank_account.try(:account)} - #{bank_account.try(:account_digit)}
-br/
-| Nome do titular: #{bank_account.try(:user_name)}
-br/
-| CPF: #{bank_account.try(:user_document)}
+br /
+| Using pagar.me ?
+= ( Project.using_pagarme Yes ?: 'No' )
+br /
+| Bancarios data:
+br /
+| Bank: # { bank_account.try ( : name ) }
+br /
+| Agency: # { bank_account.try ( : agency ) } - # { bank_account.try ( : agency_digit ) }
+br /
+| Account: # { bank_account.try ( : account ) } - # { bank_account.try ( : account_digit ) }
+br /
+| Holder Name : # { bank_account.try ( : user_name ) }
+br /
+| CPF: # { bank_account.try ( : user_document ) }
