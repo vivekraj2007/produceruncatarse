@@ -1,7 +1,7 @@
-- contribution = @notification.contribution
-p Olá, <strong>#{contribution.user.display_name}</strong>!
+- Contribution = @ notification.contribution
+p Hello , < strong> # { contribution.user.display_name } < / strong >
 p
-  | Seu apoio para o projeto #{link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))} foi confirmado com sucesso. 
-  | Até o momento você e outras #{contribution.project.total_contributions} pessoas estão tornando esse projeto uma realidade.
-p Esse e-mail serve como um <strong>recibo provisório da sua contribuição</strong>.
-= render partial: 'contribution_data', locals: {contribution: contribution}
+  | Your support for the project # { link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } was successfully confirmed.
+  | By the time you and # { } contribution.project.total_contributions people are making this ProduceRun a reality.
+p This email serves as a < strong> provisional receipt for your contribution < / strong > .
+= Partial surrender : ' contribution_data ' locals : { contribution : contribution }
