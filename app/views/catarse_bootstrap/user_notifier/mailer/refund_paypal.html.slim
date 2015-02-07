@@ -1,25 +1,25 @@
-- user = @notification.user
-|Olá #{user.name}, tudo bem?
+- user =  notification .user
+| Hello # { user.name } , okay?
 br
-|Sabe quando você acha aquela nota de dinheiro no bolso de uma calça que não usava faz tempo? Pois esse e-mail é pra relembrarmos essa gostosa sensação. =D
+| You know when you think that piece of money in the pocket of trousers which used not long ago? For this email is for remembering this great feeling. = D
 br
-|Para muitos casos, não tínhamos uma solução simples para fazer o reembolso. Agora estamos em um processo para otimizar essa etapa. Como você fez o seu apoio via Paypal, a maneira mais simples é fazermos uma transferência direto para a sua conta Paypal, cadastrada no nosso sistema através do e-mail #{user.contributions.last.payer_email}.
+| For many cases, did not have a simple solution to make the repayment. Now we are in a process to optimize this step. How did you do your support via Paypal, the simplest way is to do a direct-transfer to your PayPal account, registered in our system via e-mail # { user.contributions.last.payer_email } .
 br
-|O valor do apoio que você fez e que será reembolsado é de: R$#{user.contributions.where(state:'requested_refund').sum(:value)}.
+| The amount of support that you have made ​​and to be repaid is: £ # { user.contributions.where ( state: ' requested_refund ' ) .sum ( : value ) } .
 br
-|Infelizmente, como seu apoio foi feito há mais de 120 dias, não conseguiremos reembolsar a taxa do meio de pagamento (cartão ou boleto) e a descontaremos na hora de efetuar o depósito. Esta taxa é diferente de acordo com a forma de pagamento utilizada, sendo que pode variar entre 2% e 6% do seu apoio.
+| Unfortunately, as their support was made more than 120 days, we will not refund the fee of the means of payment (card or ticket) and will discount at the time of the deposit. This rate is different according to the used form of payment, and which may vary between 2% and 6% of the support.
 br
-|O(s) número(s) de identificação do seu apoio é:
+| O (s) number (s) of identification of their support is:
 br
-- user.contributions.where(state:'requested_refund').each do |contribution|
-  |#{contribution.key}
+- user.contributions.where ( state: ' requested_refund ' ) .each the | contribution |
+  | # { contribution.key }
   br
-|Iremos fazer o depósito na sua conta até o dia 30/09/2014. 
+| We will make the deposit in your account until the day 09/30/2014. 
 br
-|Espero que vocês compreendam e estamos aqui para tirar qualquer dúvida. Para isso, é só responder a esta mensagem.
+| I hope you understand and are here to take any questions. To do so, just reply to this message.
 br
-|Muito obrigado!
+| Thank you!
 br
-|Diego Reeberg
+| William Pattison
 br
-|Malabarista Organizacional
+| President & Cheif Produce Runner
