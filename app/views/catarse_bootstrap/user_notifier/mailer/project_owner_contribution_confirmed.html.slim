@@ -1,43 +1,43 @@
-- project = @notification.project
-- confirmed_contributions_today = project.contributions.confirmed_today
+- Project = @ notification.project
+- Confirmed_contributions_today = project.contributions.confirmed_today
 
-- project_link = project_by_slug_url(permalink: project.permalink)
-- company_name = CatarseSettings[:company_name]
+- Project_link = project_by_slug_url (permalink : project.permalink )
+- Company_name = ProduceRunSettings [: company_name ]
 
-| Olá, <strong>#{project.user.display_name}</strong>!
+| Hello , < strong> # { project.user.display_name } < / strong >
 br
 br
-| Hoje, seu projeto teve #{confirmed_contributions_today.length} apoios!
+| Today, this ProduceRun was # { } confirmed_contributions_today.length support !
 br
 br
-| Alguns dados sobre esses apoios:
+| Some data on these supports :
 br
 br
-table width="500" border="1" cellpadding="10" cellspacing="0" style='font-size: 13px;'
+table width = "500" border = "1" cellpadding = "10" cellspacing = "0" style = " font-size: 13px ; '
   thead
     tr
-      th width="100" Nome do apoiador
-      th width="100" Email do apoiador
-      th width="100" Valor apoiado
-      th width="200" Recompensa selecionada
+      th width = "100" supporter Name
+      th width = "100" Email supporter
+      th width = "100" supported Value
+      th width = "200" selected Reward
   tbody
-    - confirmed_contributions_today.each do |contribution|
+    - Confirmed_contributions_today.each the | contribution |
       tr
-        td= contribution.user.display_name
-        td= contribution.user.email
-        td= contribution.display_value
-        td= contribution.reward.try(:display_description)
-br/
-br/
-| Veja todos os seus apoiadores #{link_to 'aqui', project_by_slug_url(permalink: project.permalink, anchor: 'contributions', target: '__blank')}!
-br/
-br/
-| Comunique-se com eles pela aba de #{link_to 'Novidades', project_by_slug_url(permalink: project.permalink, anchor: 'updates', target: '__blank')}
-br/
-br/
-| E baixe planilhas com as informações completas de todos os apoiadores eles #{link_to 'aqui', project_by_slug_url(permalink: project.permalink, anchor: 'reports', target: '__blank')}!
-br/
-br/
-|Um abraço,
+        td = contribution.user.display_name
+        td = contribution.user.email
+        td = contribution.display_value
+        td = contribution.reward.try ( : display_description )
+br /
+br /
+| See all his supporters # { link_to 'here' , project_by_slug_url (permalink : project.permalink , anchor: ' contributions ' , target: ' __blank ')} !
+br /
+br /
+| Communicate with them for the tab # { link_to ' News ' , project_by_slug_url (permalink : project.permalink , anchor: ' updates' , target: ' __blank ')}
+br /
+br /
+| And download spreadsheets with complete information for all supporters they # { link_to 'here' , project_by_slug_url (permalink : project.permalink , anchor , ' reports' , target: ' __blank ')} !
+br /
+br /
+| A big thank you to you ,
 br
 = company_name
