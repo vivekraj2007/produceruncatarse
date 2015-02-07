@@ -1,41 +1,41 @@
-- user = @notification.user
-- project = @notification.project
+- User = @ notification.user
+- Project = @ notification.project
 
-- project_link = project_by_slug_url(permalink: project.permalink)
-- company_name = CatarseSettings[:company_name]
+- Project_link = project_by_slug_url (permalink : project.permalink )
+- Company_name = ProduceRunSettings [: company_name ]
 
-|Olá, #{user.name}!
+| Hello , # { user.name } !
 br
 br
-| Nossa equipe acabou de receber o projeto  #{link_to project.name, project_link, target: '__blank'}
-br/
-br/
-| Durante os próximos 4 dias úteis, iremos analisar o rascunho de projeto que você nos enviou e te daremos uma resposta.
+| Our team just received your ProduceRun Campaign # { link_to project.name , project_link , target: ' __blank '}
+br /
+br /
+| During the next 24 hours , we want look at your draft, provide feedback if needed so you can have a succcessful ProduceRun Sales Campaign .
 br
 br
-strong Você pode receber 3 tipos de resposta: 
-br/
-br/
-strong Opção 1: 
-| Seu rascunho passou na análise, foi aceito e poderá ir ao ar! 
-br/
-| Agora é só marcarmos o dia e hora para estreiar seu projeto no site do Catarse!
-br/
-br/
-strong Opção 2: 
-| Nos parece que o seu projeto tem muito ver com o #{company_name}, mas ainda precisa de alguns ajustes para ir para o ar. Vamos entrar em contato para entender possibilidades , sugerir coisas e tirar algumas dúvidas. 
-br/
-br/
-strong Opção 3: 
-| Infelizmente, o rascunho de projeto que você enviou não se encaixa no perfil do site do #{company_name}. 
-| Enviaremos um email notificando a recusa. Sim, sabemos que recusas são sempre desagradáveis. Mas o lema aqui é 
-| "levanta, sacode a poeira e dá a volta por cima". Mas antes de sacudir qualquer poeira, 
-| estude nossa #{link_to 'Central de Suporte', CatarseSettings[:support_forum], target: '__blank'}  para que você saiba tudo sobre nossos pré-requisitos para a construção do seu próximo projeto.
-br/
-br/
-| Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_projects]}
-br/
-br/
-|Um abraço,
-br/
+strong You can receive 3 types of response :
+br /
+br /
+strong Option 1:
+| Your draft passed in the analysis, was accepted and you can goto Market !
+br /
+| Now just arrange the day and time for your debut project on the ProduceRun site!
+br /
+br /
+strong Option 2:
+| It seems to us that your project has a lot do with # { company_name } , but still needs some tweaking to go to the Market. We will contact you to understand possibilities , suggest things and take some questions .
+br /
+br /
+strong Option 3:
+| Unfortunately , the project draft you sent does not fit the profile of the site # { company_name } .
+| Send an email notifying the refusal . Yes , we know that refusals are always unpleasant. But the motto here is
+| " Up, shakes the dust and give a comeback " . But before shaking any dust ,
+| Our study # { link_to ' Support Center ' , ProduceRunSettings [: support_forum ] target: ' __blank '} so you know everything about our prerequisites for the construction of your next ProduceRun .
+br /
+br /
+| Remembering that you can ask questions with us directly responding to this message or by e -mail # { mail_to ProduceRunSettings [: email_projects ] }
+br /
+br /
+| A big thank you ,
+br /
 = company_name
