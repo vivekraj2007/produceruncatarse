@@ -1,56 +1,56 @@
-- user =  notification .user
-- project =  notification .project
-- channel =  notification .project.last_channel
+- User = notification .user
+- Project = notification .project
+- Channel = notification .project.last_channel
 
-- project_link = project_by_slug_url ( permalink: project.permalink)
-- company_name =  ProduceRunSettings [ : company_name ]
+- Project_link = project_by_slug_url (permalink : project.permalink )
+- Company_name = ProduceRunSettings [: company_name ]
 
-= content_for : email_logo the   
-  = image_tag (channel.image, alt: channel.name)
+= Content_for : email_logo the
+  = Image_tag ( channel.image , alt: channel.name )
 
-| Hello, # { user.name } !
+| Hello , # { user.name } !
 br
 br
-| Our team of # { channel.name } just received the project # { link_to project.name, project_link, target:  ' __blank ' }
+| Our team of # { } channel.name just received the project # { link_to project.name , project_link , target: ' __blank '}
 br /
 br /
-| During the next 24 hours, we will analyze the project draft you sent us and we will give you an answer.
+| During the next 24 hours , we will analyze the project draft you sent us and we will give you an answer .
 br /
 br /
-strong You can receive three types of response:
+You can receive strong three types of response :
 br /
 br /
 strong Option 1:
-| Your draft passed in the analysis, was accepted and can go to the market!
-| Now just arrange the day and time for your debut project in # { channel.name } , on the site # { company_name } !
+| Your draft passed in the analysis , was accepted and can go to the market !
+| Now just arrange the day and time for your ProduceRun debut in # { } channel.name , on the site # { company_name } !
 br /
 br /
 strong Option 2:
-| It seems to us that your project has a lot do with # { channel.name } , but still needs some tweaking to go to the market.
-| We will contact you to understand possibilities, suggest things and take some questions.
+| It Seems to us que your ProduceRun has a lot of with # { } channel.name , but still needs some tweaking to go to the market .
+| We will contact you to Understand possibilities , suggest things and take some questions .
 br /
 br /
 strong Option 3:
-| Unfortunately, the ProduceRun draft you sent does not fit the profile # { channel.name } .
-| Send an email notifying the refusal. Yes, we know that refusals are always unpleasant.
-'The # { link_to  ' Support Center ' , ProduceRunSettings [ : support_forum ] target:  ' __blank ' } of # { company_name } and # {  link_to  ' proposal ' , channels_about_url ( subdomain: channel.permalink), target:  ' __blank ' }
-| The # { channel.name } so you know everything about our prerequisites for the construction of your next project.
+| Unfortunately, the draft ProduceRun you sent does not fit the profile # { } channel.name .
+| Send an email Notifying the refusal . Yes, we know que refusals are always unpleasant .
+'The # { link_to ' Support Center ', ProduceRunSettings [: support_forum ] target: ' __blank ' } of # { company_name } and # { link_to ' proposal ' , channels_about_url ( subdomain : channel.permalink ) , target: ' __blank '}
+| The # { } channel.name so you know everything about our prerequisites for the construction of your next project .
 br /
 br /
-| If you got any questions, please contact us replying to this message or by e-mail # { mail_to channel.email } .
+| If you got any questions , please contact us replying to this message or by e- mail # { mail_to channel.email } .
 br /
 br /
-strong Every care will be directly with the Channel managers via email above!
+Every care will be strong directly with the Channel managers via email above !
 br /
 br /
-| A hug,
+| A hug ,
 br /
 = channel.name
 br /
 br /
-| You are in contact with the care of # { channel.name }
+| You are in contact with the care of # { } channel.name
 br /
 br /
-| Learn more:
+| Learn more :
 br /
-= link_to ' ProduceRun Support ? ' , ' http://support.producerun ' , target: ' __blank '   
+= Link_to ' ProduceRun Support? ',' Http : //support.producerun ' target ' __blank '
