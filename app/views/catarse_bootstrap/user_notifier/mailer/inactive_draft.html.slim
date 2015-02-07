@@ -1,22 +1,22 @@
-- project = @notification.project
-|Olá #{project.user.name}, tudo bem? Aqui quem fala é a Luciana do Catarse!
-br/
-br/
-|Vi que você criou o rascunho do projeto #{link_to(project.name, project_by_slug_url(permalink: project.permalink, ref: 'notificação_resgate_rascunho' ))} mas ainda não nos enviou. Após o envio, você vai começar a receber uma consultoria especial minha ou da nossa super equipe de atendimento, lembrando que todas as informações do seu projeto poderão ser editadas e é você que escolhe o dia para iniciar sua arrecadação.
-br/
-br/
-= link_to image_tag("#{CatarseSettings[:base_url]}/assets/catarse_bootstrap/botao_envie.png", style: "display:block;margin-left:auto;margin-right:auto;"), project_by_slug_url(permalink: project.permalink, ref: 'notificação_resgate_botao' )
-br/
-br/
-|Se ainda não está pronto para receber um feedback do Catarse, recomendo dar um passeio pela nossa #{link_to('Central de Suporte', CatarseSettings[:support_forum])}. Lá você vai encontrar as respostas para as dúvidas mais frequentes de nossos realizadores, além de sugestões #{link_to('de o que oferecer como recompensa', CatarseSettings[:choose_reward_link])} e também #{link_to('dicas de como fazer um vídeo matador', CatarseSettings[:video_how_to_link])}.
-br/
-br/
-|Lembrando que você também pode entrar em contato comigo a hora que quiser respondendo diretamente a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_contact]}.
-br/
-br/
-|Beijo,
-br/
+- project =  notification .project
+| Hello # { project.user.name } , okay? Here the speaker is William Pattison!
+br /
+br /
+| I saw you created the project sketch # { link_to (project.name, project_by_slug_url ( permalink: project.permalink, ref:  ' notificação_resgate_rascunho ' )) } but not yet sent us. After sending, you will start receiving a special consulting my or our super service team, remembering that all your project information can be edited and you pick the day to start your collection.
+br /
+br /
+= link_to image_tag( " #{ ProduceRunSettings [ :base_url ] } /assets/producerun_bootstrap/botao_envie.png " , style: " display:block;margin-left:auto;margin-right:auto; " ), project_by_slug_url ( permalink: project.permalink, ref: ' notification_rescue_button ' )   
+br /
+br /
+| If you are not ready to receive a feedback ProduceRun, I recommend taking a walk by our # { link_to ( ' Support Center ' , ProduceRunSettings [ : support_forum ]) } . There you will find the answers to frequently asked questions of our directors, as well as suggestions # { link_to ( ' of what to offer as a reward ' , ProduceRunSettings [ : choose_reward_link ]) } and also # { link_to ( ' tips on how to make a video killer ' , ProduceRunSettings [ : video_how_to_link ]) } .
+br /
+br /
+| Remember that you can also contact me any time you want directly responding to this message or by e-mail # { mail_to ProduceRunSettings [ : email_contact ] } .
+br /
+br /
+| Kind Regards,
+br /
 strong
-  |Luciana Masini
-br/
-|Catalisadora de projetos criativos
+  | William Pattison
+br /
+| ProduceRun
