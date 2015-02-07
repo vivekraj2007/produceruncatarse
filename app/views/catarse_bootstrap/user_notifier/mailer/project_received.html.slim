@@ -1,49 +1,49 @@
-- user = @notification.user
-- project = @notification.project
+- user =  notification .user
+- project =  notification .project
 
-- project_link = project_by_slug_url(permalink: project.permalink)
-- company_name = CatarseSettings[:company_name]
+- project_link = project_by_slug_url ( permalink: project.permalink)
+- company_name =  ProduceRunSettings [ : company_name ]
 
-|Olá, #{user.name}!
+| Hello, # { user.name } !
 br
 br
-| Obrigado por iniciar o processo de inscrição de um projeto no #{company_name}! 
-| Este é apenas o passo inicial e quer dizer que você acabou de criar seu 
-| <strong>#{link_to 'rascunho de projeto', project_link, target: '__blank'}</strong> no #{company_name}.
-br/
-br/
-| As dicas fundamentais para estruturar o seu projeto podem ser encontradas em 
-| diversos artigos na nossa #{link_to "Central de Suporte do #{company_name}", CatarseSettings[:support_forum], target: '__blank'}. 
-| Ela pode ser utilizada como fonte de consulta para a maioria das dúvidas que você terá antes, durante e após a sua campanha. 
-| Mesmo assim resolvemos destacar alguns pontos nesse email. Leia todos com bastante atenção: 
-br/
-= link_to "O Básico do #{company_name}", 'http://suporte.catarse.me/hc/pt-br/sections/200408863-O-B%C3%A1sico', target: '__blank'
-br/
-= link_to 'Realizadores - primeiros passos (rascunho)', 'http://suporte.catarse.me/hc/pt-br/sections/200406978-Realizadores-Primeiros-passos', target: '__blank'
-br/
-br/
-|Confira também:
-br/
-= link_to "Quais são todos os passos que envolvem uma campanha no #{company_name}?", 'http://suporte.catarse.me/hc/pt-br/articles/202445898-Quais-s%C3%A3o-todos-os-passos-envolvidos-em-uma-campanha-no-Catarse-', target: '__blank'
-br/
-= link_to "Como promover seu projeto", 'http://suporte.catarse.me/hc/pt-br/articles/202226843-Promovendo-seu-projeto', target: '__blank'
-br/
-br/
-| Leia esses materiais e depois preencha tudo com bastante calma para aperfeiçoar seu projeto. 
-br/
-| Você pode ficar o tempo que quiser montando a página do seu projeto antes de enviá-lo. 
-br/
-br/
-| Quando considerar que a sua página de projeto está pronta, basta clicar no botão “ENVIAR PROJETO” que entraremos em contato contigo.
-br/
-br/
-| Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_projects]}
-br/
-br/
-| E por falar nisso, por favor <strong>não esqueça de incluir na sua lista de contatos os e-mails:</strong> 
-| #{mail_to CatarseSettings[:email_projects]} e #{mail_to CatarseSettings[:email_contact]} para evitar que nossas mensagens caiam na sua caixa de spam devido a filtros do seu email. 
-br/
-br/
-| Um abraço,
-br/
+| Thanks to begin the application process of a ProduceRun in # { company_name } !
+| This is only the first step and means that you just created your 
+| < strong > # { link_to  ' project draft ' , project_link, target:  ' __blank ' } </ strong > in # { company_name } .
+br /
+br /
+| The key tips to structure your project can be found at 
+| Various articles in our # { link_to  " Support Center # { company_name } " , ProduceRunSettings [ : support_forum ] target:  ' __blank ' } .
+| It can be used as a reference source for most of the questions you have before, during and after the campaign. 
+| Even so decided to highlight some points in this email. Read all very carefully:
+br /
+= link_to " The Basics do #{ company_name } " , ' http://support.producerun.com ' , target: ' __blank '   
+br /
+= link_to ' Directors - first steps (rascunho) ' , ' http://support.producerun.com ' , target: ' __blank '   
+br /
+br /
+| Check also:
+br /
+= link_to " What are all the steps involved in a campaign no #{ company_name } ? " , ' http://support.producerun.com' , target: ' __blank '   
+br /
+= link_to " How to Promote Your projeto " , ' http://support.producerun.com ' , target: ' __blank '   
+br /
+br /
+| Read these materials and then fill all calmly enough to improve your ProduceRun Campaign. 
+br /
+| You can stay as long as you like riding the page of your ProduceRun before you send it. 
+br /
+br /
+| When you feel that your ProduceRun page is ready, simply click the "SEND PRODUCERUN" button and we will contact you.
+br /
+br /
+| If you got any questions, please contact us replying to this message or by e-mail # { mail_to CatarseSettings [ : email_projects ] }
+br /
+br /
+| And by the way, please < strong > do not forget to include in your contact list e-mail: </ strong >
+| # { mail_to ProduceRunSettings [ : email_projects ] } and {# mail_to ProduceRunSettings [ : email_contact ] } to prevent our messages fall into your spam due to your email filters.
+br /
+br /
+| A big thank you,
+br /
 = company_name
