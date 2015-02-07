@@ -1,72 +1,73 @@
-- user = @notification.user
-- project = @notification.project
-- channel = @notification.project.last_channel
 
-- project_link = project_by_slug_url(permalink: project.permalink)
-- company_name = CatarseSettings[:company_name]
+- user =  notification .user
+- project =  notification .project
+- channel =  notification .project.last_channel
 
-= content_for :email_logo do
-  = image_tag(channel.image, alt: channel.name)
+- project_link = project_by_slug_url ( permalink: project.permalink)
+- company_name =  ProduceRunSettings [ : company_name ]
 
-| Olá
-- if user.name
-  | , #{user.name}!
-br/
-br/
-| O projeto #{link_to project.name, project_link, target: '__blank' } está no ar no #{channel.name} e já pode receber apoios! 
-| Boa sorte nessa maratona!  Uma campanha de financiamento coletivo dá trabalho, mas é recompensador! 
-| Se não planejou suas ações anteriormente, não perca tempo. A hora é essa! Agora é #{link_to 'TUDO-OU-NADA!', 'http://suporte.catarse.me/hc/pt-br/articles/202265256', target: '__blank'}
-br/
-br/
-| Para conversar sobre estratégias de comunicação com nossa equipe e receber sugestões sobre como agir na sua campanha, 
-| responda esse email ou envie uma mensagem para #{mail_to channel.email}. Mas, lembre-se que <strong>você é o responsável por 
-| promover a campanha e cuidar da divulgação do projeto.</strong> É da sua rede que virão grande parte dos apoios, 
-| esta conversa deve ser encarada como um auxílio.
-br/
-br/
-strong Informações Importantes:
-br/
-br/
-| Você <strong>NÃO</strong> pode mais <strong>alterar</strong> nem a <strong>Meta de Arrecadação</strong> nem o <strong>Prazo escolhido</strong> para a campanha. 
-br/
-br/
-| No entanto você ainda pode:
-br/
-| - Trocar o vídeo principal da sua campanha
-br/
-| - Editar a descrição do seu projeto
-br/
-| - Criar novas recompensas
-br/
-| - Alterar conteúdo e valor de recompensas que ninguém escolheu
-br/
-| - Alterar o limite de apoiadores de uma determinada recompensa
-br/
-| - Esgotar recompensas (limitando-as para um numero X de apoiadores)
-br/
-| - Trocar o Thumbnail e a Frase de Efeito do seu projeto
-br/
-| - Estudar regras, dicas e outras informações através da #{link_to 'Central de Suporte', CatarseSettings[:support_forum]} do #{company_name}.
-br/
-br/
-| <strong>Se você não conferiu a #{link_to 'Central de Suporte', CatarseSettings[:support_forum], target: '__blank'}, 
-| confira! Quanto mais você souber sobre os detalhes de uma campanha no #{company_name}, melhor preparado você estará.</strong> 
-| E fique tranquilo, estamos por aqui! Você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to channel.email}
-br/
-br/
-| E por falar nisso, por favor </strong>não esqueça de incluir na sua lista de contatos os e-mails:</strong> 
-| #{mail_to channel.email}, #{mail_to CatarseSettings[:email_projects]} e #{mail_to CatarseSettings[:email_contact]} para evitar que nossas mensagens 
-| caiam na sua caixa de spam devido a filtros do seu email. 
-br/
-br/
-| Um abraço,
-br/
-| A equipe do #{company_name} e do #{channel.name} te desejam uma boa campanha!!!!
-br/
-br/
-| Você está em contato com o atendimento do #{channel.name}
-br/
-br/
-| Saiba mais:
-br/
-= link_to 'O que são os canais ?', 'http://suporte.catarse.me/hc/pt-br/articles/203083107-O-que-s%C3%A3o-os-Canais-', target: '__blank'
+= content_for : email_logo the   
+  = image_tag (channel.image, alt: channel.name)
+
+| Hello
+- if user.name 
+  |, # { user.name } !
+br /
+br /
+| The project # { link_to project.name, project_link, target:  ' __blank '  } is in the air # { channel.name } and can now receive support!
+| Good luck in this marathon! A collective funding campaign takes work, but it is rewarding!
+| If you did not plan your actions before, do not waste time. The time is now! Now is # { link_to  ' ALL-OR-NOTHING! ' , ' http://support.producerun.com ' , target:  ' __blank ' }
+br /
+br /
+| To talk about communication strategies with our team and receive suggestions on how to act in your campaign, 
+| Reply to this email or send a message to # { mail_to channel.email } . But remember that < strong > you are responsible for
+|. Promote the campaign and take care of the project dissemination </ strong > It is your network that will largely of support,
+| This conversation should be seen as an aid.
+br /
+br /
+strong Important Information:
+br /
+br /
+| You < strong > can </ strong > no longer < strong > change </ strong > the < strong > Fundraising Goal </ strong > or the < strong > selected Period </ strong > for the campaign.
+br /
+br /
+| However you still can:
+br /
+| - Change the main display of your campaign
+br /
+| - Edit the description of your project
+br /
+| - Create new rewards
+br /
+| - Change content and value of rewards that no one chose
+br /
+| - Change supporters limit of a certain reward
+br /
+| - Exhaust rewards (limiting them to an X number of supporters)
+br /
+| - Change Thumbnail and the Effect phrase of your project
+br /
+| - Studying rules, tips and other information through # { link_to  ' Support Center ' , ProduceRunSettings [ : support_forum ] } of # { company_name } .
+br /
+br /
+| < strong > If you did not check the # { link_to  ' Support Center ' , ProduceRunSettings [ : support_forum ] target:  ' __blank ' } ,
+| Check it out! The more you know about the details of a campaign in # { company_name } , the better prepared you will be. </ strong >
+| And do not worry, we are here! You can ask questions with us directly responding to this message or by e-mail # { mail_to channel.email }
+br /
+br /
+| And by the way, please </ strong > do not forget to include in your contact list e-mail: </ strong >
+| # { mail_to prevent our messages
+| Fall in your spam box because the e-mail filters. 
+br /
+br /
+| A hug,
+br /
+| The team # { company_name } and # { channel.name } you want a good campaign !!!!
+br /
+br /
+| You are in contact with the care of # { channel.name }
+br /
+br /
+| Learn more:
+br /
+= link_to ' What are the channels ? ' , ' http://support.producerun.com' , target: ' __blank ' 
