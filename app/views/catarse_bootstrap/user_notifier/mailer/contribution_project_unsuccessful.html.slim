@@ -1,27 +1,28 @@
-- contribution = @notification.contribution
+- Contribution = notification .contribution
 
-|Olá, #{contribution.user.name}!
+| Hello , # { } contribution.user.name !
 br
 br
-| Infelizmente o projeto #{link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))}
-| que você apoiou não atingiu a meta estabelecida e não foi financiado no #{CatarseSettings[:company_name]}.
+| Unfortunately the ProduceRun # { link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) }
+| You Stood did not reach the target set and was not funded in # { ProduceRunSettings [: company_name ] } .
 br
 br
-| Como o seu pagamento foi feito por boleto, segue os procedimentos que devem ser feitos para que possamos estornar o valor do seu apoio
+| As the payment was made ​​by slip , Following the procedures que must be made ​​so That We can reverse the value of your support
 br
 br
-| Como o seu apoio foi efetuado através de boleto, você precisa preencher seus
-'  #{link_to 'dados bancários', settings_user_url(contribution.user)} para efetuarmos a transação em até 10 dias.
+| The support was made ​​through its ticket , you need to fill your
+'# { Link_to ' bank details' , settings_user_url ( contribution.user ) } to we made the transaction Within 10 days .
 br
 br
-| Assim que o reembolso for feito, você receberá um e-mail de confirmação da operação.
-br/
-br/
-| Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_contact]} .Para agilizar o atendimento, pedimos que indique a chave de identificação do seu apoio, que é:
-br/
-| #{contribution.payment_id}
+| Once the refund Has Been made ​​, you will receive an email confirmation of the operation .
+br /
+br /
+| If you got any questions , please contact us replying to this message or by e- mail # { mail_to ProduceRunSettings [: email_contact ] } .To expedite service , please enter the identification key for your support , Which is :
+br /
+| # { } Contribution.payment_id
 br
 br
-|Um abraço,
+| A big thank you ,
 br
-| #{CatarseSettings[:company_name]}
+| # { ProduceRunSettings [: company_name ] }
+| # { ProduceRunSettings [: company_name ] }
