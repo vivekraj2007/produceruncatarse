@@ -1,34 +1,33 @@
-- project = @notification.project
-| Hey!
+- Project = @ notification.project
+| Hey !
 br
 br
-| Mais um projeto foi criado no #{CatarseSettings[:company_name]}!
-== " por #{link_to project.user.name, user_url(project.user)}"
+| Another ProduceRun was created in # { ProduceRunSettings [: company_name ] } !
+== " By # { link_to project.user.name , user_url ( project.user ) } "
 br
-== "Email do realizador: #{mail_to project.user.email}"
-br
-br
-| Detalhes do projeto abaixo:
+== " Director 's email: # { } mail_to project.user.email "
 br
 br
-b Nome:
-= " #{project.name}"
+| ProduceRun details below:
 br
-b Meta:
-= " #{project.display_goal}"
 br
-b Lista de Links relacionados:
+b Name:
+= "# { } Project.name "
 br
-= simple_format(project.more_links)
+b Meta :
+= "# { } Project.display_goal "
 br
-b Primeiros apoiadores:
+b Related Links List:
 br
-= simple_format(project.first_contributions)
+= Simple_format ( project.more_links )
 br
-b Como conheceu o #{CatarseSettings[:company_name].downcase}:
+b First supporters :
+br
+= Simple_format ( project.first_contributions )
+br
+b How did the # { CatarseSettings [: company_name ] .downcase } :
 br
 = project.traffic_sources
 br
 br
-= link_to 'Veja mais sobre o projeto', project_by_slug_url(permalink: project.permalink)
-
+= Link_to ' See more about the project ,' project_by_slug_url (permalink : project.permalink )
