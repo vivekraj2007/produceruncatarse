@@ -1,22 +1,24 @@
-- contribution = @notification.contribution
-|Olá, #{contribution.user.name}!
+- Contribution = @ notification.contribution
+| Hello , # { } contribution.user.name !
 br
 br
-|Você iniciou um apoio para o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)}, porém ele não atingiu a meta estabelecida no Catarse.
+| You started a support for the ProduceRun # { link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) } , but he did not reach the target set in the Catharsis .
 br
 br
-| <strong>Se você NÃO concluiu o apoio</strong>, pode desconsiderar as informações desse e-mail.
+| < Strong> If you DO NOT found support < / strong >, you can disregard the information in this email.
 br
 br
-| <strong>Se você concluiu o seu apoio</strong>, mas não recebeu a confirmação do Catarse ainda, você deverá receber nos próximos dias um recibo provisório. Logo depois, já que o projeto não foi financiado, receberá uma notificação com detalhes sobre o reembolso do seu apoio.
+| < Strong> If you completed your support < / strong > , but have not received confirmation of catharsis yet , you should receive in the coming days a provisional receipt. Soon after, as the project was not funded , you will receive a notification with details on the reimbursement of their support.
 br
 br
-| Lembrando que a chave de identificação do seu apoio é: <strong>#{contribution.payment_id}</strong>
+| Remembering that your support of the identification key is: < strong> # { contribution.payment_id } < / strong >
 br
 br
-| Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_contact]}
+| If you got any questions, please contact us replying to this message or by e -mail # { mail_to ProduceRunSettings [: email_contact ] }
 br
 br
-| Um abraço,
+| Kind Regards ,
 br
-| #{CatarseSettings[:company_name]}
+| # { ProduceRunSettings [: company_name ] }
+
+
