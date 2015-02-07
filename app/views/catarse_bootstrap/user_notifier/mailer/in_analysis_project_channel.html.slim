@@ -1,57 +1,56 @@
-- user = @notification.user
-- project = @notification.project
-- channel = @notification.project.last_channel
+- user =  notification .user
+- project =  notification .project
+- channel =  notification .project.last_channel
 
-- project_link = project_by_slug_url(permalink: project.permalink)
-- company_name = CatarseSettings[:company_name]
+- project_link = project_by_slug_url ( permalink: project.permalink)
+- company_name =  ProduceRunSettings [ : company_name ]
 
-= content_for :email_logo do
-  = image_tag(channel.image, alt: channel.name)
+= content_for : email_logo the   
+  = image_tag (channel.image, alt: channel.name)
 
-|Olá, #{user.name}!
+| Hello, # { user.name } !
 br
 br
-| Nossa equipe do #{channel.name} acabou de receber o projeto #{link_to project.name, project_link, target: '__blank'}
-br/
-br/
-| Durante os próximos 4 dias úteis, iremos analisar o rascunho de projeto que você nos enviou e te daremos uma resposta.
-br/
-br/
-strong Você pode receber 3 tipos de resposta:
-br/
-br/
-strong Opção 1:
-| Seu rascunho passou na análise, foi aceito e poderá ir ao ar!
-| Agora é só marcarmos o dia e hora para estreiar seu projeto no #{channel.name}, no site do #{company_name}!
-br/
-br/
-strong Opção 2:
-| Nos parece que o seu projeto tem muito ver com o #{channel.name}, mas ainda precisa de alguns ajustes para ir para o ar.
-| Vamos entrar em contato para entender possibilidades , sugerir coisas e tirar algumas dúvidas.
-br/
-br/
-strong Opção 3:
-| Infelizmente, o rascunho de projeto que você enviou não se encaixa no perfil do #{channel.name}.
-| Enviaremos um email notificando a recusa. Sim, sabemos que recusas são sempre desagradáveis. Mas o lema aqui
-| é "levanta, sacode a poeira e dá a volta por cima". Mas antes de sacudir qualquer poeira, estude
-' a #{link_to 'Central de Suporte', CatarseSettings[:support_forum], target: '__blank'} do #{company_name} e a #{ link_to 'proposta', channels_about_url(subdomain: channel.permalink), target: '__blank'}
-| do #{channel.name} para que você saiba tudo sobre nossos pré-requisitos para a construção do seu próximo projeto.
-br/
-br/
-| Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to channel.email}.
-br/
-br/
-strong Todo o atendimento será diretamente com os gestores do Canal através do email acima!
-br/
-br/
-|Um abraço,
-br/
+| Our team of # { channel.name } just received the project # { link_to project.name, project_link, target:  ' __blank ' }
+br /
+br /
+| During the next 24 hours, we will analyze the project draft you sent us and we will give you an answer.
+br /
+br /
+strong You can receive three types of response:
+br /
+br /
+strong Option 1:
+| Your draft passed in the analysis, was accepted and can go to the market!
+| Now just arrange the day and time for your debut project in # { channel.name } , on the site # { company_name } !
+br /
+br /
+strong Option 2:
+| It seems to us that your project has a lot do with # { channel.name } , but still needs some tweaking to go to the market.
+| We will contact you to understand possibilities, suggest things and take some questions.
+br /
+br /
+strong Option 3:
+| Unfortunately, the ProduceRun draft you sent does not fit the profile # { channel.name } .
+| Send an email notifying the refusal. Yes, we know that refusals are always unpleasant.
+'The # { link_to  ' Support Center ' , ProduceRunSettings [ : support_forum ] target:  ' __blank ' } of # { company_name } and # {  link_to  ' proposal ' , channels_about_url ( subdomain: channel.permalink), target:  ' __blank ' }
+| The # { channel.name } so you know everything about our prerequisites for the construction of your next project.
+br /
+br /
+| If you got any questions, please contact us replying to this message or by e-mail # { mail_to channel.email } .
+br /
+br /
+strong Every care will be directly with the Channel managers via email above!
+br /
+br /
+| A hug,
+br /
 = channel.name
-br/
-br/
-| Você está em contato com o atendimento do #{channel.name}
-br/
-br/
-| Saiba mais:
-br/
-= link_to 'O que são os canais ?', 'http://suporte.catarse.me/hc/pt-br/articles/203083107-O-que-s%C3%A3o-os-Canais-', target: '__blank'
+br /
+br /
+| You are in contact with the care of # { channel.name }
+br /
+br /
+| Learn more:
+br /
+= link_to ' ProduceRun Support ? ' , ' http://support.producerun ' , target: ' __blank '   
