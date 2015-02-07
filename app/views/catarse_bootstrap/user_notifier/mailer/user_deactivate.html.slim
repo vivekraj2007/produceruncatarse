@@ -1,10 +1,10 @@
-p Olá #{@notification.user.name},
+Hello #{@notification.user.name p } ,
 
-p 
-  | Sua conta no Catarse já está desativada. Caso sinta saudades, você pode reativar a sua conta a qualquer momento, basta #{link_to('clicar aqui', reactivate_user_url(@notification.user, token: @notification.user.reactivate_token))} e voltar a apoiar ou realizar projetos incríveis.
+p
+  | Your account ProduceRun is already disabled . If you feel homesick , you can reactivate your account at any time , just # { link_to ( ' click here ' , reactivate_user_url ( @ notification.user , token: @ notification.user.reactivate_token ) ) } and back to support or undertake a ProduceRun Campaign .
 
-p 
-  | Qualquer dúvida você pode entrar em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_contact]}
+p
+  | Any questions you can contact us replying to this message or by e -mail # { mail_to ProduceRunSettings [: email_contact ] }
 
-p Um abraço,
-p Catarse
+p Thanks ,
+p ProduceRun
