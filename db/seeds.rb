@@ -4,24 +4,24 @@ puts 'Seeding the database...'
 
 [
   { pt: 'Opt1', en: 'Bundles' },
-  { pt: 'Opt1',en: 'Produce' },
-  { pt: 'Opt1',en: 'Eggs & Dairy' },
-  { pt: 'Opt1',en: 'Meat & Fish' },
-  { pt: 'Opt1',en: 'Bakery' },
-  { pt: 'Opt1',en: 'Pantry' },
-  { pt: 'Opt1',en: 'Snacks' },
-  { pt: 'Opt1',en: 'Drinks' },
-  { pt: 'Opt1',en: 'Floral & Home' },
-  { pt: 'Opt1',en: 'Prepared Foods' },
-  { pt: 'Opt1',en: 'CSA' },
-  { pt: 'Opt1',en: 'Misc' },
-  { pt: 'Opt1',en: '' },
+  { pt: 'Opt2',en: 'Produce' },
+  { pt: 'Opt3',en: 'Eggs & Dairy' },
+  { pt: 'Opt4',en: 'Meat & Fish' },
+  { pt: 'Opt5',en: 'Bakery' },
+  { pt: 'Opt6',en: 'Pantry' },
+  { pt: 'Opt7',en: 'Snacks' },
+  { pt: 'Opt8',en: 'Drinks' },
+  { pt: 'Opt9',en: 'Floral & Home' },
+  { pt: 'Opt10',en: 'Prepared Foods' },
+  { pt: 'Opt11',en: 'CSA' },
+  { pt: 'Opt12',en: 'Misc' },
 
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])
    category.update_attributes({
      name_en: name[:en]
    })
+   puts name
  end
 
 {
@@ -29,7 +29,6 @@ puts 'Seeding the database...'
   company_logo: 'http://www.producerun.com/wp-content/uploads/2014/11/rsz_producerun-green.png',
   host: 'producerun.com',
   base_url: "http://www.producerun.com",
-
   email_contact: 'info+contact@producerun.com',
   email_payments: 'info+finance@producerun.com',
   email_projects: 'info+projects@producerun.com',
@@ -58,6 +57,7 @@ puts 'Seeding the database...'
   mixpanel_token: 'e0e80f9f416708ba621aaf3d6aff3b85',
   sendgrid_user_name: 'hackandgrow',
   sendgrid: 'change_this_directly_in_database',
+
 }.each do |name, value|
    conf = CatarseSettings.find_or_initialize_by(name: name)
    conf.update_attributes({
