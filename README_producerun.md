@@ -4,9 +4,10 @@
 
     rake db:create db:migrate db:seed
 
-You will also need to download and run redis server.
+You will also need to download and run redis server and sidekiq
 
    redis-server
+   sidekiq
 
 # To deploy to heroku
 
