@@ -173,22 +173,20 @@ margin:0 20px
 }
 @media only screen and (min-width: 800px) {
 .category-icons ul {
-padding-bottom:0;
-display:block
-}
+		padding-bottom:0;
+		display:block
+	}
 }
 .category-icons li {
 	display:inline-block;
-	width:11%;
+	width:10.8%;
 	text-align:center
 }
-.category-icons li:last-child {
-	width:9%;
-}
+
 @media only screen and (max-width: 800px) {
 .category-icons {
-display:none
-}
+		display:none
+	}
 }
 .category-icon {
 	display:inline;
@@ -203,23 +201,23 @@ display:none
 	margin:3px 0 -93px 0
 }
 .category-icon::before {
-display:inline;
-font-family:Grocery Icons;
-font-size:90px;
-line-height:90px;
-width:90px
+	display:inline;
+	font-family:Grocery Icons;
+	font-size:90px;
+	line-height:90px;
+	width:90px
 }
 .category-icon.outline::before, .category-icon.highlight::before {
-margin-left:-90px
+	margin-left:-90px
 }
 .category-icon.outline::before {
-color:#9c9795
+	color:#9c9795
 }
 .category-icon.highlight {
 	color:rgba(0, 0, 0, 0.15)
 }
 .category-icon.background::before {
-color:#fcfcfa
+	color:#fcfcfa
 }
 .category-icons__hr {
 	border:none;
@@ -258,29 +256,29 @@ color:#fcfcfa
 	transform:none
 }
 .category-button a.selected .outline::before {
-color:#403e3b
+	color:#403e3b
 }
 .category-button a.selected .label {
 	color: #1a7f2e
 }
 @media only screen and (max-width: 1080px) {
 .category-icon::before {
-font-size:67.5px;
-line-height:67.5px;
-width:67.5px
+	font-size:67.5px;
+	line-height:67.5px;
+	width:67.5px
 }
 .category-icon.outline::before, .category-icon.highlight::before {
-margin-left:-67.5px
+	margin-left:-67.5px
 }
 .category-icon.base {
-width:67.5px;
-height:67.5px;
-margin:2px 0 -69.5px 0
+	width:67.5px;
+	height:67.5px;
+	margin:2px 0 -69.5px 0
 }
 .category-button .label {
-margin-top:10px;
-font-size:14px
-}
+		margin-top:10px;
+		font-size:14px
+	}
 }
 .category-icons .bakery_fills:before {
 	content:"\e600"
@@ -373,6 +371,7 @@ font-size:14px
 	float: none;
 	padding: 15px 30px;/*padding: 21px 30px 30px;*/
 }
+.container-form .form-group .input-lg { font-size: 1em; }
 .google-map {
 	margin-bottom: 15px;
 }
@@ -380,7 +379,7 @@ font-size:14px
 	width:100%;
 }
 .form-group label.title {
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 .agree-policy p{
 	font-size: 0.85em;

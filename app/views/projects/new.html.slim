@@ -2,8 +2,20 @@
 - content_for :title, t('.page-title')
 
 = render 'shared/header_big'
-
-.w-container
+.container
+  .row
+    .col-md-12
+      h2.text-center Let's Sell Something
+      p.text-center Get Started for free. No credit card required. Make something happen.
+.container
+  .step-wizard.row.text-center
+    .col-md-4.active
+      a href="#"  Basics
+    .col-md-4
+      a href="#"  Pricing
+    .col-md-4
+      a href="#"  Goto Market
+.container
   .w-row
     .send-project-content
       .w-col.w-col-4.send-project-faq
@@ -62,6 +74,181 @@
             = form.input :traffic_sources, as: :select, collection: t('simple_form.collections.project.traffic_sources').values, prompt: t('simple_form.prompts.project.select'), label: t('.form.labels.traffic_sources')
 
           = form.submit t('.form.submit'), class: 'w-button send-project-form-button bt-large', id: 'project_submit'
+
+
+  .row
+    .col-md-12
+      .container-form
+        form
+          .row
+            .col-md-8
+              h3 style="margin:0;"  Let's get started with basics
+            .col-md-4
+              .form-inline.pull-right
+                .form-group
+                  label.sr-only for="inputPassword2"  Promo Code
+                  input#inputPassword2.form-control placeholder="Password" type="password" /
+                button.btn.btn-default.btn-custom-green type="submit"  Apply
+          hr/
+          .form-group
+            label.title for=""  What category is your goods in?
+            .category-icons
+              ul
+                li.category-button.category-bundles
+                  a.selected href="/sfbay/bundles" 
+                    .glyphs
+                      .category-icon.base
+                      .category-icon.background.bundles_fills
+                      .category-icon.highlight.bundles_shading
+                      .category-icon.outline.bundles_lines
+                    .label Bundles
+                li.category-button.category-summer.fruit
+                  a href="/sfbay/produce" 
+                    .glyphs
+                      .category-icon.base
+                      .category-icon.background.produce_fills
+                      .category-icon.highlight.produce_shading
+                      .category-icon.outline.produce_lines
+                  .label Produce
+                li.category-button.category-eggs.dairy class=("<br />&amp;amp;") 
+                  a href="/sfbay/dairy" 
+                    .glyphs
+                      .category-icon.base
+                      .category-icon.background.dairy_fills
+                      .category-icon.highlight.dairy_shading
+                      .category-icon.outline.dairy_lines
+                    .label Eggs &amp; Dairy
+                li.category-button.category-meats.seafood class=("<br />&amp;amp;") 
+                  a href="/sfbay/meat" 
+                    .glyphs
+                      .category-icon.base
+                      .category-icon.background.meat_fills
+                      .category-icon.highlight.meat_shading
+                      .category-icon.outline.meat_lines
+                    .label Meat &amp; Fish
+                li.category-button.category-baked.goods.sweets class=("<br />&amp;amp;") 
+                  a href="/sfbay/bakery" 
+                    .glyphs
+                      .category-icon.base
+                      .category-icon.background.bakery_fills
+                      .category-icon.highlight.bakery_shading
+                      .category-icon.outline.bakery_lines
+                      .label Bakery
+                li.category-button.category-pantry.staples.drinks class=("<br />&amp;amp;") 
+                  a href="/sfbay/kitchen" 
+                    .glyphs
+                      .category-icon.base
+                      .category-icon.background.kitchen_fills
+                      .category-icon.highlight.kitchen_shading
+                      .category-icon.outline.kitchen_lines
+                    .label Pantry
+                li.category-button.category-snacks
+                  a href="/sfbay/snacks" 
+                    .glyphs
+                      .category-icon.base
+                      .category-icon.background.snacks_fills
+                      .category-icon.highlight.snacks_shading
+                      .category-icon.outline.snacks_lines
+                    .label Snacks
+                li.category-button.category-drinks
+                  a href="/sfbay/drinks" 
+                    .glyphs
+                      .category-icon.base
+                      .category-icon.background.drinks_fills
+                      .category-icon.highlight.drinks_shading
+                      .category-icon.outline.drinks_lines
+                    .label Drinks
+                li.category-button.category-floral.home class="&amp;" 
+                  a href="/sfbay/floral" 
+                    .glyphs
+                      .category-icon.base
+                      .category-icon.background.floral_fills
+                      .category-icon.highlight.floral_shading
+                      .category-icon.outline.floral_lines
+                    .label Floral &amp; Home
+          hr/
+          .form-group
+            label.title for=""  Enter your producerun Campaign Name
+            input.form-control.input-lg id="" placeholder=("Eg: Produce") type="email" /
+          .form-group
+            textarea.form-control.input-lg placeholder=("Description of your wonderful product to your customers") rows="3" 
+          hr/
+          .form-group
+            label.title for="exampleInputFile"  Optional image or video
+          .radio
+            label
+              input type="radio" /
+              | Image
+            label
+              input type="radio" /
+              | Video
+          .form-group
+            input#exampleInputFile.filestyle.input-lg data-buttontext=("Choose Image") placeholder=("Campaigns with a pictures 5x more successful...)") type="file" /
+          .checkbox
+            label
+              input type="checkbox" /
+              | Make this private
+          .checkbox
+            label
+              input type="checkbox" /
+              | Show a custom message/ Thank-you when people contribute
+          hr/
+          .form-group
+            label.title for=""  Name of your farm organization or campaign co-creator
+            input.form-control.input-lg id="" placeholder=("Eg: Basic Family Farms") type="email" /
+          hr/
+          h4 How your going to deliver the goods?
+          .row
+            .col-md-3
+              .form-group
+                label.title for=""  Your Delivery Method
+            .col-md-4
+              .checkbox
+                label
+                  input type="checkbox" /
+                  | Where your dropping off your goods
+              .google-map
+                img src="/assets/Implement-GPS-data-for-your-Google-MAP.gif" /
+              .form-group
+                .input-group.input-group-lg
+                  span.input-group-btn
+                    button.btn.btn-default type="button"  Go!
+                  input.form-control placeholder=("Your Drop Off Location") type="text" /
+                /! /input-group
+              .form-horizontal
+                .form-group
+                  label.col-sm-2.control-label for=""  Date
+                  .col-sm-10
+                    input.form-control.input-lg id="" placeholder=("05/ 01/ 2015") type="email" /
+              .form-horizontal
+                .form-group
+                  label.col-sm-2.control-label for=""  Time
+                  .col-sm-10
+                    input.form-control.input-lg id="" placeholder=("05:30 PM") type="email" /
+              .form-group
+                textarea.form-control.input-lg placeholder=("Description of your wonderful product to your customers") rows="3" 
+            .col-md-5
+              .checkbox
+                label
+                  input type="checkbox" /
+                  | Ask Customers for their mailing address if shipping
+              .form-group
+                select.form-control.input-lg
+                  option selected=""  Just in my state
+                  option Nationwide
+          hr/
+          .container
+            .row
+              .col-md-12.text-center.agree-policy
+                p
+                  | Don't have all the details yet?
+                  br/
+                  | No worries! You can edit your campaign after it's been created.
+                button.btn.btn-default.btn-lg.btn-custom-green type="submit"  Continue
+                p
+                  | By clicking Create, you are indicating that you have read and
+                  br/
+                  | agree to ProduceRun Terms of Use, Privacy Policies &amp; Stripe's Payment Terms
 
 = render 'shared/footer_big'
 
