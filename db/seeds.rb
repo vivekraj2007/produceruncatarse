@@ -39,7 +39,7 @@ puts 'Seeding the database...'
   facebook_app_id: '173747042661491',
   twitter_url: 'http://twitter.com/producerun',
   twitter_username: "producerun",
-  mailchimp_url: "http://catarse.us5.list-manage.com/subscribe/post?u=ebfcd0d16dbb0001a0bea3639&amp;id=149c39709e",
+  mailchimp_url: "http://producerun.us8.list-manage.com/subscribe/post?u=d7cada44d74cc8dec9c798429&amp;id=4538752d65",
   catarse_fee: '0.10',
   support_forum: 'http://suport.producerun.com/',
   base_domain: 'producerun.com',
@@ -56,6 +56,8 @@ puts 'Seeding the database...'
   github_url: 'http://github.com/producerun',
   contato_url: 'http://suport.producerun.com/',
   mixpanel_token: 'e0e80f9f416708ba621aaf3d6aff3b85',
+  sendgrid_user_name: 'hackandgrow',
+  sendgrid: 'change_this_directly_in_database',
 }.each do |name, value|
    conf = CatarseSettings.find_or_initialize_by(name: name)
    conf.update_attributes({
@@ -103,7 +105,7 @@ end
 
 Rails.cache.clear
 
-user = User.first_or_initialize( name: 'Asd Name', email: 'asd@asd.asd') do |user|
+user = User.where( name: 'Asd Name', email: 'asd@asd.asd').first_or_initialize do |user|
   user.password = 'asdasd'
   user.admin = true
   puts "User #{user.email} created"
