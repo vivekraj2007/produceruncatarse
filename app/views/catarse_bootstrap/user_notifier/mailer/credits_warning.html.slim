@@ -9,7 +9,7 @@ br
 br
 br
 -user.recommended_projects.limit ( 3 ) .each do | project |
-  | #{ link_to ( project.name , "#{ CatarseSettings [: base_url ] } / projects / #{ project.to_param } " ) }
+  | #{ link_to ( project.name , "#{ CatarseSettings [:base_url ] } / projects / #{ project.to_param } " ) }
   br
   | #{ } project.headline
   br
@@ -30,7 +30,7 @@ br
 | 5 - Ready ! Your support will be confirmed = )
 br
 br
-| If you prefer , you can claim a refund of your money by clicking #{ link_to ( " here " , "#{ CatarseSettings [: base_url ] } / users / { #} user.to_param #credits " ) } . You will be able to take most of your questions about reimbursement #{ link_to ( ' Support ' 'http://suporte.catarse.me')}.
+| If you prefer , you can claim a refund of your money by clicking #{ link_to ( " here " , "#{ CatarseSettings [:base_url ] } / users / { #} user.to_param #credits " ) } . You will be able to take most of your questions about reimbursement #{ link_to ( ' Support ' 'http://suporte.catarse.me')}.
 br
 br
 | If you have any other questions , please contact us at our Support Center : support.producerun.com .
