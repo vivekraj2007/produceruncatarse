@@ -1,19 +1,19 @@
 -contribution = @ notification.contribution
 - Company_name = ProduceRunSettings [: company_name ]
 - Contact_email = ProduceRunSettings [: email_contact ]
-| Hello , < strong> # { contribution.user.display_name } < / strong >
+| Hello , < strong> #{ contribution.user.display_name } < / strong >
 br
 br
-| Repayment of his support for the project # { link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) } in { # } company_name has just been completed! Effective credit should happen in the next bill , if it is still open, or the next , if that month has already been closed.
+| Repayment of his support for the project #{ link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) } in { # } company_name has just been completed! Effective credit should happen in the next bill , if it is still open, or the next , if that month has already been closed.
 br
 br
-| The support of your identification key is: # { } contribution.payment_id
+| The support of your identification key is: #{ } contribution.payment_id
 br /
 br /
 | If you have any questions or had any problems in this process , please contact us by answering
-' This message or by e -mail # { mail_to contact_email } . To expedite service , please enter the Key.
+' This message or by e -mail #{ mail_to contact_email } . To expedite service , please enter the Key.
 br
 br
 | Kind Regards ,
 br
-| # { Company_name }
+| #{ Company_name }

@@ -2,20 +2,20 @@
 - Company_name = ProduceRunSettings [: company_name ]
 - Contact_email = ProduceRunSettings [: email_contact ]
 
-| Hello , < strong> # { contribution.user.display_name } < / strong >
+| Hello , < strong> #{ contribution.user.display_name } < / strong >
 br
 br
-| We do not receive the support of confirming payment for design # { link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink , ref: ' notificacao_cancelado ')} .
+| We do not receive the support of confirming payment for design #{ link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink , ref: ' notificacao_cancelado ')} .
 br
 br
-| To make this ProduceRun Run , this run needs a lot of your support , so you have to # { l ( contribution.project.expires_at ) }
-| To hold a # { link_to ' new contribution ' , project_by_slug_url (permalink : contribution.project.permalink , ref: ' notificacao_cancelado ')} .
-| Join more < strong> # { contribution.project.total_contributions } < / strong > people who want to take the project # { link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink , ref: ' notificacao_cancelado ')} of the paper.
+| To make this ProduceRun Run , this run needs a lot of your support , so you have to #{ l ( contribution.project.expires_at ) }
+| To hold a #{ link_to ' new contribution ' , project_by_slug_url (permalink : contribution.project.permalink , ref: ' notificacao_cancelado ')} .
+| Join more < strong> #{ contribution.project.total_contributions } < / strong > people who want to take the project #{ link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink , ref: ' notificacao_cancelado ')} of the paper.
 br
 br
-| If you got any questions, please contact us replying to this message or by e -mail # { mail_to contact_email }
+| If you got any questions, please contact us replying to this message or by e -mail #{ mail_to contact_email }
 br
 br
 | A big thank you ,
 br
-| # { Company_name }
+| #{ Company_name }

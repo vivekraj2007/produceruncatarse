@@ -1,24 +1,24 @@
 - contribution =  notification .contribution
 
-| Hello, < strong > # { contribution.user.display_name } </ strong >
+| Hello, < strong > #{ contribution.user.display_name } </ strong >
 br
 br
-'Thanks for supporting this ProduceRun # { link_to contribution.project.name, project_by_slug_url ( permalink: contribution.project.permalink, ref:  ' notificacao_pending ' ) } ,
+'Thanks for supporting this ProduceRun #{ link_to contribution.project.name, project_by_slug_url ( permalink: contribution.project.permalink, ref:  ' notificacao_pending ' ) } ,
 | unfortunately this ProduceRun Campaign hasn't reached it's Tipping point to Run.
 br
 br
-| There is other ProduceRun's happening, you can join others in buying from the farmer # { contribution.project.total_contributions } .
+| There is other ProduceRun's happening, you can join others in buying from the farmer #{ contribution.project.total_contributions } .
 br
 br
-| # {  link_to  " You have up to # { l (contribution.project.expires_at) } to make a contribution where it left off. " , edit_project_contribution_url( project_id: contribution.project.id, id: contribution.id, ref:  ' notification_pending ' ) }
+| #{  link_to  " You have up to #{ l (contribution.project.expires_at) } to make a contribution where it left off. " , edit_project_contribution_url( project_id: contribution.project.id, id: contribution.id, ref:  ' notification_pending ' ) }
 br
 br
 | If the reason for not having completed their support was a technical problem, we recommend try again using another browser.
 br
 br
-| If the problem persists, please contact us immediately replying to this message or by e-mail # { mail_to ProduceRunSettings [ : email_contact ] }
+| If the problem persists, please contact us immediately replying to this message or by e-mail #{ mail_to ProduceRunSettings [ : email_contact ] }
 br
 br
 | A big thanks to you,
 br
-| # { ProduceRunSettings [ : company_name ] }
+| #{ ProduceRunSettings [ : company_name ] }

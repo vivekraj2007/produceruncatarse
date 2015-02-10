@@ -1,19 +1,19 @@
 - contribution =  notification .contribution
 
-| Hello, # { contribution.user.name } !
+| Hello, #{ contribution.user.name } !
 br
 br
-| Unfortunately the ProduceRun # { link_to (contribution.project.name, project_by_slug_url ( permalink: contribution.project.permalink)) } that you supported did not reach the target set and was not funded in # { ProduceRunSettings [ : company_name ] } .
+| Unfortunately the ProduceRun #{ link_to (contribution.project.name, project_by_slug_url ( permalink: contribution.project.permalink)) } that you supported did not reach the target set and was not funded in #{ ProduceRunSettings [ : company_name ] } .
 br
 br
 | Within 5 working days we will refund the value of your support that < strong > will come as the next credit or
 | Subsequent bill your card </ strong >. Once the refund has been made, you will receive an email confirmation of the operation.
 br
 br
-| If you got any questions, please contact us replying to this message or by e-mail # { mail_to ProduceRunSettings [ : email_contact ] } 
-| And inform your support identification key, which is: # { contribution.payment_id }
+| If you got any questions, please contact us replying to this message or by e-mail #{ mail_to ProduceRunSettings [ : email_contact ] } 
+| And inform your support identification key, which is: #{ contribution.payment_id }
 br
 br
 | A hug,
 br
-| # { ProduceRunSettings [ : company_name ] }
+| #{ ProduceRunSettings [ : company_name ] }

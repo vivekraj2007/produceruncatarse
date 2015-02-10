@@ -4,10 +4,10 @@
 - Project_link = project_by_slug_url (permalink : project.permalink )
 - Company_name = ProduceRunSettings [: company_name ]
 
-| Hello , < strong> # { project.user.display_name } < / strong >
+| Hello , < strong> #{ project.user.display_name } < / strong >
 br
 br
-| Today, this ProduceRun was # { } confirmed_contributions_today.length support !
+| Today, this ProduceRun was #{ } confirmed_contributions_today.length support !
 br
 br
 | Some data on these supports :
@@ -29,13 +29,13 @@ table width = "500" border = "1" cellpadding = "10" cellspacing = "0" style = " 
         td = contribution.reward.try ( : display_description )
 br /
 br /
-| See all his supporters # { link_to 'here' , project_by_slug_url (permalink : project.permalink , anchor: ' contributions ' , target: ' __blank ')} !
+| See all his supporters #{ link_to 'here' , project_by_slug_url (permalink : project.permalink , anchor: ' contributions ' , target: ' __blank ')} !
 br /
 br /
-| Communicate with them for the tab # { link_to ' News ' , project_by_slug_url (permalink : project.permalink , anchor: ' updates' , target: ' __blank ')}
+| Communicate with them for the tab #{ link_to ' News ' , project_by_slug_url (permalink : project.permalink , anchor: ' updates' , target: ' __blank ')}
 br /
 br /
-| And download spreadsheets with complete information for all supporters they # { link_to 'here' , project_by_slug_url (permalink : project.permalink , anchor , ' reports' , target: ' __blank ')} !
+| And download spreadsheets with complete information for all supporters they #{ link_to 'here' , project_by_slug_url (permalink : project.permalink , anchor , ' reports' , target: ' __blank ')} !
 br /
 br /
 | A big thank you to you ,

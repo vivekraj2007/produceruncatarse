@@ -1,17 +1,17 @@
 - User = @ notification.user
-| Hello , < strong> # { user.display_name } < / strong >
+| Hello , < strong> #{ user.display_name } < / strong >
 br
 br
-| We have seen here that you have $ # { } user.credits in credits ProduceRun . Here are some farmers ProduceRun's that we thought you might be interested in.
+| We have seen here that you have $ #{ } user.credits in credits ProduceRun . Here are some farmers ProduceRun's that we thought you might be interested in.
 br
 br
 | Down selected some project suggestions especially for you :
 br
 br
 -user.recommended_projects.limit ( 3 ) .each do | project |
-  | # { link_to ( project.name , "# { ProduceRunSettings [: base_url ] } / projects / # { project.to_param } " ) }
+  | #{ link_to ( project.name , "#{ ProduceRunSettings [: base_url ] } / projects / #{ project.to_param } " ) }
   br
-  | # { } project.headline
+  | #{ } project.headline
   br
   br
 br
@@ -19,7 +19,7 @@ br
 | Not to be sure, here's a step-by- step to use the credits :
 br
 br
-| 1 - # { link_to ( ' Select the ProduceRun you want to support ; ' explore_url ) }
+| 1 - #{ link_to ( ' Select the ProduceRun you want to support ; ' explore_url ) }
 br
 | 2 - Click I want to support this ProduceRun ;
 br
@@ -30,7 +30,7 @@ br
 | 5 - Ready ! Your support will be confirmed = )
 br
 br
-| If you prefer , you can claim a refund of your money by clicking # { link_to ( " here " , "# { ProduceRunSettings [: base_url ] } / users / { # } user.to_param #credits " ) } . You will be able to take most of your questions about reimbursement # { link_to ( ' Support ' 'http://suporte.catarse.me')}.
+| If you prefer , you can claim a refund of your money by clicking #{ link_to ( " here " , "#{ ProduceRunSettings [: base_url ] } / users / { #} user.to_param #credits " ) } . You will be able to take most of your questions about reimbursement #{ link_to ( ' Support ' 'http://suporte.catarse.me')}.
 br
 br
 | If you have any other questions , please contact us at our Support Center : support.producerun.com .

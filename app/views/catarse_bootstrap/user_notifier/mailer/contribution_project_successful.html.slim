@@ -1,7 +1,7 @@
 - Contribution = @ notification.contribution
-p Hello , < strong> # { contribution.user.display_name } < / strong >
+p Hello , < strong> #{ contribution.user.display_name } < / strong >
 p
-  | Congratulations ! The ProduceRun # { link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } that ,
-  | Including you, had # { } contribution.project.total_contributions supporters , was funded with success in # { ProduceRunSettings [: company_name ] } .
+  | Congratulations ! The ProduceRun #{ link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } that ,
+  | Including you, had #{ } contribution.project.total_contributions supporters , was funded with success in #{ ProduceRunSettings [: company_name ] } .
 p This email serves as a < strong> final receipt for your contribution < / strong > .
 = Partial surrender : ' contribution_data ' locals : { contribution : contribution }

@@ -1,18 +1,18 @@
 -contribution = @ notification.contribution
 - Company_name = ProduceRunSettings [: company_name ]
 - Contact_email = ProduceRunSettings [: email_contact ]
-| Hello , < strong> # { contribution.user.display_name } < / strong >
+| Hello , < strong> #{ contribution.user.display_name } < / strong >
 br
 br
-| Your refund was successful and the payment for the project # { link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) } , canceled.
+| Your refund was successful and the payment for the project #{ link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) } , canceled.
 br
 br
-| The support of your identification key is: # { } contribution.payment_id
+| The support of your identification key is: #{ } contribution.payment_id
 br
 br
-| If you got any questions, please contact us replying to this message or by e -mail # { mail_to contact_email }
+| If you got any questions, please contact us replying to this message or by e -mail #{ mail_to contact_email }
 br
 br
 | Thanks ,
 br
-| # { Company_name }
+| #{ Company_name }

@@ -1,10 +1,10 @@
 Hello #{@notification.user.name p } ,
 
 p
-  | Your account ProduceRun is already disabled . If you feel homesick , you can reactivate your account at any time , just # { link_to ( ' click here ' , reactivate_user_url ( @ notification.user , token: @ notification.user.reactivate_token ) ) } and back to support or undertake a ProduceRun Campaign .
+  | Your account ProduceRun is already disabled . If you feel homesick , you can reactivate your account at any time , just #{ link_to ( ' click here ' , reactivate_user_url ( @ notification.user , token: @ notification.user.reactivate_token ) ) } and back to support or undertake a ProduceRun Campaign .
 
 p
-  | Any questions you can contact us replying to this message or by e -mail # { mail_to ProduceRunSettings [: email_contact ] }
+  | Any questions you can contact us replying to this message or by e -mail #{ mail_to ProduceRunSettings [: email_contact ] }
 
 p Thanks ,
 p ProduceRun

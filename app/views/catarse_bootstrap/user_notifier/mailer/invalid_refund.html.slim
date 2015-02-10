@@ -5,25 +5,25 @@
 | Hello Community !
 br /
 br /
-| Repayment of support for this ProduceRun # { link_to ( project.name , project_by_slug_url (permalink : project.permalink ) ) } was not made due to errors in completed bank details :
+| Repayment of support for this ProduceRun #{ link_to ( project.name , project_by_slug_url (permalink : project.permalink ) ) } was not made due to errors in completed bank details :
 br /
 br /
 - If bank_account
-  | Bank: # { } bank_account.bank.to_s
+  | Bank: #{ } bank_account.bank.to_s
   br
-  | Agency: # { bank_account.try ( : agency ) }
+  | Agency: #{ bank_account.try ( : agency ) }
   br
-  | Account: # { bank_account.try ( : account ) } - # { bank_account.try ( : account_digit ) }
+  | Account: #{ bank_account.try ( : account ) } - #{ bank_account.try ( : account_digit ) }
   br
-  | Holder Name : # { bank_account.try ( : owner_name ) }
+  | Holder Name : #{ bank_account.try ( : owner_name ) }
   br
-  | CPF: # { bank_account.try ( : owner_document ) }
+  | CPF: #{ bank_account.try ( : owner_document ) }
   br /
   br /
-| Support Identification key : # { } contribution.payment_id
+| Support Identification key : #{ } contribution.payment_id
 br /
 br /
-| Please contact the user via the email address registered to carry out the refund : # { mail_to contribution.user.email }
+| Please contact the user via the email address registered to carry out the refund : #{ mail_to contribution.user.email }
 br /
 br /
 | Kind Regards,

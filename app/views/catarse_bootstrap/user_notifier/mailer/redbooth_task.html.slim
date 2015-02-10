@@ -27,12 +27,12 @@ br /
 br /
 | Bancarios data:
 br /
-| Bank: # { bank_account.try ( : name ) }
+| Bank: #{ bank_account.try ( : name ) }
 br /
-| Agency: # { bank_account.try ( : agency ) } - # { bank_account.try ( : agency_digit ) }
+| Agency: #{ bank_account.try ( : agency ) } - #{ bank_account.try ( : agency_digit ) }
 br /
-| Account: # { bank_account.try ( : account ) } - # { bank_account.try ( : account_digit ) }
+| Account: #{ bank_account.try ( : account ) } - #{ bank_account.try ( : account_digit ) }
 br /
-| Holder Name : # { bank_account.try ( : user_name ) }
+| Holder Name : #{ bank_account.try ( : user_name ) }
 br /
-| CPF: # { bank_account.try ( : user_document ) }
+| CPF: #{ bank_account.try ( : user_document ) }

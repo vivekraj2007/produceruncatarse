@@ -1,18 +1,18 @@
 - Contribution = @ notification.contribution
 
-| Hello , # { } contribution.user.name !
+| Hello , #{ } contribution.user.name !
 br
 br
-| Unfortunately design # { link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } that you supported did not reach the target set and was not funded in # { ProduceRunSettings [: company_name ] } .
+| Unfortunately design #{ link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } that you supported did not reach the target set and was not funded in #{ ProduceRunSettings [: company_name ] } .
 br
 br
 | How your support was performed using credits , our team will contact you to make the refund.
 br
 br
-| If you got any questions, please contact us replying to this message or by e -mail # { mail_to ProduceRunSettings [: email_contact ] }
-| And inform your support identification key , which is : # { } contribution.payment_id
+| If you got any questions, please contact us replying to this message or by e -mail #{ mail_to ProduceRunSettings [: email_contact ] }
+| And inform your support identification key , which is : #{ } contribution.payment_id
 br
 br
 | A big thank you,
 br
-| # { ProduceRunSettings [: company_name ] }
+| #{ ProduceRunSettings [: company_name ] }

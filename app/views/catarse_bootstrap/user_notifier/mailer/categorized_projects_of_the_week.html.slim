@@ -1,23 +1,23 @@
 - User = @ notification.user
 - Category = @ notification.category
 
-| Hello # { user.name } ,
+| Hello #{ user.name } ,
 br /
 br /
-| News this week in category # { } category.name_pt of ProduceRun
+| News this week in category #{ } category.name_pt of ProduceRun
 br /
 br /
 . - Category.projects.of_current_week.with_state ( 'online' ) each of the | project |
-  | # { link_to ( project.name , project_by_slug_url (permalink : project.permalink , ref: ' notificacao_subscription_category ')) }
+  | #{ link_to ( project.name , project_by_slug_url (permalink : project.permalink , ref: ' notificacao_subscription_category ')) }
   br
-  | # { } project.headline
+  | #{ } project.headline
   br
   br
 br /
 br /
 | A hug ,
 br /
-| # { ProduceRunSettings [: company_name ] }
+| #{ ProduceRunSettings [: company_name ] }
 br /
 br /
-| # { Link_to ' Unsubscribe ' unsubscribe_category_url ( category ) , target: ' __ blank '} receipt of recent projects that category.
+| #{ Link_to ' Unsubscribe ' unsubscribe_category_url ( category ) , target: ' __ blank '} receipt of recent projects that category.
