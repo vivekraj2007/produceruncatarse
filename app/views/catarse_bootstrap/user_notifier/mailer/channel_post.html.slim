@@ -1,6 +1,6 @@
-- Channel = @ notification.channel_post.channel
-- Post = @ notification.channel_post
-- User = @ notification.user
+- channel = @notification.channel_post.channel
+- post = @notification.channel_post
+- user = @notification.user
 
 = Content_for : email_logo the
   = Image_tag ( channel.image , alt: channel.name )
@@ -9,5 +9,5 @@ br /
 strong = post.title
 == post.email_body_html
 br /
-| View channel: # { link_to channel.name , root_url ( subdomain : channel.permalink ) }
+| View channel: #{ link_to channel.name , root_url ( subdomain : channel.permalink ) }
 br /

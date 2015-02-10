@@ -1,24 +1,24 @@
--contribution = @ notification.contribution
-- Company_name = ProduceRunSettings [: company_name ]
-- Contact_email = ProduceRunSettings [: email_contact ]
-| Hello , < strong> # { contribution.user.display_name } < / strong >
+-contribution = @notification.contribution
+- company_name = CatarseSettings [:company_name ]
+- contact_email = CatarseSettings [:email_contact ]
+| Hello , < strong> #{ contribution.user.display_name } < / strong >
 br
 br
-| Your support for # { link_to contribution.project.name , project_url ( contribution.project ) }
-| Filed for < strong> analysis by # { contribution.payment_method } < / strong >
+| Your support for #{ link_to contribution.project.name , project_url ( contribution.project ) }
+| Filed for < strong> analysis by #{ contribution.payment_method } < / strong >
 br
 br
-| This is a security measure made ​​by # { } contribution.payment_method to prevent fraud and
-| Increase the tranquility of all involved in the transactions that occur in the # { company_name } .
-| It is possible that the # { } contribution.payment_method contact you by phone to confirm the transaction .
+| This is a security measure made ​​by #{ contribution.payment_method } to prevent fraud and
+| Increase the tranquility of all involved in the transactions that occur in the #{ company_name } .
+| It is possible that the #{ contribution.payment_method } contact you by phone to confirm the transaction .
 br
 br
-| Once the # { } contribution.payment_method authorize your payment , we will send another email with confirmation .
+| Once the #{ contribution.payment_method } authorize your payment , we will send another email with confirmation .
 br
 br
-| If you got any questions, please contact us replying to this message or by e -mail # { mail_to contact_email }
+| If you got any questions, please contact us replying to this message or by e -mail #{ mail_to contact_email }
 br
 br
 | A big thank you to you ,
 br
-| # { Company_name }
+| #{ Company_name }

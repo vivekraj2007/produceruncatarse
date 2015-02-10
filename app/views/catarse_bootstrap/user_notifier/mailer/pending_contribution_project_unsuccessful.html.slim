@@ -1,8 +1,8 @@
--- Contribution = @ notification.contribution
-| Hello , # { } contribution.user.name !
+-- Contribution = @notification.contribution
+| Hello , #{ contribution.user.name } !
 br
 br
-| You backed a ProduceRun # { link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) } , but he did not reach the target set in the ProduceRun .
+| You backed a ProduceRun #{ link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) } , but he did not reach the target set in the ProduceRun .
 br
 br
 | < Strong> If you did not find enough backers < / strong >, you can disregard the information in this email.
@@ -11,13 +11,13 @@ br
 | < Strong> If you successfully completed a ProduceRun < / strong > , but have not received confirmation of ProduceRun yet , you should receive a final receipt in the next 24 hours. Soon after, as the project was not funded , you will receive a notification with details on the reimbursement of their support.
 br
 br
-| Remembering that your support of the identification key is: < strong> # { contribution.payment_id } < / strong >
+| Remembering that your support of the identification key is: < strong> #{ contribution.payment_id } < / strong >
 br
 br
-| If you got any questions, please contact us replying to this message or by e -mail # { mail_to ProduceRunSettings [: email_contact ] }
+| If you got any questions, please contact us replying to this message or by e -mail #{ mail_to CatarseSettings [:email_contact ] }
 br
 br
 | Big thanks to you ,
 br
-| # { ProduceRunSettings [: company_name ] }
+| #{ CatarseSettings [:company_name ] }
 

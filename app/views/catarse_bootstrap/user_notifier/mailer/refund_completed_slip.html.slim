@@ -1,38 +1,38 @@
 - contribution = @notification.contribution
-- company_name = ProduceRunSettings[:company_name]
-- contact_email = ProduceRunSettings[:email_contact]
+- company_name = CatarseSettings[:company_name]
+- contact_email = CatarseSettings[:email_contact]
 - user = @notification.contribution.user
 - bank_account = user.bank_account
 
-- Contribution = @ notification.contribution
-- Company_name = ProduceRunSettings [: company_name ]
-- Contact_email = ProduceRunSettings [: email_contact ]
-- User = @ notification.contribution.user
-- Bank_account = user.bank_account
+- contribution = @notification.contribution
+- company_name = CatarseSettings [:company_name ]
+- contact_email = CatarseSettings [:email_contact ]
+- user = @notification.contribution.user
+- bank_account = user.bank_account
 
-| Hello , < strong> # { contribution.user.display_name } < / strong >
+| Hello , < strong> #{ contribution.user.display_name } < / strong >
 br
 br
-| Repayment of his support for the project # { link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } in { # } company_name just been done to the bank account :
+| Repayment of his support for the project #{ link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } in { #} company_name just been done to the bank account :
 br
 br
-| Bank: # { bank_account.try ( : bank ) .to_s }
+| Bank: #{ bank_account.try ( : bank ) .to_s }
 br
-| Agency: # { bank_account.try ( : agency ) }
+| Agency: #{ bank_account.try ( : agency ) }
 br
-| Account: # { bank_account.try ( : account ) } - # { bank_account.try ( : account_digit ) }
+| Account: #{ bank_account.try ( : account ) } - #{ bank_account.try ( : account_digit ) }
 br
-| Holder Name : # { bank_account.try ( : owner_name ) }
+| Holder Name : #{ bank_account.try ( : owner_name ) }
 br
-| CPF: # { bank_account.try ( : owner_document ) }
-br
-br
-| The support of your identification key is: # { } contribution.payment_id
+| CPF: #{ bank_account.try ( : owner_document ) }
 br
 br
-| If you have any questions or had any problems in this process , please contact us replying to this message or by e -mail # { mail_to contact_email } . To expedite service , please enter the identification code .
+| The support of your identification key is: #{ contribution.payment_id }
+br
+br
+| If you have any questions or had any problems in this process , please contact us replying to this message or by e -mail #{ mail_to contact_email } . To expedite service , please enter the identification code .
 br
 br
 | Kind Regards ,
 br
-| # { Company_name }
+| #{ Company_name }

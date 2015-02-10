@@ -1,13 +1,13 @@
 - user =  notification .user
 
-| Hi # { user.name } ,
+| Hi #{ user.name } ,
 br /
 br /
 | In order to further simplify the process of repayments, 
-'From 10/11 # { link_to  ' no longer exist credits  That's why we came here to talk to you.
+'From 10/11 #{ link_to  ' no longer exist credits  That's why we came here to talk to you.
 br /
 br /
-| So we check, you've got to use part of their claims, but still have # { user.display_credits } here. This is money that can help make a difference in a project in which you believe. :-)
+| So we check, you've got to use part of their claims, but still have #{ user.display_credits } here. This is money that can help make a difference in a project in which you believe. :-)
 br /
 br /
 | To support a ProduceRun, the process is the same:
@@ -28,9 +28,9 @@ br /
 br /
 br /
 - user.recommended_projects.limit ( 3 ) .each of the | project |
-  | # { link_to (project.name, project_by_slug_url ( permalink: project.permalink, ref:  ' credits_warning_more_group ' )) }
+  | #{ link_to (project.name, project_by_slug_url ( permalink: project.permalink, ref:  ' credits_warning_more_group ' )) }
   br /
-  | # { project.headline }
+  | #{ project.headline }
   br /
   br /
 br /

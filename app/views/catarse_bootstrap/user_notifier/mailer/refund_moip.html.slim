@@ -1,20 +1,20 @@
 - user =  notification .user
-| Hello # { user.name } , okay?
+| Hello #{ user.name } , okay?
 br
 | You know when you think that piece of money in the pocket of trousers which used not long ago? For this email is for remembering this great feeling. = D
 br
 | For many cases, did not have a simple solution to make the repayment. Now we are in a process to optimize this step. You are part of the first group to which we will make a refund directly to the bank account. :-)
 br
-| For that, we need you to fill out the form below with your bank details: # { link_to  ' http://producerun.com ' , ' http://producerun.com' }
+| For that, we need you to fill out the form below with your bank details: #{ link_to  ' http://producerun.com ' , ' http://producerun.com' }
 br
-| The amount of support that you have made ​​and to be repaid is: $ # { user.contributions.where ( state: ' requested_refund ' ) .sum ( : value ) } .
+| The amount of support that you have made ​​and to be repaid is: $ #{ user.contributions.where ( state: ' requested_refund ' ) .sum ( : value ) } .
 br
 | Unfortunately, as their support was made more than 120 days, we will not refund the fee of the means of payment (card or ticket) and will discount at the time of the deposit. This rate is different according to the used form of payment, and which may vary between 2% and 6% of the support.
 br
 | O (s) number (s) of identification of their support is:
 br
 - user.contributions.where ( state: ' requested_refund ' ) .each the | contribution |
-  | # { contribution.key }
+  | #{ contribution.key }
   br
 | We will make the deposit in your account until November / 2014. That's because we have to do, one by one, almost 8000 operations. We prefer to define a more long-term and deliver as promised than promise something for tomorrow and not keep.
 br

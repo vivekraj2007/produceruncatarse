@@ -1,17 +1,17 @@
 - project =  notification .project
-| Hello # { project.user.name } , okay? Here the speaker is William Pattison!
+| Hello #{ project.user.name } , okay? Here the speaker is William Pattison!
 br /
 br /
-| I saw you created the project sketch # { link_to (project.name, project_by_slug_url ( permalink: project.permalink, ref:  ' notificação_resgate_rascunho ' )) } but not yet sent us. After sending, you will start receiving a special consulting my or our super service team, remembering that all your project information can be edited and you pick the day to start your collection.
+| I saw you created the project sketch #{ link_to (project.name, project_by_slug_url ( permalink: project.permalink, ref:  ' notificação_resgate_rascunho ' )) } but not yet sent us. After sending, you will start receiving a special consulting my or our super service team, remembering that all your project information can be edited and you pick the day to start your collection.
 br /
 br /
-= link_to image_tag( " #{ ProduceRunSettings [ :base_url ] } /assets/producerun_bootstrap/botao_envie.png " , style: " display:block;margin-left:auto;margin-right:auto; " ), project_by_slug_url ( permalink: project.permalink, ref: ' notification_rescue_button ' )   
+= link_to image_tag( " #{ CatarseSettings [ :base_url ] } /assets/producerun_bootstrap/botao_envie.png " , style: " display:block;margin-left:auto;margin-right:auto; " ), project_by_slug_url ( permalink: project.permalink, ref: ' notification_rescue_button ' )   
 br /
 br /
-| If you are not ready to receive a feedback ProduceRun, I recommend taking a walk by our # { link_to ( ' Support Center ' , ProduceRunSettings [ : support_forum ]) } . There you will find the answers to frequently asked questions of our directors, as well as suggestions # { link_to ( ' of what to offer as a reward ' , ProduceRunSettings [ : choose_reward_link ]) } and also # { link_to ( ' tips on how to make a video killer ' , ProduceRunSettings [ : video_how_to_link ]) } .
+| If you are not ready to receive a feedback ProduceRun, I recommend taking a walk by our #{ link_to ( ' Support Center ' , CatarseSettings [ : support_forum ]) } . There you will find the answers to frequently asked questions of our directors, as well as suggestions #{ link_to ( ' of what to offer as a reward ' , CatarseSettings [ : choose_reward_link ]) } and also #{ link_to ( ' tips on how to make a video killer ' , CatarseSettings [ : video_how_to_link ]) } .
 br /
 br /
-| Remember that you can also contact me any time you want directly responding to this message or by e-mail # { mail_to ProduceRunSettings [ : email_contact ] } .
+| Remember that you can also contact me any time you want directly responding to this message or by e-mail #{ mail_to CatarseSettings [ : email_contact ] } .
 br /
 br /
 | Kind Regards,

@@ -1,15 +1,15 @@
-- Project = @ notification.project
-- User = @ notification.user
-- Company_name = ProduceRunSettings [: company_name ]
+- project = @notification.project
+- user = @notification.user
+- company_name = CatarseSettings [:company_name ]
 
-| Hello , < strong> # { user.display_name } < / strong >
+| Hello , < strong> #{ user.display_name } < / strong >
 br
 br
-| This is the reminder that the ProduceRun # { link_to project.name , project_by_slug_url ( project.permalink , ref: ' Notification- reminder ')} ends in 48 hours
+| This is the reminder that the ProduceRun #{ link_to project.name , project_by_slug_url ( project.permalink , ref: ' Notification- reminder ')} ends in 48 hours
 br
 | Now is the time for you to be part of this ; )
 br
 br
 | Thanks ,
 br
-| # { Company_name }
+| #{ Company_name }

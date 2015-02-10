@@ -1,40 +1,40 @@
 p Here are all the payment details :
 p
-  | Supporter name: # { ( contribution.payer_name || contribution.user.display_name ) }
+  | Supporter name: #{ ( contribution.payer_name || contribution.user.display_name ) }
   br /
-  | CPF / CNPJ supporter : # { ( contribution.payer_document || contribution.user.cpf ) }
+  | CPF / CNPJ supporter : #{ ( contribution.payer_document || contribution.user.cpf ) }
   br /
-  | Date of confirmation of support : # { l } contribution.confirmed_at
+  | Date of confirmation of support : #{ l } contribution.confirmed_at
   br /
-  | Payment Option: # { contribution.payment_choice || contribution.payment_method }
+  | Payment Option: #{ contribution.payment_choice || contribution.payment_method }
   br /
-  | Contribution value : # { number_to_currency contribution.value }
+  | Contribution value : #{ number_to_currency contribution.value }
   - If contribution.installments > 1
     br /
-    | Number of parcels : # { } contribution.installments
+    | Number of parcels : #{ contribution.installments }
     br /
-    | Share of value: # { number_to_currency ( contribution.installment_value , precision : 2) }
+    | Share of value: #{ number_to_currency ( contribution.installment_value , precision : 2) }
   br /
   -if contribution.reward.present ?
-    | Selected Reward: # { } contribution.reward.description
+    | Selected Reward: #{ contribution.reward.description }
     br /
-    | Delivery Estimates: # { } contribution.reward.display_deliver_estimate
+    | Delivery Estimates: #{ contribution.reward.display_deliver_estimate }
     br /
-  | Support ID: # { } contribution.payment_id
+  | Support ID: #{ contribution.payment_id }
   br /
-  | Name / Company Name of director : # { contribution.project.user.full_name.presence || contribution.project.user.name.presence }
+  | Name / Company Name of director : #{ contribution.project.user.full_name.presence || contribution.project.user.name.presence }
   br /
-  | CPF / CNPJ director : # { } contribution.project.user.cpf
+  | CPF / CNPJ director : #{ contribution.project.user.cpf }
 
 p
   ' Importantly, the ProduceRun is only mediator of this process ,
   ' So if you have any questions about the ProduceRun or Pricing selected from
-  ' Directly contact the farmer via email # { mail_to contribution.project.user.email } .
+  ' Directly contact the farmer via email #{ mail_to contribution.project.user.email } .
   ' Ah ! Remember to keep this email as it contains important information
   ' Regarding their contribution to the project.
-p If you kept any questions, please contact us replying to this message or by e -mail # { mail_to CatarseSettings [: email_contact ] }
+p If you kept any questions, please contact us replying to this message or by e -mail #{ mail_to CatarseSettings [:email_contact ] }
 
 p
   | A big thank you,
   br /
-  | # { CatarseSettings [: company_name ] }
+  | #{ CatarseSettings [:company_name ] }

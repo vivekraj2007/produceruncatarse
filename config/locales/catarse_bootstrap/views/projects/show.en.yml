@@ -48,7 +48,7 @@ en:
       contribution_states: 
         confirmed: "confirmed" #i18n-GT
         pending: "printed slips" #i18n-GT
-      count_contributed_projects: "supported %{Total} projects" #i18n-GT
+      count_contributed_projects: "supported %{total} projects" #i18n-GT
       funding_period: "Campaign period" #i18n-GT
       menu: 
         about: "about" #i18n-GT
@@ -68,7 +68,7 @@ en:
         without_city: "A project" #i18n-GT
       sidebar: 
         contributions: "support" #i18n-GT
-        goal: "achieved in %{Total}" #i18n-GT
+        goal: "achieved in %{total}" #i18n-GT
     twitter: 
       take_a_look: "Check out the project %{name} in ProduceRun" #i18n-GT
     video_embed: 

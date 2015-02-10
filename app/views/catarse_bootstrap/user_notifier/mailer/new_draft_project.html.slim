@@ -1,21 +1,21 @@
-- Project = @ notification.project
+- project = @notification.project
 | Hey !
 br
 br
-| Another ProduceRun was created in # { ProduceRunSettings [: company_name ] } !
-== " By # { link_to project.user.name , user_url ( project.user ) } "
+| Another ProduceRun was created in #{ CatarseSettings [:company_name ] } !
+== " By #{ link_to project.user.name , user_url ( project.user ) } "
 br
-== " Director 's email: # { } mail_to project.user.email "
+== " Director 's email: #{ mail_to } project.user.email "
 br
 br
 | ProduceRun details below:
 br
 br
 b Name:
-= "# { } Project.name "
+= "#{ Project.name } "
 br
 b Meta :
-= "# { } Project.display_goal "
+= "#{ Project.display_goal } "
 br
 b Related Links List:
 br
@@ -25,7 +25,7 @@ b First supporters :
 br
 = Simple_format ( project.first_contributions )
 br
-b How did the # { CatarseSettings [: company_name ] .downcase } :
+b How did the #{ CatarseSettings [:company_name ] .downcase } :
 br
 = project.traffic_sources
 br

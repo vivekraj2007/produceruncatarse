@@ -1,16 +1,16 @@
-- User = @ notification.user
-- Expiring = ProjectsForHome.expiring
+- user = @notification.user
+- expiring = ProjectsForHome.expiring
 
 | Hello
-- If user.name
-  | , # { User.name } !
+- if user.name
+  | , #{ User.name } !
 
 br /
 br /
 | Welcome to ProduceRun . Connecting you directly to the Farmer !
 br /
 br /
-| Just so you do not forget , your access email is: # { } user.email
+| Just so you do not forget , your access email is: #{ user.email }
 br /
 br /
 | To begin , it is worth knowing that three projects are in the final stretch :
@@ -18,7 +18,7 @@ br /
 br /
 br /
 
-- Expiring.present if?
+- expiring.present if?
   table border = "0" cellpadding = "0" cellspacing = " 0 " width = " 540 " align = "center"
     - Expiring.each the | project |
     tr
@@ -31,11 +31,11 @@ br /
 br /
 center
   = Link_to explore_url , target: ' __blank ' the
-    Image_tag = "# { CatarseSettings [: base_url ] } / assets / catarse_bootstrap / botao_bemvindo_PT_big.png "
+    Image_tag = "#{ CatarseSettings [:base_url ] } / assets / catarse_bootstrap / botao_bemvindo_PT_big.png "
 
 
 br
 br
 | Kind Regards ,
 br
-ProduceRunSettings = [: company_name ]
+CatarseSettings = [:company_name ]

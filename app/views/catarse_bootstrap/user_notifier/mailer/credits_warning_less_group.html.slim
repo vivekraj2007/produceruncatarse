@@ -1,6 +1,6 @@
-- User = @ notification.user
+- user = @notification.user
 
-| Hi } # { user.name ,
+| Hi } #{ user.name ,
 br /
 br /
 | In order to further simplify the process of repayments ,we wanted to talk to you about your credits.
@@ -35,10 +35,10 @@ br /
 | <Strong > ProduceRun Tips < / strong >
 br /
 br /
-- User.recommended_projects.limit ( 3 ) .each do | project |
-  | # { link_to ( project.name , project_by_slug_url (permalink : project.permalink , ref: ' credits_warning_less_group ')) }
+- user.recommended_projects.limit ( 3 ) .each do | project |
+  | #{ link_to ( project.name , project_by_slug_url (permalink : project.permalink , ref: ' credits_warning_less_group ')) }
   br /
-  | # { } project.headline
+  | #{ project.headline }
   br /
   br /
 br /

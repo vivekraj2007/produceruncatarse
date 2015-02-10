@@ -1,3 +1,5 @@
+require 'sidekiq/web'
+
 Catarse::Application.routes.draw do
   def ssl_options
     if Rails.env.production? && CatarseSettings.get_without_cache(:secure_host)
@@ -31,6 +33,7 @@ Catarse::Application.routes.draw do
   mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
   mount CatarseApi::Engine => "/api", as: :catarse_api
 #  mount CatarseWepay::Engine => "/", as: :catarse_wepay
+  mount Sidekiq::Web => '/sidekiq'
 
   get '/post_preview' => 'post_preview#show', as: :post_preview
   resources :categories, only: [] do

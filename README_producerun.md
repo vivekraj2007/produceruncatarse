@@ -4,9 +4,10 @@
 
     rake db:create db:migrate db:seed
 
-You will also need to download and run redis server.
+You will also need to download and run redis server and sidekiq
 
    redis-server
+   sidekiq
 
 # To deploy to heroku
 
@@ -22,6 +23,8 @@ You will also need to download and run redis server.
 
     rails c
     CatarseSettings[:base_domain] = "domain.com"
+    CatarseSettings[:sendgrid_user_name] = "hackandgrow"
+    CatarseSettings[:sendgrid] = "change_this_directly_in_database"
 
 # To test the code, switch back to :pt in config/initializers/locale.rb
 

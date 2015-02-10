@@ -4,23 +4,23 @@
 - channel =  notification .project.last_channel
 
 - project_link = project_by_slug_url ( permalink: project.permalink)
-- company_name =  ProduceRunSettings [ : company_name ]
+- company_name =  CatarseSettings [ : company_name ]
 
 = content_for : email_logo the   
   = image_tag (channel.image, alt: channel.name)
 
 | Hello
 - if user.name 
-  |, # { user.name } !
+  |, #{ user.name } !
 br /
 br /
-| The project # { link_to project.name, project_link, target:  ' __blank '  } is in the air # { channel.name } and can now receive support!
+| The project #{ link_to project.name, project_link, target:  ' __blank '  } is in the air #{ channel.name } and can now receive support!
 | Good luck in this marathon! A collective funding campaign takes work, but it is rewarding!
-| If you did not plan your actions before, do not waste time. The time is now! Now is # { link_to  ' ALL-OR-NOTHING! ' , ' http://support.producerun.com ' , target:  ' __blank ' }
+| If you did not plan your actions before, do not waste time. The time is now! Now is #{ link_to  ' ALL-OR-NOTHING! ' , ' http://support.producerun.com ' , target:  ' __blank ' }
 br /
 br /
 | To talk about communication strategies with our team and receive suggestions on how to act in your campaign, 
-| Reply to this email or send a message to # { mail_to channel.email } . But remember that < strong > you are responsible for
+| Reply to this email or send a message to #{ mail_to channel.email } . But remember that < strong > you are responsible for
 |. Promote the campaign and take care of the project dissemination </ strong > It is your network that will largely of support,
 | This conversation should be seen as an aid.
 br /
@@ -47,25 +47,25 @@ br /
 br /
 | - Change Thumbnail and the Effect phrase of your project
 br /
-| - Studying rules, tips and other information through # { link_to  ' Support Center ' , ProduceRunSettings [ : support_forum ] } of # { company_name } .
+| - Studying rules, tips and other information through #{ link_to  ' Support Center ' , CatarseSettings [ : support_forum ] } of #{ company_name } .
 br /
 br /
-| < strong > If you did not check the # { link_to  ' Support Center ' , ProduceRunSettings [ : support_forum ] target:  ' __blank ' } ,
-| Check it out! The more you know about the details of a campaign in # { company_name } , the better prepared you will be. </ strong >
-| And do not worry, we are here! You can ask questions with us directly responding to this message or by e-mail # { mail_to channel.email }
+| < strong > If you did not check the #{ link_to  ' Support Center ' , CatarseSettings [ : support_forum ] target:  ' __blank ' } ,
+| Check it out! The more you know about the details of a campaign in #{ company_name } , the better prepared you will be. </ strong >
+| And do not worry, we are here! You can ask questions with us directly responding to this message or by e-mail #{ mail_to channel.email }
 br /
 br /
 | And by the way, please </ strong > do not forget to include in your contact list e-mail: </ strong >
-| # { mail_to prevent our messages
+| #{ mail_to prevent our messages
 | Fall in your spam box because the e-mail filters. 
 br /
 br /
 | A hug,
 br /
-| The team # { company_name } and # { channel.name } you want a good campaign !!!!
+| The team #{ company_name } and #{ channel.name } you want a good campaign !!!!
 br /
 br /
-| You are in contact with the care of # { channel.name }
+| You are in contact with the care of #{ channel.name }
 br /
 br /
 | Learn more:

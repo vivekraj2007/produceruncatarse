@@ -1,34 +1,34 @@
-- Contribution = @ notification.contribution
-- User = @ notification.contribution.user
-- Bank_account = user.bank_account
+- contribution = @notification.contribution
+- user = @notification.contribution.user
+- bank_account = user.bank_account
 
-| Hello , # { } contribution.user.name !
+| Hello , #{ contribution.user.name } !
 br
 br
-| Unfortunately design # { link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } that you supported did not reach the target set and was not funded in # { ProduceRunSettings [: company_name ] } .
+| Unfortunately design #{ link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } that you supported did not reach the target set and was not funded in #{ CatarseSettings [:company_name ] } .
 br
 br
 | As its support was made ​​through ticket , we will refund directly to the account within 10 business days .
 br
 br
-| Bank: # { } bank_account.bank.to_s
+| Bank: #{ bank_account.bank.to_s }
 br
-| Agency: # { bank_account.try ( : agency ) }
+| Agency: #{ bank_account.try ( :agency ) }
 br
-| Account: # { bank_account.try ( : account ) } - # { bank_account.try ( : account_digit ) }
+| Account: #{ bank_account.try ( :account ) } - #{ bank_account.try ( :account_digit ) }
 br
-| Holder Name : # { bank_account.try ( : owner_name ) }
+| Holder Name : #{ bank_account.try ( :owner_name ) }
 br
-| CPF: # { bank_account.try ( : owner_document ) }
+| CPF: #{ bank_account.try ( :owner_document ) }
 br
 br
 | Once the refund has been made , you will receive an email confirmation of the operation .
 br
 br
-| If you got any questions, please contact us replying to this message or by e -mail # { mail_to ProduceRunSettings [: email_contact ] }
-| And inform your support identification key , which is : # { } contribution.payment_id
+| If you got any questions, please contact us replying to this message or by e -mail #{ mail_to CatarseSettings [:email_contact ] }
+| And inform your support identification key , which is : #{ contribution.payment_id }
 br
 br
 | A big thank you ,
 br
-| # { ProduceRunSettings [: company_name ] }
+| #{ CatarseSettings [:company_name ] }
