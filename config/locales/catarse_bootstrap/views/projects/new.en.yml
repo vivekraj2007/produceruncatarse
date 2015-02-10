@@ -19,7 +19,7 @@ en:
           disclaimer: "Not all projects submitted will air , our service will evaluate the focus , the feasibility , consistency and the presentation of your project." #i18n-GT
           first: 
             description: "You are creating a draft of your project." #i18n-GT
-            title: "1. Basic information" #i18n-GT
+            title: "1. Enter your producerun Campaign Name" #i18n-GT
           second: 
             description: "Information may be edited below for you at any time , even when your project is in the air." #i18n-GT
             title: "2. History of the project" #i18n-GT
