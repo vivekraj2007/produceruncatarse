@@ -3,7 +3,7 @@
 - Channel = notification .project.last_channel
 
 - Project_link = project_by_slug_url (permalink : project.permalink )
-- Company_name = ProduceRunSettings [: company_name ]
+- Company_name = CatarseSettings [: company_name ]
 
 = Content_for : email_logo the
   = Image_tag ( channel.image , alt: channel.name )
@@ -33,7 +33,7 @@ br /
 strong Option 3:
 | Unfortunately, the draft ProduceRun you sent does not fit the profile #{ } channel.name .
 | Send an email Notifying the refusal . Yes, we know que refusals are always unpleasant .
-'The #{ link_to ' Support Center ', ProduceRunSettings [: support_forum ] target: ' __blank ' } of #{ company_name } and #{ link_to ' proposal ' , channels_about_url ( subdomain : channel.permalink ) , target: ' __blank '}
+'The #{ link_to ' Support Center ', CatarseSettings [: support_forum ] target: ' __blank ' } of #{ company_name } and #{ link_to ' proposal ' , channels_about_url ( subdomain : channel.permalink ) , target: ' __blank '}
 | The #{ } channel.name so you know everything about our prerequisites for the construction of your next project .
 br /
 br /

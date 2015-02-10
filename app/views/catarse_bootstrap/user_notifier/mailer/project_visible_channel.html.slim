@@ -4,7 +4,7 @@
 - channel =  notification .project.last_channel
 
 - project_link = project_by_slug_url ( permalink: project.permalink)
-- company_name =  ProduceRunSettings [ : company_name ]
+- company_name =  CatarseSettings [ : company_name ]
 
 = content_for : email_logo the   
   = image_tag (channel.image, alt: channel.name)
@@ -47,10 +47,10 @@ br /
 br /
 | - Change Thumbnail and the Effect phrase of your project
 br /
-| - Studying rules, tips and other information through #{ link_to  ' Support Center ' , ProduceRunSettings [ : support_forum ] } of #{ company_name } .
+| - Studying rules, tips and other information through #{ link_to  ' Support Center ' , CatarseSettings [ : support_forum ] } of #{ company_name } .
 br /
 br /
-| < strong > If you did not check the #{ link_to  ' Support Center ' , ProduceRunSettings [ : support_forum ] target:  ' __blank ' } ,
+| < strong > If you did not check the #{ link_to  ' Support Center ' , CatarseSettings [ : support_forum ] target:  ' __blank ' } ,
 | Check it out! The more you know about the details of a campaign in #{ company_name } , the better prepared you will be. </ strong >
 | And do not worry, we are here! You can ask questions with us directly responding to this message or by e-mail #{ mail_to channel.email }
 br /
