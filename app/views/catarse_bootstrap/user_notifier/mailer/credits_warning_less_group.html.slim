@@ -38,7 +38,7 @@ br /
 - User.recommended_projects.limit ( 3 ) .each do | project |
   | #{ link_to ( project.name , project_by_slug_url (permalink : project.permalink , ref: ' credits_warning_less_group ')) }
   br /
-  | #{ } project.headline
+  | #{ project.headline }
   br /
   br /
 br /

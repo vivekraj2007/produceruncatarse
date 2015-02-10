@@ -2,7 +2,7 @@
 | Hello , < strong> #{ user.display_name } < / strong >
 br
 br
-| We have seen here that you have $ #{ } user.credits in credits ProduceRun . Here are some farmers ProduceRun's that we thought you might be interested in.
+| We have seen here that you have $ #{ user.credits } in credits ProduceRun . Here are some farmers ProduceRun's that we thought you might be interested in.
 br
 br
 | Down selected some project suggestions especially for you :
@@ -11,7 +11,7 @@ br
 -user.recommended_projects.limit ( 3 ) .each do | project |
   | #{ link_to ( project.name , "#{ CatarseSettings [:base_url ] } / projects / #{ project.to_param } " ) }
   br
-  | #{ } project.headline
+  | #{ project.headline }
   br
   br
 br

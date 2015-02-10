@@ -2,7 +2,7 @@
 - User = @ notification.contribution.user
 - Bank_account = user.bank_account
 
-| Hello , #{ } contribution.user.name !
+| Hello , #{ contribution.user.name } !
 br
 br
 | Unfortunately design #{ link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } that you supported did not reach the target set and was not funded in #{ CatarseSettings [:company_name ] } .
@@ -11,7 +11,7 @@ br
 | As its support was made ​​through ticket , we will refund directly to the account within 10 business days .
 br
 br
-| Bank: #{ } bank_account.bank.to_s
+| Bank: #{ bank_account.bank.to_s }
 br
 | Agency: #{ bank_account.try ( : agency ) }
 br
@@ -26,7 +26,7 @@ br
 br
 br
 | If you got any questions, please contact us replying to this message or by e -mail #{ mail_to CatarseSettings [:email_contact ] }
-| And inform your support identification key , which is : #{ } contribution.payment_id
+| And inform your support identification key , which is : #{ contribution.payment_id }
 br
 br
 | A big thank you ,

@@ -1,6 +1,6 @@
 - Contribution = @ notification.contribution
 
-| Hello , #{ } contribution.user.name !
+| Hello , #{  contribution.user.name} !
 br
 br
 | Unfortunately design #{ link_to ( contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) ) } that you supported did not reach the target set and was not funded in #{ CatarseSettings [:company_name ] } .
@@ -10,7 +10,7 @@ br
 br
 br
 | If you got any questions, please contact us replying to this message or by e -mail #{ mail_to CatarseSettings [:email_contact ] }
-| And inform your support identification key , which is : #{ } contribution.payment_id
+| And inform your support identification key , which is : #{  contribution.payment_id}
 br
 br
 | A big thank you,

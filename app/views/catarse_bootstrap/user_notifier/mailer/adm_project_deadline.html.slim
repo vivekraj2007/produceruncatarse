@@ -3,13 +3,13 @@
 | The project #{ link_to ( project.name , project_by_slug_url ( project.permalink ) ) } just hit your deadline.
 br
 br
-| Project Name : #{ } project.name
+| Project Name : #{ project.name }
 br /
-| Collected Value: #{ } project.display_pledged
+| Collected Value: #{ project.display_pledged }
 br /
-| Date of completion : #{ } project.display_expires_at
+| Date of completion : #{ project.display_expires_at }
 br /
-| Account MoIP : #{ } project.user.moip_login
+| Account MoIP : #{ project.user.moip_login }
 br /
 br /
 ' Banking Data:

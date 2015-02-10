@@ -4,13 +4,13 @@
 | Hello #{ user.name } ,
 br /
 br /
-| News this week in category #{ } category.name_pt of ProduceRun
+| News this week in category #{ category.name_pt } of ProduceRun
 br /
 br /
 . - Category.projects.of_current_week.with_state ( 'online' ) each of the | project |
   | #{ link_to ( project.name , project_by_slug_url (permalink : project.permalink , ref: ' notificacao_subscription_category ')) }
   br
-  | #{ } project.headline
+  | #{ project.headline }
   br
   br
 br /
