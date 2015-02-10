@@ -1,6 +1,6 @@
-- Contribution = @ notification.contribution
-- Bank_account = contribution.user.bank_account
-- Project = contribution.project
+- contribution = @ notification.contribution
+- bank_account = contribution.user.bank_account
+- project = contribution.project
 
 | Hello Community !
 br /
@@ -8,7 +8,7 @@ br /
 | Repayment of support for this ProduceRun #{ link_to ( project.name , project_by_slug_url (permalink : project.permalink ) ) } was not made due to errors in completed bank details :
 br /
 br /
-- If bank_account
+- if bank_account
   | Bank: #{ bank_account.bank.to_s }
   br
   | Agency: #{ bank_account.try ( : agency ) }

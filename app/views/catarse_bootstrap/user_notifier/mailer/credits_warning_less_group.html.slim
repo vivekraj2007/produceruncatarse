@@ -1,4 +1,4 @@
-- User = @ notification.user
+- user = @ notification.user
 
 | Hi } #{ user.name ,
 br /
@@ -35,7 +35,7 @@ br /
 | <Strong > ProduceRun Tips < / strong >
 br /
 br /
-- User.recommended_projects.limit ( 3 ) .each do | project |
+- user.recommended_projects.limit ( 3 ) .each do | project |
   | #{ link_to ( project.name , project_by_slug_url (permalink : project.permalink , ref: ' credits_warning_less_group ')) }
   br /
   | #{ project.headline }

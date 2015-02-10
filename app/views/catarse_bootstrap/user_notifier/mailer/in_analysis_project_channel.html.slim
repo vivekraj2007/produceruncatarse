@@ -1,9 +1,9 @@
-- User = notification .user
-- Project = notification .project
-- Channel = notification .project.last_channel
+- user = notification .user
+- project = notification .project
+- channel = notification .project.last_channel
 
-- Project_link = project_by_slug_url (permalink : project.permalink )
-- Company_name = CatarseSettings [:company_name ]
+- project_link = project_by_slug_url (permalink : project.permalink )
+- company_name = CatarseSettings [:company_name ]
 
 = Content_for : email_logo the
   = Image_tag ( channel.image , alt: channel.name )
