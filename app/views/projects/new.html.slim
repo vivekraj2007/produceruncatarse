@@ -7,248 +7,390 @@
     .col-md-12
       h2.text-center Let's Sell Something
       p.text-center Get Started for free. No credit card required. Make something happen.
-.container
-  .step-wizard.row.text-center
-    .col-md-4.active
-      a href="#"  Basics
-    .col-md-4
-      a href="#"  Pricing
-    .col-md-4
-      a href="#"  Goto Market
+.container role="tabpanel"
+  .row.text-center.step-wizard
+    ul#myTab.nav.nav-tabs role="tablist" 
+      li.col-md-4.active role="presentation" 
+        a#home-tab aria-controls="home" aria-expanded="true" data-toggle="tab" href="#home" role="tab"  Basics
+      li.col-md-4 role="presentation" 
+        a#profile-tab aria-controls="profile" data-toggle="tab" href="#profile" role="tab"  Pricing
+      li.col-md-4 role="presentation" 
+        a#myTabDrop1.dropdown-toggle aria-controls="myTabDrop1-contents" data-toggle="dropdown" href="#"  Goto Market
+
 .container
   .row
     .col-md-12
-      .container-form
-        form
-          .row
-            .col-md-8
-              h3 style="margin:0;"  Let's get started with basics 
-            .col-md-4
-              .form-inline.pull-right
-                .form-group
-                  label.sr-only for="inputPassword2"  Promo Code
-                  input#inputPassword2.form-control placeholder="Password" type="password" /
-                button.btn.btn-default.btn-custom-green type="submit"  Apply      
-          hr/
-         
-        /!.w-row
-          .send-project-content
-            .w-col.w-col-4.send-project-faq
-                ul.w-list-unstyled
-                  li.menu-list-head
-                    h2.caption.bold = t('.faq.titles.support')
-                  li
-                    = link_to t('.faq.links.criteria'), "http://suporte.catarse.me/hc/pt-br/articles/202387638-Diretrizes-para-a-cria%C3%A7%C3%A3o-de-projetos", target: '_blank', class: "alt-link"
+      .tab-content
+        #home.container-form.tab-pane.fade.active.in aria-labelledby="home-tab" role="tabpanel"
+          form
+            #home.row.tab-pane.fade.active.in aria-labelledby="home-tab" role="tabpanel"
+              .col-md-8
+                h3 style="margin:0;"  Let's get started with basics 
+              .col-md-4
+                .form-inline.pull-right
+                  .form-group
+                    label.sr-only for="inputPassword2"  Promo Code
+                    input#inputPassword2.form-control placeholder="Password" type="password" /
+                  button.btn.btn-default.btn-custom-green type="submit"  Apply      
+            hr/
+           
+          /!.w-row
+            .send-project-content
+              .w-col.w-col-4.send-project-faq
+                  ul.w-list-unstyled
+                    li.menu-list-head
+                      h2.caption.bold = t('.faq.titles.support')
+                    li
+                      = link_to t('.faq.links.criteria'), "http://suporte.catarse.me/hc/pt-br/articles/202387638-Diretrizes-para-a-cria%C3%A7%C3%A3o-de-projetos", target: '_blank', class: "alt-link"
 
-                  li
-                    =link_to t('.faq.links.suport_central'), "#{CatarseSettings[:faq_url]}", target: '_blank', class: "alt-link"
+                    li
+                      =link_to t('.faq.links.suport_central'), "#{CatarseSettings[:faq_url]}", target: '_blank', class: "alt-link"
 
-                  li.zendesk_widget
-                    =link_to t('.faq.links.support_contact'), "#{CatarseSettings[:zendesk_url]}/account/dropboxes/#{CatarseSettings[:zendesk_dropbox_id]}", target: '_blank', class: "alt-link"
+                    li.zendesk_widget
+                      =link_to t('.faq.links.support_contact'), "#{CatarseSettings[:zendesk_url]}/account/dropboxes/#{CatarseSettings[:zendesk_dropbox_id]}", target: '_blank', class: "alt-link"
 
-                ul.w-list-unstyled
-                  li.menu-list-head
-                    h2.caption.bold = t('.faq.titles.know_more')
-                  li
-                    =link_to t('.faq.links.how_it_works'), "http://suporte.catarse.me/hc/pt-br/articles/201982466-O-que-%C3%A9-e-como-funciona-o-Catarse-", target: '_blank', class: "alt-link"
+                  ul.w-list-unstyled
+                    li.menu-list-head
+                      h2.caption.bold = t('.faq.titles.know_more')
+                    li
+                      =link_to t('.faq.links.how_it_works'), "http://suporte.catarse.me/hc/pt-br/articles/201982466-O-que-%C3%A9-e-como-funciona-o-Catarse-", target: '_blank', class: "alt-link"
 
-                  li
-                    =link_to t('.faq.links.money'), "http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-", target: '_blank', class: "alt-link"
-                  li
-                    =link_to t('.faq.links.selection'), "http://suporte.catarse.me/hc/pt-br/articles/202446018-Como-funciona-a-sele%C3%A7%C3%A3o-de-projetos-no-Catarse-", target: '_blank', class: "alt-link"
-                  li
-                    =link_to t('.faq.links.all_or_nothing'), "http://suporte.catarse.me/hc/pt-br/articles/202265256-Por-que-o-Tudo-ou-Nada-", target: '_blank', class: "alt-link"
+                    li
+                      =link_to t('.faq.links.money'), "http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-", target: '_blank', class: "alt-link"
+                    li
+                      =link_to t('.faq.links.selection'), "http://suporte.catarse.me/hc/pt-br/articles/202446018-Como-funciona-a-sele%C3%A7%C3%A3o-de-projetos-no-Catarse-", target: '_blank', class: "alt-link"
+                    li
+                      =link_to t('.faq.links.all_or_nothing'), "http://suporte.catarse.me/hc/pt-br/articles/202265256-Por-que-o-Tudo-ou-Nada-", target: '_blank', class: "alt-link"
 
-            .w-col.w-col-8.send-project-form
+              .w-col.w-col-8.send-project-form
         
 
 
   
-        = simple_form_for @project, html: { id: 'project_form', class: 'w-form' } do |form|
-          = render 'devise/shared/alert'
-          .form-group
-            label.title for=""  What category is your goods in?
-            .category-icons
-              ul
-                li.category-button.category-bundles
-                  a.selected href="/sfbay/bundles" 
-                    .glyphs
-                      .category-icon.base
-                      .category-icon.background.bundles_fills
-                      .category-icon.highlight.bundles_shading
-                      .category-icon.outline.bundles_lines
-                    .label Bundles
-                li.category-button.category-summer.fruit
-                  a href="/sfbay/produce" 
-                    .glyphs
-                      .category-icon.base
-                      .category-icon.background.produce_fills
-                      .category-icon.highlight.produce_shading
-                      .category-icon.outline.produce_lines
-                  .label Produce
-                li.category-button.category-eggs.dairy class=("<br />&amp;amp;") 
-                  a href="/sfbay/dairy" 
-                    .glyphs
-                      .category-icon.base
-                      .category-icon.background.dairy_fills
-                      .category-icon.highlight.dairy_shading
-                      .category-icon.outline.dairy_lines
-                    .label Eggs &amp; Dairy
-                li.category-button.category-meats.seafood class=("<br />&amp;amp;") 
-                  a href="/sfbay/meat" 
-                    .glyphs
-                      .category-icon.base
-                      .category-icon.background.meat_fills
-                      .category-icon.highlight.meat_shading
-                      .category-icon.outline.meat_lines
-                    .label Meat &amp; Fish
-                li.category-button.category-baked.goods.sweets class=("<br />&amp;amp;") 
-                  a href="/sfbay/bakery" 
-                    .glyphs
-                      .category-icon.base
-                      .category-icon.background.bakery_fills
-                      .category-icon.highlight.bakery_shading
-                      .category-icon.outline.bakery_lines
-                      .label Bakery
-                li.category-button.category-pantry.staples.drinks class=("<br />&amp;amp;") 
-                  a href="/sfbay/kitchen" 
-                    .glyphs
-                      .category-icon.base
-                      .category-icon.background.kitchen_fills
-                      .category-icon.highlight.kitchen_shading
-                      .category-icon.outline.kitchen_lines
-                    .label Pantry
-                li.category-button.category-snacks
-                  a href="/sfbay/snacks" 
-                    .glyphs
-                      .category-icon.base
-                      .category-icon.background.snacks_fills
-                      .category-icon.highlight.snacks_shading
-                      .category-icon.outline.snacks_lines
-                    .label Snacks
-                li.category-button.category-drinks
-                  a href="/sfbay/drinks" 
-                    .glyphs
-                      .category-icon.base
-                      .category-icon.background.drinks_fills
-                      .category-icon.highlight.drinks_shading
-                      .category-icon.outline.drinks_lines
-                    .label Drinks
-                li.category-button.category-floral.home class="&amp;" 
-                  a href="/sfbay/floral" 
-                    .glyphs
-                      .category-icon.base
-                      .category-icon.background.floral_fills
-                      .category-icon.highlight.floral_shading
-                      .category-icon.outline.floral_lines
-                    .label Floral &amp; Home
-          hr/ 
-          fieldset
-            legend.send-project-form-headline.headline = t('.form.blocks.first.title')
-            p.body-medium = t('.form.blocks.first.description')
-            = form.association :category, label: t('.form.labels.category'), hint: t('.form.hints.category'), input_html: { class: 'w-input text-field' }, prompt: true
-            = form.input :name, as: :string, label: t('.form.labels.name'), hint: t('.form.hints.name'), input_html: { class: 'w-input text-field' }, autofocus: true
-            = form.input :about, as: :text, label: t('.form.labels.about'), hint: t('.form.hints.about').html_safe, input_html: { class: 'w-input text-field text-field-big' }
-            = form.input :permalink, as: :string, label: t('.form.labels.permalink'), hint: t('.form.hints.permalink'), input_html: { class: 'w-input text-field permalink-input' }
-            p.placeholder = t('.form.info.permalink')
+          = simple_form_for @project, html: { id: 'project_form', class: 'w-form' } do |form|
+            = render 'devise/shared/alert'
             .form-group
-              label.title for="exampleInputFile"  Optional image or video
-            .radio
-              label
-                input type="radio" /
-                | Image
-              label
-                input type="radio" /
-                | Video            
-            = form.input :video_url, as: :string, label: t('.form.labels.video_url'), hint: t('.form.hints.video_url'), input_html: { class: 'w-input text-field' }
-            .form-group
-              input#exampleInputFile.filestyle.input-lg data-buttontext=("Choose Image") placeholder=("Campaigns with a pictures 5x more successful...)") type="file" /
-            .checkbox
-              label
-                input type="checkbox" /
-                | Make this private
-            .checkbox
-              label
-                input type="checkbox" /
-                | Show a custom message/ Thank-you when people contribute            
-            = form.input :goal, as: :string, label: t('.form.labels.goal'), hint: t('.form.hints.goal'), input_html: { class: 'w-input text-field text-field-half goal-input' }
-            p.placeholder = t('.form.info.goal')
-            = form.input :online_days, as: :string, label: t('.form.labels.online_days'), hint: t('.form.hints.online_days'), input_html: { class: 'w-input text-field text-field-half' }
-            p.placeholder.days-placeholder = t('.form.info.online_days')
+              label.title for=""  What category is your goods in?
+              .category-icons
+                ul
+                  li.category-button.category-bundles
+                    a.selected href="/sfbay/bundles" 
+                      .glyphs
+                        .category-icon.base
+                        .category-icon.background.bundles_fills
+                        .category-icon.highlight.bundles_shading
+                        .category-icon.outline.bundles_lines
+                      .label Bundles
+                  li.category-button.category-summer.fruit
+                    a href="/sfbay/produce" 
+                      .glyphs
+                        .category-icon.base
+                        .category-icon.background.produce_fills
+                        .category-icon.highlight.produce_shading
+                        .category-icon.outline.produce_lines
+                    .label Produce
+                  li.category-button.category-eggs.dairy class=("<br />&amp;amp;") 
+                    a href="/sfbay/dairy" 
+                      .glyphs
+                        .category-icon.base
+                        .category-icon.background.dairy_fills
+                        .category-icon.highlight.dairy_shading
+                        .category-icon.outline.dairy_lines
+                      .label Eggs &amp; Dairy
+                  li.category-button.category-meats.seafood class=("<br />&amp;amp;") 
+                    a href="/sfbay/meat" 
+                      .glyphs
+                        .category-icon.base
+                        .category-icon.background.meat_fills
+                        .category-icon.highlight.meat_shading
+                        .category-icon.outline.meat_lines
+                      .label Meat &amp; Fish
+                  li.category-button.category-baked.goods.sweets class=("<br />&amp;amp;") 
+                    a href="/sfbay/bakery" 
+                      .glyphs
+                        .category-icon.base
+                        .category-icon.background.bakery_fills
+                        .category-icon.highlight.bakery_shading
+                        .category-icon.outline.bakery_lines
+                        .label Bakery
+                  li.category-button.category-pantry.staples.drinks class=("<br />&amp;amp;") 
+                    a href="/sfbay/kitchen" 
+                      .glyphs
+                        .category-icon.base
+                        .category-icon.background.kitchen_fills
+                        .category-icon.highlight.kitchen_shading
+                        .category-icon.outline.kitchen_lines
+                      .label Pantry
+                  li.category-button.category-snacks
+                    a href="/sfbay/snacks" 
+                      .glyphs
+                        .category-icon.base
+                        .category-icon.background.snacks_fills
+                        .category-icon.highlight.snacks_shading
+                        .category-icon.outline.snacks_lines
+                      .label Snacks
+                  li.category-button.category-drinks
+                    a href="/sfbay/drinks" 
+                      .glyphs
+                        .category-icon.base
+                        .category-icon.background.drinks_fills
+                        .category-icon.highlight.drinks_shading
+                        .category-icon.outline.drinks_lines
+                      .label Drinks
+                  li.category-button.category-floral.home class="&amp;" 
+                    a href="/sfbay/floral" 
+                      .glyphs
+                        .category-icon.base
+                        .category-icon.background.floral_fills
+                        .category-icon.highlight.floral_shading
+                        .category-icon.outline.floral_lines
+                      .label Floral &amp; Home
+            hr/ 
+            fieldset
+              legend.send-project-form-headline.headline = t('.form.blocks.first.title')
+              p.body-medium = t('.form.blocks.first.description')
+              = form.association :category, label: t('.form.labels.category'), hint: t('.form.hints.category'), input_html: { class: 'w-input text-field' }, prompt: true
+              = form.input :name, as: :string, label: t('.form.labels.name'), hint: t('.form.hints.name'), input_html: { class: 'w-input text-field' }, autofocus: true
+              = form.input :about, as: :text, label: t('.form.labels.about'), hint: t('.form.hints.about').html_safe, input_html: { class: 'w-input text-field text-field-big' }
+              = form.input :permalink, as: :string, label: t('.form.labels.permalink'), hint: t('.form.hints.permalink'), input_html: { class: 'w-input text-field permalink-input' }
+              p.placeholder = t('.form.info.permalink')
+              .form-group
+                label.title for="exampleInputFile"  Optional image or video
+              .radio
+                label
+                  input type="radio" /
+                  | Image
+                label
+                  input type="radio" /
+                  | Video            
+              = form.input :video_url, as: :string, label: t('.form.labels.video_url'), hint: t('.form.hints.video_url'), input_html: { class: 'w-input text-field' }
+              .form-group
+                input#exampleInputFile.filestyle.input-lg data-buttontext=("Choose Image") placeholder=("Campaigns with a pictures 5x more successful...)") type="file" /
+              .checkbox
+                label
+                  input type="checkbox" /
+                  | Make this private
+              .checkbox
+                label
+                  input type="checkbox" /
+                  | Show a custom message/ Thank-you when people contribute            
+              = form.input :goal, as: :string, label: t('.form.labels.goal'), hint: t('.form.hints.goal'), input_html: { class: 'w-input text-field text-field-half goal-input' }
+              p.placeholder = t('.form.info.goal')
+              = form.input :online_days, as: :string, label: t('.form.labels.online_days'), hint: t('.form.hints.online_days'), input_html: { class: 'w-input text-field text-field-half' }
+              p.placeholder.days-placeholder = t('.form.info.online_days')
 
-          fieldset
-            legend.send-project-form-headline-with-margin.headline = t('.form.blocks.second.title')
-            p.body-medium = t('.form.blocks.second.description')
+            fieldset
+              legend.send-project-form-headline-with-margin.headline = t('.form.blocks.second.title')
+              p.body-medium = t('.form.blocks.second.description')
+              hr/
+
+              
+
+              
+
+              = form.input :headline, as: :text, label: t('.form.labels.headline'), hint: t('.form.hints.headline'), input_html: { class: 'w-input text-field text-field-medium' }
+
+              = form.input :traffic_sources, as: :select, collection: t('simple_form.collections.project.traffic_sources').values, prompt: t('simple_form.prompts.project.select'), label: t('.form.labels.traffic_sources')
+
+            
+
             hr/
-
             
-
-            
-
-            = form.input :headline, as: :text, label: t('.form.labels.headline'), hint: t('.form.hints.headline'), input_html: { class: 'w-input text-field text-field-medium' }
-
-            = form.input :traffic_sources, as: :select, collection: t('simple_form.collections.project.traffic_sources').values, prompt: t('simple_form.prompts.project.select'), label: t('.form.labels.traffic_sources')
-
-          
-
-          hr/
-          
-          .form-group
-            label.title for=""  Name of your farm organization or campaign co-creator
-            input.form-control.input-lg id="" placeholder=("Eg: Basic Family Farms") type="email" /
-          hr/
-          h4 How your going to deliver the goods?
-          .row
-            .col-md-3
-              .form-group
-                label.title for=""  Your Delivery Method
-            .col-md-4
-              .checkbox
-                label
-                  input type="checkbox" /
-                  | Where your dropping off your goods
-              .google-map
-                img src="/assets/Implement-GPS-data-for-your-Google-MAP.gif" /
-              .form-group
-                .input-group.input-group-lg
-                  span.input-group-btn
-                    button.btn.btn-default type="button"  Go!
-                  input.form-control placeholder=("Your Drop Off Location") type="text" /
-                /! /input-group
-              .form-horizontal
-                .form-group
-                  label.col-sm-2.control-label for=""  Date
-                  .col-sm-10
-                    input.form-control.input-lg id="" placeholder=("05/ 01/ 2015") type="email" /
-              .form-horizontal
-                .form-group
-                  label.col-sm-2.control-label for=""  Time
-                  .col-sm-10
-                    input.form-control.input-lg id="" placeholder=("05:30 PM") type="email" /
-              .form-group
-                textarea.form-control.input-lg placeholder=("Description of your wonderful product to your customers") rows="3" 
-            .col-md-5
-              .checkbox
-                label
-                  input type="checkbox" /
-                  | Ask Customers for their mailing address if shipping
-              .form-group
-                select.form-control.input-lg
-                  option selected=""  Just in my state
-                  option Nationwide
-          hr/
-          .container
+            .form-group
+              label.title for=""  Name of your farm organization or campaign co-creator
+              input.form-control.input-lg id="" placeholder=("Eg: Basic Family Farms") type="email" /
+            hr/
+            h4 How your going to deliver the goods?
             .row
-              .col-md-12.text-center.agree-policy
-                p
-                  | Don't have all the details yet?
-                  br/
-                  | No worries! You can edit your campaign after it's been created.
-                = form.submit t('.form.submit'), class: 'w-button send-project-form-button bt-large', id: 'project_submit'
-                p
-                  | By clicking Create, you are indicating that you have read and
-                  br/
-                  | agree to ProduceRun Terms of Use, Privacy Policies &amp; Stripe's Payment Terms
+              .col-md-3
+                .form-group
+                  label.title for=""  Your Delivery Method
+              .col-md-4
+                .checkbox
+                  label
+                    input type="checkbox" /
+                    | Where your dropping off your goods
+                .google-map
+                  img src="/assets/Implement-GPS-data-for-your-Google-MAP.gif" /
+                .form-group
+                  .input-group.input-group-lg
+                    span.input-group-btn
+                      button.btn.btn-default type="button"  Go!
+                    input.form-control placeholder=("Your Drop Off Location") type="text" /
+                  /! /input-group
+                .form-horizontal
+                  .form-group
+                    label.col-sm-2.control-label for=""  Date
+                    .col-sm-10
+                      input.form-control.input-lg id="" placeholder=("05/ 01/ 2015") type="email" /
+                .form-horizontal
+                  .form-group
+                    label.col-sm-2.control-label for=""  Time
+                    .col-sm-10
+                      input.form-control.input-lg id="" placeholder=("05:30 PM") type="email" /
+                .form-group
+                  textarea.form-control.input-lg placeholder=("Description of your wonderful product to your customers") rows="3" 
+              .col-md-5
+                .checkbox
+                  label
+                    input type="checkbox" /
+                    | Ask Customers for their mailing address if shipping
+                .form-group
+                  select.form-control.input-lg
+                    option selected=""  Just in my state
+                    option Nationwide
+            hr/
+            .container
+              .row
+                .col-md-12.text-center.agree-policy
+                  p
+                    | Don't have all the details yet?
+                    br/
+                    | No worries! You can edit your campaign after it's been created.
+                  = form.submit t('.form.submit'), class: 'w-button send-project-form-button bt-large', id: 'project_submit'
+                  p
+                    | By clicking Create, you are indicating that you have read and
+                    br/
+                    | agree to ProduceRun Terms of Use, Privacy Policies &amp; Stripe's Payment Terms
+        #profile.container-form.tab-pane.fade.in aria-labelledby="home-tab" role="tabpanel"
+          form.text-left.clearfix
+            .row
+              .form-group.label-block.col-lg-4
+                label for="MinCampaignSale" 
+                  Min Number of Campaign Sales(
+                  span data-placement="bottom" data-toggle="tooltip" title="" > ?
+                  
+                input#MinCampaignSale.form-control.input-lg placeholder="0" type="text" /
+                span Items
+              .form-group.label-block.col-lg-4
+                label for="MaxNumberAvailable"  Max Number Available(Optional)
+                input#MaxNumberAvailable.form-control.input-lg placeholder="0" type="text" /
+                span Items
+            h3.text-left Pricing Options
+            .row
+              img.col-sm-2 alt="" src="http://placehold.it/150x150" /
+              .col-sm-2
+                .form-group
+                  label for="ProductName"  Product Option
+                  label.sr-only for="ProductName"  ProductName
+                  input#ProductName.form-control placeholder=("Eg; Weekly Produce Box") type="text" /
+                .form-group
+                  label.sr-only for="ProductDetail"  Option Description
+                  textarea.form-control placeholder=("Option Description") rows="3" 
+              .col-sm-1.label-block
+                label for="price"  Price
+                input#price.form-control placeholder="Price" type="text" /
+              .col-sm-1.label-block
+                label for="limit"  Limit
+                input#limit.form-control min="1" step="1" type="number" value="3" /
+              .col-sm-1.label-block
+                label for="backers"  Backers
+                input#backers.form-control min="1" step="1" type="number" value="3" /
+              .col-sm-1.label-block
+                label data-placement="top" data-toggle="tooltip" for="recurring" title=("Please note: Recurring prices will be billed monthly so don't forgot to do a monthly price")  Recurring
+                select#recurring.form-control
+                  option value="y"  Yes
+                  option value="n"  No
+              .col-sm-1.label-block
+                label for="period"  Period
+                select#period.form-control
+                  option value="M"  Monthly
+                  option value="Q"  Quarterly
+                  option value="Y"  Yearly
+              .col-sm-1.label-block
+                label for="times"  Times
+                input#times.form-control min="1" step="1" type="number" value="3" /
+              .col-sm-1.label-block
+                label for="signupfee"  SignUpFee
+                input#signupfee.form-control placeholder="$0" type="text" /
+              .col-sm-1.label-block
+                label for="deliveryfee"  DeliveryFee
+                input#deliveryfee.form-control placeholder="$0" type="text" /
+            .row
+              img.col-sm-2 alt="" src="http://placehold.it/150x150" /
+              .col-sm-2
+                .form-group
+                  label for="ProductName"  Product Option
+                  label.sr-only for="ProductName"  ProductName
+                  input#ProductName.form-control placeholder=("Eg; Weekly Produce Box") type="text" /
+                .form-group
+                  label.sr-only for="ProductDetail"  Option Description
+                  textarea.form-control placeholder=("Option Description") rows="3" 
+              .col-sm-1.label-block
+                label for="price"  Price
+                input#price.form-control placeholder="Price" type="text" /
+              .col-sm-1.label-block
+                label for="limit"  Limit
+                input#limit.form-control min="1" step="1" type="number" value="3" /
+              .col-sm-1.label-block
+                label for="backers"  Backers
+                input#backers.form-control min="1" step="1" type="number" value="3" /
+              .col-sm-1.label-block
+                label data-placement="top" data-toggle="tooltip" for="recurring" title=("Please note: Recurring prices will be billed monthly so don't forgot to do a monthly price")  Recurring
+                select#recurring.form-control
+                  option value="y"  Yes
+                  option value="n"  No
+              .col-sm-1.label-block
+                label for="period"  Period
+                select#period.form-control
+                  option value="M"  Monthly
+                  option value="Q"  Quarterly
+                  option value="Y"  Yearly
+              .col-sm-1.label-block
+                label for="times"  Times
+                input#times.form-control min="1" step="1" type="number" value="3" /
+              .col-sm-1.label-block
+                label for="signupfee"  SignUpFee
+                input#signupfee.form-control placeholder="$0" type="text" /
+              .col-sm-1.label-block
+                label for="deliveryfee"  DeliveryFee
+                input#deliveryfee.form-control placeholder="$0" type="text" /
+            button.send-project-form-button.bt-large.btn-lg + Add New Price Point
+            hr/
+            h2.text-center Your Best Contact Details
+            .form-horizontal
+              .form-group
+                label.col-sm-2.control-label.text-right for="_name"  Name
+                .col-sm-4
+                  input#_name.form-control placeholder=("Will Pattion") type="text" /
+              .form-group
+                label.col-sm-2.control-label.text-right for="farm_address"  Farm Address
+                .col-sm-4
+                  textarea#farm_address.form-control placeholder=("Pattison Rd") type="text" 
+              .form-group
+                label.col-sm-2.control-label.text-right for="office_phone"  Office Phone
+                .col-sm-4
+                  input#office_phone.form-control placeholder=("319 740 7002") type="text" /
+              .form-group
+                label.col-sm-2.control-label.text-right for="cell_phone"  Cell Phone
+                .col-sm-4
+                  input#cell_phone.form-control placeholder=("319 740 7002") type="text" /
+              .form-group
+                label.col-sm-2.control-label.text-right for="email_address"  Email Address
+                .col-sm-4
+                  input#email_address.form-control placeholder="will@producerun.com" type="text" /
+            hr/
+            hr/
+            .container
+              .row
+                .col-md-12.text-center.agree-policy
+                  p
+                    Don't have all the details yet?
+                    br/
+                    | No worries! You can edit your campaign after it's been created.
+                    
+                  p
+                    | By clicking Create, you are indicating that you have read and
+                    br/
+                    | agree to ProduceRun Terms of Use, Privacy Policies &amp; Stripe's Payment Terms
 
+
+
+  
+
+     
+          
 = render 'shared/footer_big'
 
+javascript:
+  $('#myTab a[href="#profile"]').tab('show')

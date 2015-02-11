@@ -116,14 +116,20 @@ a:hover { color: #1a7f2e; text-decoration: none;}
 .produce-delivery-date h5 {
 	text-transform: uppercase;
 }
-.step-wizard > .col-md-4 {
+.step-wizard .nav-tabs { border-bottom: 0; }
+.step-wizard > ul li.col-md-4 {
 	margin: 20px 0;	
 }
-.step-wizard > div.active{
+.step-wizard > ul li.active{
 	
 	position: relative;
 }
-.step-wizard > div > a {
+.step-wizard > ul > li > a,
+.step-wizard > ul > li > a:hover,
+
+.step-wizard > ul > li.active > a,
+.step-wizard > ul > li.active > a:focus, 
+.step-wizard > ul > li.active > a:hover {
 	font-size: 2em;
 	padding: 15px 0;
 	width: 100%;
@@ -133,10 +139,10 @@ a:hover { color: #1a7f2e; text-decoration: none;}
 	border-radius: 10px;
 	border: 5px solid #cfd6dc;
 }
-.step-wizard > div.active a {
+.step-wizard > ul > li.active > a {
 	background: #f5f8fa;
 }
-.step-wizard > div.active:after {
+.step-wizard > ul > li.active:after {
 	z-index: 1;
 	bottom: -22px;
 	border-right: 15px solid transparent;
@@ -150,7 +156,7 @@ a:hover { color: #1a7f2e; text-decoration: none;}
 	left: 50%;
 	margin-left: -16px;
 }
-.step-wizard > div > a:hover {
+.step-wizard > li > a:hover {
 	background: #f5f8fa;
 }
 
