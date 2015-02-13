@@ -44,7 +44,7 @@ en:
           rejected: "This project was not accepted." #i18n-GT
           successful: "This project was successful and was funded in %{date}" #i18n-GT
           waiting_funds: "Awaiting confirmation slips to know if this project will be funded ." #i18n-GT
-        submit: "Support this project" #i18n-GT
+        submit: "Buy" #i18n-GT
       contribution_states: 
         confirmed: "confirmed" #i18n-GT
         pending: "printed slips" #i18n-GT
@@ -52,7 +52,7 @@ en:
       funding_period: "Campaign period" #i18n-GT
       menu: 
         about: "about" #i18n-GT
-        add_reward: "Add reward" #i18n-GT
+        add_reward: "Pricing" #i18n-GT
         comments: "reviews" #i18n-GT
         contributions: "supports" #i18n-GT
         edit: "edition" #i18n-GT

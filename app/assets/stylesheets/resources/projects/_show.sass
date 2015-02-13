@@ -105,16 +105,15 @@
         font-size: 12px
         font-family: "Lato"
     .project_image
-      +grid(2)
+      width: 100%
       padding-top:  40px
       padding-bottom: 40px
       img
-        max-width: 90px
-        max-height: 67px
+        width: 100%
+        
     .section_header
-      +grid(14)
       padding-top:  40px
-      padding-bottom: 40px
+      padding-bottom: 0px
       h1
         color: #333
         font-family: "Lato"
@@ -271,7 +270,7 @@
             float: left
             width: 240px
             padding: 15px 15px 15px 40px
-            background: url($images_path+'reward_box.png') left top no-repeat #F3F3F3
+            background: url($images_path+'reward_box.png') left top no-repeat
             .value
               font-family: "Lato"
               font-weight: 700
@@ -309,7 +308,7 @@
         border-bottom: 1px dotted #CCCCCC
         li
           +opacity(0.8)
-          float: left
+          float: none
           margin-right: 5px
           a
             +transition(all, 0.5s)
@@ -333,9 +332,13 @@
             &.twitter
               width: 16px
               background: url($images_path+'social_icons.png') left -54px no-repeat
+
+    .new_statics 
+      width: 100%
+      float: none
       #rewards
         .box
-          background: #F3F3F3
+          background: none
           width: 225px
           padding: 20px 20px 20px 35px
           margin-bottom: 20px
@@ -439,18 +442,19 @@
                 cursor: pointer
       .info
         #pledge
-          background: #F3F3F3
+          background: none
         .statistics
-          background: #F3F3F3
-          width: 240px
+          background: none
+          width: 100%
           float: left
           padding: 20px 20px 0 20px
           .item
             font-family: Arial
             font-size: 16px
             color: #444
-            padding-left: 65px
+            padding-left: 0
             margin-bottom: 20px
+            text-align: center
             p
               white-space: nowrap
               font-family: "Lato"
@@ -458,21 +462,23 @@
               font-size: 36px
               color: #444
               text-shadow: 1px 1px white
+              padding-top: 30px
+              margin-bottom: 0
             em
               font-family: "Lato"
               font-size: 14px
               color: #444
               text-shadow: 1px 1px white
             &.contributions
-              background: url($images_path+"sidebar_contributions_icon26x19.png") left center no-repeat
+              background: url($images_path+"sidebar_contributions_icon26x19.png") top center no-repeat
             &.goal
-              background: url($images_path+"goal_icon36x17.png") left center no-repeat
+              background: url($images_path+"goal_icon36x17.png") top center no-repeat
             &.time
-              background: url($images_path+"time_icon19x30.png") left center no-repeat
+              background: url($images_path+"time_icon19x30.png") top center no-repeat
         #condition
           background: url($images_path+"back_statistics.gif") left top repeat-x
-          width: 260px
-          height: 30px
+          width: 100%
+          height: auto
           float: left
           padding: 11px 10px 10px
           &.successful
@@ -493,7 +499,7 @@
             color: #666666
             text-shadow: 1px 1px white
         #pledge
-          width: 280px
+          width: auto
           float: left
           padding-top: 20px
           padding-bottom: 20px
@@ -504,7 +510,7 @@
             display: block
             margin: 0 auto
             background: url($images_path+"submit_back_icon25x22.png") 20px center no-repeat $light_green
-            width: 245px
+            width: 150px
             height: 55px
             border: none
             text-indent: 30px
@@ -805,3 +811,14 @@
         font-weight: bold
       i
         font-style: italic
+.avatar-new
+  .avatar_wrapper
+    width: auto!important
+
+.campaign-fund-status-wrapper 
+  background: #f3f3f3
+  position: relative
+  border: 2px solid #cfd6dc
+  border-radius: 10px
+  h3
+    padding: 0 15px
