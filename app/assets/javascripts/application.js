@@ -23,5 +23,6 @@
 //= require_tree ./lib
 //= require_tree ./app
 //= require ./lib/bootstrap-filestyle.js
+//= require ./lib/bootstrap-new.min.js
 
 
