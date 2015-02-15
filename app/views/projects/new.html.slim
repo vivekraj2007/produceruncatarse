@@ -74,7 +74,8 @@
               .category-icons
                 ul
                   li.category-button.category-bundles
-                    a.selected href="/sfbay/bundles" 
+                    - bundle_cat_id = Category.find_by!(name_en: 'Bundles').id
+                    a class=('selected' if bundle_cat_id==@project.category_id) href="#" data-category-id="#{bundle_cat_id}" 
                       .glyphs
                         .category-icon.base
                         .category-icon.background.bundles_fills
@@ -82,7 +83,8 @@
                         .category-icon.outline.bundles_lines
                       .label Bundles
                   li.category-button.category-summer.fruit
-                    a href="/sfbay/produce" 
+                    - fruit_cat_id = Category.find_by!(name_en: 'Produce').id
+                    a href="#" class=("selected" if fruit_cat_id == @project.category_id) data-category-id="#{fruit_cat_id}" 
                       .glyphs
                         .category-icon.base
                         .category-icon.background.produce_fills
@@ -90,7 +92,8 @@
                         .category-icon.outline.produce_lines
                     .label Produce
                   li.category-button.category-eggs.dairy class=("<br />&amp;amp;") 
-                    a href="/sfbay/dairy" 
+                    - dairy_cat_id = Category.find_by!(name_en: 'Eggs & Dairy').id
+                    a href="#" class=("selected" if dairy_cat_id == @project.category_id) data-category-id="#{dairy_cat_id}" 
                       .glyphs
                         .category-icon.base
                         .category-icon.background.dairy_fills
@@ -98,7 +101,8 @@
                         .category-icon.outline.dairy_lines
                       .label Eggs &amp; Dairy
                   li.category-button.category-meats.seafood class=("<br />&amp;amp;") 
-                    a href="/sfbay/meat" 
+                    - meat_cat_id = Category.find_by!(name_en: 'Meat & Fish').id
+                    a href="#" class=("selected" if meat_cat_id == @project.category_id) data-category-id="#{meat_cat_id}"  
                       .glyphs
                         .category-icon.base
                         .category-icon.background.meat_fills
@@ -106,7 +110,8 @@
                         .category-icon.outline.meat_lines
                       .label Meat &amp; Fish
                   li.category-button.category-baked.goods.sweets class=("<br />&amp;amp;") 
-                    a href="/sfbay/bakery" 
+                    - bakery_cat_id = Category.find_by!(name_en: 'Bakery').id
+                    a href="#" class=("selected" if bakery_cat_id == @project.category_id) data-category-id="#{bakery_cat_id}" 
                       .glyphs
                         .category-icon.base
                         .category-icon.background.bakery_fills
@@ -114,7 +119,8 @@
                         .category-icon.outline.bakery_lines
                         .label Bakery
                   li.category-button.category-pantry.staples.drinks class=("<br />&amp;amp;") 
-                    a href="/sfbay/kitchen" 
+                    - pantry_cat_id = Category.find_by!(name_en: 'Pantry').id
+                    a href="#" class=("selected" if pantry_cat_id == @project.category_id) data-category-id="#{pantry_cat_id}" 
                       .glyphs
                         .category-icon.base
                         .category-icon.background.kitchen_fills
@@ -122,7 +128,8 @@
                         .category-icon.outline.kitchen_lines
                       .label Pantry
                   li.category-button.category-snacks
-                    a href="/sfbay/snacks" 
+                    - snacks_cat_id = Category.find_by!(name_en: 'Snacks').id
+                    a href="#" class=("selected" if snacks_cat_id == @project.category_id) data-category-id="#{snacks_cat_id}" 
                       .glyphs
                         .category-icon.base
                         .category-icon.background.snacks_fills
@@ -130,7 +137,8 @@
                         .category-icon.outline.snacks_lines
                       .label Snacks
                   li.category-button.category-drinks
-                    a href="/sfbay/drinks" 
+                    - drinks_cat_id =Category.find_by!(name_en: 'Drinks').id
+                    a href="#" class=("selected" if drinks_cat_id == @project.category_id) data-category-id="#{drinks_cat_id}" 
                       .glyphs
                         .category-icon.base
                         .category-icon.background.drinks_fills
@@ -138,7 +146,8 @@
                         .category-icon.outline.drinks_lines
                       .label Drinks
                   li.category-button.category-floral.home class="&amp;" 
-                    a href="/sfbay/floral" 
+                    - floral_cat_id = Category.find_by!(name_en: 'Floral & Home').id
+                    a href="#" class=("selected" if floral_cat_id == @project.category_id) data-category-id="#{floral_cat_id}" 
                       .glyphs
                         .category-icon.base
                         .category-icon.background.floral_fills
@@ -149,7 +158,7 @@
             fieldset
               legend.send-project-form-headline.headline = t('.form.blocks.first.title')
               p.body-medium = t('.form.blocks.first.description')
-              = form.association :category, label: t('.form.labels.category'), hint: t('.form.hints.category'), input_html: { class: 'w-input text-field' }, prompt: true
+              = form.hidden_field :category_id
               = form.input :name, as: :string, label: t('.form.labels.name'), hint: t('.form.hints.name'), input_html: { class: 'w-input text-field' }, autofocus: true
               = form.input :about, as: :text, label: t('.form.labels.about'), hint: t('.form.hints.about').html_safe, input_html: { class: 'w-input text-field text-field-big' }
               = form.input :permalink, as: :string, label: t('.form.labels.permalink'), hint: t('.form.hints.permalink'), input_html: { class: 'w-input text-field permalink-input' }
@@ -411,5 +420,14 @@
           
 = render 'shared/footer_big'
 
-javascript:
-  $('#myTab a[href="#profile"]').tab('show')
+= content_for :page_javascript do
+  javascript:
+    //$('#myTab a[href="#profile"]').tab('show');
+
+    $('[data-category-id]').click(function(e) {
+      e.preventDefault();
+      $('#project_category_id').val(this.dataset.categoryId);
+      $('[data-category-id]').removeClass('selected');
+      $(this).addClass('selected');
+      LOG && console.log("data-category-id "+this.dataset.categoryId);
+    });

@@ -2,6 +2,7 @@
 
 puts 'Seeding the database...'
 
+# if you change categories, please update on app/views/projects/new.html.slim page also
 [
   { pt: 'Opt1', en: 'Bundles' },
   { pt: 'Opt2',en: 'Produce' },
