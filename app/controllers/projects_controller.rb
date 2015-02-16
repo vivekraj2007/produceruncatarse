@@ -41,6 +41,7 @@ class ProjectsController < ApplicationController
     @project = Project.new params[:project].merge(user: current_user)
     authorize @project
     create! { project_by_slug_path(@project.permalink) }
+    @project.send_to_analysis unless @project.new_record?
   end
 
   def destroy
