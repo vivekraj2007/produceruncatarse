@@ -462,6 +462,16 @@ margin:0 20px
   margin-right: 0;
   display:block;
 }
+
+#myModal .modal-backdrop { display: none; }
+.modal-header .close {
+margin-top: 2px;
+position: absolute;
+right: 15px;
+}
+.got-market-info p { padding: 5px 0; margin-bottom: 0;}
+.got-market-info li { padding: 10px 0 0 25px; position: relative}
+.got-market-info li span.glyphicon { position: absolute; left: 0; top: 12px}
 .footer-links ul {
 	padding-left:0;
 }

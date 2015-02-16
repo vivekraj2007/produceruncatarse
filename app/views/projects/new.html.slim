@@ -15,7 +15,7 @@
       li.col-md-4 role="presentation" 
         a#profile-tab aria-controls="profile" data-toggle="tab" href="#profile" role="tab"  Pricing
       li.col-md-4 role="presentation" 
-        a#myTabDrop1.dropdown-toggle aria-controls="myTabDrop1-contents" data-toggle="dropdown" href="#"  Goto Market
+        a#myTabDrop1 href="#myModal" data-toggle="modal"  Goto Market
 
 .container
   .row
@@ -415,7 +415,32 @@
 
 
   
-
+#myModal.modal.hide.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" 
+  .modal-header
+    button.close aria-hidden="true" data-dismiss="modal" type="button"  ×
+    h3#myModalLabel Your Campaign is ready!
+  .modal-body.got-market-info
+    p Before you start sharing:
+    ul
+      li 
+        span.glyphicon.glyphicon-info-sign aria-hidden="true"
+        invite some close friends and family to contribute first it's better to have a few seed contributions before you share it to the masses
+    p A few more things:
+    ul
+      li
+        span.glyphicon.glyphicon-info-sign aria-hidden="true"  
+        Important payment and notifications will be sent to will_pattison@hotmail.com
+      li
+        span.glyphicon.glyphicon-usd aria-hidden="true" 
+        To receive the funds, simply provide us with your bank information anytime before your Producerun ends
+      li
+        span.glyphicon.glyphicon-cog aria-hidden="true"  
+        To edit your campaign, download contributor information, or find other useful tips, look under "Admin Tools" in the upper right hand corner of the page
+      li
+        span.glyphicon.glyphicon-info-sign aria-hidden="true" 
+        Get real-time updates and be notified when you have new contributors, comments and more. 
+  .modal-footer.text-center
+    button.btn aria-hidden="true" data-dismiss="modal"  Close
      
           
 = render 'shared/footer_big'
