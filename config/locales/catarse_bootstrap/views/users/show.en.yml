@@ -10,7 +10,7 @@ en:
     credits: 
       index: 
         contribution_date: "Support Date" #i18n-GT
-        current_credits_html: "Your current balance is < span id = \" current_credits \"> %{credits} < / span > in credits ." #i18n-GT
+        current_credits_html: "Your current balance is <span id=\"current_credits\"> %{credits} </span> in credits." #i18n-GT
         important_html: "For all reimbursement rules and procedures, <a href='http://suporte.ProduceRun.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos'" #i18n-GT
         insufficient_credits: "You do not have enough credits to achieve this reversal ." #i18n-GT
         project: "project" #i18n-GT
@@ -39,7 +39,7 @@ en:
       bank_account_title: "bank details" #i18n-GT
       bio_limit: "140 characters" #i18n-GT
       change_password: "Change my password" #i18n-GT
-      current_password_hint: "<i > For the password to be changed you need to confirm your current password . < / i>" #i18n-GT
+      current_password_hint: "<i>For the password to be changed you need to confirm your current password.</i>" #i18n-GT
       deactivate: "Disable my account" #i18n-GT
       deactivate_confirm: "You want to disable this account ?" #i18n-GT
       deactivate_hint: "All your support will be converted into anonymous support , your data will not be visible , you will exit the system and your account will be permanently disabled ." #i18n-GT
@@ -53,7 +53,7 @@ en:
       my_facebook: "Integration with facebook" #i18n-GT
       newsletter: "I want to receive news from ProduceRun by email" #i18n-GT
       other_link: "link its website" #i18n-GT
-      password_hint: "<i > Leave blank if you do not want to change your password . < / i>" #i18n-GT
+      password_hint: "<i>Leave blank if you do not want to change your password.</i>" #i18n-GT
       social_info: "Contact Information" #i18n-GT
       submit: "send" #i18n-GT
       submit_text: "Choose your image" #i18n-GT

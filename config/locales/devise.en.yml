@@ -62,7 +62,7 @@ en:
       new: 
         google_step_1: "1 - Click %{link}" #i18n-GT
         google_step_2: "2 - Follow the next steps to create a new password." #i18n-GT
-        google_warning_html: "If you used an account of the < strong> Google < / strong > :" #i18n-GT
+        google_warning_html: "If you used an account of the <strong>Google</strong> :" #i18n-GT
         login_subtitle: "If you already have an account" #i18n-GT
         login_title: "Login" #i18n-GT
         register_subtitle: "Use your e -mail" #i18n-GT

@@ -16,7 +16,7 @@ en:
         choose_payment_subtitle: "Select below a form of payment" #i18n-GT
         cpf: "To prosseguir , please report :" #i18n-GT
         credits_notice_html: "This will be paid with their claims." #i18n-GT
-        credits_preview_html: "You have < strong> %{credits} < / strong > in credits to make this support < strong> until the day 10/11 < / strong > as <a href = ' http : //blog.ProduceRun.me/simplificacao" #i18n-GT
+        credits_preview_html: "You have <strong>%{credits}</strong> in credits to make this support <strong>until the day 10/11 </strong> as <a href='http://blog.ProduceRun.me/simplificacao" #i18n-GT
         credits_submit: "make Payment" #i18n-GT
         credits_title: "Pay with credits" #i18n-GT
         form_labels: 
@@ -36,8 +36,8 @@ en:
         payment_boleto: "Payment with boletus" #i18n-GT
         payment_card: "Payment with credit card" #i18n-GT
         payment_save_card: "I want to save my credit card to facilitate future support ." #i18n-GT
-        review_with_reward_html: "You will support with < strong> %{value} < / strong > and earn the following rewards :" #i18n-GT
-        review_without_reward_html: "You will support with < strong> %{value} < / strong > and do not want any reward for their support." #i18n-GT
+        review_with_reward_html: "You will support with <strong>%{value}</strong> and earn the following rewards :" #i18n-GT
+        review_without_reward_html: "You will support with <strong>%{value}</strong> and do not want any reward for their support." #i18n-GT
         reward_sold_out: "This reward is exhausted ." #i18n-GT
         select_account: "You will be redirected to your bank's website :" #i18n-GT
         select_boleto: "To continue, please select :" #i18n-GT

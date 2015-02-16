@@ -3,7 +3,7 @@ en:
   formtastic: 
     hints: 
       contribution: 
-        credits: "You have < strong> %{credits} < / strong > in credits and can support up to this value without having to make a new payment ." #i18n-GT
+        credits: "You have <strong>%{credits}</strong> in credits and can support up to this value without having to make a new payment ." #i18n-GT
       project: 
         about: "Tell us a little about your inspiration to undertake the project , its history and what will be delivered to the end ." #i18n-GT
         category: "Before sending your design , explore and be inspired with other projects that have gone through the site ." #i18n-GT
