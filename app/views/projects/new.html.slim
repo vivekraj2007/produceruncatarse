@@ -91,7 +91,7 @@
                         .category-icon.highlight.produce_shading
                         .category-icon.outline.produce_lines
                     .label Produce
-                  li.category-button.category-eggs.dairy class=("<br />&amp;amp;") 
+                  li.category-button.category-eggs.dairy
                     - dairy_cat_id = Category.find_by!(name_en: 'Eggs & Dairy').id
                     a href="#" class=("selected" if dairy_cat_id == @project.category_id) data-category-id="#{dairy_cat_id}" 
                       .glyphs
@@ -100,7 +100,7 @@
                         .category-icon.highlight.dairy_shading
                         .category-icon.outline.dairy_lines
                       .label Eggs &amp; Dairy
-                  li.category-button.category-meats.seafood class=("<br />&amp;amp;") 
+                  li.category-button.category-meats.seafood 
                     - meat_cat_id = Category.find_by!(name_en: 'Meat & Fish').id
                     a href="#" class=("selected" if meat_cat_id == @project.category_id) data-category-id="#{meat_cat_id}"  
                       .glyphs
@@ -109,7 +109,7 @@
                         .category-icon.highlight.meat_shading
                         .category-icon.outline.meat_lines
                       .label Meat &amp; Fish
-                  li.category-button.category-baked.goods.sweets class=("<br />&amp;amp;") 
+                  li.category-button.category-baked.goods.sweets 
                     - bakery_cat_id = Category.find_by!(name_en: 'Bakery').id
                     a href="#" class=("selected" if bakery_cat_id == @project.category_id) data-category-id="#{bakery_cat_id}" 
                       .glyphs
@@ -118,7 +118,7 @@
                         .category-icon.highlight.bakery_shading
                         .category-icon.outline.bakery_lines
                         .label Bakery
-                  li.category-button.category-pantry.staples.drinks class=("<br />&amp;amp;") 
+                  li.category-button.category-pantry.staples.drinks 
                     - pantry_cat_id = Category.find_by!(name_en: 'Pantry').id
                     a href="#" class=("selected" if pantry_cat_id == @project.category_id) data-category-id="#{pantry_cat_id}" 
                       .glyphs
@@ -145,7 +145,7 @@
                         .category-icon.highlight.drinks_shading
                         .category-icon.outline.drinks_lines
                       .label Drinks
-                  li.category-button.category-floral.home class="&amp;" 
+                  li.category-button.category-floral.home 
                     - floral_cat_id = Category.find_by!(name_en: 'Floral & Home').id
                     a href="#" class=("selected" if floral_cat_id == @project.category_id) data-category-id="#{floral_cat_id}" 
                       .glyphs
