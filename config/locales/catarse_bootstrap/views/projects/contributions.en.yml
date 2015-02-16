@@ -28,7 +28,7 @@ en:
           payment_card_source: "Security code" #i18n-GT
         installment_with_tax: "without interest" #i18n-GT
         insufficient_credits: "You have%{credits} credits." #i18n-GT
-        live_in_brazil: "I live in Brazil ." #i18n-GT
+        live_in_brazil: "I live in USA ." #i18n-GT
         number_card: "Card data" #i18n-GT
         owner_card: "Cardholder data" #i18n-GT
         pagarme_warning_html: "The ProduceRun is in testing phase of a new means of payment that facilitate financial support and the possible repayment of the amounts to supporters ." #i18n-GT

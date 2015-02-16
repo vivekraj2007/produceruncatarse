@@ -8,9 +8,6 @@
         / We use the URL in the helper bellow to redirect to a HTTPS page if it's configured
         = semantic_form_for @contribution, url: project_contributions_url(@project), html: { id: 'contribution_form' } do |form|
           = form.inputs do
-            li
-              label Quantities
-              input.form-control type="text"
             = hidden_field_tag 'credits', current_user.credits.to_i
             = form.input :referal_link, as: :hidden, input_html: { value: referal_link }
             = form.label :value, t('formtastic.labels.contribution.value')
@@ -18,6 +15,9 @@
             = form.input :value, required: true, as: :string, label: false,  input_html: { pattern: '\\d+', autocomplete: 'off', data: { rewards: @rewards.map{|r| {id: r.id, minimum_value: r.minimum_value.to_i} }.to_json } }
             .simbol
               p R$
+            li
+              label Quantities ?
+              input.form-control type="text"            
             = form.input :reward, as: :radio, collection: @rewards
             = form.input :anonymous
             li#anonymous_warning.important.hide
