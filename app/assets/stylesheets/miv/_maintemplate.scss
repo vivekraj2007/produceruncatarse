@@ -463,7 +463,10 @@ margin:0 20px
   display:block;
 }
 
-#myModal .modal-backdrop { display: none; }
+#myModal .modal-backdrop,
+#sendInvites .modal-backdrop { display: none; }
+.send-message { padding: 15px; }
+
 .modal-header .close {
 margin-top: 2px;
 position: absolute;

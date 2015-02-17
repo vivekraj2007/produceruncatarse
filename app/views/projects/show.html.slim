@@ -26,6 +26,8 @@
 #page_content
   .container 
     .row
+      .col-md-12
+        a.btn.btn-success.pull-right.show_reward_form href="#sendInvites" data-toggle="modal"  Send Invites 
       .col-md-12 = render @project.state_warning_template
       .col-md-4
         .sidebar
@@ -204,3 +206,22 @@
 
 
     .clearfix
+#sendInvites.modal.hide aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" 
+  .modal-header
+    button.close aria-hidden="true" data-dismiss="modal" type="button"  ×
+    h3#myModalLabel Send Message
+  .modal-body.got-market-info
+    form
+      .send-message
+        h4 Message      
+        .form-group
+          input.form-control.input-lg placeholder=("From") type="text" /
+        .form-group
+          input.form-control.input-lg placeholder=("To") type="text" /
+        .form-group
+          input.form-control.input-lg placeholder=("Subject") type="text" /
+        .form-group
+          textarea.form-control.input-lg name="textarea" rows="3"  default text
+
+  .modal-footer.text-center
+    button.btn.btn-lg.btn-success aria-hidden="true" data-dismiss="modal"  Send Message
