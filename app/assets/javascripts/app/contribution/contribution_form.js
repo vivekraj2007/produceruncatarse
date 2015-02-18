@@ -5,7 +5,12 @@ App.views.Contribution.addChild('ContributionForm', _.extend({
     'change #contribution_value' : 'resetReward',
     'click input[type=radio]' : 'clickReward',
     'click #contribution_anonymous' : 'clickAnonymous',
-    'change #contribution_credits' : 'checkCredits'
+    'change #contribution_credits' : 'checkCredits',
+    'change #number_of_items' : 'updateTotal',
+  },
+
+  updateTotal: function(event) {
+    this.value.val(parseInt(event.target.value)*this.reward().minimum_value);
   },
 
   checkCredits: function(event){

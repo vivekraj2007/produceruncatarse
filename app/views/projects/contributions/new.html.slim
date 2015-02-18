@@ -17,7 +17,7 @@
               p R$
             li
               label Quantities ?
-              input.form-control type="text"            
+              input.form-control type="number" id="number_of_items" min="1" max="9" value="1" style="height:30px"          
             = form.input :reward, as: :radio, collection: @rewards
             = form.input :anonymous
             li#anonymous_warning.important.hide
