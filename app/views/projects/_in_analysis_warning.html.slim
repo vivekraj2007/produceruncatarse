@@ -2,27 +2,27 @@ br
 - if policy(@project).update?
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      i Seu projeto está em análise.
+      i Your project is under review.
       #toggle_warning
-        = link_to '(minimizar informações)', '#'
+        = link_to '(minimize information)', '#'
       #project_warning_text
         br/
         br/
-        | Estamos avaliando as informações do seu rascunho, entraremos em contato em até 4 dias úteis =) 
+        | We are evaluating the information from your draft, we will contact you within 4 working days =)
         br/
-        | Lembre-se de preencher as informações do #{link_to 'seu perfil', user_path(@project.user)} no Catarse
+        | Remember to fill in your profile information on Catarse
         br/
         br/
-        strong Solução de problemas:
+        strong Troubleshooting:
         br/
-        = link_to 'Socorro! | Já passaram 4 dias úteis e não tive noticias da curadoria, o que fazer?', 'http://suporte.catarse.me/hc/pt-br/articles/202037423-Socorro-J%C3%A1-enviei-o-projeto-h%C3%A1-quatro-dias-%C3%BAteis-e-n%C3%A3o-me-respondem-', target: '__blank'
+        = link_to 'Help! | It\'s been 4 days and have not had news of curated, what to do?', 'http://suporte.catarse.me/hc/pt-br/articles/202037423-Socorro-J%C3%A1-enviei-o-projeto-h%C3%A1-quatro-dias-%C3%BAteis-e-n%C3%A3o-me-respondem-', target: '__blank'
 - else
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      i Atenção! Este projeto ainda não está no ar! O Realizador responsável está fazendo ajustes! 
+      i Heads Up! This project is still in the air! The Director responsible for making adjustments!
       #toggle_warning
-        = link_to '(minimizar informações)', '#'
+        = link_to '(minimize information)', '#'
       #project_warning_text
         br/
         br/
-        | Aproveite para dar uma olhada na página e deixe seu feedback para o(a) realizador(a) ali na <strong>Aba Comentários</strong>. Ajude a melhorar o projeto com a sua opinião! 
+        | Take to take a look on the page and leave your feedback for the (a) director (a) there in the <strong> Tab Comments </strong>. Help improve the design with your opinion!
