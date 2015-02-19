@@ -5,9 +5,8 @@
         +grid(16)
         padding-top: 15px
         .title
-          +grid(16)
+          //+grid(16)
           +alpha
-          width: 600px
           padding-bottom: 40px
           h1
             color: $ultra_gryn
@@ -49,8 +48,9 @@
               display: block
               color: #333333
               margin-bottom: 12px
-            input[type="text"]
-              height: 55px
+            input[type="text"],
+            input[type="number"]
+              height: 55px!important
               width: 300px
               font-size: 38px
               padding-right: 20px
@@ -79,7 +79,7 @@
               legend
                 float: left
                 border-bottom: dotted 1px #ccc
-                margin-top: 40px
+                margin-top: 0px
                 background: url($images_path+'gift.png') 10px top no-repeat
                 label
                   padding-left: 50px
@@ -130,8 +130,8 @@
                 color: #333
                 font-family: 'Lato'
                 font-weight: 700
-                float: right
-                padding: 15px 16px
+              //  float: right
+              //  padding: 15px 16px
                 width: 510px
                 margin-right: 10px
                 background: #e0f5e0
@@ -151,7 +151,7 @@
           line-height: 18px
           margin-bottom: 20px
           margin-right: 10px
-          margin-top: -26px
+          margin-top: 0
           padding: 20px 40px
           text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
           //width: 462px
@@ -205,6 +205,10 @@
             font-family: 'Lato'
             font-size: 14px
             padding-bottom: 20px
+
+  .container
+    .row
+      .col-md-4
         .back_faq
           margin-bottom: 20px
           h2
@@ -220,7 +224,7 @@
             font-family: 'Lato'
             font-weight: 700
             font-size: 14px
-            padding-bottom: 15px
+            padding-bottom: 0
             color: #333333
             text-decoration: none
             cursor: pointer
@@ -228,10 +232,11 @@
             padding-left: 16px
             @include transition(all, 0.5s)
             background: url($images_path+'bullet-green.png') left 5px no-repeat
+            margin-bottom: 0
             &:hover
               color: #64CB64
           p
-            padding-bottom: 30px
+            padding-bottom: 0
             font-family: Arial
             line-height: 18px
             font-size: 12px
@@ -240,3 +245,12 @@
             a
             &:hover
               color: #64CB64
+
+#page_content 
+  .container 
+    .contribution_cst_content
+      width: 100%!Important
+      #contribute_options
+        width: 100%!Important
+      li 
+        list-style: none
