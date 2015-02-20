@@ -475,9 +475,14 @@ right: 15px;
 .got-market-info p { padding: 5px 0; margin-bottom: 0;}
 .got-market-info li { padding: 10px 0 0 25px; position: relative}
 .got-market-info li span.glyphicon { position: absolute; left: 0; top: 12px}
-.project_img,
-.project_content_wrap { float: left; }
-.project_content_wrap { margin-top: 48px; margin-left: 30px; }
+
+.project_content_wrap { margin-top: 10px; text-align: center }
+
+.quantities { float: left }
+.quantities input[type="number"] { margin-left: 0!important; }
+.brdr-left { border-left: 1px solid #f5f5f5}
+
+
 
 .footer-links ul {
 	padding-left:0;

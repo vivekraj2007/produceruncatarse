@@ -1,9 +1,9 @@
 #page_content
   .container
     .row
-      .col-md-8
+      .col-md-4
         #contribution_info
-          #project_info
+          #project_info.text-center
             .project_img
               h3
                 .project_name= link_to @project.name, project_by_slug_path(permalink: @project.permalink)
@@ -14,42 +14,41 @@
               .project_expires_at 
                 h3 #{@project.time_to_go[:time]} #{@project.time_to_go[:unit]} #{pluralize_without_number(@project.time_to_go[:time], t('remaining_singular'), t('remaining_plural'))}
             .clearfix
-      .col-md-4
         .back_faq
-          = render 'contribute_text'            
-      .contribution_content.contribution_cst_content
-        .title
-          h1= t('.header.title')
-          h2= t('.header.subtitle')
-        #contribute_options.bootstrap-form.col-md-12
-          / We use the URL in the helper bellow to redirect to a HTTPS page if it's configured
-          = semantic_form_for @contribution, url: project_contributions_url(@project), html: { id: 'contribution_form' } do |form|
-            = form.inputs do
-            .row
-              .col-md-6            
-                = hidden_field_tag 'credits', current_user.credits.to_i
-                = form.input :referal_link, as: :hidden, input_html: { value: referal_link }
-                = form.label :value, t('formtastic.labels.contribution.value')
-                = form.input :value, required: true, as: :string, label: false,  input_html: { pattern: '\\d+', autocomplete: 'off', data: { rewards: @rewards.map{|r| {id: r.id, minimum_value: r.minimum_value.to_i} }.to_json } }
-                .simbol
-                  p R$
-                li
-                  label Quantities ?
-                  input.form-control type="number" id="number_of_items" min="1" max="9" value="1" style="height:30px"
-              .col-md-6     
-                = form.input :reward, as: :radio, collection: @rewards
-              .col-md-12
-                = form.input :anonymous
-              .col-md-12 
-                #anonymous_warning.important.hide
-            .row
-              .col-md-12.text-center
-                .bootstrap-alert
-                  .alert
-                    = render 'anonymous_warning'
-            = form.actions do
-              .bootstrap-twitter
-                = form.submit t('.submit'), class: 'btn btn-primary btn-large', id: "contribution_submit"
+          = render 'contribute_text'
+      .col-md-8.brdr-left            
+        .contribution_content.contribution_cst_content
+          .title
+            h1= t('.header.title')
+            h2= t('.header.subtitle')
+          #contribute_options.bootstrap-form
+            / We use the URL in the helper bellow to redirect to a HTTPS page if it's configured
+            = semantic_form_for @contribution, url: project_contributions_url(@project), html: { id: 'contribution_form' } do |form|
+              = form.inputs do          
+              = hidden_field_tag 'credits', current_user.credits.to_i
+              .row
+                .col-md-6
+                  = form.input :referal_link, as: :hidden, input_html: { value: referal_link }
+                  = form.label :value, t('formtastic.labels.contribution.value')
+                  = form.input :value, required: true, as: :string, label: false,  input_html: { pattern: '\\d+', autocomplete: 'off', data: { rewards: @rewards.map{|r| {id: r.id, minimum_value: r.minimum_value.to_i} }.to_json } }
+                  .simbol
+                    p R$
+                .col-md-6
+                  .quantities
+                    label Quantities ?
+                    input.form-control type="number" id="number_of_items" min="1" max="9" value="1" style="height:30px"    
+              li.clearfix
+              = form.input :reward, as: :radio, collection: @rewards
+              = form.input :anonymous
+              #anonymous_warning.important.hide
+              .row
+                .col-md-12.text-center
+                  .bootstrap-alert
+                    .alert
+                      = render 'anonymous_warning'
+              = form.actions do
+                .bootstrap-twitter
+                  = form.submit t('.submit'), class: 'btn btn-primary btn-large', id: "contribution_submit"
 
     .clearfix
 

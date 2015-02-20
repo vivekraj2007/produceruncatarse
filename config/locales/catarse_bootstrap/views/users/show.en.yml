@@ -74,10 +74,10 @@ en:
         anonymous: "Anonymous support." #i18n-GT
         no_contributions: "%{name} not backed any project yet ." #i18n-GT
         no_contributions_current_user_html: "You have not backed any project." #i18n-GT
-        no_reward: "You have not selected any reward" #i18n-GT
+        no_reward: "You have not selected any pricing" #i18n-GT
         title: "Projects that %{name} has supported" #i18n-GT
         title_current_user: "Projects already supported" #i18n-GT
-        your_reward: "your reward" #i18n-GT
+        your_reward: "your pricing" #i18n-GT
       projects: 
         here: "here" #i18n-GT
         no_projects: "%{name} has not started any project on ProduceRun ." #i18n-GT

@@ -47,7 +47,7 @@ en:
         refunded: "Reversal done ?" #i18n-GT
         request_refund: "To request direct reimbursement" #i18n-GT
         requested_refund: "Asked reversal ?" #i18n-GT
-        reward: "reward" #i18n-GT
+        reward: "pricing" #i18n-GT
         send_refund_request_contribution: "Send refund request" #i18n-GT
         state: "state" #i18n-GT
         submit: "research" #i18n-GT
@@ -63,7 +63,7 @@ en:
       messages: 
         successful: 
           cancel: "Successfully canceled support!" #i18n-GT
-          change_reward: "Successfully modified reward!" #i18n-GT
+          change_reward: "Successfully modified pricing!" #i18n-GT
           confirm: "Successfully confirmed support!" #i18n-GT
           hide: "Successfully hidden support!" #i18n-GT
           pendent: "Successfully desconfirmado support!" #i18n-GT

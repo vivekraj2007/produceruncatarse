@@ -144,7 +144,7 @@ en:
     project_should_be_online: "You can not support a project that is not in the air" #i18n-GT
     reward_must_be_from_project: "must be of the same design" #i18n-GT
     should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum number of supporters" #i18n-GT
-    value_must_be_at_least_rewards_value: "should be at least %{minimum_value} to the selected reward" #i18n-GT
+    value_must_be_at_least_rewards_value: "should be at least %{minimum_value} to the selected pricing" #i18n-GT
   contribution_report_to_project_owner: 
     address_number: "number" #i18n-GT
     address_state: "state" #i18n-GT

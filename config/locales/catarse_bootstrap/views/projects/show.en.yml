@@ -24,7 +24,7 @@ en:
       embed: "embed" #i18n-GT
       embed_title: "Embed this project on your site" #i18n-GT
     project_reports: 
-      all_contributions_without_reward: "Download report of all supporters who did not select a reward" #i18n-GT
+      all_contributions_without_reward: "Download report of all supporters who did not select a Pricing" #i18n-GT
       link_reports_confirmed: "Download report all confirmed supporters" #i18n-GT
       link_reports_waiting_confirmation: "Download report of all supporters with printed ticket" #i18n-GT
       link_reward: "Download report of reward supporters %{value}" #i18n-GT
