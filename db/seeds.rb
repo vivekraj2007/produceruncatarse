@@ -57,8 +57,8 @@ puts 'Seeding the database...'
   contato_url: 'http://suport.producerun.com/',
   mixpanel_token: 'e0e80f9f416708ba621aaf3d6aff3b85',
   sendgrid_user_name: 'hackandgrow',
-  sendgrid: 'change_this_directly_in_database',
   minimum_goal_for_video: '5000',
+  aws_bucket: 'producerun',
 
 }.each do |name, value|
    conf = CatarseSettings.find_or_initialize_by(name: name)

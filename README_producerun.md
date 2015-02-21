@@ -21,16 +21,14 @@ You will also need to download and run redis server and sidekiq
     RAILS_ENV=production rake assets:precompile
     rails s -e production -p 3000
 
-# We keep all keys and settings in CatarseSettings. To enable login, key *:base_domain* should point to the url. For example for domain.com
+# We keep all keys and settings in CatarseSettings. To enable login, key *:base_domain* should point to the url. For example for app.domain.com
 
     rails c
-    CatarseSettings[:base_domain] = "domain.com"
+    CatarseSettings[:base_domain] = "app.domain.com"
     CatarseSettings[:sendgrid_user_name] = "hackandgrow"
     CatarseSettings[:sendgrid] = "change_this_directly_in_database"
-    CatarseSettings[:aws_bucket] = "producerun"
     CatarseSettings[:aws_access_key] = "change_this_directly_in_database"
     CatarseSettings[:aws_secret_key] = "change_this_directly_in_database"
-    CatarseSettings[:minimum_goal_for_video] = "5000"
 
 # To test the code, switch back to :pt in config/initializers/locale.rb
 
