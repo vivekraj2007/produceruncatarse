@@ -14,20 +14,88 @@ hr
   .col-md-3
     div role="tabpanel" 
       /! Nav tabs
-      ul.nav.nav-tabs.tabs-left role="tablist" 
+      ul.nav.nav-tabs.tabs-left role="tablist"
         li.active role="presentation" 
+          a aria-controls="myprofile" data-toggle="tab" href="#my_profile" role="tab"  Profile     
+        li role="presentation" 
           a aria-controls="bankdetails" data-toggle="tab" href="#bank_account" role="tab"  Bank Details
         li role="presentation" 
-          a aria-controls="myavatar" data-toggle="tab" href="#my_avatar" role="tab"  Change Avatar
-        li role="presentation" 
           a aria-controls="mydata" data-toggle="tab" href="#my_user_data1" role="tab"  User Data
-        li role="presentation" 
-          a aria-controls="changepassword" data-toggle="tab" href="#change_password" role="tab"  Change Password
         li role="presentation" 
           a aria-controls="facebookintegration" data-toggle="tab" href="#my_facebook" role="tab"  Facebook Integration   
   .col-md-9
     .tab-content
-      #bank_account.user_data.tab-pane.active role="tabpanel"
+      #my_profile.user_data.tab-pane.active role="tabpanel"
+        h1 = t('.local_avatar')
+        ul
+          li
+            .bootstrap-form
+              = semantic_form_for @user do |f|
+                = f.inputs do
+                  p= f.input :uploaded_image, as: :file, label: t('.submit_text')
+                = f.actions do
+                  .bootstrap-twitter
+                    p= f.action :submit, button_html: {value: t('.submit'), class: 'btn', id: 'image_upload_btn'}
+          li
+            #gravatar_hint.alert.alert-info
+              = link_to 'http://gravatar.com/', target: :_blank do
+                = image_tag 'gravatar.png', id: 'gravatar_logo'
+              p= t('.gravatar_hint_html', link: link_to('Gravatar', 'http://gravatar.com/', target: :_blank))
+              .clearfix
+        form
+          .row
+            .col-md-6
+              .form-group
+                label First Name
+                input.form-control placeholder=("Username") type="text"
+              .form-group
+                label Email
+                input.form-control placeholder="will_pattison@hotmail.com" type="password"
+              .form-group
+                label Phone Number
+                input.form-control placeholder="319607002" type="text"
+            .col-md-6
+              .form-group
+                label Last Name
+                input.form-control placeholder=("Lastname") type="text"
+            .col-md-12                    
+              button.btn.btn-default type="submit"  Submit
+            
+            .col-md-12
+              hr
+              .user_data
+                h1= t('.change_password')
+                ul
+                  li
+                    .bootstrap-form
+                      = form_for(@user, url: update_password_user_url(@user), html: { method: :put, class: 'skip_feed_event', id: 'password_form' }) do |f|
+                        span.hint= t('.current_password_hint').html_safe
+                        br
+                        .row
+                          .col-md-6
+                            = f.label :current_password
+                            = f.password_field :current_password, class:'empty'
+                          .col-md-6
+                            = f.label :password, t('devise.passwords.edit.form.labels.password')
+                            = f.password_field :password, class:'empty'
+                          .col-md-12
+                            .bootstrap-twitter
+                              p= f.submit 'OK', class: 'btn', id: 'password_submit'       
+            .col-md-12
+              #deactivate.user_data
+                h1= t('.deactivate')
+                ul
+                  li
+                    .bootstrap-form
+                      = form_for(@user, html: { method: :delete }) do |f|
+                        span.hint= t('.deactivate_hint').html_safe
+                        br
+                        br
+                        .bootstrap-twitter
+                          p= f.submit t('.deactivate'), class: 'btn', data: {confirm: t('.deactivate_confirm')}                                             
+            
+
+      #bank_account.user_data.tab-pane role="tabpanel"
         h1= t('.bank_account_title')
         ul
           li
@@ -47,31 +115,10 @@ hr
                     = bank_form.input :owner_document, as: :string, input_html: { value: bank_form.object.owner_document || @user.cpf }
                     .clearfix
                 .bootstrap-twitter
-                  p= f.submit t('.update_social_info'), class: 'btn'        
+                  p= f.submit t('.update_social_info'), class: 'btn'
 
-      #my_avatar.user_data.tab-pane role="tabpanel"
-        h1 = t('.local_avatar')
-        ul
-          li
-            .bootstrap-form
-              = semantic_form_for @user do |f|
-                = f.inputs do
-                  p= f.input :uploaded_image, as: :file, label: t('.submit_text')
-                = f.actions do
-                  .bootstrap-twitter
-                    p= f.action :submit, button_html: {value: t('.submit'), class: 'btn', id: 'image_upload_btn'}
-          li
-            #gravatar_hint.alert.alert-info
-              = link_to 'http://gravatar.com/', target: :_blank do
-                = image_tag 'gravatar.png', id: 'gravatar_logo'
-              p= t('.gravatar_hint_html', link: link_to('Gravatar', 'http://gravatar.com/', target: :_blank))
-              .clearfix
-      - unless @user.has_facebook_authentication?
-        #my_facebook.user_data.tab-pane role="tabpanel"
-          h1= t('.my_facebook')
-          ul
-            li
-              = link_to t('layouts.login.login_with_facebook'), user_omniauth_authorize_path(provider: 'facebook', locale: nil), class: 'facebook_start'
+
+
 
 
       #my_user_data1.tab-pane role="tabpanel"
@@ -114,31 +161,11 @@ hr
                     p= f.submit t('.update_social_info'), class: 'btn', id: "user_submit"
 
 
-      #change_password.user_data.tab-pane role="tabpanel"
-        h1= t('.change_password')
-        ul
-          li
-            .bootstrap-form
-              = form_for(@user, url: update_password_user_url(@user), html: { method: :put, class: 'skip_feed_event', id: 'password_form' }) do |f|
-                span.hint= t('.current_password_hint').html_safe
-                br
-                .div
-                  = f.label :current_password
-                  = f.password_field :current_password, class:'empty'
-                .div
-                  = f.label :password, t('devise.passwords.edit.form.labels.password')
-                  = f.password_field :password, class:'empty'
-                .bootstrap-twitter
-                  p= f.submit 'OK', class: 'btn', id: 'password_submit'
+
+      - unless @user.has_facebook_authentication?
+        #my_facebook.user_data.tab-pane role="tabpanel"
+          h1= t('.my_facebook')
+          ul
+            li
+              = link_to t('layouts.login.login_with_facebook'), user_omniauth_authorize_path(provider: 'facebook', locale: nil), class: 'facebook_start'                  
 .clearfix                
-#deactivate.user_data
-  h1= t('.deactivate')
-  ul
-    li
-      .bootstrap-form
-        = form_for(@user, html: { method: :delete }) do |f|
-          span.hint= t('.deactivate_hint').html_safe
-          br
-          br
-          .bootstrap-twitter
-            p= f.submit t('.deactivate'), class: 'btn', data: {confirm: t('.deactivate_confirm')}
