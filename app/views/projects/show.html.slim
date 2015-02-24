@@ -9,7 +9,7 @@
   - if @post
     meta name="description" content=@post.title
     meta property="og:title" content=@post.title
-    meta property="og:description" content=@post.comment
+    meta propert+y="og:description" content=@post.comment
     meta property="og:url" content=project_by_slug_url(@project.permalink, project_post_id: @post.id, locale: I18n.locale, ref: 'facebook')
   - else
     meta name="description" content=@project.headline
@@ -26,9 +26,11 @@
 #page_content
   .container 
     .row
-      .col-md-12
-        a.btn.btn-success.pull-right.show_reward_form href="#sendInvites" data-toggle="modal"  Send Invites 
       .col-md-12 = render @project.state_warning_template
+      .col-md-12
+        a.btn.btn-success.pull-right.show_reward_form href="#referfreinds" data-toggle="modal"  Refer Friends
+        
+        a.btn.btn-success.pull-right.show_reward_form href="#sendInvites" data-toggle="modal"  Send Invites 
       .col-md-4
         .sidebar
           .info.text-center
@@ -173,6 +175,8 @@
               = link_to '#metrics', id: 'metrics_link', data: {target: '#project_metrics'} do
                 = t('.menu.metrics')
         .main
+              fb:comments-count href=controller.fb_comments_link
+              | )
           #project_content
             - if policy(@project).update?
               #project_reports.content.hide
@@ -210,7 +214,7 @@
   .modal-header
     button.close aria-hidden="true" data-dismiss="modal" type="button"  ×
     h3#myModalLabel Send Message
-  .modal-body.got-market-info
+  .modal-body.got-market-info.
     form
       .send-message
         h4 Message      
@@ -225,3 +229,26 @@
 
   .modal-footer.text-center
     button.btn.btn-lg.btn-success aria-hidden="true" data-dismiss="modal"  Send Message
+
+#referfreinds.modal.hide aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+  button.close.pull-right.btn-inverse style="margin: 10px 10px 0 0" aria-hidden="true" data-dismiss="modal" type="button"  × 
+  .modal-body.got-market-info.text-center.share-with-friend
+    img src="assets/catarse_bootstrap/refer_a_friend_logo.png" width="150px"
+    form
+      .send-message
+        h4 Producerun is better with friends
+        p Share this link! Your friends get $20 toward starting their first produce and you'll get $20 when they successfully produce something      
+        .form-group
+          input.form-control.input-lg placeholder=("http://producerun.com/love-wpattison") type="text" /
+    .row.text-center
+      .col-md-4
+        button.btn.btn-success.btn-lg type="button" 
+          span.glyphicon.icon-facebook aria-hidden="true" share
+      .col-md-4   
+        button.btn.btn-success.btn-lg type="button" 
+          span.glyphicon.icon-twitter aria-hidden="true" tweet
+      .col-md-4
+        button.btn.btn-success.btn-lg type="button" 
+          span.glyphicon.glyphicon-envelope aria-hidden="true" email    
+    p.paragraph You can check on the status of your friends anytime                   
+

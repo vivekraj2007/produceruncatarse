@@ -370,7 +370,17 @@ margin:0 20px
 }
 
 .more-projects { margin-top: 20px; float: right;}
+.share-with-friend { max-height: 560px}
+.share-with-friend h4 {
+	padding: 12px 0;
+}
+.share-with-friend p {
+	padding: 5px 0 20px;
+}
+.share-with-friend .btn-success { padding-left: 20px; padding-right: 20px;}
+.share-with-friend .glyphicon:before { margin-right: 10px; }
 
+.got-market-info .paragraph { padding: 40px 0 10px; }
 .container-form {
 	position: relative;
 	border: 2px solid #cfd6dc;
@@ -464,7 +474,9 @@ margin:0 20px
 }
 
 #myModal .modal-backdrop,
-#sendInvites .modal-backdrop { display: none; }
+#sendInvites .modal-backdrop,
+#referfreinds .modal-backdrop  { display: none; }
+.show_reward_form { margin-left: 5px; }
 .send-message { padding: 15px; }
 
 .modal-header .close {
