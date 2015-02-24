@@ -146,7 +146,7 @@
   hr/
   .row
     .col-md-8
-      .row
+      /!.row
         .col-md-6.produce-item-wrapper
           .produce-listing-item
             .produce-item-img
@@ -207,6 +207,47 @@
                 p Needs 5 more items to be sold
               .col-md-4.produce-info-price.pull-left
                 .produce-item-price 20lb
+      - if current_user && @projects_near.present?
+        .row.near_projects.list
+          .col-md-6
+            header
+              h2.list-title
+                = link_to t('.sections.near.title'), explore_path(anchor: "near_of/" ) + current_user.address_state
+          .col-md-6
+            = link_to t('.links.near'), explore_path(anchor: "near_of/" ) + current_user.address_state, class: "more-projects"
+        .row
+          == render_projects @projects_near, 'home_near'
+
+      .row
+        .col-md-6
+          header
+            h2.list-title
+              = link_to t('.sections.recommended.title'), explore_path(anchor: :recommended)
+        .col-md-6
+          = link_to t('.links.recommended'), explore_path(anchor: :recommended), class: "more-projects"
+      .row
+        == render_projects @recommends, 'home_recommended'
+
+      .row
+        .col-md-6
+          header
+            h2.list-title
+              = link_to t('.sections.expiring.title'), explore_path(anchor: :expiring)
+        .col-md-6
+          = link_to t('.links.expiring'), explore_path(anchor: :expiring), class: "more-projects"
+      .row
+        == render_projects @expiring, 'home_expiring'
+      .clearfix
+
+      .row
+        .col-md-6
+          header
+            h2.list-title
+              = link_to t('.sections.recents.title'), explore_path(anchor: :recent)
+        .col-md-6
+          = link_to t('.links.recents'), explore_path(anchor: :recent), class: "more-projects"
+      .row        
+        == render_projects @recent, 'home_recent'
     .col-md-4
       h4 Filter by Progress
       .filter-by-progress.clearfix
@@ -291,38 +332,7 @@
 #page_content
   .container
     .main
-      - if current_user && @projects_near.present?
-        section.near_projects.list
-          header
-            h2.list-title
-              = link_to t('.sections.near.title'), explore_path(anchor: "near_of/" ) + current_user.address_state
-            = link_to t('.links.near'), explore_path(anchor: "near_of/" ) + current_user.address_state, class: "more-projects"
-          .projects
-            == render_projects @projects_near, 'home_near'
 
-      section.selected_projects.list
-        header
-          h2.list-title
-            = link_to t('.sections.recommended.title'), explore_path(anchor: :recommended)
-          = link_to t('.links.recommended'), explore_path(anchor: :recommended), class: "more-projects"
-        .projects
-          == render_projects @recommends, 'home_recommended'
-
-      section.expiring_projects.list
-        header
-          h2.list-title
-            = link_to t('.sections.expiring.title'), explore_path(anchor: :expiring)
-          = link_to t('.links.expiring'), explore_path(anchor: :expiring), class: "more-projects"
-        .projects
-          == render_projects @expiring, 'home_expiring'
-
-      section.recents_projects.list
-        header
-          h2.list-title
-            = link_to t('.sections.recents.title'), explore_path(anchor: :recent)
-          = link_to t('.links.recents'), explore_path(anchor: :recent), class: "more-projects"
-        .projects
-          == render_projects @recent, 'home_recent'
 
     aside.main-sidebar
       section.main-sidebar-division

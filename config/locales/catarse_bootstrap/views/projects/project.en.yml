@@ -14,9 +14,9 @@ en:
         successful: "funded" #i18n-GT
         waiting_confirmation: "waiting" #i18n-GT
         waiting_funds: "waiting" #i18n-GT
-      pledged_html: "<span>%{value}</span> levantados" #i18n-GT
-      progress_html: "<span>%{percent}%</span> financiado" #i18n-GT
+      pledged_html: "<span>%{value}</span> raised" #i18n-GT
+      progress_html: "<span>%{percent}%</span> funded" #i18n-GT
       reached: "reached" #i18n-GT
       time_remaining_html: 
-        one: "<span>%{count} %{unit}</span> restante" #i18n-GT
-        other: "<span>%{count} %{unit}</span> restantes" #i18n-GT
+        one: "<span>%{count} %{unit}</span> remaining" #i18n-GT
+        other: "<span>%{count} %{unit}</span> remaining" #i18n-GT
