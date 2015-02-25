@@ -175,8 +175,6 @@
               = link_to '#metrics', id: 'metrics_link', data: {target: '#project_metrics'} do
                 = t('.menu.metrics')
         .main
-              fb:comments-count href=controller.fb_comments_link
-              | )
           #project_content
             - if policy(@project).update?
               #project_reports.content.hide
