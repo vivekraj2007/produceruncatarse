@@ -1,99 +1,99 @@
-pt:
+en:
   projects:
     metrics:
       titles:
-        confirmed_by_day: 'Total de apoios confirmados por dia'
-        confirmed_amount_by_day: 'Total arrecadado por dia'
-        address_state: 'Total de apoios confirmados por Estado'
+        confirmed_by_day:  ' Total support confirmed by day '
+        confirmed_amount_by_day:  ' Total raised by day '
+        address_state:  ' Total support confirmed by State '
     reminder:
-      ok: 'Ok! Vamos te mandar um lembrete por e-mail 48 horas antes do fim da campanha'
-      active_btn: 'Lembre-me deste projeto'
-      deactive_btn: 'Não quero mais ser lembrado'
-    send_to_analysis: Seu projeto foi enviado para nossa equipe.
-    send_to_analysis_error: Erro ao enviar projeto para análise. Preencha todos os campos obrigatórios.
-    push_to_online: Seu projeto está online!
-    push_to_online_error: Erro ao colocar o projeto online. Preencha todos os campos obrigatórios.
+      ok:  ' Okay! We will send you a reminder via email 48 hours before the end of the campaign '
+      active_btn:  ' Remember me this ProduceRun '
+      deactive_btn:  ' I do not want to be remembered '
+    send_to_analysis:  Your ProduceRun campaign has been sent to our team.
+    send_to_analysis_error:  Error sending producerun campaign for analysis. Please complete all required fields.
+    push_to_online:  Your ProduceRun campaign is online!
+    push_to_online_error:  Error while placing the online producerun campaign. Please complete all required fields.
     twitter:
-      take_a_look: Confira o projeto %{name} no @catarse
+      take_a_look:  Check out the campaign% {name} in producerun
     video_embed:
-      a_project_by_html: Um projeto de %{link} no
+      a_project_by_html:  A produceruncampaign% {link} in
     posts:
       project_post:
-        unavailable: Esta novidade só está disponível para apoiadores.
-        contribute: Apoie
-        unavailable_contribute: este projeto para visualizá-la.
-        destroy: Remover Novidade
-        destroy_confirmation: Deseja remover esta novidade?
+        unavailable:  This news is only available to supporters.
+        Contribute:  Support
+        unavailable_contribute:  this producerun to view it.
+        destroy:  Remove Novelty
+        destroy_confirmation:  Do you want to remove this news?
       new:
-        notice: Novidade enviada com sucesso!
-        comment: Texto da sua Novidade
-        exclusive: Visível apenas para apoiadores
-        submit: Enviar Novidade
-        title: Título da sua Novidade
-        warning: Lembrando que todo post de novidade vai diretamente para o email de
-          seus apoiadores. Por isso, revise bem seu texto antes de enviá-lo.
+        notice:  Novelty sent successfully
+        comment:  Text of your Novelty
+        exclusive:  Only visible to supporters
+        submit:  Send Novelty
+        title:  Summary of Your New
+        warning:  Remember that every post novelty goes directly to your email
+          his supporters. So well review your text before sending - it.
     project_reports:
-      all_contributions_without_reward: Baixar relatório de todos os apoiadores
-        que não selecionaram uma recompensa
-      link_reports_confirmed: Baixar relatório de todos os apoiadores confirmados
-      link_reports_waiting_confirmation: Baixar relatório de todos os apoiadores
-        com boleto impresso
-      link_reward: Baixar relatório dos apoiadores da recompensa de %{value}
+      all_contributions_without_reward:  Download report of all supporters
+        not selected a reward
+      link_reports_confirmed:  Download report all confirmed supporters
+      link_reports_waiting_confirmation:  Download report of all supporters
+        with printed ticket
+      link_reward:  Download report of% reward supporters {value}
     project_about:
-      embed: < embed >
-      embed_title: Incorpore este projeto no seu site
-      active_btn: ' Lembrar-me'
-      deactive_btn: ' Lembrete ativo'
+      embed:  <embed>
+      embed_title:  Embed this producerun campaign on your own site
+      active_btn:  ' Remember me '
+      deactive_btn:  ' active Reminder '
     show:
       menu:
-        panel_html: "&nbsp;&nbsp;Painel de controle"
-        about: Sobre
-        add_reward: Adicionar recompensa
-        comments: Comentários
-        contributions: Apoios
-        metrics: Métricas
-        edit: Edição
-        reports: Relatórios
-        posts: Novidades
+        panel_html:  " & nbsp; & nbsp; Control Panel "
+        about:  About
+        add_reward:  Add price
+        comments:  Comments
+        contributions:  Supports
+        metrics:  Metrics
+        edit:  Editing
+        Reports:  Reports
+        posts:  News
     project_main:
-      twitter_profile: "Perfil no Twitter"
-      facebook_profile: "Perfil no Facebook"
-      author_website: "Site"
-      share: "Compartilhe"
-      tweet: "Tweet"
-      contact_author: "Enviar mensagem"
+      twitter_profile:  " Profile on Twitter "
+      facebook_profile:  " Facebook Profile "
+      author_website:  " Site "
+      share:  " Share "
+      tweet:  " Tweet "
+      contact_author:  " Send Message "
       contribute_project:
         display_status:
-          reached_goal: "Este projeto será bem-sucedido e financiado em %{date}"
-          not_reached_goal: "Este projeto só será financiado se pelo menos %{goal} forem atingidos até %{date}"
-          failed: "Este projeto não atingiu o mínimo de %{goal} até %{date} e não foi financiado"
-          rejected: "Este projeto não foi aceito. Não é possível realizar um apoio."
-          in_analysis: "Este projeto está em análise e ainda não está aberto para receber apoios."
-          successful: "Este projeto foi bem-sucedido e foi financiado em %{date}"
-          waiting_funds: "Aguardando a confirmação de boletos para saber se este projeto será financiado."
-          draft: "Este projeto é apenas um rascunho e ainda não pode receber apoios."
-        submit: Apoiar este projeto
-      project_by: projeto por
-      funding_period: Período de campanha
+          reached_goal:  " This ProduceRun will be successful and funded in% {date} "
+          not_reached_goal:  " This producerun will only be funded if at least% {goal} are reached to% {date} "
+          failed:  " This producerun did not reach the minimum of% {goal} to% {date} and was not funded "
+          rejected:  " This producerun was not accepted You can not perform a backup.. "
+          in_analysis:  " This producerun is under review and is not yet open to receive support. "
+          success:  " This producerun was successful and was funded in% {date} "
+          waiting_funds:  " Waiting for confirmation slips to know if this producerun will be funded. "
+          draft:  " This producerun is just a draft and still can not receive support. "
+        submit:  Support this producerun
+      project_by:  design by
+      funding_period:  Campaign Period
       project_header:
-        subtitle_html: "Um projeto de %{link}"
-        without_city: "Um projeto de"
-        with_city: "Um projeto de %{category_name} por %{author} em %{city}"
+        subtitle_html:  " A project% {link} "
+        without_city:  " A project "
+        with_city:  " A% {project} category_name by% {author} in {city}% "
       menu:
-        about: Sobre
-        add_reward: Adicionar recompensa
-        comments: Comentários
-        contributions: Apoios
-        metrics: Métricas
-        edit: Edição
-        reports: Relatórios
-        posts: Novidades
-      no_rewards_warning: Não viaje! Pense em como irá entregá-las e coloque tudo
-        isso no orçamento. Prometeu?! CUMPRA! :D
-      no_rewards_warning_title: Crie aqui suas recompensas
+        about:  About
+        add_reward:  Add price
+        comments:  Comments
+        contributions:  Supports
+        metrics:  Metrics
+        edit:  Editing
+        Reports:  Reports
+        posts:  News
+      no_rewards_warning:  Do not travel! Think about how you will deliver them and put everything
+        this in the budget. Prometheus ?! FOLLOW! : D
+      no_rewards_warning_title:  Create here your rewards
       contribution_states:
-        confirmed: Confirmados
-        pending: Boletos impressos
+        confirmed:  Confirmed
+        pending:  printed Slips
       sidebar:
-        contributions: apoios
-        goal: atingidos de %{total}
+        contributions:  support
+        goal:  hit of% {Total}
