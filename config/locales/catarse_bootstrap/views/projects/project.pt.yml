@@ -1,49 +1,49 @@
-pt:
+en:
   projects:
     project:
-      contributed: levantados
-      reached: atingido
-      progress_html: "<span>%{percent}%</span> financiado"
+      contributed: raised
+      Reached: hit
+      progress_html: "<span>% {percent}% </ span> financed"
       time_remaining_small_html:
-        one: "<div class='fontsize-smallest lineheight-tightest'>%{count} %{unit}</div> <div class='fontsize-smallest lineheight-tightest'>restante</div>"
-        other: "<div class='fontsize-smallest lineheight-tightest'>%{count} %{unit}</div> <div class='fontsize-smallest lineheight-tightest'>restantes</div>"
+        one: "<div class = 'fontsize-smallest LineHeight-tightest'>% {count}% {unit} </ div> <div class = 'LineHeight-tightest-smallest fontsize'> rest </ div>"
+        other: "<div class = 'LineHeight-tightest-smallest fontsize'>% {count}% {unit} </ div> <div class = 'LineHeight-tightest-smallest fontsize'> other </ div>"
       time_remaining_html:
-        one: "<span>%{count} %{unit}</span> restante"
-        other: "<span>%{count} %{unit}</span> restantes"
-      pledged_html: "<span>%{value}</span> levantados"
+        one: "<span>% {count}% {unit} </ span> rest"
+        other: "<span>% {count}% {unit} </ span> other"
+      pledged_html: "<span>% {value} </ span> raised"
       display_status:
-        online: 'online'
-        expired: "finalizado"
-        rejected: "recusado"
-        failed: "não financiado"
-        successful: financiado
-        approved: aprovado
-        reached_goal: financiado
-        waiting_confirmation: aguardando
-        waiting_funds: aguardando
-        not_reached_goal: aguardando
-        draft: "rascunho"
-        in_analysis: "em análise"
+        online: online-
+        expired: "finalized"
+        rejected: "refused"
+        failed: "unfunded"
+        success: funded
+        approved:
+        reached_goal: funded
+        waiting_confirmation: waiting
+        waiting_funds: waiting
+        not_reached_goal: waiting
+        draft: "Draft"
+        in_analysis "under review"
     card:
-      by: por
+      by: by
       remaining:
-        one: "restante"
-        other: "restantes"
-      contributed: levantados
-      reached: atingido
-      progress_html: "<span>%{percent}%</span> financiado"
+        one: "rest"
+        other: "other"
+      contributed: raised
+      Reached: hit
+      progress_html: "<span>% {percent}% </ span> financed"
       time_remaining_html:
-        one: "<span>%{count} %{unit}</span> restante"
-        other: "<span>%{count} %{unit}</span> restantes"
-      pledged_html: "<span>%{value}</span> levantados"
+        one: "<span>% {count}% {unit} </ span> rest"
+        other: "<span>% {count}% {unit} </ span> other"
+      pledged_html: "<span>% {value} </ span> raised"
       display_status:
-        expired: "finalizado"
-        rejected: "rejeitado"
-        failed: "Não-financiado"
-        successful: "Bem-sucedido"
-        approved: aprovado
-        reached_goal: financiado
-        waiting_funds: "Aguardando boletos"
-        not_reached_goal: aguardando
-        draft: "rascunho"
-        in_analysis: "em análise"
+        expired: "finalized"
+        rejected: "rejected"
+        failed: "No-financed"
+        success: "Successful"
+        approved:
+        reached_goal: funded
+        waiting_funds: "Waiting slips"
+        not_reached_goal: waiting
+        draft: "Draft"
+        in_analysis "under review"
