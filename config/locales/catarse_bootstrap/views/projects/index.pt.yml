@@ -1,50 +1,49 @@
-pt:
+en:
   projects:
     index_header:
-      subtitle: Financie projetos de maneira colaborativa e torne-se parte de algo
-        maior. Promova uma catarse coletiva! Você é a peça que falta nesta história.
-      title: Faça acontecer os projetos em que você acredita
+      subtitle: Welcome to ProduceRun
+        greater. Join your community in buying fresh food directly from the farm.
+      title: Make it happen in the projects that you believe
     index:
-      back_a_project: 'Apoie um projeto'
-      banner_title: 'Tire projetos do papel!'
-      see_all: 'Ver todos'
-      near_you: 'Próximos a você'
-      recents: Recentes
-      blog: Blog do Catarse
-      expiring: Na reta final
-      recommended: Recomendados
-      banner_subtitle: 'Música, quadrinhos, cinema, impacto social, tecnologia e muito mais. Conheça, inspire-se e apoie projetos.'
+      back_a_project: 'Support a ProduceRun'
+      banner_title: 'Welcome to ProduceRun!'
+      see_all: 'All'
+      near_you: 'Next to you'
+      Recents: Recent
+      Blog: Blog of ProduceRun
+      expiring: In the final stretch
+      recommended: Recommended
+      banner_subtitle: 'Vegetables, fruit, Meat, nuts, milk and more. Meet the farmer and buy from their ProduceRun. '
       box:
-        by: por
-        when: em
-      banner: "Conheça a pesquisa"
-      explore: "Explore projetos"
+        by: by
+        When: in
+      banner: "Meet the survey"
+      explore: "Explore ProduceRun's"
       links:
-        channels: "Descubra o Canal Asas"
-        recommended: "Descubra projetos recomendados"
-        expiring: "Descubra projetos na reta final"
-        recents: "Descubra projetos recentes"
-        near: "Descubra projetos perto de você"
+        channels: "Discover Channel Wings"
+        recommended: "Discover projects recommended"
+        expiring: "Discover projects down the stretch"
+        Recents: "Discover recent ProduceRun's"
+        near: "Discover ProduceRun's near you"
       sidebar:
         titles:
           blog: blog
-          facebook: "já curtiu nosso face?"
-          newsletter: "Assine nossa news"
-          faq: "tá com dúvida?"
-          schedule: agenda
+          facebook: "already likes our facebook?"
+          newsletter: "Subscribe to our news"
+          faq: "okay with doubt?"
+          Schedule: schedule
         placeholders:
-          email: "Digite seu email"
+          email: "Enter your email"
         buttons:
-          newsletter: Enviar
+          Newsletter: Submit
       sections:
         near:
-          title: 'Próximos a mim'
+          title: 'Next to Me'
         recommended:
-          title: 'Recomendados'
+          title: 'Recommended'
         expiring:
-          title: "Na reta final"
-        recents:
-          title: "Recentes"
+          title: "In the run"
+        Recents:
+          title: "Recent"
         channels:
-          title: 'Canal Asas'
-
+          title: 'Channel Wings'
