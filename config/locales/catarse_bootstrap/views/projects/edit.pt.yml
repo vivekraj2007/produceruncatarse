@@ -1,169 +1,169 @@
-pt:
+en:
   projects:
     reward_fields:
-      edit: "Editar recompensa"
-      reward: Recompensa
-      info_box: "Descreva o valor da recompensa e coloque uma previsão de data de entrega real para os apoiadores. Você também pode limitar uma recompensa e quando o limite é atingido ela aparece como ESGOTADA. Se quiser mudar a ordem que as recompensas aparecem em seu projeto, basta fazer isso arrastando-as para cima ou para baixo."
-      minimum_value: "Valor:"
-      deliver_at: "Previsão de entrega:"
-      description: "Descrição:"
-      limit_reward: "Limitar recompensa"
-      available: "Quantidade disponível"
-      submit: "Salvar"
+      edit:  " Edit price "
+      reward:  Price
+      info_box:  " . Describe the value of the price and put a real delivery date forecast for supporters You can also limit a price and when the limit is reached it appears as EXHAUSTED If you want to change the order that the prices appear in your project. just do this by dragging them up or down. "
+      minimum_value:  " Value "
+      deliver_at:  " Estimated delivery: "
+      description:  " Description: "
+      limit_reward:  " Limit reward "
+      available:  " Quantity Available "
+      submit:  " Save "
       index:
-        select_reward: "Selecione essa recompensa"
-        display_remaining: "%{remaining} de %{maximum} disponíveis"
-        dont_want: "Não quero recompensa"
-        limited: Limitada
-        sold_out: Esgotada
+        select_reward:  " Select this Price "
+        display_remaining:  " % {remaining} of {%} maximum available "
+        dont_want:  " I do not want reward "
+        Limited:  Limited
+        sold_out:  Sold out
         contributions_to_confirm:
-          one: 1 apoio em prazo de confirmação.
-          other: "%{count} apoios em prazo de confirmação."
-        edit_reward: Editar recompensa
-        new_reward: Cadastrar recompensa
-        reward_deliver_time: "<b>Estimativa de Entrega:</b> %{estimate}"
-        reward_title: Para %{minimum} ou mais
+          one:  1 support in term of confirmation.
+          other:  " % {count}-term support confirmation. "
+        edit_reward:  Edit price
+        new_reward:  Sign price
+        reward_deliver_time:  " <b> Delivery Estimates: </ b>% {estimate} "
+        reward_title:  To minimum {}% or more
     dashboard_user_settings:
-       title: "Dados cadastrais e bancários"
-       subtitle_html: "Com os dados abaixo completos, seu projeto estará pronto para ir ao ar. Após concluir o preenchimento, clique em Salvar. Revise. Se tudo estiver ok, basta apertar o botão Publicar e começar sua campanha!"
-       user_data_title: "Dados cadastrais e endereço"
-       user_data_subtitle_html: "Precisamos dos dados abaixo para emissão de Nota Fiscais para projetos bem sucedidos. <b>ATENÇÃO: O CPF/CNPJ listado nos dados cadastrais e dados bancários precisa ser o mesmo.</b>"
-       account_title: "Dados bancários"
-       account_subtitle_html: "Precisamos dos dados abaixo para efetuar a transferência financeira para projetos bem sucedidos. <b>ATENÇÃO: O CPF/CNPJ listado nos dados cadastrais e dados bancários precisa ser o mesmo.</b>"
-       submit: "Salvar"
+       title:  " registration and banking data "
+       subtitle_html:  " ... With the data below full, your project will be ready to air After completing the filling, click Save Review If everything is ok, just press the Post button and start your campaign! "
+       user_data_title:  " Registry data and address "
+       user_data_subtitle_html:  " We need the data below for the issuance of Tax Notes for successful ProduceRun campaigns <b> WARNING:.. The CPF / CNPJ listed in the registration data and bank details must be the same </ b> "
+       account_title:  " Bank details "
+       account_subtitle_html:  " We need the data below to make a financial transfer for successful ProduceRun campaigns <b> WARNING:. The CPF / CNPJ listed in the registration data and bank details must be the same </ b>. "
+       submit:  " Save "
     dashboard_home_templates:
-      status: "Status:"
+      status:  " Status: "
       project_numbers:
-        financed: financiado
-        backed: levantados
-        contributions: apoios
-        left: restantes
+        Financed:  funded
+        backed:  raised
+        contributions:  support
+        left:  remaining
       waiting_funds:
-        title: "%{name}, estamos processando os últimos pagamentos."
-        subtitle_html: "Seu projeto foi finalizado em %{expires} e está aguardando confirmação de boletos e pagamentos. Devido à data de vencimento de boletos, projetos que tiveram apoios de última hora ficam por até 4 dias úteis nesse status, contados a partir da data de finalização do projeto. %{link}."
-        header: "A partir daqui o seu projeto pode bater a meta ou não. Veja o que acontece em cada um dos casos:"
-        success: "Bati a meta:"
-        failed: "Não bati a meta:"
-        good_luck: "Boa sorte!"
-      successful:
-        title: "%{name}, comemore que você merece!"
-        subtitle_html: "Seu projeto foi bem sucedido e agora é a hora de iniciar o trabalho de relacionamento com seus apoiadores! Atenção especial à entrega de recompensas. Prometeu? Entregue! Não deixe de olhar a seção de pós-projeto do %{link1} e de informar-se sobre %{link2}. "
-        header1: "E não se esqueça: transparência é tudo."
-        transparent_html: "Manter um apoiador informado é manter um apoiador feliz. Mesmo que você vá informá-lo de uma falha ou contratempo. Apoiadores felizes são %{link} . Portanto, use e abuse (sempre com moderação) da aba novidades. O que você escrever por lá chega direto na caixa de emails dos seus apoiadores. Já vai começar a entrega de recompensas? Na aba \"relatórios\" você baixa informações para que você possa fazer a gestão de entrega de recompensas do seu projeto."
-        header2: "Não deixe de ler:"
+        title:  " % {name}, we are processing the final payments. "
+        subtitle_html:  " . His project was completed in% {} expires and is awaiting confirmation slips and payments Due to the due date of bills, projects that had last minute support are for up to 4 days in that status, starting from the date project finish.% {link}. "
+        header:  " From here your project can hit the target or not See what happens in each case:. "
+        success:  " I hit the goal: "
+        failed:  " Do not hit the goal: "
+        good_luck:  " Good luck! "
+      success:
+        title:  " % {name}, celebrate you deserve! "
+        subtitle_html:  " !.! Your ProduceRun was successful and now is the time to start working relationship with their supporters Special attention to the delivery of prices promised Hand Be sure to look at the% of post-project section {} and link1 to inquire about% {link2}. "
+        header1:  " And do not forget: Transparency is everything. "
+        transparent_html:  " Keep an informed supporter is to maintain a happy supporter Even if you go inform you of a failure or setback happy supporters are% {link} So use and abuse (always in moderation) of new tab What.... you write there comes straight in the emails of your supporters box. It will begin delivering rewards? In the tab \ " reports \ " you download information so you can make the rewards delivery management of your project. "
+        header2:  " Be sure to read: "
       rejected:
-        title: "%{name}, infelizmente não foi dessa vez."
-        subtitle_html: "Você enviou seu projeto para análise do Catarse e entendemos que ele não está de acordo com o perfil do site. Ter um projeto recusado não impede que você envie novos projetos para avaliação ou reformule seu projeto atual. Converse com nosso atendimento! Recomendamos que você dê uma boa olhada nos %{link1}  e no %{link2}."
-      online:
-        title: "%{name}, sua campanha está no ar!"
-        subtitle_html: "Seu projeto está no ar e sua campanha se encerrará às 23hs59min59s do dia %{date}. Até esse dia e horário você poderá receber apoios. Lembre-se, é tudo-ou-nada e você só levará os recursos captados se bater a meta que foi estipulada. Acesse a nossa %{link2} para outras dúvidas!"
-        explanation_html: "
-<div class='fontsize-base u-marginbottom-40 card card-terciary'>
-                      <p class='fontweight-bold'>
-                        Com o projeto no ar, algumas informações não podem mais ser editadas
-                      </p>
-                      <p>
-                        Você não poderá mais alterar:<br> - a sua meta de captação;<br> - o prazo final;<br> - a URL do projeto;<br> - o usuário dono do projeto.
-                      </p>
-                      <p class='fontweight-bold'>
-                        Precisa de mais informações sobre processos de campanha? Veja o box ao lado.
-                      </p>
-                      <p>
-                        A pequisa&nbsp;%{link1} também é ótima fonte de dados sobre o cenário brasileiro. Uma boa lida no&nbsp; %{link2} pode ser inspiradora. Lá você encontra histórias de projetos bem sucedidos e dicas de campanha.
-                      </p>
-                    </div>
+        title:  " % {name}, unfortunately it was not this time. "
+        subtitle_html:  " . You sent your project for analysis of ProduceRun and we understand that it is not according to the site profile Having a refused producerun does not prevent you send new producerun campaigns for review or rephrase your current producerun campaign Talk to recommend our service.! you take a good look at the% {link1} {link2 and%}. "
+      Online:
+        title:  " % {name}, your campaign is published online! "
+        subtitle_html:  " Your ProduceRun is in the air and your campaign will end the day 23hs59min59s% {date} Until that day and time you can receive support Remember, it's all-or-nothing and you just take the funds raised will be.. hit the target that was set. Visit our% {link2} for further questions! "
+        explanation_html:  "
+<Div class = 'fontsize-based u-marginbottom-40 card card-terciary'>
+                      <P class = 'FontWeight-bold'>
+                        With the producerun campaign published , some information can not be edited
+                      </ P>
+                      <P>
+                        You can no longer change: Filmography - your target capture, Photos - the deadline; Filmography - the URL of the project; Filmography - user project owner.
+                      </ P>
+                      <P class = 'FontWeight-bold'>
+                        Need more information about campaign process? See the box on the side.
+                      </ P>
+                      <P>
+                        The pequisa & nbsp;%} {link1 is also great source of data on the US scene. A good read on & nbsp; % {Link2} can be inspiring. There you will find stories of successful ProduceRun's and campaign advice.
+                      </ P>
+                    </ Div>
 "
       failed:
-        title: "%{name}, não desanime!"
-        subtitle_html: "Seu projeto não bateu a meta e sabemos que isso não é a melhor das sensações. Mas não desanime. Encare o processo como um aprendizado e não deixe de cogitar uma segunda tentativa. Não se preocupe, todos os seus apoiadores receberão o dinheiro de volta. %{link}."
-        questions: "Enviamos também um email para você com duas perguntinhas. Se você tiver tempo e cabeça, seria ótimo se pudesse dar uma olhada. Seu feedback nos ajuda a construir um Catarse melhor e mais legal pra você."
+        title:  " % {name}, do not be discouraged! "
+        subtitle_html:  " Your ProduceRun campaign didn't hit the target and we know that this is not the best of feelings Do not be discouraged Face the process as a learning and be sure to entertain a second attempt Do not worry, all your supporters will receive the money... back.% {link}. "
+        questions:  " We also send an email to you with two short questions If you have time and head, it would be great if you could take a look Your feedback helps us build a ProduceRun better and nicer to you... "
       draft:
-        title: "%{name}, construa seu projeto!"
-        subtitle: "Quanto mais cuidadoso e bem formatado for um projeto, maiores as chances de ele ser bem sucedido na sua campanha de captação. Antes de enviar seu projeto para a nossa análise, preencha todas as abas acima com carinho. Você pode salvar as alterações e voltar ao rascunho de projeto quantas vezes quiser. Quando tudo estiver pronto, clique no botão ENVIAR e entraremos em contato para avaliar o seu projeto."
-        study_title: "Sentiu que precisa estudar mais para montar seu projeto? Confira os links no box ao lado."
+        title:  " % {name}, build your project! "
+        subtitle:  " .. The more careful and well formatted for a project, the greater the chances of it being successful in your fundraising campaign Before you submit your ProduceRun for our analysis, complete all the tabs above fondly You can save changes and return to the producerun campaign draft over again. When everything is ready, click the SEND button and we will contact you to assess your producerun campaign. "
+        study_title:  " He felt need to study more to build your project Check out the links in the box next?. "
       approved:
-        title: "%{name}, seu projeto foi aprovado!"
-        subtitle_html: "Para colocar o seu projeto no ar é preciso apenas que você preencha os dados necessários na aba %{link1}. É importante saber que cobramos a taxa de 13% do valor total arrecadado apenas por projetos bem sucedidos. Entenda %{link2}. "
+        title:  " % {name}, your producerun campaign has been approved! "
+        subtitle_html:  " .. To publish your ProduceRun campaign online only requires you to fill in the required data in% {link1} tab is important to know that we charge a fee of 3% of the total amount collected only for successful producerun campaign Understand% {link2 }. "
       in_analysis:
-        title: "%{name}, você enviou seu projeto para análise e receberá nossa resposta em até 4 dias úteis"
-        subtitle_html: "Muito obrigado! Nossa equipe vai avaliar todo o conteúdo do seu projeto e em até 4 dias úteis você receberá um email informando se ele foi Aprovado, Recusado ou se vai continuar Em Análise por mais algum tempo para que você possa realizar ajustes sugeridos. Aproveite esse período para coletar feedbacks com pessoas próximas!"
+        title:  " % {name}, you sent your ProduceRun for analysis and receive our response within 4 working days "
+        subtitle_html:  " Thank you very much Our team will review the entire contents of your ProduceRun campaign and up to 4 business days you will receive an email informing if it was approved, refused or whether it will continue in analysis for some time so you can make suggested adjustments . Take advantage of this period to collect feedback with close people! "
     edit:
-      leave_link_html: "&nbsp; Sair do painel de controle"
-      start_tab: Início
-      basics_tab: Básico
-      project_tab: Projeto
-      posts_tab: Novidades
-      rewards_tab: Recompensas
-      about_you_tab: Sobre você
-      reports_tab: Relatórios
-      account_tab: Conta
-      preview_tab: Preview
-      send: Enviar
-      publish: Publicar
+      leave_link_html:  " & nbsp; Control Panel Exit "
+      start_tab:  Home
+      basics_tab:  Basic
+      project_tab:  Project
+      posts_tab:  News
+      rewards_tab:  Rewards
+      about_you_tab:  About you
+      reports_tab:  Reports
+      account_tab:  Account
+      preview_tab:  Preview
+      send:  Send
+      publish:  Post
     dashboard_user_about:
-      submit: "Salvar"
-      title: "Fale mais sobre você!"
-      subtitle: "Apoiadores querem conhecer melhor os realizadores de projetos. Links que ajudam a contar sua história são sempre bem vindos. "
-      twitter_label: "Perfil do twitter"
-      twitter_hint: "Cole o link do seu perfil"
-      other_link_label: "Presença na internet"
-      other_link_hint: "Inclua links que ajudem os apoiadores a entender porque você é a pessoa certa para fazer esse projeto. "
-      about_label: "Sobre você"
-      about_hint: "Utilize esse espaço caso você queira descrever melhor você, sua empresa ou sua instituição. Quer dar crédito a parceiros? Utilizar algum vídeo institucional? Esse espaço é seu e utilize-o da forma que quiser.  Todas essas informações vão aparecer na Aba Sobre em seu Perfil Público."
-      facebook_link_label: "Perfil do facebook"
-      facebook_link_hint: "Cole o link do seu perfil"
-      uploaded_image_label: "Imagem do perfil"
-      uploaded_image_hint: "Essa imagem será utilizada como a miniatura de seu perfil (PNG, JPG tamanho ideal 280 x 280)"
-      name_label: "Nome"
-      name_hint: "Seu nome público, visível para todos como autor do projeto."
+      submit:  " Save "
+      title:  " Tell me more about you! "
+      subtitle:  " Supporters want to learn more about the farmer, the farm and farm practises, links that help tell your story are always welcome.. "
+      twitter_label:  " twitter profile "
+      twitter_hint:  " Paste the link to your profile "
+      other_link_label:  " Presence on the Internet "
+      other_link_hint:  " Include links that help supporters to understand why you are the right person to do this ProduceRun. "
+      about_label:  " About Me "
+      about_hint:  " .?. Use this space if you want to better describe you, your company or your institution wants to give credit to some institutional partners Using video This space is yours and use it as you wish All of this information will appear in Aba on in your Public Profile. "
+      facebook_link_label:  " facebook profile "
+      facebook_link_hint:  " Paste the link to your profile "
+      uploaded_image_label:  " Profile Picture "
+      uploaded_image_hint:  " This image will be used as the thumbnail of your profile (PNG, JPG ideal size 280 x 280) "
+      name_label:  " Name "
+      name_hint:  " Your public name, visible to all as a ProduceRun Campaign organizer. "
     dashboard_reward:
-      title: "Crie e edite aqui suas recompensas"
-      add_reward: "Adicionar recompensa"
-      subtitle: "Essa é sua demonstração de gratidão com os apoiadores. Lembre-se de incluir os custos das recompensas no seu orçamento. Prometeu, ENTREGUE! "
-      reward: "Recompensa"
+      title:  " Create and edit their prices here "
+      add_reward:  " Add price "
+      subtitle:  " This is your show of gratitude to the supporters Remember to include the cost of the price promised in its budget, DELIVERED..! "
+      reward:  " Price "
     dashboard_preview:
-      header_subtitle: "É hora dos feedbacks!"
-      header_text: "Compartilhe o link abaixo com seus amigos e aproveite o momento para fazer ajustes finos que ajudem na sua campanha."
+      header_subtitle:  " It is time for feedback! "
+      header_text:  " Share the link below with your friends and enjoy the moment to make fine adjustments to help craft your campaign. "
     dashboard_posts:
-      title: "Escrever uma novidade"
-      only_to_backers: "Quero que essa novidade seja visível apenas para apoiadores."
-      publish: 'Publicar novidade'
-      discard: 'Descartar'
-      warning: "Toda novidade publicada é enviada diretamente aos seus apoiadores por email. Revise bem o post antes de publicar."
-      old_posts: "Novidades antigas"
+      title:  " Write a novelty "
+      only_to_backers:  " I want this novelty is only visible to supporters. "
+      publish:  ' Post novelty '
+      discard:  ' Discard '
+      warning:  " All published news is sent directly to their supporters by email Review and the post before publishing.. "
+      old_posts:  " old news "
     dashboard_project:
-      budgets_hint_html: "Informe uma lista com os principais itens do orçamento. Não precisa entrar em detalhes minuciosos, basta uma visão geral. Seus apoiadores gostarão de saber onde o dinheiro deles estará indo. Não existe uma regra&nbsp;quanto a quantidade de itens na lista, mas normalmente 5 costuma ser um bom número!"
-      budget_hint_html: "Como o seu dinheiro será utilizado? Quanto mais transparência melhor. Mostre que etapas e processos estarão envolvidos no uso desses recursos. Uma lista com os principais itens do orçamento ou até mesmo um gráfico de pizza vão super bem aqui."
-      budget_label: "Orçamento do projeto"
-      budgets_label: "Detalhe do orçamento"
-      start: "Conte a história do seu projeto!"
-      start_subtitle: "Pense bem na narrativa do projeto. É ela quem encantará as pessoas e trará apoiadores. Um bom video e descrição são diferenciais!"
-      video_url: "URL do vídeo"
-      video_url_hint: "Link do seu vídeo no Vimeo ou Youtube."
-      about: "Descrição do projeto"
-      links_title: "Links úteis"
-      about_hint_html: 'Fale com paixão e clareza sobre o que será realizado. Esclareça possíveis dúvidas sobre como o dinheiro será utilizado, quem está por trás do projeto, como e quando o projeto será entregue. Transparência atrai mais apoiadores. Lembre-se: seu projeto será acessado por pessoas comuns que decidirão se querem ou não apoiar seu projeto. Capriche! '
-      card: 'Card do projeto'
-      card_subtitle: 'Sabe aquele cardzinho de projeto que aparece na home e na busca? Então, faz bonito aqui nessa parte pois dizem que a primeira impressão é a que fica!'
-      image: 'Imagem do projeto'
-      image_hint: 'Essa imagem será utilizada como a miniatura de seu projeto (PNG, JPG tamanho 600 x 340)'
-      headline: 'Chamada do Projeto'
-      headline_hint: 'Será utilizada no card do projeto, junto com a imagem acima (miniatura). No máximo 100 caracteres.'
-      submit: 'Salvar'
+      budgets_hint_html:  " ... Tell a list of the main budget items do not need to go into great detail, just an overview His will like supporters to know where their money is going There is no Rule & nbsp; as the number of items in the list, but usually 5 usually a good number! "
+      budget_hint_html:  " How your money will be used The more transparency best Show steps and processes are involved in the use of these resources A list of the main items of the budget or even a pie chart will very well here?... "
+      budget_label:  " ProduceRun campaign Budget "
+      budgets_label:  " Budget Detail "
+      start:  " Tell the story of your ProduceRun! "
+      start_subtitle:  " Think in the ProduceRun narrative is she who will charm people and bring supporters A good video and description are differential..! "
+      video_url:  " Video URL "
+      video_url_hint:  " Link your video on Vimeo or Youtube. "
+      about:  " ProduceRun Description "
+      links_title:  " Useful links "
+      about_hint_html:  ' Speak with passion and clarity about what will be done. Possible answer any questions about how the farm items were grown, who is the farmer, as and when the ProduceRun will be delivered. Transparency attracts more supporters. Remember, your ProduceRun will be accessed by ordinary people who decide whether or not to support your ProduceRun. Goodluck! '
+      card:  ' Card design '
+      card_subtitle:  ' You know that ProduceRun campaign that appears on the home and search? So is beautiful here in this part because they say that the first impression is the one that is! '
+      image:  ' design image '
+      image_hint:  ' This image will be used as the thumbnail of your project (PNG, JPG size 600 x 340) '
+      headline:  ' Project Call '
+      headline_hint:  ' It will be used in the producerun campaign, along with the above picture (thumbnail). A maximum of 100 characters. '
+      submit:  ' Save '
     dashboard_basics:
-      project_start: 'Preencha as informações abaixo'
-      project_start_subtitle: 'Os dados informados nessa seção não poderão ser modificados quando o projeto for ao ar. Preencha com atenção e revise antes de lançar o projeto. '
-      online_date: 'Data de entrada no ar'
-      user_id: 'Id do usuário'
-      name: 'Nome do projeto'
-      name_label: 'Quanto mais direto melhor. Não ultrapasse 50 caracteres'
-      url: 'URL do projeto'
-      url_label: 'É o endereço do seu projeto, deve ser fácil de memorizar. Evite underline, hífen e símbolos'
-      category: 'Categoria'
-      category_label: 'Explore e se inspire em outros projetos da mesma categoria que o seu.'
-      online_days: 'Prazo para arrecadação'
-      online_days_label: 'Você pode escolher entre 1 e 60 dias para a sua campanha. Confira o guia dos realizadores para dicas sobre prazos.'
-      value: 'Valor a ser arrecadado'
-      value_secondary: 'Planeje uma meta coerente com o que seu projeto propõe. Revise seu orçamento e não esqueça de incluir a taxa de 13% cobrada pelo Catarse caso seu projeto seja bem-sucedido'
+      project_start:  ' Complete the information below '
+      project_start_subtitle:  ' The data reported in this section may not be modified when the producerun campaign goes live. Fill out carefully and review before launching the producerun campaign. '
+      online_date:  ' Date published online '
+      user_id:  ' User Id '
+      name:  ' Farmers Name '
+      name_label:  ' The more direct the better. Do not exceed 50 characters '
+      url:  ' URL of the project '
+      url_label:  ' It is the address of your ProduceRun campaign, it should be easy to remember. Avoid underline, hyphen and symbols '
+      category:  ' Category '
+      category_label:  ' Explore and be inspired by other ProduceRun campaigns in the same category as yours. '
+      online_days:  ' Deadline for money collection '
+      online_days_label:  ' You can choose between 1 and 60 days for your campaign. Check out the guide of farmers for tips on deadlines. '
+      value:  ' Amount to be raised '
+      value_secondary:  ' Plan a consistent goal with your producerun campaign. Review your goal and do not forget to include the rate of 3% charged by ProduceRun when your campaign is successful '
       form:
-        submit: 'Salvar'
+        submit:  ' Save '
