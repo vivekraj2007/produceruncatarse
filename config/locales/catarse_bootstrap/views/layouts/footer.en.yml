@@ -1,0 +1,32 @@
+en:
+  layouts:
+    footer :
+      links:
+        jobs: Work with us
+        blog: Blog
+        contact: Contact
+        discover : Discover ProduceRun's
+        start: ' How it works '
+        expiring : In the final stretch
+        facebook : Facebook
+        faq : Help
+        guides : Guide for farmers
+        feedback : Feedback
+        github : Github
+        Instagram : Instagram
+        near : Next to me
+        press : Press
+        privacy : Privacy Policy
+        Recents : Recent
+        recommended : Recommended
+        submit : Start your own ProduceRun
+        terms: Terms of use
+        twitter : Twitter
+      texts :
+        copyleft : Built by Farmers, for farmers.
+      titles:
+        about: Help
+        contact: Welcome
+        Newsletter: Subscribe to our news
+        sitemap : Browse
+        Social : Social networks
