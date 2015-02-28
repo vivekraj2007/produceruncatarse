@@ -1,31 +1,31 @@
-pt:
+en:
   projects:
     new:
-      page-title: "Comece seu projeto"
+      page-title : " Start your own ProduceRun"
 
-      faq:
+      faq :
         titles:
-          support: "Suporte"
-          know_more: "Saiba mais"
+          support: "Support"
+          know_more : " Learn more "
 
         links:
-          criteria: "Critérios de seleção"
-          suport_central: "Central de suporte"
-          support_contact: "Entre em contato com a gente"
-          how_it_works: "Como o Catarse funciona?"
-          money: "Como receberei o dinheiro?"
-          selection: "Como os projetos são selecionados?"
-          all_or_nothing: "Por que Tudo ou Nada?"
+          criteria : " Selection Criteria "
+          suport_central : " Support Center "
+          support_contact : " Contact us"
+          how_it_works : "How does ProduceRun work? "
+          money : " How will I get the money ? "
+          selection : " How are ProduceRun's selected ? "
+          all_or_nothing : "Why All or Nothing "
 
-      form:
-        blocks:
-          first:
-            title: "Bem Vindo!"
-            description: "Preencha as informações abaixo para iniciar o rascunho do seu projeto."
+      form :
+        blocks :
+          first :
+            title: " Welcome ! "
+            description: " Complete the information below to start the draft of your ProduceRun Campaign. "
 
-        info:
-          permalink: http://catarse.me/
-          goal: R$
-          online_days: dias
+        info :
+          permalink : http://www.producerun.com
+          goal : £
+          online_days : days
 
-        submit: "Salvar e continuar"
+        submit : " Save and Continue "
