@@ -1,0 +1,20 @@
+en:
+  layouts:
+    header :
+      blog: Blog
+      discover Explore local food
+      faq : FAQ
+      help: Help
+      profile: My Profile
+      projects: My ProduceRun campaigns
+      signin Login
+      signup : Sign up
+      submit : Start your own ProduceRun
+      search : Search ProduceRun
+    login:
+      login_with_facebook : enter your facebook account
+    user:
+      my_contributions : My support
+      logout : Exit
+      my_credits : Credit Balance
+      refund_link : Request reimbursement
