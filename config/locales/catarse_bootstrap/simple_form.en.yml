@@ -1,0 +1,53 @@
+en:
+  simple_form:
+    collections:
+      project:
+        traffic_sources:
+          one:  " I've had another project in ProduceRun "
+          two:  " I know someone that did a ProduceRun "
+          three:  " indication colleague / friend / professional contact "
+          four:  " from a project that was picking up on the platform "
+          five:  " article in a blog "
+          six:  " a story in the press (news portal on the internet, TV, newspaper, magazine) "
+          seven:  " in a class / course / lecture / event "
+          eight:  " I did an internet search "
+          nine:  " Other "
+    validation_texts:
+      reward:
+        minimum_value:  " Tell a higher minimum or equal to 10 "
+        description:  " Enter a description for the price "
+      bank_account:
+        bank_id:  " Select a bank "
+        agency:  " What is the EIN number? "
+        account:  " What is the account number? "
+        account_digit:  " What is the check digit? "
+        owner_name:  " Enter a name with a minimum of 5 and a maximum of 30 letters "
+        owner_document:  " Tell A EIN valid for the account holder "
+      contribution:
+        PAYER_NAME:  " Please enter the name of supporter "
+        payer_email:  " Please enter a valid email address "
+        payer_document:  " Please enter a EIN "
+        address_state:  " Select a State "
+        address_street:  " Enter the street name "
+        address_number:  " Enter the address number "
+        address_city:  " Enter city name "
+        address_zip_code:  " Enter the zip code "
+        address_phone_number:  " Enter the phone number "
+    prompts:
+      project:
+        category:  " Select a category "
+        select:  " Select an option "
+        traffic_sources:  " How did you find ProduceRun? "
+    hints:
+      project:
+        select:  " Select an option "
+        traffic_sources:  " How did you find ProduceRun? "
+        name:  " Give a name that people will remember easily not exceed 50 characters.. "
+        permalink:  " Prefer something simple, straightforward and well identify your ProduceRun Try not to use hyphen, underscore etc.. "
+        category:  " Choose the most appropriate to your project. "
+        goal:  " . Plan a consistent goal with your ProduceRun proposes Review your budget and do not forget to include the rate of 3% charged by ProduceRun if your ProduceRun is successful. "
+        online_days:  " . You can choose between 1 and 60 days for this campaign Check out the guide of directors for tips on deadlines. "
+        video_url:  " Link your video on Vimeo or Youtube <br/>. "
+        about:  " .. Speak with passion and clarity about what will be done Clarify any doubts about how the money will be used, who is behind the ProduceRun, as and when the ProduceRun will be delivered Transparency attracts more supporters Remember:. your ProduceRun will be accessed by ordinary people who decide whether or not to support your run. Good Luck! "
+        headline:  " . Quote the ProduceRun card to call supporters should have a maximum of 100 characters and well summarize the ProduceRun. "
+        uploaded_image:  " This image will be used as the thumbnail of your project (PNG, JPG size 600 x 340) "
