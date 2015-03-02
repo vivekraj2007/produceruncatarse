@@ -221,10 +221,10 @@ p {
 }
 .text-field.negative {
   display: block;
-  margin-top: 0px;
+  margin-top: 13px;
   margin-bottom: 0px;
   border-style: solid;
-  border-color: rgba(255, 255, 255, 0.11);
+  border-color: rgba(192, 192, 192, 0.11);
   background-color: transparent;
   color: rgba(255, 255, 255, 0.61);
 }
@@ -531,8 +531,8 @@ p {
   font-weight: 600;
 }
 .main-header {
-  padding-top: 10px;
-  padding-bottom: 8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-left: 15px;
   border-bottom: 1px solid rgba(37, 49, 57, 0.6);
   background-color: #3f4752;
@@ -545,6 +545,7 @@ p {
   background-color: transparent;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), transparent);
   background-image: linear-gradient(rgba(0, 0, 0, 0.22), transparent);
+  background: #fff;
 }
 .img-logo {
   margin-top: 8px;
@@ -568,12 +569,12 @@ p {
   top: 5px;
   right: -73px;
   display: inline-block;
-  margin: 0px 5px 0px 0px;
+  margin: 16px 5px 0px 0px;
   padding: 9px 22px;
   border-radius: 4px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  color: #f1f2f3;
+  color: #00B22D;
   font-size: 15px;
   font-weight: 300;
   text-decoration: none;
@@ -910,6 +911,7 @@ p {
 .fontsize-jumbo {
   font-size: 54px;
   line-height: 100%;
+  text-transform: uppercase;
 }
 .blue-one {
   color: #3f4752;
@@ -1755,8 +1757,8 @@ p {
 }
 .header-logo {
   display: inline-block;
-  width: 32px;
-  max-width: 32px;
+  width: 256px;
+  max-width: 256px;
   margin-right: 20px;
   margin-left: 0px;
   padding: 0px;
@@ -2690,8 +2692,8 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     background-color: #f1f4f4;
   }
   .main-header {
-    padding-top: 8px;
-    padding-bottom: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-left: 5px;
   }
   .img-logo {
@@ -3026,7 +3028,7 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     background-color: #f1f4f4;
   }
   .text-field.negative {
-    background-color: rgba(241, 244, 244, 0.61);
+    background-color: rgba(192, 192, 192, 0.61);
     color: #3f4752;
   }
   .text-field.negative:hover {
