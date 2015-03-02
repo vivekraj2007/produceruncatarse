@@ -2,74 +2,64 @@
 
 puts 'Seeding the database...'
 
+# if you change categories, please update on app/views/projects/new.html.slim page also
 [
-  { pt: 'Arte', en: 'Art' },
-  { pt: 'Artes plásticas', en: 'Visual Arts' },
-  { pt: 'Circo', en: 'Circus' },
-  { pt: 'Comunidade', en: 'Community' },
-  { pt: 'Humor', en: 'Humor' },
-  { pt: 'Quadrinhos', en: 'Comicbooks' },
-  { pt: 'Dança', en: 'Dance' },
-  { pt: 'Design', en: 'Design' },
-  { pt: 'Eventos', en: 'Events' },
-  { pt: 'Moda', en: 'Fashion' },
-  { pt: 'Gastronomia', en: 'Gastronomy' },
-  { pt: 'Cinema e Vídeo', en: 'Film & Video' },
-  { pt: 'Jogos', en: 'Games' },
-  { pt: 'Jornalismo', en: 'Journalism' },
-  { pt: 'Música', en: 'Music' },
-  { pt: 'Fotografia', en: 'Photography' },
-  { pt: 'Ciência e Tecnologia', en: 'Science & Technology' },
-  { pt: 'Teatro', en: 'Theatre' },
-  { pt: 'Esporte', en: 'Sport' },
-  { pt: 'Web', en: 'Web' },
-  { pt: 'Carnaval', en: 'Carnival' },
-  { pt: 'Arquitetura e Urbanismo', en: 'Architecture & Urbanism' },
-  { pt: 'Literatura', en: 'Literature' },
-  { pt: 'Mobilidade e Transporte', en: 'Mobility & Transportation' },
-  { pt: 'Meio Ambiente', en: 'Environment' },
-  { pt: 'Negócios Sociais', en: 'Social Business' },
-  { pt: 'Educação', en: 'Education' },
-  { pt: 'Filmes de Ficção', en: 'Fiction Films' },
-  { pt: 'Filmes Documentários', en: 'Documentary Films' },
-  { pt: 'Filmes Universitários', en: 'Experimental Films' }
+  { pt: 'Opt1', en: 'Bundles' },
+  { pt: 'Opt2',en: 'Produce' },
+  { pt: 'Opt3',en: 'Eggs & Dairy' },
+  { pt: 'Opt4',en: 'Meat & Fish' },
+  { pt: 'Opt5',en: 'Bakery' },
+  { pt: 'Opt6',en: 'Pantry' },
+  { pt: 'Opt7',en: 'Snacks' },
+  { pt: 'Opt8',en: 'Drinks' },
+  { pt: 'Opt9',en: 'Floral & Home' },
+  { pt: 'Opt10',en: 'Prepared Foods' },
+  { pt: 'Opt11',en: 'CSA' },
+  { pt: 'Opt12',en: 'Misc' },
+
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])
    category.update_attributes({
      name_en: name[:en]
    })
+   puts name
  end
 
 {
-  company_name: 'Catarse',
-  company_logo: 'http://catarse.me/assets/catarse_bootstrap/logo_icon_catarse.png',
-  host: 'catarse.me',
-  base_url: "http://catarse.me",
-
-  email_contact: 'contato@catarse.me',
-  email_payments: 'financeiro@catarse.me',
-  email_projects: 'projetos@catarse.me',
-  email_system: 'system@catarse.me',
-  email_no_reply: 'no-reply@catarse.me',
-  facebook_url: "http://facebook.com/catarse.me",
+  company_name: 'ProduceRun',
+  company_logo: 'http://www.producerun.com/wp-content/uploads/2014/11/rsz_producerun-green.png',
+  host: 'producerun.com',
+  base_url: "http://www.producerun.com",
+  email_contact: 'info+contact@producerun.com',
+  email_payments: 'info+finance@producerun.com',
+  email_projects: 'info+projects@producerun.com',
+  email_system: 'info+system@producerun.com',
+  email_no_reply: 'info+no-reply@producerun.com',
+  facebook_url: "https://www.facebook.com/producerun",
   facebook_app_id: '173747042661491',
-  twitter_url: 'http://twitter.com/catarse',
-  twitter_username: "catarse",
-  mailchimp_url: "http://catarse.us5.list-manage.com/subscribe/post?u=ebfcd0d16dbb0001a0bea3639&amp;id=149c39709e",
-  catarse_fee: '0.13',
-  support_forum: 'http://suporte.catarse.me/',
-  base_domain: 'catarse.me',
+  twitter_url: 'http://twitter.com/producerun',
+  twitter_username: "producerun",
+  mailchimp_url: "http://producerun.us8.list-manage.com/subscribe/post?u=d7cada44d74cc8dec9c798429&amp;id=4538752d65",
+  catarse_fee: '0.10',
+  support_forum: 'http://suport.producerun.com/',
+  base_domain: 'producerun.com',
   uservoice_secret_gadget: 'change_this',
   uservoice_key: 'uservoice_key',
-  faq_url: 'http://suporte.catarse.me/',
-  feedback_url: 'http://suporte.catarse.me/forums/103171-catarse-ideias-gerais',
-  terms_url: 'http://suporte.catarse.me/knowledgebase/articles/161100-termos-de-uso',
-  privacy_url: 'http://suporte.catarse.me/knowledgebase/articles/161103-pol%C3%ADtica-de-privacidade',
-  about_channel_url: 'http://blog.catarse.me/conheca-os-canais-do-catarse/',
-  instagram_url: 'http://instagram.com/catarse_',
-  blog_url: "http://blog.catarse.me",
-  github_url: 'http://github.com/catarse',
-  contato_url: 'http://suporte.catarse.me/'
+  faq_url: 'http://suport.producerun.com/',
+  feedback_url: 'http://suport.producerun.com/',
+  terms_url: 'http://suport.producerun.com/',
+  privacy_url: 'http://suport.producerun.com/',
+  about_channel_url: 'http://blog.producerun.com',
+  instagram_url: 'http://instagram.com/producerun_',
+  blog_url: "http://blog.producerun.com",
+  farmers_blog_url: "http://farmers.producerun.com",
+  github_url: 'http://github.com/producerun',
+  contato_url: 'http://suport.producerun.com/',
+  mixpanel_token: 'e0e80f9f416708ba621aaf3d6aff3b85',
+  sendgrid_user_name: 'hackandgrow',
+  minimum_goal_for_video: '5000',
+  aws_bucket: 'producerun',
+
 }.each do |name, value|
    conf = CatarseSettings.find_or_initialize_by(name: name)
    conf.update_attributes({
@@ -78,8 +68,8 @@ puts 'Seeding the database...'
 end
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = 'your_facebook_app_key'
-  o.secret = 'your_facebook_app_secret'
+  o.key = '39410167937'
+  o.secret = 'e55126b947fccbff9a86d9716c179860'
   o.path = 'facebook'
 end
 
@@ -109,6 +99,20 @@ CatarseSettings.all.each do |conf|
 end
 
 Rails.cache.clear
+
+user = User.where( name: 'Asd Name', email: 'asd@asd.asd').first_or_initialize do |user|
+  user.password = 'asdasd'
+  user.admin = true
+  puts "User #{user.email} created"
+  user.save
+end
+
+user.projects.where(name: "Example project name", category: Category.first, goal: 100, about: "This is about text", video_url: 'https://www.youtube.com/watch?v=IexoJu3TMWM', online_days: 30, headline: 'Example headline').first_or_create do |p|
+  puts  "example project created"
+  #p.send_to_analysis!
+  #p.approve!
+end
+
 
 puts '---------------------------------------------'
 puts 'Done!'
