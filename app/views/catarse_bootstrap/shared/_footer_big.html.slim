@@ -10,17 +10,16 @@ footer.main-footer.main-footer-neg
           .w-col.w-col-4.w-col-small-4.w-col-tiny-4.footer-full-lastcolumn
             = render 'shared/footer_navigate'
       .w-col.w-col-3.column-social-media-footer
-        .footer-full-signature-text.fontsize-small Assine nossa news
+        .footer-full-signature-text.fontsize-small Subscribe to our news
         .w-form
           = render 'shared/newsletter'
-        .footer-full-signature-text.fontsize-small Redes sociais
+        .footer-full-signature-text.fontsize-small Social Networks
         .w-widget.w-widget-facebook.u-marginbottom-20
           = render_facebook_like colorscheme: "dark"
         .w-widget.w-widget-twitter
           = link_to "Follow @#{CatarseSettings[:twitter_username]}", "http://twitter.com/#{CatarseSettings[:twitter_username]}", :class => 'twitter-follow-button', :"data-button"=>"blue", :"data-text-color" => "#ffffff", :"data-link-color"=>"#fffffff", :"data-width" => "224px"
   .w-container
     .footer-full-copyleft 
-      = image_tag "logo-footer.png", class: "u-marginbottom-20"
-      .lineheight-loose Feito com amor | 2015 | Open source
-      
+      = image_tag "logo-footer-new.png", class: "u-marginbottom-20"
+      .lineheight-loose Producerun.com | 2015      
       

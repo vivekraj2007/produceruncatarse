@@ -319,7 +319,7 @@ fr:
       signup: "Créer un compte"
       signin: Login
       discover: Discover
-      submit: Send your project
+      submit: Send Producerun Campaign
       profile: "Mon profil"
       account: "Mon compte"
     user:
@@ -571,7 +571,7 @@ fr:
       headline_important: "It's a summary of  your project . 140 characters tops!:D"
       tags_important: "Check other projects in your category  <a href='%{href}' target='_blank'>here!</a>!."
       subtitle: "The time to make it happen is now! We really want to know what you're up to..."
-      title: "Send your project"
+      title: "Send Producerun Campaign"
       about: "Describe your project and how much do you need"
       category: "Project category"
       how_much_you_need: "How much do you want to raise?"

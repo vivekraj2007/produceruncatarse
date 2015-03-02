@@ -103,8 +103,8 @@ en:
       near: "Near me"
       expiring: "Expiring"
       recents: "Recent"
-      submit: "Send your project"
-      discover: "Discover projects"
+      submit: "Send Producerun Campaign"
+      discover: "Discover Producerun Campaign"
     texts:
       copyleft: "Made with love."
   main:
@@ -322,7 +322,7 @@ en:
       signup: "Sign up"
       signin: Login
       discover: Discover
-      submit: Send your project
+      submit: Send Producerun Campaign
       profile: "My profile"
       account: "My account"
     user:

@@ -44,9 +44,9 @@ p {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid #7cc142;
+  border: 1px solid #da9455;
   border-radius: 5px;
-  background-color: #7cc142;
+  background-color: #da9455;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   color: white;
@@ -1671,6 +1671,7 @@ p {
   margin-bottom: 20px;
   color: white;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .footer-full-copyleft {
   margin-top: 80px;
@@ -2857,7 +2858,7 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
   }
   .header-logo {
     width: 28px;
-    max-width: 28px;
+    max-width: 136px;
     margin-right: 10px;
     margin-left: 0px;
   }
@@ -3321,8 +3322,8 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
   }
   .header-logo {
     display: inline-block;
-    width: 24px;
-    max-width: 24px;
+    width: 138px;
+    max-width: 138px;
     margin-right: 10px;
     margin-left: 0px;
     float: none;
@@ -3709,7 +3710,7 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     margin-left: 0px;
   }
   .header-logo {
-    width: 24px;
+    width: 138px;
     padding: 0px;
   }
   .btn-dark.btn-attached {

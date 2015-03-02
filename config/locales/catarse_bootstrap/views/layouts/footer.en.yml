@@ -5,7 +5,7 @@ en:
       links: 
         blog: "Blog" #i18n-GT
         contact: "contact" #i18n-GT
-        discover: "Discover projects" #i18n-GT
+        discover: "Discover Campaign" #i18n-GT
         expiring: "In the final stretch" #i18n-GT
         facebook: "Facebook" #i18n-GT
         faq: "help" #i18n-GT
@@ -18,7 +18,7 @@ en:
         privacy: "privacy" #i18n-GT
         recents: "recent" #i18n-GT
         recommended: "recommended" #i18n-GT
-        submit: "Submit your project" #i18n-GT
+        submit: "Submit your campaign" #i18n-GT
         terms: "Terms of use" #i18n-GT
         twitter: "Twitter" #i18n-GT
       texts: 
