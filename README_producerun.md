@@ -12,7 +12,7 @@ You will also need to download and run redis server and sidekiq
 # To deploy to heroku
 
     git remote add heroku git@heroku.com:produceruncatarse.git
-    git push heroku
+    git push heroku development:master
 
 # To run production version locally
 
