@@ -1,0 +1,31 @@
+--- 
+en: 
+  layouts: 
+    footer: 
+      links: 
+        blog: "Blog" #i18n-GT
+        contact: "contact" #i18n-GT
+        discover: "Discover projects" #i18n-GT
+        expiring: "In the final stretch" #i18n-GT
+        facebook: "Facebook" #i18n-GT
+        faq: "help" #i18n-GT
+        feedback: "Feedback" #i18n-GT
+        github: "Github" #i18n-GT
+        instagram: "Instagram" #i18n-GT
+        jobs: "Work with us" #i18n-GT
+        near: "Near Me" #i18n-GT
+        press: "press" #i18n-GT
+        privacy: "privacy" #i18n-GT
+        recents: "recent" #i18n-GT
+        recommended: "recommended" #i18n-GT
+        submit: "Submit your project" #i18n-GT
+        terms: "Terms of use" #i18n-GT
+        twitter: "Twitter" #i18n-GT
+      texts: 
+        copyleft: "Made with love." #i18n-GT
+      titles: 
+        about: "about Us" #i18n-GT
+        contact: "keep in touch" #i18n-GT
+        newsletter: "Subscribe to our news" #i18n-GT
+        sitemap: "Browse" #i18n-GT
+        social: "social networks" #i18n-GT

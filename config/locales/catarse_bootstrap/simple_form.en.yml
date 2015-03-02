@@ -1,0 +1,39 @@
+--- 
+en: 
+  simple_form: 
+    collections: 
+      project: 
+        traffic_sources: 
+          eight: "I did an internet search on collective funding / alternative forms of funding" #i18n-GT
+          five: "article in a blog" #i18n-GT
+          four: "from a project that was picking up on the platform" #i18n-GT
+          nine: "other" #i18n-GT
+          one: "I 've had another project in ProduceRun" #i18n-GT
+          seven: "in a class / course / lecture / event" #i18n-GT
+          six: "a story in the press ( news portal on the internet, TV, newspaper, magazine )" #i18n-GT
+          three: "indication friend / colleague / professional contact" #i18n-GT
+          two: "indication of a person who has had a project in ProduceRun" #i18n-GT
+    hints: 
+      project: 
+        about: "Talk about what will take place , how the money will be used , who is behind the project, as and when the project will be delivered ." #i18n-GT
+        category: "Before sending , explore and inspire other projects in the same category." #i18n-GT
+        goal: "Much of the support will be close to you ." #i18n-GT
+        headline: "No more than 100 characters ." #i18n-GT
+        name: "The more direct the better." #i18n-GT
+        online_days: "On average the projects are in the air for 40 days." #i18n-GT
+        permalink: "It is the address of your project , let it simple." #i18n-GT
+        video_url: "Enter here the link of your video." #i18n-GT
+    prompts: 
+      project: 
+        category: "Select a category" #i18n-GT
+        select: "Select an option" #i18n-GT
+        traffic_sources: "How did you meet ProduceRun ?" #i18n-GT
+    validation_texts: 
+      contribution: 
+        address_city: "Enter the city name" #i18n-GT
+        address_number: "Enter the address number" #i18n-GT
+        address_phone_number: "Enter the phone number" #i18n-GT
+        address_street: "Enter the street name" #i18n-GT
+        address_zip_code: "Enter the zip code" #i18n-GT
+        payer_email: "Please enter a valid email address" #i18n-GT
+        payer_name: "Please type the name of supporter" #i18n-GT

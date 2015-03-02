@@ -1,0 +1,75 @@
+--- 
+en: 
+  projects: 
+    metrics: 
+      titles: 
+        address_state: "Total support confirmed by State" #i18n-GT
+        confirmed_amount_by_day: "Total contributions per day" #i18n-GT
+        confirmed_by_day: "Total daily confirmed support" #i18n-GT
+    posts: 
+      new: 
+        comment: "Text of your Novelty" #i18n-GT
+        exclusive: "Visible only to supporters" #i18n-GT
+        notice: "Successfully sent New!" #i18n-GT
+        submit: "Send Novelty" #i18n-GT
+        title: "Summary of Your New" #i18n-GT
+        warning: "Recalling that all post new goes directly to the email of his supporters ." #i18n-GT
+      project_post: 
+        contribute: "Support" #i18n-GT
+        destroy: "Remove Novelty" #i18n-GT
+        destroy_confirmation: "want to remove" #i18n-GT
+        unavailable: "This novelty is only available to supporters." #i18n-GT
+        unavailable_contribute: "this project to view it ." #i18n-GT
+    project_about: 
+      embed: "embed" #i18n-GT
+      embed_title: "Embed this project on your site" #i18n-GT
+    project_reports: 
+      all_contributions_without_reward: "Download report of all supporters who did not select a Pricing" #i18n-GT
+      link_reports_confirmed: "Download report all confirmed supporters" #i18n-GT
+      link_reports_waiting_confirmation: "Download report of all supporters with printed ticket" #i18n-GT
+      link_reward: "Download report of reward supporters %{value}" #i18n-GT
+    reminder: 
+      active_btn: "Remember me this project" #i18n-GT
+      deactive_btn: "Do not want to be remembered" #i18n-GT
+      ok: "Ok!" #i18n-GT
+    send_to_analysis: "Your project has been sent to our team." #i18n-GT
+    show: 
+      contribute_project: 
+        display_status: 
+          draft: "This project is only a draft and is not yet open to receive support ." #i18n-GT
+          failed: "This project does not reach the minimum of %{goal} to%{date} and was not funded" #i18n-GT
+          in_analysis: "This project is under review and is not yet open to receive support ." #i18n-GT
+          not_reached_goal: "This project will only be funded if at least %{goal} are reached to%{date}" #i18n-GT
+          reached_goal: "This project will be successful and funded in%{date}" #i18n-GT
+          rejected: "This project was not accepted." #i18n-GT
+          successful: "This project was successful and was funded in %{date}" #i18n-GT
+          waiting_funds: "Awaiting confirmation slips to know if this project will be funded ." #i18n-GT
+        submit: "Buy" #i18n-GT
+      contribution_states: 
+        confirmed: "confirmed" #i18n-GT
+        pending: "printed slips" #i18n-GT
+      count_contributed_projects: "supported %{total} projects" #i18n-GT
+      funding_period: "Campaign period" #i18n-GT
+      menu: 
+        about: "about" #i18n-GT
+        add_reward: "Pricing" #i18n-GT
+        comments: "reviews" #i18n-GT
+        contributions: "supports" #i18n-GT
+        edit: "edition" #i18n-GT
+        metrics: "metrics" #i18n-GT
+        posts: "news" #i18n-GT
+        reports: "reports" #i18n-GT
+      no_rewards_warning: "Do not travel !" #i18n-GT
+      no_rewards_warning_title: "Create here your rewards" #i18n-GT
+      project_by: "design by" #i18n-GT
+      project_header: 
+        subtitle_html: "A project %{link}" #i18n-GT
+        with_city: "A %{project} category_name by %{author} in%{city}" #i18n-GT
+        without_city: "A project" #i18n-GT
+      sidebar: 
+        contributions: "support" #i18n-GT
+        goal: "achieved in %{total}" #i18n-GT
+    twitter: 
+      take_a_look: "Check out the project %{name} in ProduceRun" #i18n-GT
+    video_embed: 
+      a_project_by_html: "A project %{link} in" #i18n-GT

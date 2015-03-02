@@ -1,0 +1,102 @@
+--- 
+en: 
+  users: 
+    credit_cards: 
+      index: 
+        brand: "operator" #i18n-GT
+        last_digits: "card" #i18n-GT
+        remove: "remove" #i18n-GT
+        title: "Credit cards" #i18n-GT
+    credits: 
+      index: 
+        contribution_date: "Support Date" #i18n-GT
+        current_credits_html: "Your current balance is <span id=\"current_credits\"> %{credits} </span> in credits." #i18n-GT
+        important_html: "For all reimbursement rules and procedures, <a href='http://suporte.ProduceRun.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos'" #i18n-GT
+        insufficient_credits: "You do not have enough credits to achieve this reversal ." #i18n-GT
+        project: "project" #i18n-GT
+        refunded: "Confirmed request." #i18n-GT
+        refunds_title: "Support that may have made reversal" #i18n-GT
+        request_refund: "request reversal" #i18n-GT
+        requested_refund: "asked reversal" #i18n-GT
+        status: "Status" #i18n-GT
+        title: "my credits" #i18n-GT
+        value: "value" #i18n-GT
+      modal: 
+        accept_btn: "Yes, I request a refund for my support" #i18n-GT
+        link: "Rules and Operations of refunds / rebates" #i18n-GT
+        reject_btn: "No, I want to keep my credits" #i18n-GT
+        text: "Learn how the refund process ProduceRun:" #i18n-GT
+        title: "You really want to request a refund of your support ?" #i18n-GT
+      refund: 
+        cannot_refund: "This support can not be reversed ." #i18n-GT
+        error: "Oops ." #i18n-GT
+        no_credits: "You do not have enough credits to achieve this reversal ." #i18n-GT
+        refunded: "This support has been reversed." #i18n-GT
+        requested_refund: "Have you applied for this chargeback support." #i18n-GT
+      title: "my credits" #i18n-GT
+    current_user_fields: 
+      bank_account_hint: "Your bank data will be used to perform a full refund of your support , if the project does not reach 100 %of the target ." #i18n-GT
+      bank_account_title: "bank details" #i18n-GT
+      bio_limit: "140 characters" #i18n-GT
+      change_password: "Change my password" #i18n-GT
+      current_password_hint: "<i>For the password to be changed you need to confirm your current password.</i>" #i18n-GT
+      deactivate: "Disable my account" #i18n-GT
+      deactivate_confirm: "You want to disable this account ?" #i18n-GT
+      deactivate_hint: "All your support will be converted into anonymous support , your data will not be visible , you will exit the system and your account will be permanently disabled ." #i18n-GT
+      deactivate_notice: "The account %{name} has been disabled." #i18n-GT
+      email_hint: "Your email is used only to send ProduceRun of communications and projects you support ." #i18n-GT
+      email_tooltip: "Click here to fill in your email ..." #i18n-GT
+      facebook_link: "Facebook profile ( full link )" #i18n-GT
+      gravatar_hint_html: "You can also change your photo using the %{link} with your email." #i18n-GT
+      local_avatar: "my avatar" #i18n-GT
+      my_data: "my data" #i18n-GT
+      my_facebook: "Integration with facebook" #i18n-GT
+      newsletter: "I want to receive news from ProduceRun by email" #i18n-GT
+      other_link: "link its website" #i18n-GT
+      password_hint: "<i>Leave blank if you do not want to change your password.</i>" #i18n-GT
+      social_info: "Contact Information" #i18n-GT
+      submit: "send" #i18n-GT
+      submit_text: "Choose your image" #i18n-GT
+      twitter: "twitter ( user)" #i18n-GT
+      update_social_info: "Update information" #i18n-GT
+      updated: "Your information has been updated" #i18n-GT
+    failed_reactivation: "The link reactivation is invalid , please contact our team." #i18n-GT
+    project: 
+      confirmed: "confirmed" #i18n-GT
+      refunded: "refunded" #i18n-GT
+      requested_refund: "requested reimbursement" #i18n-GT
+      tell_about_this_contribution: "Tell the world about your support!" #i18n-GT
+      waiting_confirmation: "waiting for confirmation" #i18n-GT
+    reactivated: "Welcome back , your account has been reactivated." #i18n-GT
+    show: 
+      attention: "Heads Up" #i18n-GT
+      contributions: 
+        anonymous: "Anonymous support." #i18n-GT
+        no_contributions: "%{name} not backed any project yet ." #i18n-GT
+        no_contributions_current_user_html: "You have not backed any project." #i18n-GT
+        no_reward: "You have not selected any pricing" #i18n-GT
+        title: "Projects that %{name} has supported" #i18n-GT
+        title_current_user: "Projects already supported" #i18n-GT
+        your_reward: "your pricing" #i18n-GT
+      projects: 
+        here: "here" #i18n-GT
+        no_projects: "%{name} has not started any project on ProduceRun ." #i18n-GT
+        no_projects_current_user_html: "You have not started any project on ProduceRun ." #i18n-GT
+        title: "%Of projects %{name}" #i18n-GT
+        title_current_user: "my Projects" #i18n-GT
+      tabs: 
+        comments: "reviews" #i18n-GT
+        contributed_projects: "supported projects" #i18n-GT
+        created_projects: "projects created" #i18n-GT
+        credit_cards: "Credit cards" #i18n-GT
+        credits: "credits" #i18n-GT
+        settings: "preferences" #i18n-GT
+        unsubscribes: "Notifications" #i18n-GT
+      user_social: 
+        email: "Send me an email" #i18n-GT
+        facebook: "Profile no facebook" #i18n-GT
+        twitter: "Profile no twitter" #i18n-GT
+    unsubscribes: 
+      posts: "I want to receive updates of projects" #i18n-GT
+      projects_in_reminder: "Projects with active reminder :" #i18n-GT
+      title: "Choosing which projects you want to receive notifications :" #i18n-GT
