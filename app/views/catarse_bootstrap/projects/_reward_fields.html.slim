@@ -40,7 +40,7 @@
       .w-col.w-col-4.w-sub-col
         .fontweight-semibold.fontsize-smallest.u-marginbottom-10
           - if reward.new_record?
-            | #{t('.reward')} #
+            | #{t('Pricing Option 1')} #
           - else
             = t('.edit')
           |&nbsp;
@@ -70,13 +70,13 @@
               .w-col.w-col-5
                 label.fontsize-smaller= t('.description') 
               .w-col.w-col-7
-                = f.input_field :description, as: :text,  class: 'positive', placeholder: "Descreva sua recompensa", required: true
+                = f.input_field :description, as: :text,  class: 'positive', placeholder: "Describe your pricng", required: true
                 .fontsize-smaller.text-error.u-marginbottom-20.fa.fa-exclamation-triangle.w-hidden[data-error-for="reward_description"] = t('simple_form.validation_texts.reward.description')
             .w-row
               .w-col.w-col-5
                 .w-checkbox
                   .w-checkbox-input= check_box_tag  "limit_reward", '', (reward.maximum_contributions.present?), id: 'limit_reward' 
-                  label.w-form-label for="limit_reward"= t('.limit_reward') 
+                  label.w-form-label for="limit_reward"= t('Limit option') 
               .w-col.w-col-7 class="reward_maximum_contributions #{reward.maximum_contributions.present? ?  '' : 'w-hidden'}"
                 = f.input_field :maximum_contributions, as: :tel, class: 'u-marginbottom-30 positive', placeholder: t('.available')
             .w-row.u-margintop-30

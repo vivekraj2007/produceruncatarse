@@ -1,7 +1,7 @@
 pt:
   projects:
     project:
-      contributed: levantados
+      contributed: Raised
       reached: atingido
       progress_html: "<span>%{percent}%</span> financiado"
       time_remaining_small_html:
@@ -29,7 +29,7 @@ pt:
       remaining:
         one: "restante"
         other: "restantes"
-      contributed: levantados
+      contributed: Raised
       reached: atingido
       progress_html: "<span>%{percent}%</span> financiado"
       time_remaining_html:

@@ -21,45 +21,45 @@
             = link_to '#basics', id: 'basics_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_basics', tab_group: 'edit'} do
               = @project.decorate.status_icon_for('basics')
               | &nbsp;&nbsp;
-              = t('.basics_tab')
+              = t('Start')
           = link_to '#project', id: 'dashboard_project_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_project', tab_group: 'edit'} do
             = @project.decorate.status_icon_for('project')
             | &nbsp;&nbsp;
-            = t('.project_tab')
+            = t('Campaign')
           - if @project.already_deployed?
             = link_to '#posts', id: 'dashboard_posts_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_posts', tab_group: 'edit'} do
-              = t('.posts_tab')
+              = t('Posts')
               | &nbsp;
               span.badge= @project.posts.count
           = link_to '#reward', id: 'dashboard_reward_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_reward', tab_group: 'edit'} do
             = @project.decorate.status_icon_for('reward')
             | &nbsp;&nbsp;
-            = t('.rewards_tab')
+            = t('Pricing')
           - if @project.already_deployed?
             = link_to '#reports', id: 'dashboard_reports_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_reports', tab_group: 'edit'} do
-              = t('.reports_tab')
+              = t('Reports')
               | &nbsp;
           = link_to '#user_about', id: 'dashboard_user_about_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_user_about', tab_group: 'edit'} do
             = @project.decorate.status_icon_for('user_about')
             | &nbsp;&nbsp;
-            = t('.about_you_tab')
+            = t('About You')
           - if @project.can_show_account_link? || (current_user && current_user.admin?)
             = link_to '#user_settings', id: 'dashboard_user_settings_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_user_settings', tab_group: 'edit'} do
               = @project.decorate.status_icon_for('user_settings')
               | &nbsp;&nbsp;
-              = t('.account_tab')
+              = t('Account')
         - if @project.draft? || @project.approved? || @project.rejected? || @project.in_analysis?
           .w-col.w-col-3.w-clearfix.col-btn-send-draft
             - if @project.can_show_preview_link?
               = link_to '#preview', id: 'dashboard_preview_link', class: 'dashboard-nav-link ' , data: {target: '#dashboard_preview', tab_group: 'edit'} do
-                = t('.preview_tab')
+                = t('Preview Your Campaign')
             - if @project.draft?
               .btn-send-draft
                  = link_to t('.send'), send_to_analysis_project_path(@project), class: 'btn btn-small'
             - if @project.approved?
               .btn-send-draft
                  = link_to publish_project_path(@project), class: 'btn btn-small' do
-                  = t('.publish')
+                  = t('Publish')
                   | &nbsp;&nbsp;
                   span.fa.fa-chevron-right
   section.section

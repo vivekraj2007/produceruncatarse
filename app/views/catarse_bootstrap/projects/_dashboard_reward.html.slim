@@ -20,7 +20,7 @@
               #rewards
                 = f.simple_fields_for :rewards, @rewards do |form|
                   = render 'reward_fields', f: form
-              = link_to_add_association "+ #{t('.add_reward')}", f, :rewards, :'data-association-insertion-node' => '#rewards', :'data-association-insertion-method' => :append, class: 'btn btn-large btn-message show_reward_form new_reward_button'
+              = link_to_add_association '+ Add another price option', f, :rewards, :'data-association-insertion-node' => '#rewards', :'data-association-insertion-method' => :append, class: 'btn btn-large btn-message show_reward_form new_reward_button'
 
             .w-col.w-col-4.w-col-push-4.u-margintop-40
               = f.button :submit, 'Save',  class:'btn btn-large'
@@ -28,5 +28,5 @@
         .w-col.w-col-4.w-hidden-small.w-hidden-tiny    
           a.w-inline-block.card.u-radius.card-guide href="http://beta.catarse.me/guides#rewards" target="_blank"
             = image_tag "icon-guides-blue-sm.png", class: "u-left"
-            .fontweight-semibold.fontsize-smallest.fontcolor-secondary Guia dos Realizadores
-            .fontsize-small.fontcolor-dashboard Definindo as recompensas
+            .fontweight-semibold.fontsize-smallest.fontcolor-secondary Need help or advice?
+            .fontsize-small.fontcolor-dashboard ProduceRun Support

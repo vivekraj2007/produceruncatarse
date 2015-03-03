@@ -14,13 +14,15 @@
           .w-form
               = @project.display_errors(:project)
 
-              = form.input :video_url, as: :string, 
-                wrapper: :two_columns,
-                wrapper_class: 'w-row u-marginbottom-30 card card-terciary',
-                label_wrapper_html: { class: 'w-col w-col-5 w-subcol' },
-                text_field_wrapper_html: { class: 'w-col w-col-7' },
-                input_html: { class: 'positive', required: false },
-                validation_text: false
+              .card.card-terciary.u-marginbottom-30
+                = form.input :video_url, as: :string, 
+                  wrapper: :two_columns,
+                  wrapper_class: 'w-row',
+                  label_wrapper_html: { class: 'w-col w-col-5 w-subcol' },
+                  text_field_wrapper_html: { class: 'w-col w-col-7' },
+                  input_html: { class: 'positive', required: false },
+                  validation_text: false
+                p Eg: showcase your farm, practices and items grown.
 
               = form.input :about, as: :text, 
                 wrapper: :one_col,
@@ -32,7 +34,7 @@
               .card.card-terciary
                 = form.input :budget, as: :text, 
                   wrapper: :one_col,
-                  hint: t('.budget_hint_html'),
+                  hint: t('Farmer notes'),
                   wrapper_class: '',
                   label_wrapper_html: { class: 'w-col w-col-12' },
                   text_field_wrapper_html: { class: 'w-col w-col-12' },
@@ -52,8 +54,8 @@
         .w-col.w-col-4.w-hidden-small.w-hidden-tiny    
           a.w-inline-block.card.u-radius.card-guide.u-marginbottom-20 href="http://beta.catarse.me/guides#you_history" target="_blank"
             = image_tag "icon-guides-blue-sm.png", class: "u-left"
-            .fontweight-semibold.fontsize-smallest.fontcolor-secondary Guia dos Realizadores
-            .fontsize-small.fontcolor-dashboard Contando sua história
+            .fontweight-semibold.fontsize-smallest.fontcolor-secondary Need Help or advice?
+            .fontsize-small.fontcolor-dashboard ProduceRun Support
 
           = render 'shared/formatting_tips'
   .divider
@@ -88,5 +90,5 @@
           .w-col.w-col-4
           .w-col.w-col-4
             = hidden_field_tag 'anchor', 'project'
-            = form.button :submit, t('.submit'),  class:'btn btn-large', id: 'project-save'
+            = form.button :submit, 'Submit',  class:'btn btn-large', id: 'project-save'
           .w-col.w-col-4

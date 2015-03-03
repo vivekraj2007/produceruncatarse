@@ -35,7 +35,7 @@ pt:
       status: "Status:"
       project_numbers:
         financed: financiado
-        backed: levantados
+        backed: Raised
         contributions: apoios
         left: restantes
       waiting_funds:

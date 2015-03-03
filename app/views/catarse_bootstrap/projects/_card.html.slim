@@ -31,7 +31,7 @@ div class="#{defined?(wrapper_class) ? wrapper_class : ''}"
         .w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-center-small-only
           .fontsize-smaller.fontweight-semibold 
             = number_to_currency(@project.pledged, precision: 0)
-          .fontsize-smallest.lineheight-tightest Levantados
+          .fontsize-smallest.lineheight-tightest Raised
         .w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-right
           - unless @project.expired?
             .fontsize-smaller.fontweight-semibold 

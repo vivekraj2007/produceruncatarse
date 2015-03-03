@@ -14,9 +14,9 @@
         .fontsize-largest.fontweight-semibold.u-marginbottom-20
           = resource.decorate.display_name
         .w-hidden-small.w-hidden-tiny.u-marginbottom-40.fontsize-base
-          | Chegou junto em #{localize(resource.created_at, format: "%B de %Y")}
+          | Came together in #{localize(resource.created_at, format: "%B of %Y")}
           br
-          | Apoiou #{projects_to_show.count} projetos e já criou #{resource.created_projects.count} projetos&nbsp;
+          | Supported #{projects_to_show.count} campaigns and has created #{resource.created_projects.count} campaigns&nbsp;
       .w-col.w-col-3
   .hero-profile style="background-image: url('#{resource.cover_image.try(:base).try(:url) || resource.uploaded_image.url}')"
 
@@ -44,7 +44,7 @@ section.section
           .w-row.u-text-center
             .w-col.w-col-2
             .w-col.w-col-8
-              .fontsize-base #{resource.name} not backed any campaign yet .
+              .fontsize-base #{resource.name} not backed any campaigns yet .
             .w-col.w-col-2
         - else
           == render_projects projects_to_show.most_recent_first, 'profile_contributed_projects', { wrapper_class: 'w-col w-col-4 u-marginbottom-30' }
