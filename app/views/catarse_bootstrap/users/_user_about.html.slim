@@ -21,7 +21,7 @@
           .fontsize-smallest.lineheight-looser
             = resource.address_city
         .fontsize-smallest 
-          | #{resource.created_projects.count} projeto criado
+          | #{resource.created_projects.count} campaign created
         .fontsize-smallest
           | #{resource.total_contributed_projects} campaigns supported
         .project-author-contacts
@@ -37,5 +37,5 @@
                 = link_to link.link, link.link, class: 'link-hidden', target: '__blank'
             li.project-author-list.fontsize-smaller
               a.link-hidden href="#" 
-        = mail_to resource.email, 'Enviar mensagem', class: 'btn btn-medium btn-message', target: '__blank'
+        = mail_to resource.email, 'Send Message', class: 'btn btn-medium btn-message', target: '__blank'
 
