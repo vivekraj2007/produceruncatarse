@@ -25,12 +25,12 @@ RSpec.describe ContributionDecorator do
 
     context "when the value has decimal places" do
       subject{ build(:contribution, value: 99.99).decorate.display_value }
-      it{ is_expected.to eq("R$ 99,99") }
+      it{ is_expected.to eq("$ 99,99") }
     end
 
     context "when the value does not have decimal places" do
       subject{ build(:contribution, value: 1).decorate.display_value }
-      it{ is_expected.to eq("R$ 1,00") }
+      it{ is_expected.to eq("$ 1,00") }
     end
   end
 

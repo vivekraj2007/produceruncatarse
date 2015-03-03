@@ -74,7 +74,7 @@ pt:
         you_have_credits: "Você tem <strong>%{credits}</strong> em créditos para realizar este apoio."
         choose_reward: Escolha a recompensa e em seguida o valor do apoio
         choose_value: Digite o valor do seu apoio.
-        minimum_disclaimer: 'A partir de R$ <span id="minimum-value">10</span> está ótimo ;)'
+        minimum_disclaimer: 'A partir de $ <span id="minimum-value">10</span> está ótimo ;)'
         next_step: "Revisar e realizar pagamento"
         no_reward: Obrigado. Eu só quero ajudar o projeto.
       review:

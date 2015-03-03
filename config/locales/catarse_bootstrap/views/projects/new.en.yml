@@ -33,7 +33,7 @@ en:
           permalink: "It is the address of your project should be easy to remember ." #i18n-GT
           video_url: "Enter here the link of your video." #i18n-GT
         info: 
-          goal: "R$" #i18n-GT
+          goal: "$" #i18n-GT
           online_days: "days" #i18n-GT
           permalink: "http://ProduceRun.me/" #i18n-GT
         labels: 
