@@ -260,7 +260,7 @@ fr:
     hints:
       contribution:
         credits: "Vous avez <strong>%{credits}</strong> en crédits et vous pouvez les utiliser sans faire un nouveau paiement."
-        value: "Choisissez votre montant ;) mise de départ R$10, tout montant supérieur est encore meilleur"
+        value: "Choisissez votre montant ;) mise de départ $10, tout montant supérieur est encore meilleur"
       project:
         video_url_edit: 'Collez ici le lien de votre vidéo Vimeo/Youtube'
         about: "Dites-nous ce qui vous a inspiré pour arriver à ce projet. Soyez fin objectif charmant, présenter vos lecteurs avec quelque chose qui les meut, tout en étant très transparent sur les attentes de votre projet!"
@@ -268,7 +268,7 @@ fr:
         category: "Avant de formater votre projet explorez d'autres projets (réussis) pour vous en inspirer!"
         expires_at: "Enfin, choisissez combien de temps vous voulez que votre campagne dure. Encore une fois, il s'agit d'un choix stratégique: si vous mettez beaucoup de temps, les gens vont perdre de l'intérêt le long du chemin, si mettre trop peu, vous ne pouvez pas atteindre le minimum de temps."
         online_days: "Enfin, choisissez combien de temps vous voulez que votre campagne dure. Encore une fois, il s'agit d'un choix stratégique: si vous mettez beaucoup de temps, les gens vont perdre de l'intérêt le long du chemin, si mettre trop peu, vous ne pouvez pas atteindre le minimum de temps."
-        goal: "Montant en reais (R$)"
+        goal: "Montant en reais ($)"
         first_contributions: "Pour atteindre votre objectif financier c'est indispensable pour engager les gens qui sont proches de vous et le projet. Donc, si vous pouvez énumérer ici qui seront vos 20 premiers bailleurs de fonds qui serait un grand pas vers l'avant;)"
         headline: "Résumez votre projet en 140 caractères. Ce sera le premier contact que les visiteurs auront avec votre projet, avant même de voir la vidéo. Soyez créatif, clair et direct ;)"
         name: "Soyez aussi objectif que possible. Donnez des explications sur la section 'à propos'."
@@ -424,7 +424,7 @@ fr:
         error: "Ooops. There was an error while registering your contribution. Please try again."
         international:
           description: "You can use PayPal to make international payments"
-          important_html: "<p>The use of PayPal is destinated mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any fee.</p><p>In case you can make the regular payment through MoIP, we recommend you to do it.</p><p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5,4% + R$0,60 per transaction.</p>"
+          important_html: "<p>The use of PayPal is destinated mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any fee.</p><p>In case you can make the regular payment through MoIP, we recommend you to do it.</p><p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5,4% + $0,60 per transaction.</p>"
           submit: "Proceed to PayPal's checkout"
           title: "Want to make an international payment?"
         review_with_reward_html: "You will contribute with <strong>%{value}</strong> and receive the following reward:"
@@ -571,7 +571,7 @@ fr:
       headline_important: "It's a summary of  your project . 140 characters tops!:D"
       tags_important: "Check other projects in your category  <a href='%{href}' target='_blank'>here!</a>!."
       subtitle: "The time to make it happen is now! We really want to know what you're up to..."
-      title: "Send Producerun Campaign"
+      title: "Send Campaign"
       about: "Describe your project and how much do you need"
       category: "Project category"
       how_much_you_need: "How much do you want to raise?"
