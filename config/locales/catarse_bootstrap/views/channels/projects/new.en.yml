@@ -10,7 +10,7 @@ en:
         category_id_hint: "Before you format your project <a href='%{href}' target='_blank'>explore other</a> (successful) projects to inspire yourself!"
         first_contributions: "List the first contributions"
         first_contributions_hint: "To reach your financial goal it’s indispensable to engage the people who are close to you and the project. So if you can list here who will be your first 20 contributions that would be a great sign."
-        goal: "Values in reais (R$)"
+        goal: "Values in reais ($)"
         goal_hint: "The biggest part of the supportes will be close to you. Based on that try to think on your capacity to mobilize at least 50% of your network. Remember the ProduceRun 13% tax.Just divide your final budget by 0,87 to reach the final number."
         headline: "Punch Line"
         headline_hint: "Summarize your project in 140 characters. This sentence will be the first contact people will have with your project, before even seeing the video. Be creative, clear and direct."

@@ -25,7 +25,7 @@ pt:
 
         info:
           permalink: http://catarse.me/
-          goal: R$
+          goal: $
           online_days: dias
 
         submit: "Salvar e continuar"

@@ -1,18 +1,18 @@
 -contribution = @notification.contribution
-- company_name = CatarseSettings[:company_name]
-- contact_email = CatarseSettings[:email_contact]
-|Olá, <strong>#{contribution.user.display_name}</strong>!
+- company_name = CatarseSettings [:company_name ]
+- contact_email = CatarseSettings [:email_contact ]
+| Hello , < strong> #{ contribution.user.display_name } < / strong >
 br
 br
-| Seu reembolso foi realizado com sucesso e o pagamento para o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)}, cancelado.
+| Your refund was successful and the payment for the project #{ link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) } , canceled.
 br
 br
-| A chave de identificação do seu apoio é: #{contribution.payment_id}
+| The support of your identification key is: #{ contribution.payment_id }
 br
 br
-| Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to contact_email}
+| If you got any questions, please contact us replying to this message or by e -mail #{ mail_to contact_email }
 br
 br
-|Um abraço,
+| Thanks ,
 br
-| #{company_name}
+| #{ Company_name }
