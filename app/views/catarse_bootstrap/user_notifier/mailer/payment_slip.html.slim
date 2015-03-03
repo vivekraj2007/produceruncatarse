@@ -1,17 +1,17 @@
-- contribution = @notification.contribution
-p Olá, <strong>#{contribution.user.display_name}</strong> !
-p Você acabou de gerar um boleto para apoiar o projeto #{link_to(contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink))}.
+- contribution =  notification .contribution
+p Hello, <strong> #{ contribution.user.display_name } </ strong>
+p You just generate a ticket to support the ProduceRun #{ link_to (contribution.project.name, project_by_slug_url ( permalink: contribution.project.permalink)) } .
 p 
-  | Após o pagamento, levamos até 3 dias úteis para receber a confirmação. 
-  | Quando essa confirmação ocorrer, mandaremos outro email com todos os detalhes da transação.
+  | After payment, take up to 3 business days to receive confirmation. 
+  | When this confirmation occurs, will send another email with all the transaction details.
 p 
-  | Para imprimir o boleto gerado, basta 
-  = link_to 'clicar aqui', contribution.decorate.display_slip_url
-  | .
+  | To print the ticket generated, just 
+  = link_to ' click here ' , contribution.display_slip_url  
+  |.
 
-p O prazo de vencimento do boleto é de 2 dias úteis. Para alterar a data de vencimento, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_contact]}
+p The billet maturity is 2 business days. To change the due date, please contact us replying to this message or by e-mail #{ mail_to CatarseSettings [ : email_contact ] }
 
 p 
-  | Um abraço,
-  br/
-  | #{CatarseSettings[:company_name]}
+  | Big thank you,
+  br /
+  | #{ CatarseSettings [ : company_name ] }

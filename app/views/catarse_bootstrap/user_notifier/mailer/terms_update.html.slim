@@ -1,35 +1,34 @@
-- user = @notification.user
+- user =  notification .user
 
-| Olá #{user.display_name},
-br/
-br/
-| Esse email é para notificar a recente atualização nos nossos #{link_to 'termos de uso', 'http://www.catarse.me/pt/terms-of-use', target: '__blank'} 
-'  e #{link_to 'política de privacidade', 'http://www.catarse.me/pt/privacy-policy', target: '__blank' } no Catarse. As mudanças estão relacionadas ao novo meio de pagamento que o Catarse está utilizando e passam a valer para projetos que entrarem no ar dia 10/11/2014.
-br/
-br/
-| Resumindo as mudanças:
-br/
-br/
-| - projetos não financiados não geram mais créditos (independentemente de quando entraram;
-br/
-| - não haverá a possibilidade de usar créditos em nenhum projeto;
-br/
-| - Se o projeto não for financiado, reembolso do pagamento feito via cartão de crédito em até 5 dias úteis direto na fatura;
-br/
-| - Se o projeto não for financiado, reembolso do pagamento feito via boleto em até 10 dias úteis direto na conta bancária informada no momento do pagamento;
-br/
-| - opção de salvar os dados do cartão de crédito no perfil do Catarse.
-br/
-br/
-| Para ler todos os detalhes veja nosso #{link_to 'post no blog', 'http://blog.catarse.me/pode-parcelar-pode-e-salvar-o-cartao-e-automatizar-reembolsos-e-repasses/', target: '__blank'} ou 
-'  leia os #{link_to 'termos de uso', 'http://www.catarse.me/pt/terms-of-use', target: '__blank'} 
-'  e #{link_to 'política de privacidade', 'http://www.catarse.me/pt/privacy-policy', taget: '__blank'} atualizados.
-br/
-br/
-| Se ficou com alguma dúvida entre em contato conosco respondendo a este email ou através do #{mail_to CatarseSettings[:email_contact]}
-br/
-br/
-| Um abraço,
-br/
-| Catarse
-
+| Hello #{ user.display_name } ,
+br /
+br /
+| This email is to notify the recent update on our #{ link_to  ' terms of use ' , ' http://www.producerun.com/terms-of-use ' , target:  ' __blank ' } 
+'And #{ link_to  ' privacy policy ' , ' http://www.producerun.com/privacy-policy ' , target:  ' __blank '  } in catharsis. The changes are related to new means of payment that ProduceRun is using and shall be effective for ProduceRun Campaigns.
+br /
+br /
+| To summarize the changes:
+br /
+br /
+| - Unfunded ProduceRun Campaigns do not generate more credits (regardless of when they entered;
+br /
+| - There will be the possibility of using credits on any project;
+br /
+| - If the ProduceRun Campaign is not funded, refund of payment made via credit card within 5 working days straight in the making;
+br /
+| - If the ProduceRun Campaign is not funded, refund of payment made via slip within 10 business days straight in the given bank account at the time of payment;
+br /
+| - Option to save the credit card data on ProduceRun profile.
+br /
+br /
+| To read all the details see our #{ link_to  ' post on blog ' , ' http://blog.producerun.com/ ' , target:  ' __blank ' } ou
+'Read #{ link_to  ' terms of use ' , ' http://www.producerun.com/terms-of-use ' , target:  ' __blank ' } 
+'And #{ link_to  ' privacy policy ' , ' http://www.producerun.com/privacy-policy ' , taget:  ' __blank ' } updated.
+br /
+br /
+| If you got any questions please contact us by replying to this email or by #{ mail_to CatarseSettings [ : email_contact ] }
+br /
+br /
+| Thanks,
+br /
+| ProduceRun

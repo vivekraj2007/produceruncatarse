@@ -1,41 +1,40 @@
-p Seguem todos os dados do pagamento:
+p Here are all the payment details :
 p
-  | Nome do apoiador: #{(contribution.payer_name || contribution.user.display_name)}
-  br/
-  | CPF/CNPJ do apoiador: #{(contribution.payer_document || contribution.user.cpf)}
-  br/
-  | Data da confirmação do apoio: #{l contribution.confirmed_at}
-  br/
-  | Opção de pagamento: #{contribution.payment_choice || contribution.payment_method}
-  br/
-  | Valor da contribuição: #{number_to_currency contribution.value}
-  - if contribution.installments > 1
-    br/
-    | Número de parcelas: #{contribution.installments}
-    br/
-    | Valor da parcela: #{number_to_currency(contribution.installment_value, precision: 2)}
-  br/
-  -if contribution.reward.present?
-    | Recompensa selecionada: #{contribution.reward.description}
-    br/
-    | Estimativa de entrega: #{contribution.reward.display_deliver_estimate}
-    br/
-  | ID do apoio: #{contribution.payment_id}
-  br/
-  | Nome/Razão Social do realizador: #{ contribution.project.user.full_name.presence || contribution.project.user.name.presence }
-  br/
-  | CPF/CNPJ do realizador: #{contribution.project.user.cpf}
+  | Supporter name: #{ ( contribution.payer_name || contribution.user.display_name ) }
+  br /
+  | CPF / CNPJ supporter : #{ ( contribution.payer_document || contribution.user.cpf ) }
+  br /
+  | Date of confirmation of support : #{ l } contribution.confirmed_at
+  br /
+  | Payment Option: #{ contribution.payment_choice || contribution.payment_method }
+  br /
+  | Contribution value : #{ number_to_currency contribution.value }
+  - If contribution.installments > 1
+    br /
+    | Number of parcels : #{ contribution.installments }
+    br /
+    | Share of value: #{ number_to_currency ( contribution.installment_value , precision : 2) }
+  br /
+  -if contribution.reward.present ?
+    | Selected Reward: #{ contribution.reward.description }
+    br /
+    | Delivery Estimates: #{ contribution.reward.display_deliver_estimate }
+    br /
+  | Support ID: #{ contribution.payment_id }
+  br /
+  | Name / Company Name of director : #{ contribution.project.user.full_name.presence || contribution.project.user.name.presence }
+  br /
+  | CPF / CNPJ director : #{ contribution.project.user.cpf }
 
 p
-  ' É importante ressaltar que o Catarse é apenas intermediador desse processo,
-  ' portanto, se tiver alguma dúvida em relação ao projeto ou recompensa selecionada entre
-  ' em contato diretamente com o realizador através do e-mail #{mail_to contribution.project.user.email}.
-  ' Ah! Lembre-se de guardar este email, pois ele contém informações importantes
-  ' a respeito da sua contribuição ao projeto.
-p Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_contact]}
+  ' Importantly, the ProduceRun is only mediator of this process ,
+  ' So if you have any questions about the ProduceRun or Pricing selected from
+  ' Directly contact the farmer via email #{ mail_to contribution.project.user.email } .
+  ' Ah ! Remember to keep this email as it contains important information
+  ' Regarding their contribution to the project.
+p If you kept any questions, please contact us replying to this message or by e -mail #{ mail_to CatarseSettings [:email_contact ] }
 
 p
-  | Um abraço e muito obrigado,
-  br/
-  | #{CatarseSettings[:company_name]}
-
+  | A big thank you,
+  br /
+  | #{ CatarseSettings [:company_name ] }
