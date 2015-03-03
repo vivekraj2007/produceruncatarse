@@ -8,7 +8,7 @@ en:
       help: "help" #i18n-GT
       profile: "my data" #i18n-GT
       projects: "my Campaigns" #i18n-GT
-      search: "Search Campaign" #i18n-GT
+      search: "Search Campaigns" #i18n-GT
       signin: "Login" #i18n-GT
       signup: "Register" #i18n-GT
       submit: "Start your Campaign" #i18n-GT

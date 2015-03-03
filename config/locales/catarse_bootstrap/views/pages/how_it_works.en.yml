@@ -13,10 +13,10 @@ en:
         link: "Learn how many supporters you will need to mobilize" #i18n-GT
         title: "Mobilize stakeholders" #i18n-GT
       start: 
-        content: "Start the draft of your project now !" #i18n-GT
-        link: "Learn more about the first steps of a project" #i18n-GT
-        title: "Start your project" #i18n-GT
-      submit: "Start your project" #i18n-GT
+        content: "Start the draft of your campaign now !" #i18n-GT
+        link: "Learn more about the first steps of a campaign" #i18n-GT
+        title: "Start your campaign" #i18n-GT
+      submit: "Start your campaign" #i18n-GT
       time: 
         content: "You can choose a time between 1 and 60 days to achieve the purpose of storage, the system we call All or Nothing ." #i18n-GT
         link: "Learn how our rate helps keep ProduceRun" #i18n-GT

@@ -322,7 +322,7 @@ en:
       signup: "Sign up"
       signin: Login
       discover: Discover
-      submit: Send Campaign
+      submit: Start a Campaign
       profile: "My profile"
       account: "My account"
     user:
@@ -607,7 +607,7 @@ en:
   channels:
     subscribed: "+ %{count} followers"
     header:
-      submit: "Send campaign"
+      submit: "Start a campaign"
       how_works: "How works"
       what_is_channel: "What is a channel?"
       contact: "Contact"
