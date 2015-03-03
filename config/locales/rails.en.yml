@@ -1,209 +1,265 @@
-en:
-  date:
-    abbr_day_names:
-    - Sun
-    - Mon
-    - Tue
-    - Wed
-    - Thu
-    - Fri
-    - Sat
-    abbr_month_names:
-    -
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Oct
-    - Nov
-    - Dec
-    day_names:
-    - Sunday
-    - Monday
-    - Tuesday
-    - Wednesday
-    - Thursday
-    - Friday
-    - Saturday
-    formats:
-      default: ! '%Y-%m-%d'
-      with_time: ! "%Y/%m/%d - %H:%M"
-      long: ! '%B %d, %Y'
-      short: ! '%b %d'
-    month_names:
-    -
-    - January
-    - February
-    - March
-    - April
-    - May
-    - June
-    - July
-    - August
-    - September
-    - October
-    - November
-    - December
-    order:
-    - :year
-    - :month
-    - :day
-  datetime:
-    distance_in_words:
-      about_x_hours:
-        one: about 1 hour
-        other: about %{count} hours
-      about_x_months:
-        one: about 1 month
-        other: about %{count} months
-      about_x_years:
-        one: about 1 year
-        other: about %{count} years
-      almost_x_years:
-        one: almost 1 year
-        other: almost %{count} years
-      half_a_minute: half a minute
-      less_than_x_minutes:
-        one: less than a minute
-        other: less than %{count} minutes
-      less_than_x_seconds:
-        one: less than 1 second
-        other: less than %{count} seconds
-      over_x_years:
-        one: over 1 year
-        other: over %{count} years
-      x_days:
-        one: 1 day
-        other: ! '%{count} days'
-      x_minutes:
-        one: 1 minute
-        other: ! '%{count} minutes'
-      x_months:
-        one: 1 month
-        other: ! '%{count} months'
-      x_seconds:
-        one: 1 second
-        other: ! '%{count} seconds'
-    prompts:
-      day: Day
-      hour: Hour
-      minute: Minute
-      month: Month
-      second: Seconds
-      year: Year
-  errors: &errors
-    format: ! '%{attribute} %{message}'
-    messages:
-      accepted: must be accepted
-      blank: can't be blank
-      confirmation: doesn't match confirmation
-      empty: can't be empty
-      equal_to: must be equal to %{count}
-      even: must be even
-      exclusion: is reserved
-      greater_than: must be greater than %{count}
-      greater_than_or_equal_to: must be greater than or equal to %{count}
-      inclusion: is not included in the list
-      invalid: is invalid
-      less_than: must be less than %{count}
-      less_than_or_equal_to: must be less than or equal to %{count}
-      not_a_number: is not a number
-      not_an_integer: must be an integer
-      odd: must be odd
-      record_invalid: ! 'Validation failed: %{errors}'
-      taken: has already been taken
-      too_long:
-        one: is too long (maximum is 1 character)
-        other: is too long (maximum is %{count} characters)
-      too_short:
-        one: is too short (minimum is 1 character)
-        other: is too short (minimum is %{count} characters)
-      wrong_length:
-        one: is the wrong length (should be 1 character)
-        other: is the wrong length (should be %{count} characters)
-    template:
-      body: ! 'There were problems with the following fields:'
-      header:
-        one: 1 error prohibited this %{model} from being saved
-        other: ! '%{count} errors prohibited this %{model} from being saved'
-  helpers:
-    select:
-      prompt: Please select
-    submit:
-      create: Create %{model}
-      submit: Save %{model}
-      update: Update %{model}
-  number:
-    currency:
-      format:
-        delimiter: ! ','
-        format: ! '%u%n'
+--- 
+en: 
+  activemodel: 
+    errors: 
+      format: "%{attribute} %{message}" #i18n-GT
+      messages: 
+        accepted: "must be accepted" #i18n-GT
+        blank: "can not be blank" #i18n-GT
+        confirmation: "The password and the password confirmation met are not equal" #i18n-GT
+        empty: "can not be empty" #i18n-GT
+        equal_to: "must be equal to % {count }" #i18n-GT
+        even: "must be even" #i18n-GT
+        exclusion: "is not available" #i18n-GT
+        greater_than: "must be greater than count} { %" #i18n-GT
+        greater_than_or_equal_to: "must be greater or equal the% count} {" #i18n-GT
+        inclusion: "is not included in the list" #i18n-GT
+        invalid: "is not valid" #i18n-GT
+        less_than: "% should be less than count} {" #i18n-GT
+        less_than_or_equal_to: "should be less or equal the% count} {" #i18n-GT
+        not_a_number: "only accepts numbers" #i18n-GT
+        not_an_integer: "is not an integer" #i18n-GT
+        odd: "must be odd" #i18n-GT
+        record_invalid: "Validation failed:% { errors }" #i18n-GT
+        taken: "is already in use" #i18n-GT
+        too_long: "is too long ( maximum :% {count } characters )" #i18n-GT
+        too_short: "is too short (minimum :% {count } characters )" #i18n-GT
+        wrong_length: "does not have the expected size ( % {count } characters )" #i18n-GT
+      template: 
+        body: "Please check (s ) following ( s) field (s ) :" #i18n-GT
+        header: 
+          one: "Could not write % { model } : 1 error" #i18n-GT
+          other: "Unable { model } save % :% {count } errors ." #i18n-GT
+  activerecord: 
+    errors: 
+      format: "%{attribute} %{message}" #i18n-GT
+      messages: 
+        accepted: "must be accepted" #i18n-GT
+        blank: "can not be blank" #i18n-GT
+        confirmation: "The password and the password confirmation met are not equal" #i18n-GT
+        empty: "can not be empty" #i18n-GT
+        equal_to: "must be equal to % {count }" #i18n-GT
+        even: "must be even" #i18n-GT
+        exclusion: "is not available" #i18n-GT
+        greater_than: "must be greater than count} { %" #i18n-GT
+        greater_than_or_equal_to: "must be greater or equal the% count} {" #i18n-GT
+        inclusion: "is not included in the list" #i18n-GT
+        invalid: "is not valid" #i18n-GT
+        less_than: "% should be less than count} {" #i18n-GT
+        less_than_or_equal_to: "should be less or equal the% count} {" #i18n-GT
+        not_a_number: "only accepts numbers" #i18n-GT
+        not_an_integer: "is not an integer" #i18n-GT
+        odd: "must be odd" #i18n-GT
+        record_invalid: "Validation failed:% { errors }" #i18n-GT
+        taken: "is already in use" #i18n-GT
+        too_long: "is too long ( maximum :% {count } characters )" #i18n-GT
+        too_short: "is too short (minimum :% {count } characters )" #i18n-GT
+        wrong_length: "does not have the expected size ( % {count } characters )" #i18n-GT
+      template: 
+        body: "Please check (s ) following ( s) field (s ) :" #i18n-GT
+        header: 
+          one: "Could not write % { model } : 1 error" #i18n-GT
+          other: "Unable { model } save % :% {count } errors ." #i18n-GT
+  date: 
+    abbr_day_names: 
+      - Dom
+      - Seg
+      - Ter
+      - Qua
+      - Qui
+      - Sex
+      - Sáb
+    abbr_month_names: 
+      - ~
+      - Jan
+      - Fev
+      - Mar
+      - Abr
+      - Mai
+      - Jun
+      - Jul
+      - Ago
+      - Set
+      - Out
+      - Nov
+      - Dez
+    day_names: 
+      - Domingo
+      - Segunda
+      - Terça
+      - Quarta
+      - Quinta
+      - Sexta
+      - Sábado
+    formats: 
+      default: "% d / % m / % Y" #i18n-GT
+      long: "% d of % B % Y" #i18n-GT
+      short: "% d % B" #i18n-GT
+      with_time: "% d / % m / % Y at% Hh % Mmin" #i18n-GT
+    month_names: 
+      - ~
+      - Janeiro
+      - Fevereiro
+      - Março
+      - Abril
+      - Maio
+      - Junho
+      - Julho
+      - Agosto
+      - Setembro
+      - Outubro
+      - Novembro
+      - Dezembro
+    order: 
+      - !ruby/symbol day
+      - !ruby/symbol month
+      - !ruby/symbol year
+  datetime: 
+    distance_in_words: 
+      about_x_hours: 
+        one: "about 1 hour" #i18n-GT
+        other: "about % {count } hours" #i18n-GT
+      about_x_months: 
+        one: "about 1 month" #i18n-GT
+        other: "about % { count} months" #i18n-GT
+      about_x_years: 
+        one: "about 1 year" #i18n-GT
+        other: "about % {count } years" #i18n-GT
+      almost_x_years: 
+        one: "almost one year" #i18n-GT
+        other: "% { count} almost years" #i18n-GT
+      half_a_minute: "half minute" #i18n-GT
+      less_than_x_minutes: 
+        one: "um within minutes" #i18n-GT
+        other: "% within minutes count} {" #i18n-GT
+      less_than_x_seconds: 
+        one: "less than 1 second" #i18n-GT
+        other: "% within seconds count} {" #i18n-GT
+      over_x_years: 
+        one: "over 1 year" #i18n-GT
+        other: "% over years count} {" #i18n-GT
+      x_days: 
+        one: "1 day" #i18n-GT
+        other: "% {count } days" #i18n-GT
+      x_minutes: 
+        one: "1 minute" #i18n-GT
+        other: "%{count} minutos" #i18n-GT
+      x_months: 
+        one: "1 month" #i18n-GT
+        other: "%{count} meses" #i18n-GT
+      x_seconds: 
+        one: "1 second" #i18n-GT
+        other: "%{count} segundos" #i18n-GT
+    prompts: 
+      day: "day" #i18n-GT
+      hour: "time" #i18n-GT
+      minute: "minute" #i18n-GT
+      month: "month" #i18n-GT
+      second: "second" #i18n-GT
+      year: "year" #i18n-GT
+  errors: 
+    format: "%{attribute} %{message}" #i18n-GT
+    messages: 
+      accepted: "must be accepted" #i18n-GT
+      blank: "can not be blank" #i18n-GT
+      confirmation: "The password and the password confirmation met are not equal" #i18n-GT
+      empty: "can not be empty" #i18n-GT
+      equal_to: "must be equal to % {count }" #i18n-GT
+      even: "must be even" #i18n-GT
+      exclusion: "is not available" #i18n-GT
+      greater_than: "must be greater than count} { %" #i18n-GT
+      greater_than_or_equal_to: "must be greater or equal the% count} {" #i18n-GT
+      inclusion: "is not included in the list" #i18n-GT
+      invalid: "is not valid" #i18n-GT
+      less_than: "% should be less than count} {" #i18n-GT
+      less_than_or_equal_to: "should be less or equal the% count} {" #i18n-GT
+      not_a_number: "only accepts numbers" #i18n-GT
+      not_an_integer: "is not an integer" #i18n-GT
+      odd: "must be odd" #i18n-GT
+      record_invalid: "Validation failed:% { errors }" #i18n-GT
+      taken: "is already in use" #i18n-GT
+      too_long: "is too long ( maximum :% {count } characters )" #i18n-GT
+      too_short: "is too short (minimum :% {count } characters )" #i18n-GT
+      wrong_length: "does not have the expected size ( % {count } characters )" #i18n-GT
+    template: 
+      body: "Please check (s ) following ( s) field (s ) :" #i18n-GT
+      header: 
+        one: "Could not write % { model } : 1 error" #i18n-GT
+        other: "Unable { model } save % :% {count } errors ." #i18n-GT
+  helpers: 
+    select: 
+      prompt: "Please select" #i18n-GT
+    submit: 
+      create: "Create % { model }" #i18n-GT
+      submit: "Save % { model }" #i18n-GT
+      update: "Update % { model }" #i18n-GT
+  number: 
+    currency: 
+      format: 
+        delimiter: "." #i18n-GT
+        format: "% n in %" #i18n-GT
         precision: 0
-        separator: .
+        separator: "," #i18n-GT
         significant: false
         strip_insignificant_zeros: false
-        unit: $
-    format:
-      delimiter: ! ','
-      precision: 3
-      separator: .
+        unit: "$" #i18n-GT
+    format: 
+      delimiter: "." #i18n-GT
+      precision: 2
+      separator: "," #i18n-GT
       significant: false
       strip_insignificant_zeros: false
-    human:
-      decimal_units:
-        format: ! '%n %u'
-        units:
-          billion: Billion
-          million: Million
-          quadrillion: Quadrillion
-          thousand: Thousand
-          trillion: Trillion
-          unit: ''
-      format:
-        delimiter: ''
-        precision: 3
+    human: 
+      decimal_units: 
+        format: "% n % in" #i18n-GT
+        units: 
+          billion: 
+            one: "billion" #i18n-GT
+            other: "billion" #i18n-GT
+          million: 
+            one: "million" #i18n-GT
+            other: "million" #i18n-GT
+          quadrillion: 
+            one: "quadrillion" #i18n-GT
+            other: "quadrillions" #i18n-GT
+          thousand: "thousand" #i18n-GT
+          trillion: 
+            one: "trillion" #i18n-GT
+            other: "trillion" #i18n-GT
+          unit: ~
+      format: 
+        delimiter: "." #i18n-GT
+        precision: 2
         significant: true
         strip_insignificant_zeros: true
-      storage_units:
-        format: ! '%n %u'
-        units:
-          byte:
-            one: Byte
-            other: Bytes
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
-    percentage:
-      format:
-        delimiter: ''
-    precision:
-      format:
-        delimiter: ''
-  support:
-    array:
-      last_word_connector: ! ', and '
-      two_words_connector: ! ' and '
-      words_connector: ! ', '
-  time:
-    am: am
-    formats:
-      estimate: "%B/%Y"
-      default: ! '%a, %d %b %Y %H:%M:%S %z'
-      long: ! '%B %d, %Y %H:%M'
-      short: ! '%d %b %H:%M'
-      posts: "%d %b %Y"
-    pm: pm
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors
-
+      storage_units: 
+        format: "% n % in" #i18n-GT
+        units: 
+          byte: 
+            one: "Byte" #i18n-GT
+            other: "Bytes" #i18n-GT
+          gb: "GB" #i18n-GT
+          kb: "KB" #i18n-GT
+          mb: "MB" #i18n-GT
+          tb: "TB" #i18n-GT
+    percentage: 
+      format: 
+        delimiter: "." #i18n-GT
+    precision: 
+      format: 
+        delimiter: "." #i18n-GT
+  support: 
+    array: 
+      last_word_connector: "and" #i18n-GT
+      two_words_connector: "and" #i18n-GT
+      words_connector: "," #i18n-GT
+  time: 
+    am: "am" #i18n-GT
+    formats: 
+      default: "% A, % d % B % Y , % H :% M h" #i18n-GT
+      estimate: "% B / % Y" #i18n-GT
+      long: "% A, % d % B % Y , % H :% M h" #i18n-GT
+      posts: "% d% b % Y" #i18n-GT
+      short: "%d/%m, %H:%M h" #i18n-GT
+      simple: "%d/%m/%Y, %H:%M h" #i18n-GT
+    pm: "pm" #i18n-GT
