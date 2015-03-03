@@ -133,6 +133,7 @@ group :development do
   # Uncomment only for optimization, should be commented on master branch
   # gem 'rack-mini-profiler'
   # gem 'ruby-prof'
+  gem 'quiet_assets'
 end
 
 group :test, :development do
