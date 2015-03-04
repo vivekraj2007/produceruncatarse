@@ -69,7 +69,7 @@ section.section
               - if @project.user.other_link.present?
                 li
                   = link_to t('.author_website'), @project.user.other_link, target: '_blank', class: 'link-hidden'
-          = mail_to @project.user.email, t('.contact_author'), target: '_blank', class: 'btn btn-medium btn-message'
+          = mail_to @project.user.email, t('Contact Farmer'), target: '_blank', class: 'btn btn-medium btn-message'
 
         .w-hidden-main.w-hidden-medium.project-share
           .div-share-mobile-fb

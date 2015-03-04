@@ -25,8 +25,8 @@ en:
             title: "2. History of the project" #i18n-GT
         hints: 
           about: "Share with public what makes your farm the best, your farm practises and whats special about your goods and why they should buy from you." #i18n-GT
-          category: "Before sending , explore and inspire other projects in the same category as yours." #i18n-GT
-          goal: "Much of the support will be close to you ." #i18n-GT
+          category: "Before sending , explore and inspire other campaigns in the same category as yours." #i18n-GT
+          goal: "Will come from your network." #i18n-GT
           headline: "No more than 100 characters ." #i18n-GT
           name: "The more direct the better." #i18n-GT
           online_days: "On average the projects are in the air for 40 days." #i18n-GT
@@ -35,7 +35,7 @@ en:
         info: 
           goal: "$" #i18n-GT
           online_days: "days" #i18n-GT
-          permalink: "http://ProduceRun.me/" #i18n-GT
+          permalink: "http://ProduceRun.com/" #i18n-GT
         labels: 
           about: "Project Description" #i18n-GT
           category: "Choose a category" #i18n-GT

@@ -84,7 +84,7 @@
                 = f.button :submit, t('.submit'),  class:'btn btn-small'
               - if reward.persisted?
                 .w-col.w-col-5.w-col-small-5.w-col-tiny-5.w-sub-col-middle
-                  input.w-button.btn-terciary.btn.btn-small.reward-close-button type="submit" value="Fechar" 
+                  input.w-button.btn-terciary.btn.btn-small.reward-close-button type="submit" value="Close" 
               - if reward.new_record? || (reward.persisted? && policy(reward).destroy?)
                 .w-col.w-col-1.w-col-small-1.w-col-tiny-1
                   = link_to_remove_association f, data: { confirm: 'Tem certeza?' } do
