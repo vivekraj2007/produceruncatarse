@@ -12,6 +12,9 @@ en:
         anonymous_description: "Optou to remain incognito" #i18n-GT
         no_reward: "This supporter did not select any reward" #i18n-GT
       edit: 
+        anonymous_confirmation: "The value of your support will not be disclosed to anyone other than the project owner ." #i18n-GT
+        anonymous_confirmation_title: "Are you sure you want your support to be anonymous ?" #i18n-GT
+        anonymous_contribution: "I want my support to be anonymous" #i18n-GT
         choose_payment: "How do you want to pay ?" #i18n-GT
         choose_payment_subtitle: "Select below a form of payment" #i18n-GT
         cpf: "To prosseguir , please report  :" #i18n-GT
@@ -26,18 +29,23 @@ en:
           payment_card_name: "The name on credit card" #i18n-GT
           payment_card_number: "Credit Card Number" #i18n-GT
           payment_card_source: "Security code" #i18n-GT
+          payment_card_source_short: "CVC" #i18n-GT
+          user_another_card: "Use another credit card" #i18n-GT
         installment_with_tax: "without interest" #i18n-GT
         insufficient_credits: "You have%{credits} credits." #i18n-GT
         live_in_brazil: "I live in USA ." #i18n-GT
         number_card: "Card data" #i18n-GT
         owner_card: "Cardholder data" #i18n-GT
         pagarme_warning_html: "The ProduceRun is in testing phase of a new means of payment that facilitate financial support and the possible repayment of the amounts to supporters ." #i18n-GT
+        page-title: "Support the %{name}" #i18n-GT
         payment_account: "Payment by Direct Debit" #i18n-GT
         payment_boleto: "Payment with boletus" #i18n-GT
         payment_card: "Payment with credit card" #i18n-GT
         payment_save_card: "I want to save my credit card to facilitate future support ." #i18n-GT
+        payment_slip_disclaimer: "If the project is not successful , we will refund your support." #i18n-GT
+        review_errors: "Some information is missing or not reported correctly , correct all the fields in red and tesnte again" #i18n-GT
+        review_errors_title: "Check the data reported" #i18n-GT
         review_with_reward_html: "You will support with <strong>%{value}</strong> and earn the following Pricing :" #i18n-GT
-        review_without_reward_html: "You will support with <strong>%{value}</strong> and do not want any reward for their support." #i18n-GT
         reward_sold_out: "This reward is exhausted ." #i18n-GT
         select_account: "You will be redirected to your bank's website :" #i18n-GT
         select_boleto: "To continue, please select :" #i18n-GT
@@ -49,15 +57,25 @@ en:
         transaction_error: "Transaction refused, please double check your data or contact the bank / card issuer for more information." #i18n-GT
         you_are_about_html: "You are about to join the group that does everything for%{link} happen." #i18n-GT
       new: 
-        header: 
-          subtitle: "You are a few steps to make a difference and become part of this project ." #i18n-GT
-          title: "Oohh yeah !" #i18n-GT
+        choose_reward: "Choose the reward and then the value of support" #i18n-GT
+        choose_value: "Enter the amount of your support." #i18n-GT
+        minimum_disclaimer: "From $ <span id = \" minimum- value\" > 10 </ span> is great ;)" #i18n-GT
+        next_step: "Review and make pagamento" #i18n-GT
         no_reward: "Thank U." #i18n-GT
-        submit: "Review and make payment" #i18n-GT
+        page-title: "Support the %{name}" #i18n-GT
         title: "Support the %{name}" #i18n-GT
+        you_have_credits: "You have < strong> %{credits} < / strong > in credits to make this support." #i18n-GT
+      no_estimate: "not available" #i18n-GT
       review: 
         Credits: "credits" #i18n-GT
+        MoIP: "MoIP" #i18n-GT
+        PayPal: "PayPal" #i18n-GT
         error: "Ooops ." #i18n-GT
+      selected_reward: 
+        edit: "edit" #i18n-GT
+        review_without_reward_html: "You will support with < strong> %{value} < / strong > and do not want any reward for their support." #i18n-GT
+        reward: "selected reward" #i18n-GT
+        value: "Support amount" #i18n-GT
       show: 
         header_subtitle: "Without you maybe this project did not have a chance ." #i18n-GT
         header_title: "Thank you very much!" #i18n-GT
@@ -66,3 +84,4 @@ en:
         text_subtitle: "Tell everyone what you just did" #i18n-GT
         text_title_html: "You are now part of the group that does everything for%{link} happen." #i18n-GT
         title: "thank you very much" #i18n-GT
+      you_selected: "You chose this !" #i18n-GT

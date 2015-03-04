@@ -1,6 +1,16 @@
 --- 
 en: 
   rewards: 
+    form: 
+      available: "Quantity Available" #i18n-GT
+      deliver_at: "Estimated delivery :" #i18n-GT
+      description: "description :" #i18n-GT
+      edit: "edit reward" #i18n-GT
+      info_box: "You can limit the amount available for a reward ." #i18n-GT
+      limit_reward: "limit reward" #i18n-GT
+      minimum_value: "Bid :" #i18n-GT
+      reward: "reward" #i18n-GT
+      submit: "save" #i18n-GT
     index: 
       contributions_to_confirm: 
         one: "1 support in term of confirmation." #i18n-GT
@@ -12,4 +22,5 @@ en:
       new_reward: "Sign pricing" #i18n-GT
       reward_deliver_time: "<b> Delivery Estimates: </b>%{estimate}" #i18n-GT
       reward_title: "%{minimum}" #i18n-GT
+      select_reward: "Select this reward" #i18n-GT
       sold_out: "exhausted" #i18n-GT

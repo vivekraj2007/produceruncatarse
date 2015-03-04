@@ -16,35 +16,12 @@ en:
           support: "holder" #i18n-GT
       form: 
         blocks: 
-          disclaimer: "Not all projects submitted will air , our service will evaluate the focus , the feasibility , consistency and the presentation of your project." #i18n-GT
           first: 
             description: "You are creating a draft of your project." #i18n-GT
             title: "1. Enter your producerun Campaign Name" #i18n-GT
-          second: 
-            description: "Information may be edited below for you at any time , even when your project is in the air." #i18n-GT
-            title: "2. History of the project" #i18n-GT
-        hints: 
-          about: "Share with public what makes your farm the best, your farm practises and whats special about your goods and why they should buy from you." #i18n-GT
-          category: "Before sending , explore and inspire other campaigns in the same category as yours." #i18n-GT
-          goal: "Will come from your network." #i18n-GT
-          headline: "No more than 100 characters ." #i18n-GT
-          name: "The more direct the better." #i18n-GT
-          online_days: "On average the projects are in the air for 40 days." #i18n-GT
-          permalink: "It is the address of your project should be easy to remember ." #i18n-GT
-          video_url: "Enter here the link of your video." #i18n-GT
         info: 
           goal: "$" #i18n-GT
           online_days: "days" #i18n-GT
           permalink: "http://ProduceRun.com/" #i18n-GT
-        labels: 
-          about: "Project Description" #i18n-GT
-          category: "Choose a category" #i18n-GT
-          goal: "Amount to be raised" #i18n-GT
-          headline: "Catchphrase" #i18n-GT
-          name: "Project Name" #i18n-GT
-          online_days: "Deadline for collection" #i18n-GT
-          permalink: "URL design" #i18n-GT
-          traffic_sources: "How did you meet ProduceRun ?" #i18n-GT
-          video_url: "Video URL" #i18n-GT
         submit: "Save and Continue" #i18n-GT
       page-title: "Start your Campaign" #i18n-GT

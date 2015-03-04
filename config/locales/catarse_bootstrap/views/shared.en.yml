@@ -10,6 +10,13 @@ en:
       privacy_policy: "Privacy Policy" #i18n-GT
       terms: "Terms of use" #i18n-GT
       what_is_channel: "What are channels ?" #i18n-GT
+    formatting_tips: 
+      formatting_tip1_html: "The better the photo or video, more you sell" #i18n-GT
+      formatting_tip2_html: "Share your link to your network and other websites" #i18n-GT
+      formatting_tip3_html: "If you want to put text in the link , just use the following format: \" text you want \" : http : //sua.url ." #i18n-GT
+      formatting_tip4_html: "You can use bold by adding two asterisks (** ) before and after the text you want to format ." #i18n-GT
+      formatting_tip5_html: "You can use italic adding an underscore ( _) before and after the text you want to format ." #i18n-GT
+      title: "Formatting Tips" #i18n-GT
     header_big: 
       projects: "my Projects" #i18n-GT
     header_channel: 

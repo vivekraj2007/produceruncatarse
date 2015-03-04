@@ -1,0 +1,155 @@
+--- 
+en: 
+  projects: 
+    dashboard_basics: 
+      category: "category" #i18n-GT
+      category_label: "Explore and inspire other projects in the same category as yours." #i18n-GT
+      form: 
+        submit: "save" #i18n-GT
+      name: "Project Name" #i18n-GT
+      name_label: "The more direct the better." #i18n-GT
+      online_date: "Data entry no ar" #i18n-GT
+      online_days: "Deadline for collection" #i18n-GT
+      online_days_label: "You can choose between 1 and 60 days for your campaign ." #i18n-GT
+      project_start: "Fill out the information below" #i18n-GT
+      project_start_subtitle: "The data reported in this section may not be modified when the project goes live ." #i18n-GT
+      url: "URL design" #i18n-GT
+      url_label: "It is the address of your project should be easy to remember ." #i18n-GT
+      user_id: "User ID" #i18n-GT
+      value: "Amount to be raised" #i18n-GT
+      value_secondary: "Plan a consistent goal with your project proposes ." #i18n-GT
+    dashboard_home_templates: 
+      approved: 
+        subtitle_html: "To place your project in the air is only requires you to fill in the required data in tab %{link1}. is important to know that we charge the rate of 13% of the total amount collected only for successful projects ." #i18n-GT
+        title: "%{name} , your project has been approved!" #i18n-GT
+      draft: 
+        study_title: "Felt need to study more to build your project?" #i18n-GT
+        subtitle: "The more careful and well formatted for a project , the greater the chances of it being successful in your fundraising campaign." #i18n-GT
+        title: "%{name} , build your project !" #i18n-GT
+      failed: 
+        questions: "We also send an email to you with two short questions ." #i18n-GT
+        subtitle_html: "Your project does not hit the target and we know that this is not the best of feelings ." #i18n-GT
+        title: "%{name} , do not be discouraged !" #i18n-GT
+      in_analysis: 
+        subtitle_html: "Thank you very much!" #i18n-GT
+        title: "%{name} , you sent your project for analysis and receive our response within 4 working days" #i18n-GT
+      online: 
+        explanation_html: "< div class = ' fontsize - based u- marginbottom -40 card card - terciary '> < p class = ' FontWeight - bold' > With the project in the air, some information may no longer be edited < / p> <p > You" #i18n-GT
+        subtitle_html: "Your project is in the air and your campaign will end on the day 23hs59min59s %{date}. Until that day and time you may receive support." #i18n-GT
+        title: "%{name} , your campaign is in the air !" #i18n-GT
+      project_numbers: 
+        backed: "Raised" #i18n-GT
+        contributions: "support" #i18n-GT
+        financed: "funded" #i18n-GT
+        left: "remaining" #i18n-GT
+      rejected: 
+        subtitle_html: "You sent your project for analysis of Catharsis and we understand that it is not according to the site profile ." #i18n-GT
+        title: "%{name} unfortunately was not this time ." #i18n-GT
+      status: "Status:" #i18n-GT
+      successful: 
+        header1: "And do not forget : Transparency is everything." #i18n-GT
+        header2: "Be sure to read :" #i18n-GT
+        subtitle_html: "His project was successful and now is the time to start working relationship with their supporters !" #i18n-GT
+        title: "%{name} , celebrate you deserve!" #i18n-GT
+        transparent_html: "Keep informed supporter is to maintain a happy supporter ." #i18n-GT
+      waiting_funds: 
+        failed: "Do not hit the target :" #i18n-GT
+        good_luck: "Good luck!" #i18n-GT
+        header: "From here your project can hit the target or not." #i18n-GT
+        subtitle_html: "His project was completed in %{expires} and is awaiting confirmation slips and payments." #i18n-GT
+        success: "A meta a :" #i18n-GT
+        title: "%{name} , we are processing the final payments ." #i18n-GT
+    dashboard_posts: 
+      discard: "discard" #i18n-GT
+      old_posts: "old news" #i18n-GT
+      only_to_backers: "I want this novelty is only visible to supporters." #i18n-GT
+      publish: "post new" #i18n-GT
+      title: "Write a novelty" #i18n-GT
+      warning: "All published news is sent directly to their supporters by email." #i18n-GT
+    dashboard_preview: 
+      header_subtitle: "It's time for feedback !" #i18n-GT
+      header_text: "Share the link below with your friends and enjoy the moment to make fine adjustments to help in your campaign." #i18n-GT
+    dashboard_project: 
+      about: "Project Description" #i18n-GT
+      about_hint_html: "Contact with passion and clarity about what will be done ." #i18n-GT
+      budget_hint_html: "How your funds are used?" #i18n-GT
+      budget_label: "Project budget" #i18n-GT
+      budgets_hint_html: "Enter a list of the main items of the budget." #i18n-GT
+      budgets_label: "Details of the budget" #i18n-GT
+      card: "Card design" #i18n-GT
+      card_subtitle: "You know that project cardzinho that appears on the home and search ?" #i18n-GT
+      headline: "Project call" #i18n-GT
+      headline_hint: "Will be used in the project card , along with the above picture ( thumbnail) ." #i18n-GT
+      image: "Design Image" #i18n-GT
+      image_hint: "This image will be used as the thumbnail of your project ( PNG, JPG size 600 x 340 )" #i18n-GT
+      links_title: "useful links" #i18n-GT
+      start: "Tell the story of your project !" #i18n-GT
+      start_subtitle: "Think in the project narrative." #i18n-GT
+      submit: "save" #i18n-GT
+      video_url: "Video URL" #i18n-GT
+      video_url_hint: "Link your video on Vimeo or Youtube ." #i18n-GT
+    dashboard_reward: 
+      add_reward: "Add reward" #i18n-GT
+      reward: "reward" #i18n-GT
+      subtitle: "This is your show of gratitude to the supporters." #i18n-GT
+      title: "Create and edit your rewards here" #i18n-GT
+    dashboard_user_about: 
+      about_hint: "Use this space if you want to better describe you, your company or your institution ." #i18n-GT
+      about_label: "about you" #i18n-GT
+      facebook_link_hint: "Paste the link to your profile" #i18n-GT
+      facebook_link_label: "Facebook profile" #i18n-GT
+      name_hint: "Your public name , visible to all as a project of the author ." #i18n-GT
+      name_label: "name" #i18n-GT
+      other_link_hint: "Include links to help supporters to understand why you are the right person to do this project ." #i18n-GT
+      other_link_label: "Presence on the Internet" #i18n-GT
+      submit: "save" #i18n-GT
+      subtitle: "Supporters want to learn more about the project directors." #i18n-GT
+      title: "Tell us more about you!" #i18n-GT
+      twitter_hint: "Paste the link to your profile" #i18n-GT
+      twitter_label: "Twitter profile" #i18n-GT
+      uploaded_image_hint: "This image will be used as the thumbnail of your profile ( PNG, JPG ideal size 280 x 280 )" #i18n-GT
+      uploaded_image_label: "Profile image" #i18n-GT
+    dashboard_user_settings: 
+      account_subtitle_html: "We need the data below to make a financial transfer for successful projects ." #i18n-GT
+      account_title: "bank details" #i18n-GT
+      submit: "save" #i18n-GT
+      subtitle_html: "With the form below complete, your project will be ready to air ." #i18n-GT
+      title: "Registration and banking data" #i18n-GT
+      user_data_subtitle_html: "We need the data below for the issuance of Tax Notes for successful projects ." #i18n-GT
+      user_data_title: "Registration data and address" #i18n-GT
+    edit: 
+      about_you_tab: "about you" #i18n-GT
+      account_tab: "account" #i18n-GT
+      basics_tab: "basic" #i18n-GT
+      leave_link_html: "" #i18n-GT
+      posts_tab: "news" #i18n-GT
+      preview_tab: "Preview" #i18n-GT
+      project_tab: "project" #i18n-GT
+      publish: "publish" #i18n-GT
+      reports_tab: "reports" #i18n-GT
+      rewards_tab: "rewards" #i18n-GT
+      send: "send" #i18n-GT
+      start_tab: "Begin" #i18n-GT
+    reward_fields: 
+      available: "Quantity Available" #i18n-GT
+      deliver_at: "Estimated delivery :" #i18n-GT
+      description: "description :" #i18n-GT
+      edit: "edit reward" #i18n-GT
+      index: 
+        contributions_to_confirm: 
+          one: "1 support in term of confirmation." #i18n-GT
+          other: "%{count} support in term of confirmation." #i18n-GT
+        display_remaining: "%{remaining} %{maximum} of available" #i18n-GT
+        dont_want: "I do not want reward" #i18n-GT
+        edit_reward: "edit reward" #i18n-GT
+        limited: "limited" #i18n-GT
+        new_reward: "Sign reward" #i18n-GT
+        reward_deliver_time: "< b> Delivery Estimates: < / b> %{estimate}" #i18n-GT
+        reward_title: "For %{minimum} or more" #i18n-GT
+        select_reward: "Select this reward" #i18n-GT
+        sold_out: "exhausted" #i18n-GT
+      info_box: "Describe the value of the reward and put a real delivery date forecast for the supporters." #i18n-GT
+      limit_reward: "limit reward" #i18n-GT
+      minimum_value: "value:" #i18n-GT
+      reward: "reward" #i18n-GT
+      submit: "save" #i18n-GT
