@@ -1,13 +1,13 @@
-# Catarse [![Build Status](https://img.shields.io/travis/catarse/catarse.svg)](https://travis-ci.org/catarse/catarse) [![Coverage Status](https://img.shields.io/coveralls/catarse/catarse/channels.svg)](https://coveralls.io/r/catarse/catarse) [![Dependency Status](https://img.shields.io/gemnasium/catarse/catarse.svg)](https://gemnasium.com/catarse/catarse) [![Code Climate](https://img.shields.io/codeclimate/github/catarse/catarse.svg)](https://codeclimate.com/github/catarse/catarse)
+# ProduceRun [![Build Status](https://img.shields.io/travis/catarse/catarse.svg)](https://travis-ci.org/catarse/catarse) [![Coverage Status](https://img.shields.io/coveralls/catarse/catarse/channels.svg)](https://coveralls.io/r/catarse/catarse) [![Dependency Status](https://img.shields.io/gemnasium/catarse/catarse.svg)](https://gemnasium.com/catarse/catarse) [![Code Climate](https://img.shields.io/codeclimate/github/catarse/catarse.svg)](https://codeclimate.com/github/catarse/catarse)
 
-The first crowdfunding platform from Brazil
+Group buying directly from the Farmer
 
-## An open source crowdfunding platform for creative projects
+## An open source crowdfunding platform for farmers and local food communities
 
-Welcome to Catarse's source code repository.
-Our goal with opening the source code is to stimulate the creation of a community of developers around a high-quality crowdfunding platform.
+Welcome to ProduceRun's source code repository.
+Our goal with opening the source code is to stimulate the creation of a community of developers around local food and preselling items directly from the source.
 
-You can see the software in action in http://catarse.me.
+You can see the software in action in http://www.producerun.com.
 The official repo is https://github.com/catarse/catarse
 
 ## Getting started
@@ -67,11 +67,12 @@ Thanks a lot to Daniel Walmsley, from http://purpose.com, for starting the inter
 
 ## Payment gateways
 
-Currently, we support MoIP, PayPal and WePay through our payment engines. Payment engines are extensions to Catarse that implement a specific payment gateway logic.
+Currently, ProduceRun supports PayPal Express through our payment engines. 
+
 The current working engines are:
-* MoIP
+
 * PayPal
-* WePay
+
 
 If you have created a different payment engine to Catarse please contact us so we can link your engine here.
 If you want to create a payment engine please join our mailing list at http://groups.google.com/group/catarse-dev
