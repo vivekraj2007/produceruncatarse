@@ -1,6 +1,6 @@
---- 
-en: 
-  channels: 
-    posts: 
-      index: 
-        title: "news" #i18n-GT
+---
+en:
+  channels:
+    posts:
+      index:
+        title: news

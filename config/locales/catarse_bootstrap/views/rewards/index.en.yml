@@ -1,26 +1,26 @@
---- 
-en: 
-  rewards: 
-    form: 
-      available: "Quantity Available" #i18n-GT
-      deliver_at: "Estimated delivery :" #i18n-GT
-      description: "description :" #i18n-GT
-      edit: "edit reward" #i18n-GT
-      info_box: "You can limit the amount available for a reward ." #i18n-GT
-      limit_reward: "limit reward" #i18n-GT
-      minimum_value: "Bid :" #i18n-GT
-      reward: "reward" #i18n-GT
-      submit: "save" #i18n-GT
-    index: 
-      contributions_to_confirm: 
-        one: "1 support in term of confirmation." #i18n-GT
-        other: "%{count} -term support confirmation ." #i18n-GT
-      display_remaining: "%{remaining} of %{maximum} available" #i18n-GT
-      dont_want: "I do not want pricing" #i18n-GT
-      edit_reward: "edit pricing" #i18n-GT
-      limited: "limited" #i18n-GT
-      new_reward: "Sign pricing" #i18n-GT
-      reward_deliver_time: "<b> Delivery Estimates: </b>%{estimate}" #i18n-GT
-      reward_title: "%{minimum}" #i18n-GT
-      select_reward: "Select this reward" #i18n-GT
-      sold_out: "exhausted" #i18n-GT
+---
+en:
+  rewards:
+    form:
+      edit: edit reward
+      reward: reward
+      info_box: You can limit the amount available for a reward .
+      minimum_value: 'Bid :'
+      deliver_at: 'Estimated delivery :'
+      description: 'description :'
+      limit_reward: limit reward
+      available: Quantity Available
+      submit: save
+    index:
+      select_reward: Select this reward
+      display_remaining: "%{remaining} %{maximum} of available"
+      dont_want: I do not want reward
+      limited: limited
+      sold_out: exhausted
+      contributions_to_confirm:
+        one: 1 support in term of confirmation.
+        other: "%{count} support in term of confirmation."
+      edit_reward: edit reward
+      new_reward: Sign reward
+      reward_deliver_time: "<b>Estimativa delivery: </b> %{estimate}"
+      reward_title: For %{minimum} or more

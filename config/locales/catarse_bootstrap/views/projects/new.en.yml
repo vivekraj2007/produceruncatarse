@@ -1,27 +1,28 @@
---- 
-en: 
-  projects: 
-    new: 
-      faq: 
-        links: 
-          all_or_nothing: "Why All or Nothing ?" #i18n-GT
-          criteria: "Selection Criteria" #i18n-GT
-          how_it_works: "As the ProduceRun work?" #i18n-GT
-          money: "How will I get the money ?" #i18n-GT
-          selection: "How are projects selected ?" #i18n-GT
-          suport_central: "Support Center" #i18n-GT
-          support_contact: "Contact us" #i18n-GT
-        titles: 
-          know_more: "Learn more" #i18n-GT
-          support: "holder" #i18n-GT
-      form: 
-        blocks: 
-          first: 
-            description: "You are creating a draft of your project." #i18n-GT
-            title: "1. Enter your producerun Campaign Name" #i18n-GT
-        info: 
-          goal: "$" #i18n-GT
-          online_days: "days" #i18n-GT
-          permalink: "http://ProduceRun.com/" #i18n-GT
-        submit: "Save and Continue" #i18n-GT
-      page-title: "Start your Campaign" #i18n-GT
+---
+en:
+  projects:
+    new:
+      page-title: Start your project
+      faq:
+        titles:
+          support: holder
+          know_more: Learn more
+        links:
+          criteria: Selection Criteria
+          suport_central: Support Center
+          support_contact: Contact us
+          how_it_works: As the Catharsis work?
+          money: How will I get the money ?
+          selection: How are projects selected ?
+          all_or_nothing: Why All or Nothing ?
+      form:
+        blocks:
+          first:
+            title: You Welcome!
+            description: Complete the information below to start the draft of your
+              project.
+        info:
+          permalink: http://catarse.me/
+          goal: "$"
+          online_days: days
+        submit: Save and Continue

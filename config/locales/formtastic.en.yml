@@ -1,44 +1,55 @@
---- 
-en: 
-  formtastic: 
-    hints: 
-      contribution: 
-        credits: "You have <strong>%{credits}</strong> in credits and can support up to this value without having to make a new payment ." #i18n-GT
-      project: 
-        about: "Tell us a little about your inspiration to undertake the project , its history and what will be delivered to the end ." #i18n-GT
-        category: "Before sending your design , explore and be inspired with other projects that have gone through the site ." #i18n-GT
-        first_contributions: "For your campaign to succeed , it is essential to bring your closer contact network." #i18n-GT
-        goal: "It is important to remember that much of the support will come from those close to you (1st and 2nd level of relationship ) : <a href = ' http : //blog.ProduceRun.me/sua-campanha-no-ProduceRun-precisa-de-" #i18n-GT
-        headline: "Summarize in 140 characters your project." #i18n-GT
-        more_links: "What will be the mobilization of channels used ?" #i18n-GT
-        name: "The more direct the better." #i18n-GT
-        online_days: "On average the projects are in the air for 40 days." #i18n-GT
-        uploaded_image: "Here you upload a picture (.jpg ) with size 512x400 ." #i18n-GT
-        video_url: "The video is the centerpiece of the project." #i18n-GT
-        video_url_edit: "Paste here the link of your video hosted on Vimeo or Youtube ." #i18n-GT
-      reward: 
-        days_to_delivery: "Tell how many days , after the success of the project, you plan to give this pricing" #i18n-GT
-        description: "Describe your pricing in a way that arouses the interest of people to support the project ." #i18n-GT
-        maximum_contributions: "If your pricing is limited , please as many people ." #i18n-GT
-        minimum_value: "This is minimum support value to choose this pricing ." #i18n-GT
-    labels: 
-      contribution: 
-        anonymous: "I want my support is anonymous." #i18n-GT
-        credits: "I want to use my credits for this support." #i18n-GT
-        reward: "Select your pricing" #i18n-GT
-        value: "Total Amount" #i18n-GT
-      project: 
-        about: "History of your project and how the $ will be used *" #i18n-GT
-        expires_at: "How long to reach the minimum ?" #i18n-GT
-        first_contributions: "List of the first supporters *" #i18n-GT
-        goal: "How much you want to raise ?" #i18n-GT
-        headline: "Catchphrase *" #i18n-GT
-        more_links: "Links list related to your project *" #i18n-GT
-        name: "Project Name *" #i18n-GT
-        traffic_sources: "How did you meet ProduceRun ?" #i18n-GT
-        video_url: "video" #i18n-GT
-      reward: 
-        days_to_delivery: "Estimated delivery" #i18n-GT
-        description: "description" #i18n-GT
-        maximum_contributions: "Maximum supporters (optional )" #i18n-GT
-        minimum_value: "Bid" #i18n-GT
+---
+en:
+  formtastic:
+    hints:
+      reward:
+        description: Describe your reward in a way that arouses the interest of people
+          to support the project .
+        maximum_contributions: If your reward is limited , please as many people .
+        minimum_value: This is minimum support value to choose this reward .
+        days_to_delivery: Tell how many days , after the success of the project, you
+          plan to give this reward
+      contribution:
+        credits: You own <strong>%{credits}</strong> in credits and can support up
+          to this value without having to make a new payment .
+      project:
+        about: Tell us a little about your inspiration to undertake the project ,
+          its history and what will be delivered to the end .
+        category: Before sending your design , explore and be inspired with other
+          projects that have gone through the site .
+        first_contributions: For your campaign to succeed , it is essential to bring
+          your closer contact network.
+        goal: 'It is important to remember that much of the support will come from
+          those close to you (1st and 2nd level of relationship ) : <a href=''http://blog.catarse.me/sua-campanha-no-catarse-precisa-de-um-empurrazinho''
+          target=''_blank''>Clique here </a> Thus , to set the amount you want to
+          raise through the catharsis is critical thinking in their ability to mobilize
+          at least'
+        headline: Summarize in 140 characters your project.
+        more_links: What will be the mobilization of channels used ?
+        name: The more direct the better.
+        online_days: On average the projects are in the air for 40 days.
+        uploaded_image: Here you upload a picture (.jpg ) with size 512x400 .
+        video_url: The video is the centerpiece of the project.
+        video_url_edit: Paste here the link of your video hosted on Vimeo or Youtube
+          .
+    labels:
+      reward:
+        description: description
+        minimum_value: Bid
+        days_to_delivery: Estimated delivery
+        maximum_contributions: Maximum supporters (optional )
+      contribution:
+        credits: I want to use my credits for this support.
+        anonymous: I want my support is anonymous.
+        value: How much you want to support ?
+        reward: Select your reward
+      project:
+        about: History of your project and how the $ will be used *
+        expires_at: How long to reach the minimum ?
+        first_contributions: List of the first supporters *
+        goal: How much you want to raise ?
+        headline: Catchphrase *
+        traffic_sources: How did you meet Catharsis ?
+        more_links: Links list related to your project *
+        name: Project Name *
+        video_url: video

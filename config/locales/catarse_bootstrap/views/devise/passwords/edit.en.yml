@@ -1,16 +1,16 @@
---- 
-en: 
-  devise: 
-    passwords: 
-      edit: 
-        form: 
-          hint: 
-            password_length: "Minimum of 6 characters" #i18n-GT
-          inputs: 
-            submit: "Save and enter" #i18n-GT
-          labels: 
-            password: "new Password" #i18n-GT
-            password_confirmation: "Password confirmation" #i18n-GT
-        titles: 
-          header: "Set new password" #i18n-GT
-          site: "Set a new password" #i18n-GT
+---
+en:
+  devise:
+    passwords:
+      edit:
+        titles:
+          site: Set a new password
+          header: Set new password
+        form:
+          hint:
+            password_length: Minimum of 6 characters
+          labels:
+            password: new Password
+            password_confirmation: Password confirmation
+          inputs:
+            submit: Save and enter

@@ -1,54 +1,58 @@
---- 
-en: 
-  simple_form: 
-    collections: 
-      project: 
-        traffic_sources: 
-          eight: "I did an internet search on collective funding / alternative forms of funding" #i18n-GT
-          five: "article in a blog" #i18n-GT
-          four: "from a project that was picking up on the platform" #i18n-GT
-          nine: "other" #i18n-GT
-          one: "I 've had another project in ProduceRun" #i18n-GT
-          seven: "in a class / course / lecture / event" #i18n-GT
-          six: "a story in the press ( news portal on the internet, TV, newspaper, magazine )" #i18n-GT
-          three: "indication friend / colleague / professional contact" #i18n-GT
-          two: "indication of a person who has had a project in ProduceRun" #i18n-GT
-    hints: 
-      project: 
-        about: "Share with public what makes your farm the best, your farm practises and whats special about your goods and why they should buy from you." #i18n-GT
-        category: "Before sending , explore and inspire other campaigns in the same category." #i18n-GT
-        goal: "Will come from your network" #i18n-GT
-        headline: "No more than 100 characters ." #i18n-GT
-        name: "The more direct the better." #i18n-GT
-        online_days: "On average the projects are in the air for 40 days." #i18n-GT
-        permalink: "It is the address of your project , let it simple." #i18n-GT
-        select: "Select an option" #i18n-GT
-        traffic_sources: "How did you meet Catharsis ?" #i18n-GT
-        uploaded_image: "This image will be used as the thumbnail of your project ( PNG, JPG size 600 x 340 )" #i18n-GT
-        video_url: "Enter here the link of your video." #i18n-GT
-    prompts: 
-      project: 
-        category: "Select a category" #i18n-GT
-        select: "Select an option" #i18n-GT
-        traffic_sources: "How did you meet ProduceRun ?" #i18n-GT
-    validation_texts: 
-      bank_account: 
-        account: "What is the account number ?" #i18n-GT
-        account_digit: "What is the check digit ?" #i18n-GT
-        agency: "What is the agency's number?" #i18n-GT
-        bank_id: "Select a bank" #i18n-GT
-        owner_document: "Enter a CPF or CNPJ valid for the account holder" #i18n-GT
-        owner_name: "Enter a name with a minimum of 5 and a maximum of 30 letters" #i18n-GT
-      contribution: 
-        address_city: "Enter the city name" #i18n-GT
-        address_number: "Enter the address number" #i18n-GT
-        address_phone_number: "Enter the phone number" #i18n-GT
-        address_state: "Select a state" #i18n-GT
-        address_street: "Enter the street name" #i18n-GT
-        address_zip_code: "Enter the zip code" #i18n-GT
-        payer_document: "Please enter a valid CPF or CNPJ" #i18n-GT
-        payer_email: "Please enter a valid email address" #i18n-GT
-        payer_name: "Please type the name of supporter" #i18n-GT
-      reward: 
-        description: "Enter a description for the reward" #i18n-GT
-        minimum_value: "Enter a minimum value greater than or equal to 10" #i18n-GT
+---
+en:
+  simple_form:
+    collections:
+      project:
+        traffic_sources:
+          one: I 've had another project in Catharsis
+          two: indication of a person who has had a project in Catharsis
+          three: indication friend / colleague / professional contact
+          four: from a project that was picking up on the platform
+          five: article in a blog
+          six: a story in the press ( news portal on the internet, TV, newspaper,
+            magazine )
+          seven: in a class / course / lecture / event
+          eight: I did an internet search on collective funding / alternative forms
+            of funding
+          nine: other
+    validation_texts:
+      reward:
+        minimum_value: Enter a minimum value greater than or equal to 10
+        description: Enter a description for the reward
+      bank_account:
+        bank_id: Select a bank
+        agency: What is the agency's number?
+        account: What is the account number ?
+        account_digit: What is the check digit ?
+        owner_name: Enter a name with a minimum of 5 and a maximum of 30 letters
+        owner_document: Enter a CPF or CNPJ valid for the account holder
+      contribution:
+        payer_name: Please type the name of supporter
+        payer_email: Please enter a valid email address
+        payer_document: Please enter a valid CPF or CNPJ
+        address_state: Select a state
+        address_street: Enter the street name
+        address_number: Enter the address number
+        address_city: Enter the city name
+        address_zip_code: Enter the zip code
+        address_phone_number: Enter the phone number
+    prompts:
+      project:
+        category: Select a category
+        select: Select an option
+        traffic_sources: How did you meet Catharsis ?
+    hints:
+      project:
+        select: Select an option
+        traffic_sources: How did you meet Catharsis ?
+        name: Give a name that people will remember easily.
+        permalink: Prefer something simple, straightforward and well identify your
+          project.
+        category: Choose the most appropriate to your project.
+        goal: Plan a consistent goal with your project proposes .
+        online_days: You can choose between 1 and 60 days for your campaign .
+        video_url: Link your video on Vimeo or Youtube <br/> .
+        about: Contact with passion and clarity about what will be done .
+        headline: Phrase in the project card to call supporters.
+        uploaded_image: This image will be used as the thumbnail of your project (
+          PNG, JPG size 600 x 340 )

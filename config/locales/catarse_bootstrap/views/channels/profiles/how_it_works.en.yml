@@ -1,9 +1,9 @@
---- 
-en: 
-  channels: 
-    profiles: 
-      how_it_works: 
-        sidebar: 
-          title: "Browse" #i18n-GT
-        title: 
-          channel: "How it works" #i18n-GT
+---
+en:
+  channels:
+    profiles:
+      how_it_works:
+        title:
+          channel: How it works
+        sidebar:
+          title: Browse

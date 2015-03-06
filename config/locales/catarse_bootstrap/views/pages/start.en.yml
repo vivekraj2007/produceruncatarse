@@ -1,28 +1,29 @@
---- 
-en: 
-  pages: 
-    start: 
-      header: 
-        money: "Has been sold on ProduceRun" #i18n-GT
-        people: "People have supported at least 01 project in ProduceRun" #i18n-GT
-        success: "Campaigns have been successful here" #i18n-GT
-      learn-more: "Learn more" #i18n-GT
-      page-title: "As the ProduceRun work?" #i18n-GT
-      people: 
-        content: "At least 50 % of supporters will come from your own network of contacts." #i18n-GT
-        link: "Learn how many supporters you will need to mobilize" #i18n-GT
-        title: "Reach out to your network" #i18n-GT
-      start: 
-        content: "Start the draft of your campaign now !" #i18n-GT
-        link: "Learn more about the first steps of a project" #i18n-GT
-        title: "Start your campaign" #i18n-GT
-      submit: "Start your campaign" #i18n-GT
-      time: 
-        content: "You can choose a time between 1 and 60 days to achieve your goal we will call All or Nothing ." #i18n-GT
-        link: "Learn how our rate helps keep ProduceRun" #i18n-GT
-        title: "All or nothing" #i18n-GT
-      title: "Presell goods now before you leave your farm" #i18n-GT
-      work: 
-        content: "Study Campaigns similar to yours." #i18n-GT
-        link: "Receive successful campaigns advice on ProduceRun" #i18n-GT
-        title: "Work hard at before , during and after the collection period" #i18n-GT
+---
+en:
+  pages:
+    start:
+      page-title: As the Catharsis work?
+      title: Finance your project collectively
+      submit: Start your project
+      learn-more: Learn more
+      header:
+        people: People have supported at least 01 project in Catharsis
+        success: Projects have been funded Catharsis
+        money: Donated to projects published here
+      start:
+        title: Start your project
+        content: It is important to start somewhere .
+        link: Learn more about the first steps of a project
+      people:
+        title: Study and plan
+        content: Produce your project with care and on time.
+        link: Learn how many supporters you will need to mobilize
+      work:
+        title: It's All or Nothing
+        content: Who sets the goal of fundraising and campaign time is you .
+        link: Receive successful campaigns advice on Catarse
+      time:
+        title: mobilize supporters
+        content: Communicate well during his campaign and well treat your supporters
+          !
+        link: Learn how our rate helps keep Catharsis

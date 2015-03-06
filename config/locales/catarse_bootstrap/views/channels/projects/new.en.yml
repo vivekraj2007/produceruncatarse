@@ -1,34 +1,45 @@
---- 
-en: 
-  channels: 
-    projects: 
-      new: 
-        about: "About your project. How will you spend this money?"
-        about_hint: "Tell us about what inspired you to come up with this project . Be objective end charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
-        accept_terms: "I read and agree with the %{link}."
-        category_id: Category
-        category_id_hint: "Before you format your project <a href='%{href}' target='_blank'>explore other</a> (successful) projects to inspire yourself!"
-        first_contributions: "List the first contributions"
-        first_contributions_hint: "To reach your financial goal it’s indispensable to engage the people who are close to you and the project. So if you can list here who will be your first 20 contributions that would be a great sign."
-        goal: "Values in reais ($)"
-        goal_hint: "The biggest part of the supportes will be close to you. Based on that try to think on your capacity to mobilize at least 50% of your network. Remember the ProduceRun 13% tax.Just divide your final budget by 0,87 to reach the final number."
-        headline: "Punch Line"
-        headline_hint: "Summarize your project in 140 characters. This sentence will be the first contact people will have with your project, before even seeing the video. Be creative, clear and direct."
-        how_know: "How did you find the channel?" #i18n-GT
-        how_know_hint: "Tell us how you met the channel and what you expect from us." #i18n-GT
-        important: "<strong>Important:</strong> The %{channel} selects the projects based on their own criteria, this implies that the project can be refused by the curators team."
-        more_links: "List project related links"
-        more_links_hint: "Which channels will be used to spread the word about your project? List here your facebook/twitter/blog/site/ and what ever more links you have to help you."
-        name: "Project's Name"
-        name_hint: "Be as objective as you can. Leave explanations for the About section."
-        online_days: "How Many Campaign Days?"
-        online_days_hint: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
-        permalink: "Project Url"
-        permalink_hint: "Project URL is the web address for your project, keep it simple. Try to not use underline, dash and special characters"
-        permalink_over: "{ % } .ProduceRun.com channel /" #i18n-GT
-        submit: "Save draft"
-        subtitle: "After filling out the form below, you will receive a draft project page. There you will add rewards and can share with your friends to have an even more sharp message. The information filled below are not definitive, but remember that the more consistent you are in your project submission, the faster it will air."
-        terms: "use terms"
-        title: "Submit your project to %{channel} channel"
-        video_url: Vídeo
-        video_url_hint: "Paste here the URL of your Youtube or Vimeo video."
+---
+en:
+  channels:
+    projects:
+      new:
+        title: Submit your project to %{channel} !
+        subtitle: After completing the form below, you will receive a project page
+          in draft.
+        important: "<strong>Importante : </strong> The %{channel} selects projects
+          according to their own selection criteria , which means that your project
+          may be refused by the team of curators ."
+        permalink: Url design
+        permalink_hint: URL is the address of your project , let it simple.
+        permalink_over: "%{channel}.catarse.me/"
+        name: Project Name
+        name_hint: The more direct the better.
+        about: History of your project and how the money will be used
+        about_hint: Talk about your inspiration for the project , its history and
+          what will be accomplished .
+        headline: Catchphrase
+        headline_hint: Create a brief description of the project , with a maximum
+          of 140 characters.
+        category_id: What is the category of your project ?
+        category_id_hint: Before sending , explore and inspire other projects in the
+          same <a href='%{href}' target='_blank'>categoria</a> .
+        goal: How much you want to raise ?
+        goal_hint: Much of the support will come from people close to you so think
+          on their ability to mobilize at least 50 % of the value within your network
+          of contacts.
+        online_days: How long in days to reach the minimum ?
+        online_days_hint: The deadline to leave the project in the air is 60 days
+          , with an average stay in the air for 40 days.
+        video_url: video
+        video_url_hint: The video is the centerpiece of the project, but you can send
+          it later.
+        more_links: We want to know more
+        more_links_hint: We want to know more about you and your project.
+        first_contributions: List of the first supporters
+        first_contributions_hint: For your campaign to succeed , it is essential to
+          bring your closer contact network.
+        how_know: How did you find the channel?
+        how_know_hint: Tell us how you met the channel and what you expect from us.
+        accept_terms: I have read and I agree with %{link} .
+        terms: terms of use
+        submit: Save Draft

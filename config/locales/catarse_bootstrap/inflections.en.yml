@@ -1,18 +1,18 @@
---- 
-en: 
-  contributed_project: 
-    one: "%{count} supported project" #i18n-GT
-    other: "%{count} supported projects" #i18n-GT
-    zero: "not yet supported projects" #i18n-GT
-  contribution_plural: "supporters" #i18n-GT
-  contribution_singular: "supporter" #i18n-GT
-  created_project: 
-    one: "%{count} created project" #i18n-GT
-    other: "%{count} projects created" #i18n-GT
-    zero: "has not created projects" #i18n-GT
-  found_plural: "found" #i18n-GT
-  found_singular: "found" #i18n-GT
-  project_plural: "projects" #i18n-GT
-  project_singular: "project" #i18n-GT
-  remaining_plural: "remaining" #i18n-GT
-  remaining_singular: "remainder" #i18n-GT
+---
+en:
+  found_singular: found
+  found_plural: found
+  project_singular: project
+  project_plural: projects
+  contribution_singular: supporter
+  contribution_plural: supporters
+  remaining_singular: remainder
+  remaining_plural: remaining
+  created_project:
+    zero: has not created projects
+    one: "%{count} created project"
+    other: "%{count} projects created"
+  contributed_project:
+    zero: not yet supported projects
+    one: "%{count} supported project"
+    other: "%{count} supported projects"

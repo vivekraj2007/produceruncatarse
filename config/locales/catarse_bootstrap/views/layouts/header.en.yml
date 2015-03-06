@@ -1,21 +1,21 @@
---- 
-en: 
-  layouts: 
-    header: 
-      blog: "Blog" #i18n-GT
-      discover: "Discover" #i18n-GT
-      faq: "FAQ" #i18n-GT
-      help: "help" #i18n-GT
-      profile: "my data" #i18n-GT
-      projects: "my Campaigns" #i18n-GT
-      search: "Search Campaigns" #i18n-GT
-      signin: "Login" #i18n-GT
-      signup: "Register" #i18n-GT
-      submit: "Start your Campaign" #i18n-GT
-    login: 
-      login_with_facebook: "Login with your facebook account" #i18n-GT
-    user: 
-      logout: "Sign Out" #i18n-GT
-      my_contributions: "my support" #i18n-GT
-      my_credits: "Credit balance" #i18n-GT
-      refund_link: "refund request" #i18n-GT
+---
+en:
+  layouts:
+    header:
+      blog: Blog
+      discover: Explore
+      faq: FAQ
+      help: help
+      profile: my data
+      projects: my Projects
+      signin: Login
+      signup: Register
+      submit: Start your project
+      search: Search projects
+    login:
+      login_with_facebook: Login with your facebook account
+    user:
+      my_contributions: my support
+      logout: Sign Out
+      my_credits: Credit balance
+      refund_link: refund request

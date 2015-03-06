@@ -1,23 +1,25 @@
---- 
-en: 
-  devise: 
-    registrations: 
-      new: 
-        form: 
-          hint: 
-            password_length: "Must be at least 6 characters."
-          inputs: 
-            facebook: "Sign up with Facebook"
-            submit: "Sign me up"
-          labels: 
-            accept: "When you register , you are accepting our <a href=\"%{terms_url}\" class=\"alt - link\" target=\"_blank\"> terms of use and </a> <a class = \"alt -link \" href = \" %{privacy_url} \"" #i18n-GT
-            name: Name
-            newsletter: "I want to subscribe to Producerun newsletter"
-            password: Password
-            show_password: "Show password"
-        have_account_html: "Have an account?"
-        links: 
-          login: "Log in"
-        titles: 
-          header: "Sign up"
-          site: "Sign up"
+---
+en:
+  devise:
+    registrations:
+      new:
+        have_account_html: Already have an account?
+        titles:
+          site: Register
+          header: Register
+        links:
+          login: Sign in
+        form:
+          labels:
+            show_password: View password
+            name: full Name
+            password: password
+            newsletter: I want to receive news from Catharsis in my email
+            accept: When you register , you are accepting our <a href="%{terms_url}"
+              class="alt-link" target="_blank">termos of uso9041851182357638 and <a
+              class="alt-link" href="%{privacy_url}" target="_blank">política of privacidade</a>
+          hint:
+            password_length: Minimum of 6 characters
+          inputs:
+            submit: you register
+            facebook: Login with Facebook

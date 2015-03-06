@@ -1,20 +1,20 @@
---- 
-en: 
-  days: "days" #i18n-GT
-  facebook_locale: en_US
-  failure_title: "Please, fix the errors bellow:"
-  i_just_contributed: "I just contributed the campaign %{name} on @catarse"
-  ? "no"
-  : "No"
-  not_filled: "not Entered" #i18n-GT
-  not_informed: "not informed"
+---
+en:
+  not_filled: not Entered
+  days: days
+  facebook_locale: pt_BR
+  failure_title: 'Please correct the following errors :'
+  i_just_contributed: I just support the project %{name} in catarse
+  'no': Do Not
+  'yes': Sim
+  not_informed: uninformed
   or: or
-  sending: "Sending ..." #i18n-GT
-  share_my_contributions: "See the campaigns that I support in Catarse!"
-  site: 
-    description: "O Catarse é uma ferramenta diferente – e colaborativa – para tirar o seu projeto do papel!"
-    keywords: "catarse, crowdfunding, campaign, community, open source"
-    meta_title: "%{title} · %{company_name}"
-    title: "The biggest crowdfunding community in Brazil"
-  ? "yes"
-  : "Yes"
+  sending: Sending ...
+  share_my_contributions: Check out the project
+  site:
+    description: The Catharsis is a different tool - and collaborative - to take their
+      part of the project !
+    keywords: catharsis , crowdfunding , collective financing , design, community
+      , open source
+    meta_title: "%{title} * %{company_name}"
+    title: Most collective financing community in Brazil !

@@ -1,49 +1,50 @@
---- 
-en: 
-  projects: 
-    index: 
-      back_a_project: "Support a project" #i18n-GT
-      banner: "Check out the search" #i18n-GT
-      banner_subtitle: "Music, comics , cinema, social impact , technology and more." #i18n-GT
-      banner_title: "Take paper designs !" #i18n-GT
-      blog: "Blog Catharsis" #i18n-GT
-      box: 
-        by: "by" #i18n-GT
-        when: "in" #i18n-GT
-      expiring: "In the final stretch" #i18n-GT
-      explore: "Explore projects" #i18n-GT
-      links: 
-        channels: "Discover the Canal Wings" #i18n-GT
-        expiring: "Discover projects down the stretch" #i18n-GT
-        near: "Discover projects near you" #i18n-GT
-        recents: "Discover recent projects" #i18n-GT
-        recommended: "Discover projects recommended" #i18n-GT
-      near_you: "Near you" #i18n-GT
-      recents: "recent" #i18n-GT
-      recommended: "recommended" #i18n-GT
-      sections: 
-        channels: 
-          title: "Basic Canal" #i18n-GT
-        expiring: 
-          title: "In the final stretch" #i18n-GT
-        near: 
-          title: "Near Me" #i18n-GT
-        recents: 
-          title: "recent" #i18n-GT
-        recommended: 
-          title: "recommended" #i18n-GT
-      see_all: "View all" #i18n-GT
-      sidebar: 
-        buttons: 
-          newsletter: "send" #i18n-GT
-        placeholders: 
-          email: "Enter your email address" #i18n-GT
-        titles: 
-          blog: "blog" #i18n-GT
-          facebook: "already likes our face ?" #i18n-GT
-          faq: "'re in doubt ?" #i18n-GT
-          newsletter: "Subscribe to our news" #i18n-GT
-          schedule: "agenda" #i18n-GT
-    index_header: 
-      subtitle: "Finance projects collaboratively and become part of something bigger ." #i18n-GT
-      title: "Make it happen in the projects that you believe" #i18n-GT
+---
+en:
+  projects:
+    index_header:
+      subtitle: Finance projects collaboratively and become part of something bigger
+        .
+      title: Make it happen in the projects that you believe
+    index:
+      back_a_project: Support a project
+      banner_title: Take paper designs !
+      see_all: View all
+      near_you: Near you
+      recents: recent
+      blog: Blog Catharsis
+      expiring: In the final stretch
+      recommended: recommended
+      banner_subtitle: Music, comics , cinema, social impact , technology and more.
+      box:
+        by: by
+        when: in
+      banner: Check out the search
+      explore: Explore projects
+      links:
+        channels: Discover the Canal Wings
+        recommended: Discover projects recommended
+        expiring: Discover projects down the stretch
+        recents: Discover recent projects
+        near: Discover projects near you
+      sidebar:
+        titles:
+          blog: blog
+          facebook: already likes our face ?
+          newsletter: Subscribe to our news
+          faq: "'re in doubt ?"
+          schedule: agenda
+        placeholders:
+          email: Enter your email address
+        buttons:
+          newsletter: send
+      sections:
+        near:
+          title: Near Me
+        recommended:
+          title: recommended
+        expiring:
+          title: In the final stretch
+        recents:
+          title: recent
+        channels:
+          title: Basic Canal

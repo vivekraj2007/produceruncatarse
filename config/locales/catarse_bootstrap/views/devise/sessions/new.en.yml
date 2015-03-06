@@ -1,20 +1,20 @@
---- 
-en: 
-  devise: 
-    sessions: 
-      new: 
-        form: 
-          inputs: 
-            facebook: "Log in with Facebook"
-            password: "password" #i18n-GT
-            submit: "Log me in"
-          labels: 
-            remember_me: "Remember me"
-        links: 
-          forgot_password: "I forgot my password"
-          password: "password" #i18n-GT
-          register: "Sign up"
-        no_account_html: "Need an account?"
-        titles: 
-          header: "Log in"
-          site: "Log in"
+---
+en:
+  devise:
+    sessions:
+      new:
+        no_account_html: No account ?
+        titles:
+          site: Login
+          header: Login
+        links:
+          register: Register
+          password: password
+          forgot_password: I forgot my password
+        form:
+          labels:
+            remember_me: Stay logged
+          inputs:
+            submit: log in
+            password: password
+            facebook: Login with Facebook

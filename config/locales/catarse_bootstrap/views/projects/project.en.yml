@@ -1,50 +1,52 @@
---- 
-en: 
-  projects: 
-    card: 
-      by: "by" #i18n-GT
-      contributed: "Raised" #i18n-GT
-      display_status: 
-        approved: "okay" #i18n-GT
-        draft: "draft" #i18n-GT
-        expired: "finalized" #i18n-GT
-        failed: "Unfunded" #i18n-GT
-        in_analysis: "analyzed" #i18n-GT
-        not_reached_goal: "waiting" #i18n-GT
-        reached_goal: "funded" #i18n-GT
-        rejected: "rejected" #i18n-GT
-        successful: "Successful" #i18n-GT
-        waiting_funds: "waiting slips" #i18n-GT
-      pledged_html: "<span>%{value}</span> levantados" #i18n-GT
-      progress_html: "<span > %{percent} % < / span > funded" #i18n-GT
-      reached: "reached" #i18n-GT
-      remaining: 
-        one: "remainder" #i18n-GT
-        other: "remaining" #i18n-GT
-      time_remaining_html: 
-        one: "<span>%{count} %{unit}</span> restante" #i18n-GT
-        other: "<span > %{count} %{unit} < / span > remaining" #i18n-GT
-    project: 
-      contributed: "raised" #i18n-GT
-      display_status: 
-        approved: "okay" #i18n-GT
-        draft: "draft" #i18n-GT
-        expired: "finalized" #i18n-GT
-        failed: "not funded" #i18n-GT
-        in_analysis: "analyzed" #i18n-GT
-        not_reached_goal: "waiting" #i18n-GT
-        online: "online" #i18n-GT
-        reached_goal: "funded" #i18n-GT
-        rejected: "rejected" #i18n-GT
-        successful: "funded" #i18n-GT
-        waiting_confirmation: "waiting" #i18n-GT
-        waiting_funds: "waiting" #i18n-GT
-      pledged_html: "<span>%{value}</span> raised" #i18n-GT
-      progress_html: "<span>%{percent}%</span> funded" #i18n-GT
-      reached: "reached" #i18n-GT
-      time_remaining_html: 
-        one: "<span>%{count} %{unit}</span> remaining" #i18n-GT
-        other: "<span>%{count} %{unit}</span> remaining" #i18n-GT
-      time_remaining_small_html: 
-        one: "<div class='fontsize-smallest lineheight-tightest'>%{count} %{unit}</div> <div class='fontsize-smallest lineheight-tightest'>restante</div>" #i18n-GT
-        other: "<div class='fontsize-smallest lineheight-tightest'>%{count} %{unit}</div> <div class='fontsize-smallest lineheight-tightest'>restantes</div>" #i18n-GT
+---
+en:
+  projects:
+    project:
+      contributed: Raised
+      reached: reached
+      progress_html: "<span>%{percent}%6491205958079932 funded"
+      time_remaining_small_html:
+        one: 5071541017708262%{count} %{unit}9751198152057624 <div class='fontsize-smallest
+          lineheight-tightest'>restante</div>
+        other: 333613658069143%{count} %{unit}3572391388223277 <div class='fontsize-smallest
+          lineheight-tightest'>restantes</div>
+      time_remaining_html:
+        one: "<span>%{count} %{unit}</span> rest"
+        other: "<span>%{count} %{unit}</span> remaining"
+      pledged_html: "<span>%{value}</span> raised"
+      display_status:
+        online: online
+        expired: finalized
+        rejected: refused
+        failed: not funded
+        successful: funded
+        approved: okay
+        reached_goal: funded
+        waiting_confirmation: waiting
+        waiting_funds: waiting
+        not_reached_goal: waiting
+        draft: draft
+        in_analysis: analyzed
+    card:
+      by: by
+      remaining:
+        one: remainder
+        other: remaining
+      contributed: Raised
+      reached: reached
+      progress_html: "<span>%{percent}%1882999409275753 funded"
+      time_remaining_html:
+        one: "<span>%{count} %{unit}</span> rest"
+        other: "<span>%{count} %{unit}</span> remaining"
+      pledged_html: "<span>%{value}</span> raised"
+      display_status:
+        expired: finalized
+        rejected: rejected
+        failed: Unfunded
+        successful: Successful
+        approved: okay
+        reached_goal: funded
+        waiting_funds: waiting slips
+        not_reached_goal: waiting
+        draft: draft
+        in_analysis: analyzed

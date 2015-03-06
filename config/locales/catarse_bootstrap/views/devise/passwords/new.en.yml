@@ -1,16 +1,17 @@
---- 
-en: 
-  devise: 
-    passwords: 
-      new: 
-        form: 
-          inputs: 
-            submit: "Reset password"
-          labels: 
-            email: "We'll send password reset instructions to the email address associated with your account"
-        links: 
-          register: "Sign up"
-        no_account_html: "Need an account?"
-        titles: 
-          header: "Forgot your password?"
-          site: "Forgot your password?"
+---
+en:
+  devise:
+    passwords:
+      new:
+        no_account_html: No account ?
+        titles:
+          site: Reset password
+          header: Reset password
+        links:
+          register: Register
+        form:
+          labels:
+            email: After entering your email address , we will send a notification
+              with instructions on how to reset your password
+          inputs:
+            submit: redefine
