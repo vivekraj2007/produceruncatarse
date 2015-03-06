@@ -4,10 +4,10 @@ en:
     collections:
       project:
         traffic_sources:
-          one: I 've had another project in ProduceRun
-          two: indication of a person who has had a project in ProduceRun
+          one: I 've had another campaign in ProduceRun
+          two: indication of a person who has had a campaign in ProduceRun
           three: indication friend / colleague / professional contact
-          four: from a project that was picking up on the platform
+          four: from a campaign that was picking up on the platform
           five: article in a blog
           six: a story in the press ( news portal on the internet, TV, newspaper,
             magazine )
@@ -48,11 +48,11 @@ en:
         name: Give a name that people will remember easily.
         permalink: Prefer something simple, straightforward and well identify your
           project.
-        category: Choose the most appropriate to your project.
-        goal: Plan a consistent goal with your project proposes .
+        category: Choose the most appropriate to your campaign.
+        goal: Plan a consistent goal with your campaign proposes .
         online_days: You can choose between 1 and 60 days for your campaign .
         video_url: Link your video on Vimeo or Youtube <br/> .
         about: Contact with passion and clarity about what will be done .
-        headline: Phrase in the project card to call supporters.
-        uploaded_image: This image will be used as the thumbnail of your project (
+        headline: Phrase in the campaign card to call supporters.
+        uploaded_image: This image will be used as the thumbnail of your campaign (
           PNG, JPG size 600 x 340 )

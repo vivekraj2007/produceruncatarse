@@ -3,7 +3,7 @@ en:
   activerecord:
     models:
       channel: channel
-      project: project
+      project: campaign
       reward: reward
       contribution: Sketchpad
       category: category
@@ -55,7 +55,7 @@ en:
         address_phone_number: phone
         value: support value
         reward: reward
-        project: project
+        project: campaign
       reward:
         deliver_at: Estimated delivery
       project:
@@ -65,18 +65,18 @@ en:
         online_days: Deadline for collection
         headline: Catchphrase
         image_url: Image URL
-        name: Project Name
+        name: Campaign Name
         goal: Amount to be raised
-        about: Project Description
+        about: Campaign Description
         user_id: User ID
         video_url: Video URL
-        permalink: Link your project
-        more_links: Tell links for people to know more about your project and its
+        permalink: Link your campaign
+        more_links: Tell links for people to know more about your campaign and its
           history .
         traffic_sources: How did you meet ProduceRun ?
         first_contributions: Who are the first people you will ask to support your
           project?
-        budget: Project budget
+        budget: Campaign budget
         uploaded_image: Design Image
       user:
         address_city: city
@@ -182,19 +182,19 @@ en:
         project:
           attributes:
             video_url:
-              blank: The video of the project can not be blank
+              blank: The video of the campaign can not be blank
             budget:
-              blank: The project budget can not be blank
+              blank: The campaign budget can not be blank
             uploaded_image:
               blank: This design can not be blank
             name:
-              blank: The project name can not be blank
+              blank: The campaign name can not be blank
             permalink:
-              blank: The URL of the project can not be blank
+              blank: The URL of the campaign can not be blank
               invalid: The URL of the design is invalid
-              taken: This project URL already exists
+              taken: This campaign URL already exists
             category:
-              blank: You must choose a category for your project
+              blank: You must choose a category for your campaign
             goal:
               blank: The value of the goal can not be blank
               greater_than: The goal must be greater than 9
@@ -204,9 +204,9 @@ en:
               greater_than: The deadline for collection must be greater than 0 days
               not_a_number: The deadline for collection should be a number of days
             about:
-              blank: The project description can not be blank
+              blank: The campaign description can not be blank
             headline:
-              blank: The catchphrase of the project can not be blank
+              blank: The catchphrase of the campaign can not be blank
               too_long: The catch phrase is too long.
         user:
           attributes:
@@ -240,7 +240,7 @@ en:
       posts: Deleted successfully Novelty
     video_regex_validation: Youtube or Vimeo only URLs are accepted
   contribution:
-    project_should_be_online: You can not support a project that is not in the air
+    project_should_be_online: You can not support a campaign that is not in the air
     reward_must_be_from_project: must be of the same design
     should_not_contribute_if_maximum_contributions_been_reached: has reached its maximum
       number of supporters
@@ -269,9 +269,9 @@ en:
   user:
     no_name: nameless
     contributions_text:
-      many: Supported this and more other projects %{total}
-      one: Only supported this project so far
-      two: Supported this and 1 other project
+      many: Supported this and more other campaigns %{total}
+      one: Only supported this campaign so far
+      two: Supported this and 1 other campaigns
   channels_subscribers:
     created: Now you follow the %{channel}
     deleted: You failed to follow the %{channel}

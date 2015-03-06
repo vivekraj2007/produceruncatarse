@@ -2,17 +2,17 @@
 en:
   found_singular: found
   found_plural: found
-  project_singular: project
-  project_plural: projects
+  project_singular: campaign
+  project_plural: campaigns
   contribution_singular: supporter
   contribution_plural: supporters
   remaining_singular: remainder
   remaining_plural: remaining
   created_project:
-    zero: has not created projects
-    one: "%{count} created project"
-    other: "%{count} projects created"
+    zero: has not created campaigns
+    one: "%{count} created campaign"
+    other: "%{count} campaigns created"
   contributed_project:
-    zero: not yet supported projects
-    one: "%{count} supported project"
-    other: "%{count} supported projects"
+    zero: not yet supported campaigns
+    one: "%{count} supported campaign"
+    other: "%{count} supported campaigns"
