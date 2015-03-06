@@ -11,6 +11,7 @@ en:
         faq: "help" #i18n-GT
         feedback: "Feedback" #i18n-GT
         github: "Github" #i18n-GT
+        guides: "Guide of Directors" #i18n-GT
         instagram: "Instagram" #i18n-GT
         jobs: "Work with us" #i18n-GT
         near: "Near Me" #i18n-GT
@@ -18,6 +19,7 @@ en:
         privacy: "privacy" #i18n-GT
         recents: "recent" #i18n-GT
         recommended: "recommended" #i18n-GT
+        start: "How it works" #i18n-GT
         submit: "Start a campaign" #i18n-GT
         terms: "Terms of use" #i18n-GT
         twitter: "Twitter" #i18n-GT

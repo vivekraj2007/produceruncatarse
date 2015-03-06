@@ -2,10 +2,15 @@
 en: 
   projects: 
     index: 
+      back_a_project: "Support a project" #i18n-GT
       banner: "Check out the search" #i18n-GT
+      banner_subtitle: "Music, comics , cinema, social impact , technology and more." #i18n-GT
+      banner_title: "Take paper designs !" #i18n-GT
+      blog: "Blog Catharsis" #i18n-GT
       box: 
         by: "by" #i18n-GT
         when: "in" #i18n-GT
+      expiring: "In the final stretch" #i18n-GT
       explore: "Explore projects" #i18n-GT
       links: 
         channels: "Discover the Canal Wings" #i18n-GT
@@ -13,6 +18,9 @@ en:
         near: "Discover projects near you" #i18n-GT
         recents: "Discover recent projects" #i18n-GT
         recommended: "Discover projects recommended" #i18n-GT
+      near_you: "Near you" #i18n-GT
+      recents: "recent" #i18n-GT
+      recommended: "recommended" #i18n-GT
       sections: 
         channels: 
           title: "Basic Canal" #i18n-GT
@@ -24,6 +32,7 @@ en:
           title: "recent" #i18n-GT
         recommended: 
           title: "recommended" #i18n-GT
+      see_all: "View all" #i18n-GT
       sidebar: 
         buttons: 
           newsletter: "send" #i18n-GT
