@@ -24,7 +24,7 @@ en:
         title: financial Reports
         contribution_report: Supporters Report
         search_report: Search report
-        total_projects: projects
+        total_projects: campaigns
         submit: filter
         by_state: by state
         between_expires_at: expire between
@@ -42,7 +42,7 @@ en:
       index:
         with_state: by state
         by_category: by category
-        project: project
+        project: campaign
         user: User
         between_created_at: created between
         goal_between: meta between
@@ -63,10 +63,10 @@ en:
         pledged: reached
         recommended: Recommended ?
         state: state
-        no_projects: No projects found
-        menu: Admin projects
-        title: Project management
-        total_projects: projects
+        no_projects: No campaigns found
+        menu: Admin campaigns
+        title: Campaign management
+        total_projects: campaigns
         submit: filter
         expires_at: Finishes on
         category: category
@@ -129,13 +129,13 @@ en:
           installments: plots
           created_at: started in
         placeholders:
-          project: Permalink or project name
+          project: Permalink or campaign name
           acquirer: Card company name
           user: ID , Name , Email or Mail payment
           payment_id: Key, the means of payment ID or TID operator '
         acquirer: operator
         payment_tax: Fee payment method
-        project_state: State project
+        project_state: State campaign
         send_refund_request_contribution: Send refund request
         payer_email: Email the means of payment
         payment_id: Id de Payment
@@ -160,7 +160,7 @@ en:
         id: Id
         key: key
         no_contributions: No supporter found.
-        project: project
+        project: campaign
         refunded: Reversal done ?
         requested_refund: Asked reversal ?
         reward: reward
@@ -180,11 +180,11 @@ en:
         total_contributions: supports
         total_contributors: supporters
         total_contributed: collection
-        total_projects: projects
+        total_projects: campaigns
         total_projects_success: successful
         total_projects_online: Online
       projects_in_analysis_by_week:
-        title: Projects submitted for curating a week
+        title: Campaigns submitted for curating a week
       projects_by_week:
         title: Created drafts a week
       contributions_by_week:
@@ -217,7 +217,7 @@ en:
           title: financial Reports
           contribution_report: Supporters Report
           search_report: Search report
-          total_projects: projects
+          total_projects: campaigns
           submit: filter
           by_state: by state
           between_expires_at: expire between
@@ -235,7 +235,7 @@ en:
         index:
           with_state: by state
           by_category: by category
-          project: project
+          project: campaign
           user: User
           between_created_at: created between
           goal_between: meta between
@@ -256,10 +256,10 @@ en:
           pledged: reached
           recommended: Recommended ?
           state: state
-          no_projects: No projects found
-          menu: Admin projects
-          title: Project management
-          total_projects: projects
+          no_projects: No campaigns found
+          menu: Admin campaigns
+          title: Campaign management
+          total_projects: campaigns
           submit: filter
           expires_at: Finishes on
           category: category
@@ -322,13 +322,13 @@ en:
             installments: plots
             created_at: started in
           placeholders:
-            project: Permalink or project name
+            project: Permalink or campaign name
             acquirer: Card company name
             user: ID , Name , Email or Mail payment
             payment_id: Key, the means of payment ID or TID operator '
           acquirer: operator
           payment_tax: Fee payment method
-          project_state: State project
+          project_state: State campaign
           send_refund_request_contribution: Send refund request
           payer_email: Email the means of payment
           payment_id: Id de Payment
@@ -353,7 +353,7 @@ en:
           id: Id
           key: key
           no_contributions: No supporter found.
-          project: project
+          project: campaign
           refunded: Reversal done ?
           requested_refund: Asked reversal ?
           reward: reward
@@ -373,11 +373,11 @@ en:
           total_contributions: supports
           total_contributors: supporters
           total_contributed: collection
-          total_projects: projects
+          total_projects: campaigns
           total_projects_success: successful
           total_projects_online: Online
         projects_in_analysis_by_week:
-          title: Projects submitted for curating a week
+          title: Campaigns submitted for curating a week
         projects_by_week:
           title: Created drafts a week
         contributions_by_week:
