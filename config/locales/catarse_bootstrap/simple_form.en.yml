@@ -4,8 +4,8 @@ en:
     collections:
       project:
         traffic_sources:
-          one: I 've had another project in Catharsis
-          two: indication of a person who has had a project in Catharsis
+          one: I 've had another project in ProduceRun
+          two: indication of a person who has had a project in ProduceRun
           three: indication friend / colleague / professional contact
           four: from a project that was picking up on the platform
           five: article in a blog
@@ -40,11 +40,11 @@ en:
       project:
         category: Select a category
         select: Select an option
-        traffic_sources: How did you meet Catharsis ?
+        traffic_sources: How did you meet ProduceRun ?
     hints:
       project:
         select: Select an option
-        traffic_sources: How did you meet Catharsis ?
+        traffic_sources: How did you meet ProduceRun ?
         name: Give a name that people will remember easily.
         permalink: Prefer something simple, straightforward and well identify your
           project.

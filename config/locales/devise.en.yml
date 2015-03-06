@@ -3,7 +3,7 @@ en:
   devise:
     feedback_tab:
       title: Feedback and Help
-      header_html: Welcome to <br/> new login Catharsis
+      header_html: Welcome to <br/> new login ProduceRun
       blog_button: Read more on the blog
       form_feedback_link: Send feedback
       contact_link: Contact
@@ -54,7 +54,7 @@ en:
         label_new_password: new Password
         title: Set a new password
         subtitle: Set a new password to use your email and password when you want
-          to enter the Catharsis .
+          to enter the ProduceRun .
         submit: Set new password
     registrations:
       destroyed: Goodbye!

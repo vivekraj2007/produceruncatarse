@@ -134,7 +134,6 @@ group :development do
   # gem 'rack-mini-profiler'
   # gem 'ruby-prof'
   gem 'quiet_assets'
-  gem 'yml_gtranslate', git: 'git@github.com:kulakajak/yml_gtranslate.git'
 end
 
 group :test, :development do

@@ -12,7 +12,7 @@ en:
         user_id: User ID
         goal: where
         total_payment_service_fee: MP rate
-        total_catarse_fee: Catharsis rate
+        total_catarse_fee: ProduceRun rate
         zero_fee: Support no charge ?
         repass_value: Vl.
         expires_at: Ends
@@ -115,12 +115,12 @@ en:
         successful: successful
         payment_choice: Payment Option
         payer_email: Email means of payment used in
-        user_email: Email used in catharsis
+        user_email: Email used in ProduceRun
         created_at: started in
       index:
         details:
           payer_email: Email the means of payment
-          normal_email: Email the Catharsis
+          normal_email: Email the ProduceRun
           payment_id: Payment ID
           acquirer_tid: TID Operator
           payment_method: Method of payment
@@ -139,7 +139,7 @@ en:
         send_refund_request_contribution: Send refund request
         payer_email: Email the means of payment
         payment_id: Id de Payment
-        user_email: Email used in catharsis
+        user_email: Email used in ProduceRun
         push_to_trash: delete support
         cancel: Cancel support
         between_values: values ​​between
@@ -205,7 +205,7 @@ en:
           user_id: User ID
           goal: where
           total_payment_service_fee: MP rate
-          total_catarse_fee: Catharsis rate
+          total_catarse_fee: ProduceRun rate
           zero_fee: Support no charge ?
           repass_value: Vl.
           expires_at: Ends
@@ -308,12 +308,12 @@ en:
           successful: successful
           payment_choice: Payment Option
           payer_email: Email means of payment used in
-          user_email: Email used in catharsis
+          user_email: Email used in ProduceRun
           created_at: started in
         index:
           details:
             payer_email: Email the means of payment
-            normal_email: Email the Catharsis
+            normal_email: Email the ProduceRun
             payment_id: Payment ID
             acquirer_tid: TID Operator
             payment_method: Method of payment
@@ -332,7 +332,7 @@ en:
           send_refund_request_contribution: Send refund request
           payer_email: Email the means of payment
           payment_id: Id de Payment
-          user_email: Email used in catharsis
+          user_email: Email used in ProduceRun
           push_to_trash: delete support
           cancel: Cancel support
           between_values: values ​​between
