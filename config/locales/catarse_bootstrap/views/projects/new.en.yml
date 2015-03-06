@@ -2,7 +2,7 @@
 en:
   projects:
     new:
-      page-title: Start your project
+      page-title: Start your campaign
       faq:
         titles:
           support: holder
@@ -11,9 +11,9 @@ en:
           criteria: Selection Criteria
           suport_central: Support Center
           support_contact: Contact us
-          how_it_works: As the Catharsis work?
+          how_it_works: As the ProduceRun work?
           money: How will I get the money ?
-          selection: How are projects selected ?
+          selection: How are campaigns selected ?
           all_or_nothing: Why All or Nothing ?
       form:
         blocks:

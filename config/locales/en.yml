@@ -4,13 +4,13 @@ en:
   days: days
   facebook_locale: pt_BR
   failure_title: 'Please correct the following errors :'
-  i_just_contributed: I just support the project %{name} in ProduceRun
+  i_just_contributed: I just support the campaign %{name} in ProduceRun
   'no': Do Not
   'yes': Sim
   not_informed: uninformed
   or: or
   sending: Sending ...
-  share_my_contributions: Check out the project
+  share_my_contributions: Check out the campaign
   site:
     description: The ProduceRun is a different tool - and collaborative - to take their
       part of the project !

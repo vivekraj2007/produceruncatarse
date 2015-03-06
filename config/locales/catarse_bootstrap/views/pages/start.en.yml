@@ -2,21 +2,21 @@
 en:
   pages:
     start:
-      page-title: As the Catharsis work?
-      title: Finance your project collectively
-      submit: Start your project
+      page-title: As the ProduceRun work?
+      title: Finance your campaign collectively
+      submit: Start your campaign
       learn-more: Learn more
       header:
-        people: People have supported at least 01 project in Catharsis
-        success: Projects have been funded Catharsis
-        money: Donated to projects published here
+        people: People have supported at least 01 campaign in ProduceRun
+        success: Projects have been funded ProduceRun
+        money: "Has been sold on ProduceRun"
       start:
-        title: Start your project
+        title: Start your campaign
         content: It is important to start somewhere .
-        link: Learn more about the first steps of a project
+        link: Learn more about the first steps of a campaign
       people:
-        title: Study and plan
-        content: Produce your project with care and on time.
+        title: "Reach out to your network"
+        content: Produce your campaign with care and on time.
         link: Learn how many supporters you will need to mobilize
       work:
         title: It's All or Nothing
@@ -26,4 +26,4 @@ en:
         title: mobilize supporters
         content: Communicate well during his campaign and well treat your supporters
           !
-        link: Learn how our rate helps keep Catharsis
+        link: Learn how our rate helps keep ProduceRun

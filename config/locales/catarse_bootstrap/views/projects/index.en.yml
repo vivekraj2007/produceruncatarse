@@ -2,16 +2,16 @@
 en:
   projects:
     index_header:
-      subtitle: Finance projects collaboratively and become part of something bigger
+      subtitle: Finance campaigns collaboratively and become part of something bigger
         .
-      title: Make it happen in the projects that you believe
+      title: Make it happen in the campaigns that you believe
     index:
-      back_a_project: Support a project
+      back_a_project: Support a campaign
       banner_title: Take paper designs !
       see_all: View all
       near_you: Near you
       recents: recent
-      blog: Blog Catharsis
+      blog: Blog ProduceRun
       expiring: In the final stretch
       recommended: recommended
       banner_subtitle: Music, comics , cinema, social impact , technology and more.
@@ -19,13 +19,13 @@ en:
         by: by
         when: in
       banner: Check out the search
-      explore: Explore projects
+      explore: Explore campaigns
       links:
         channels: Discover the Canal Wings
-        recommended: Discover projects recommended
-        expiring: Discover projects down the stretch
-        recents: Discover recent projects
-        near: Discover projects near you
+        recommended: Discover campaigns recommended
+        expiring: Discover campaigns down the stretch
+        recents: Discover recent campaigns
+        near: Discover campaigns near you
       sidebar:
         titles:
           blog: blog

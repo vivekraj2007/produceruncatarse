@@ -8,21 +8,21 @@ en:
         address_state: Total support confirmed by State
     reminder:
       ok: Ok!
-      active_btn: Remember me this project
+      active_btn: Remember me this campaign
       deactive_btn: Do not want to be remembered
-    send_to_analysis: Your project has been sent to our team.
-    send_to_analysis_error: Error sending project for analysis.
-    push_to_online: Your project is online!
-    push_to_online_error: Error while placing the online project.
+    send_to_analysis: Your campaign has been sent to our team.
+    send_to_analysis_error: Error sending campaign for analysis.
+    push_to_online: Your campaign is online!
+    push_to_online_error: Error while placing the online campaign.
     twitter:
-      take_a_look: Check out the project %{name} in catarse
+      take_a_look: Check out the campaign %{name} in catarse
     video_embed:
-      a_project_by_html: A %{link} project in
+      a_project_by_html: A %{link} campaign in
     posts:
       project_post:
         unavailable: This novelty is only available to supporters.
         contribute: Support
-        unavailable_contribute: this project to view it .
+        unavailable_contribute: this campaign to view it .
         destroy: Remove Novelty
         destroy_confirmation: Do you want to remove this news?
       new:
@@ -42,7 +42,7 @@ en:
       link_reward: Download report of %{value} reward supporters
     project_about:
       embed: "< embed >"
-      embed_title: Embed this project on your site
+      embed_title: Embed this campaign on your site
       active_btn: Remember me
       deactive_btn: active reminder
     show:
@@ -65,25 +65,25 @@ en:
       contact_author: Send Message
       contribute_project:
         display_status:
-          reached_goal: This project will be successful and funded %{date}
-          not_reached_goal: This project will only be funded if at least %{goal} are
+          reached_goal: This campaign will be successful and funded %{date}
+          not_reached_goal: This campaign will only be funded if at least %{goal} are
             achieved by %{date}
-          failed: This project did not reach the minimum %{goal} %{date} up and was
+          failed: This campaign did not reach the minimum %{goal} %{date} up and was
             not funded
-          rejected: This project was not accepted.
-          in_analysis: This project is under review and is not yet open to receive
+          rejected: This campaign was not accepted.
+          in_analysis: This campaign is under review and is not yet open to receive
             support .
-          successful: This project was successful and was funded in %{date}
-          waiting_funds: Awaiting confirmation slips to know if this project will
+          successful: This campaign was successful and was funded in %{date}
+          waiting_funds: Awaiting confirmation slips to know if this campaign will
             be funded .
           draft: This design is just a draft and still can not receive support .
-        submit: Support this project
+        submit: Support this campaign
       project_by: design by
       funding_period: Campaign period
       project_header:
-        subtitle_html: A %{link} project
-        without_city: A project
-        with_city: A %{category_name} %{author} project by in %{city}
+        subtitle_html: A %{link} campaign
+        without_city: A campaign
+        with_city: A %{category_name} %{author} campaign by in %{city}
       menu:
         about: about
         add_reward: Add reward

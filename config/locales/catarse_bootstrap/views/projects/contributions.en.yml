@@ -20,7 +20,7 @@ en:
         reward: selected reward
         edit: edit
       edit:
-        payment_slip_disclaimer: If the project is not successful , we will refund
+        payment_slip_disclaimer: If the campaign is not successful , we will refund
           your support.
         review_errors_title: Check the data reported
         review_errors: Some information is missing or not reported correctly , correct
@@ -42,7 +42,7 @@ en:
         installment_with_tax: without interest
         transaction_error: Transaction refused, please double check your data or contact
           the bank / card issuer for more information.
-        pagarme_warning_html: The Catharsis is in testing phase of a new means of
+        pagarme_warning_html: The ProduceRun is in testing phase of a new means of
           payment that facilitate financial support and the possible repayment of
           the amounts to supporters .
         payment_save_card: I want to save my credit card to facilitate future support
@@ -72,7 +72,7 @@ en:
         submit:
           credits: confirm
           moip: Make payment by MoIP
-        subtitle: These data will be reported to the project organizer.
+        subtitle: These data will be reported to the campaign organizer.
         title: Complete and review the data for payment
         you_are_about_html: You are about to join the group that does everything for
           %{link} happen.
@@ -92,12 +92,12 @@ en:
         Credits: credits
         error: Ooops .
       show:
-        header_subtitle: Without you maybe this project did not have a chance .
+        header_subtitle: Without you maybe this campaign did not have a chance .
         header_title: Thank you very much!
         moip_message: The verification of your transaction is in progress and MoIP
           code is " %{code} " .<br>Caso have any questions regarding the transaction
           , please contact MoIP .
-        recommended_projects: 'You may also enjoy these projects :'
+        recommended_projects: 'You may also enjoy these campaigns :'
         text_subtitle: Tell everyone what you just did
         text_title_html: You are now part of the group that does everything for the
           project %{link} happen.

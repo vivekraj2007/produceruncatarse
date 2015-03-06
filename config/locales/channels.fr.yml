@@ -17,7 +17,7 @@ fr:
         title: 'statistiques'
         total_subscribers: 'Total des abonnés'
     projects:
-      send: "Soumettez votre project"
+      send: "Soumettez votre campaign"
       see_how_it_works: "Regardez comment ça marche et soumettez votre projet"
       how_it_works: "Comment ça marche"
       progress_html: "financé à hauter de <span>%{percent}%</span>"

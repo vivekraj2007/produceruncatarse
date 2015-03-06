@@ -18,7 +18,7 @@ en:
     credits:
       modal:
         title: You really want to request a refund of your support ?
-        text: 'Learn how the refund process Catharsis:'
+        text: 'Learn how the refund process ProduceRun:'
         link: Rules and Operations of refunds / rebates
         reject_btn: No, I want to keep my credits
         accept_btn: Yes, I request a refund for my support
@@ -28,7 +28,7 @@ en:
           credits.
         important_html: For all operating rules for reimbursement, <a href='http://suporte.catarse.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos'
           target='_blank'>clique aqui2958884982019787 .
-        project: project
+        project: campaign
         refunded: Confirmed request.
         insufficient_credits: You do not have enough credits to achieve this reversal
           .
@@ -60,7 +60,7 @@ en:
       change_password: Change my password
       current_password_hint: "<i>Para the password is changed you need to confirm
         your password atual.</i>"
-      email_hint: Your email is used only to send Catharsis of communications and
+      email_hint: Your email is used only to send ProduceRun of communications and
         projects you support .
       email_tooltip: Click here to fill in your email ...
       gravatar_hint_html: You can also change your photo using %{link} with your email.
@@ -68,7 +68,7 @@ en:
       submit_text: Choose your image
       submit: send
       my_data: my data
-      newsletter: I want to receive news from Catharsis by email
+      newsletter: I want to receive news from ProduceRun by email
       password_hint: "<i>Deixe blank if you do not want to change your senha.</i>"
       deactivate: Disable my account
       deactivate_notice: The %{name} account has been disabled.
@@ -78,20 +78,20 @@ en:
         will be permanently disabled .
     unsubscribes:
       projects_in_reminder: 'Projects with active reminder :'
-      title: 'Choosing which projects you want to receive notifications :'
-      posts: I want to receive updates of projects
+      title: 'Choosing which campaigns you want to receive notifications :'
+      posts: I want to receive updates of campaigns
     show:
       projects:
         here: here
-        no_projects: "%{name} not yet any project on Catharsis ."
-        no_projects_current_user_html: You have not started any project on Catharsis
+        no_projects: "%{name} not yet any campaign on ProduceRun ."
+        no_projects_current_user_html: You have not started any campaign on ProduceRun
           .
-        title: "%{name} projects"
+        title: "%{name} campaigns"
         title_current_user: my Projects
       contributions:
         anonymous: Anonymous support.
-        no_contributions: "%{name} not backed any project yet ."
-        no_contributions_current_user_html: You have not backed any project.
+        no_contributions: "%{name} not backed any campaign yet ."
+        no_contributions_current_user_html: You have not backed any campaign.
         no_reward: You have not selected any reward
         title: Projects that %{name} has supported
         title_current_user: Projects already supported
@@ -99,8 +99,8 @@ en:
       attention: Heads Up
       tabs:
         credit_cards: Credit cards
-        contributed_projects: supported projects
-        created_projects: projects created
+        contributed_projects: supported campaigns
+        created_projects: campaigns created
         comments: reviews
         credits: credits
         settings: preferences

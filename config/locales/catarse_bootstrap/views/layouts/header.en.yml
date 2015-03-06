@@ -10,8 +10,8 @@ en:
       projects: my Projects
       signin: Login
       signup: Register
-      submit: Start your project
-      search: Search projects
+      submit: Start your campaign
+      search: Search campaigns
     login:
       login_with_facebook: Login with your facebook account
     user:

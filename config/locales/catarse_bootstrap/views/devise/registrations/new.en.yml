@@ -14,7 +14,7 @@ en:
             show_password: View password
             name: full Name
             password: password
-            newsletter: I want to receive news from Catharsis in my email
+            newsletter: I want to receive news from ProduceRun in my email
             accept: When you register , you are accepting our <a href="%{terms_url}"
               class="alt-link" target="_blank">termos of uso9041851182357638 and <a
               class="alt-link" href="%{privacy_url}" target="_blank">política of privacidade</a>
