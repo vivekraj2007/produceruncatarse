@@ -2,34 +2,34 @@
 en:
   date:
     abbr_day_names:
-    - judgment
-    - himself
-    - have
-    - by
-    - which
-    - Sex
-    - sat
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
     abbr_month_names:
     - ''
     - Jan
     - Feb
-    - sea
+    - Mar
     - Apr
     - May
     - Jun
-    - Christmas
-    - Ago
+    - Jul
+    - Aug
     - Set
-    - Out
+    - Oct
     - Nov
-    - ten
+    - Dec
     day_names:
     - Sunday
-    - second
-    - third
+    - Monday
+    - Tuesday
     - Wednesday
-    - farm
-    - Sixth
+    - Thursday
+    - Friday
     - Saturday
     formats:
       default: "%d/%m/%Y"
@@ -166,7 +166,7 @@ en:
           trillion:
             one: trillion
             other: trillion
-          unit: 
+          unit:
       format:
         delimiter: "."
         precision: 2
