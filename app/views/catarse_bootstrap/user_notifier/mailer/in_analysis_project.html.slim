@@ -1,41 +1,44 @@
 - user = @notification.user
 - project = @notification.project
 
-- project_link = project_by_slug_url (permalink : project.permalink )
-- company_name = CatarseSettings [:company_name ]
+- project_link = edit_project_url(project)
+- company_name = CatarseSettings[:company_name]
 
-| Hello , #{ user.name } !
+|Olá, #{user.name}!
 br
 br
-| Our team just received your ProduceRun Campaign #{ link_to project.name , project_link , target: ' __blank '}
-br /
-br /
-| During the next 24 hours , we want look at your draft, provide feedback if needed so you can have a succcessful ProduceRun Sales Campaign .
+| Muito obrigado por nos enviar o projeto #{link_to project.name, project_link, target: '__blank'}
+br/
+br/
+| Apartir de agora, nossa equipe de projetos vai <strong>avaliar todo o conteúdo</strong> que você colocou na página e (em no máximo 4 dias úteis) 
+'  você receberá um e-mail informando se ela foi <strong>Aprovada, Recusada</strong> ou se vai continuar <strong>Em Análise</strong> por mais algum tempo.
 br
 br
-strong You can receive 3 types of response :
-br /
-br /
-strong Option 1:
-| Your draft passed in the analysis, was accepted and you can goto Market !
-br /
-| Now just arrange the day and time for your debut project on the ProduceRun site!
-br /
-br /
-strong Option 2:
-| It seems to us that your project has a lot do with #{ company_name } , but still needs some tweaking to go to the Market. We will contact you to understand possibilities , suggest things and take some questions .
-br /
-br /
-strong Option 3:
-| Unfortunately , the project draft you sent does not fit the profile of the site #{ company_name } .
-| Send an email notifying the refusal . Yes , we know that refusals are always unpleasant. But the motto here is
-| " Up, shakes the dust and give a comeback " . But before shaking any dust ,
-| Our study #{ link_to ' Support Center ' , CatarseSettings [:support_forum ] target: ' __blank '} so you know everything about our prerequisites for the construction of your next ProduceRun .
-br /
-br /
-| Remembering that you can ask questions with us directly responding to this message or by e -mail #{ mail_to CatarseSettings [:email_projects ] }
-br /
-br /
-| A big thank you ,
-br /
+strong O que significa isso?
+br/
+br/
+strong Página foi Recusada
+br/
+| O seu projeto não tem o perfil do #{company_name} e/ou encontramos informarmações que desrespeitam as nossas regras. Essa página não poderá ser publicada na plataforma.
+br/
+br/
+strong Página continua Em Análise
+br/
+| O projeto tem o perfil do #{company_name} e está de acordo com as regras, só que a página ainda não está pronta para ser públicada na plataforma. Receba nossos comentários, dicas e sugestões. Finalize as edições na página do projeto e avise o nosso agente de suporte quando quiser que ele faça uma nova avaliação.
+br/
+br/
+strong Página foi Aprovada 
+br/
+| Vamos em frente, iniciar a arrecadação só depende de você! Escolha a melhor data e publique a página do seu projeto na plataforma. 
+br/
+br/
+strong
+  | Para acompanhar a mudança de status da página do projeto #{link_to project.name, project_link, target: '__blank'} fique de olho na caixa de entrada do seu e-mail e no painel de controle do seu projeto.
+br/
+br/
+| Lembrando que você pode tirar dúvidas conosco a qualquer momento respondendo diretamente a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_projects]} 
+br/
+br/
+|Um abraço,
+br/
 = company_name

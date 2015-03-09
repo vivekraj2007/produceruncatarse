@@ -1,40 +1,40 @@
 - user = @notification.user
-| Hello , < strong> #{ user.display_name } < / strong >
+|Olá, <strong>#{user.display_name}</strong> !
 br
 br
-| We have seen here that you have $ #{ user.credits } in credits ProduceRun . Here are some farmers ProduceRun's that we thought you might be interested in.
+|Vimos aqui que você tem  R$ #{user.credits} em créditos no Catarse. Que tal aproveitar e apoiar outro projeto bacana agora mesmo?
 br
 br
-| Down selected some project suggestions especially for you :
+|Abaixo selecionamos algumas sugestões de projetos especialmente para você:
 br
 br
--user.recommended_projects.limit ( 3 ) .each do | project |
-  | #{ link_to ( project.name , "#{ CatarseSettings [:base_url ] } / projects / #{ project.to_param } " ) }
+-user.recommended_projects.limit(3).each do |project|
+  |#{link_to(project.name, "#{CatarseSettings[:base_url]}/projects/#{project.to_param}")}
   br
-  | #{ project.headline }
+  |#{project.headline}
   br
   br
 br
 br
-| Not to be sure, here's a step-by- step to use the credits :
+|Pra não ficar dúvida, aqui vai um passo-a-passo pra utilização dos créditos:
 br
 br
-| 1 - #{ link_to ( ' Select the ProduceRun you want to support ; ' explore_url ) }
+|1 - #{link_to('Escolher o projeto que quer apoiar;', explore_url)}
 br
-| 2 - Click I want to support this ProduceRun ;
+|2 - Clicar em Quero apoiar este projeto;
 br
-| 3 - Set the value that wants to support and select the field confirming that you want to use your credits .
+|3 - Colocar o valor que quer apoiar e selecionar o campo confirmando que você quer usar seus créditos.
 br
-| 4 - Click the Review button, and make payment at the bottom of the screen;
+|4 - Clicar no botão Revisar e realizar pagamento na parte debaixo da tela;
 br
-| 5 - Ready ! Your support will be confirmed = )
-br
-br
-| If you prefer , you can claim a refund of your money by clicking #{ link_to ( " here " , "#{ CatarseSettings [:base_url ] } / users / { #} user.to_param #credits " ) } . You will be able to take most of your questions about reimbursement #{ link_to ( ' Support ' 'http://suporte.catarse.me')}.
+|5 - Pronto! Seu apoio será confirmado =)
 br
 br
-| If you have any other questions , please contact us at our Support Center : support.producerun.com .
+|Caso prefira, você pode pedir o reembolso do seu dinheiro clicando #{link_to("aqui", "#{CatarseSettings[:base_url]}/users/#{user.to_param}#credits")}.  Você conseguirá tirar a maioria das suas dúvidas sobre reembolso #{link_to('nesse artigo', 'http://suporte.catarse.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos')}.
 br
 br
-| A big thank you ,
-| ProduceRun team
+|Se tiver alguma outra dúvida, entre em contato conosco na nossa Central de Suporte: suporte.catarse.me.
+br
+br
+|Um grande abraço,
+|Equipe do Catarse

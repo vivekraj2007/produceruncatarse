@@ -1,24 +1,24 @@
 -contribution = @notification.contribution
-- company_name = CatarseSettings [:company_name ]
-- contact_email = CatarseSettings [:email_contact ]
-| Hello , < strong> #{ contribution.user.display_name } < / strong >
+- company_name = CatarseSettings[:company_name]
+- contact_email = CatarseSettings[:email_contact]
+|Olá, <strong>#{contribution.user.display_name}</strong>!
 br
 br
-| Your support for #{ link_to contribution.project.name , project_url ( contribution.project ) }
-| Filed for < strong> analysis by #{ contribution.payment_method } < / strong >
+| Seu apoio para #{link_to contribution.project.name, project_url(contribution.project)} 
+| entrou em processo de <strong>análise pelo #{contribution.payment_method}</strong>
 br
 br
-| This is a security measure made ​​by #{ contribution.payment_method } to prevent fraud and
-| Increase the tranquility of all involved in the transactions that occur in the #{ company_name } .
-| It is possible that the #{ contribution.payment_method } contact you by phone to confirm the transaction .
+| Esse é uma medida de segurança realizada pelo #{contribution.payment_method} para evitar fraudes e 
+| aumentar a tranquilidade de todos os envolvidos nas transações que ocorrem no #{company_name}. 
+| É possível que o #{contribution.payment_method} entre em contato com você por telefone para confirmar a transação.
 br
 br
-| Once the #{ contribution.payment_method } authorize your payment , we will send another email with confirmation .
+| Assim que o #{contribution.payment_method} autorizar seu pagamento, mandaremos um outro email com a confirmação.
 br
 br
-| If you got any questions, please contact us replying to this message or by e -mail #{ mail_to contact_email }
+| Se ficou com alguma dúvida, entre em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to contact_email}
 br
 br
-| A big thank you to you ,
+|Um abraço,
 br
-| #{ Company_name }
+| #{company_name}

@@ -1,16 +1,16 @@
 - contribution = @notification.contribution
-- company_name = CatarseSettings [:company_name ]
-- contact_email = CatarseSettings [:email_contact ]
+- company_name = CatarseSettings[:company_name]
+- contact_email = CatarseSettings[:email_contact]
 
-| Hello , < strong> #{ contribution.user.display_name } < / strong >
+|Olá, <strong>#{contribution.user.display_name}</strong>!
 br
 br
-| We do not receive the payment confirmation of the ticket generated for design #{ link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink , ref: ' notification_canceled ')} .
+| Não recebemos a confirmação de pagamento do boleto gerado para o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink, ref: 'notificacao_cancelado')}.
 br
 br
-| If you still have interest in supporting the project , we can change the due date for you . Simply contact us replying to this message or by e -mail #{ mail_to contact_email }
+| Caso você ainda tenha interesse em apoiar o projeto, podemos alterar a data de vencimento para você. Para isso, basta entrar em contato conosco respondendo a esta mensagem ou através do e-mail #{mail_to contact_email}
 br
 br
-| A big thank you ,
+|Um abraço,
 br
-| #{ company_name }
+| #{company_name}
