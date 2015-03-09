@@ -99,3 +99,10 @@ pt:
         email: "Me envie um email"
         facebook: "Perfil no facebook"
         twitter: "Perfil no twitter"
+    dashboard:
+      contributions:
+        support_now: Apoie agora!
+        active_projects: Projetos em andamento
+        funded_projects: Projetos bem-sucedidos
+        not_funded_projects: Projetos não-financiados
+        no_contribuitions: Você ainda não apoiou nenhum projeto conosco...

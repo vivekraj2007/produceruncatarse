@@ -109,3 +109,10 @@ en:
         email: Send me an email
         facebook: Profile no facebook
         twitter: Profile no twitter
+    dashboard:
+      contributions:
+        support_now: Support now!
+        active_projects: Active projects
+        funded_projects: Projects funded
+        not_funded_projects: Projects not funded
+        no_contribuitions: You did not support any project yet with us...
