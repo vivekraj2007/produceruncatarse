@@ -1,49 +1,49 @@
-- user =  notification .user
+- user = @notification.user
 
-| Hi #{ user.name } ,
-br /
-br /
-| In order to further simplify the process of repayments, 
-'From 10/11 #{ link_to  ' no longer exist credits  That's why we came here to talk to you.
-br /
-br /
-| So we check, you've got to use part of their claims, but still have #{ user.display_credits } here. This is money that can help make a difference in a project in which you believe. :-)
-br /
-br /
-| To support a ProduceRun, the process is the same:
-br /
-br /
-| 1 - Select the ProduceRun you want to support;
-br /
-| 2 - Click To support this ProduceRun;
-br /
-| 3 - Set the value that wants to support and select the field confirming that you want to use your credits.
-br /
-| 4 - Click the Review button, and make payment at the bottom of the screen;
-br /
-| 5 - Ready! Your support will be confirmed =)
-br /
-br /
-| < strong > Project Tips </ strong >
-br /
-br /
-- user.recommended_projects.limit ( 3 ) .each of the | project |
-  | #{ link_to (project.name, project_by_slug_url ( permalink: project.permalink, ref:  ' credits_warning_more_group ' )) }
-  br /
-  | #{ project.headline }
-  br /
-  br /
-br /
-br /
-| If you do not use the credits until the day 10/11, we will contact you to make the refund.
-br /
-br /
-| If you have any questions, just let us know by replying to this email or by info@producerun.com 
-br /
-br /
-| A big thank you
-br /
-| ProduceRun
+| Oi #{user.name},
+br/
+br/
+| Para podermos simplificar ainda mais o processo de reembolsos, 
+'  a partir de 10/11 #{link_to 'não existirão mais créditos no Catarse', 'http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/', target: '__blank'}. É por isso que viemos aqui falar com você.
+br/
+br/
+| Pelo que checamos, você já chegou a usar parte dos seus créditos, mas ainda tem #{user.display_credits} por aqui. É esse dinheiro que pode ajudar a fazer a diferença em um projeto em que você acredita. :-)
+br/
+br/
+|Para apoiar um projeto, o processo é o mesmo:
+br/
+br/
+| 1 - Escolher o projeto que quer apoiar;
+br/
+| 2 - Clicar em Apoiar este projeto;
+br/
+| 3 - Colocar o valor que quer apoiar e selecionar o campo confirmando que você quer usar seus créditos.
+br/
+| 4 - Clicar no botão Revisar e realizar pagamento na parte debaixo da tela;
+br/
+| 5 - Pronto! Seu apoio será confirmado =)
+br/
+br/
+| <strong>Dicas de projetos</strong>
+br/
+br/
+- user.recommended_projects.limit(3).each do |project|
+  |#{link_to(project.name, project_by_slug_url(permalink: project.permalink, ref: 'credits_warning_more_group'))}
+  br/
+  |#{project.headline}
+  br/
+  br/
+br/
+br/
+| Caso você não utilize os créditos até o dia 10/11, entraremos em contato para realizar o reembolso.
+br/
+br/
+| Se ficar com alguma dúvida, só nos avisar respondendo a este e-mail ou através do contato@catarse.me 
+br/
+br/
+| Um abraço
+br/
+| Catarse
 
 
 

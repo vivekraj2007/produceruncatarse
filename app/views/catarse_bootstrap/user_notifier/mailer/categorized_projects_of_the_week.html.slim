@@ -1,23 +1,23 @@
 - user = @notification.user
 - category = @notification.category
 
-| Hello #{ user.name } ,
-br /
-br /
-| News this week in category #{ category.name_pt } of ProduceRun
-br /
-br /
-. - Category.projects.of_current_week.with_state ( 'online' ) each of the | project |
-  | #{ link_to ( project.name , project_by_slug_url (permalink : project.permalink , ref: ' notificacao_subscription_category ')) }
+| Olá #{user.name},
+br/
+br/
+| Novidades dessa semana na categoria #{category.name_pt} do Catarse
+br/
+br/
+- category.projects.of_current_week.with_state('online').each do |project|
+  |#{link_to(project.name, project_by_slug_url(permalink: project.permalink, ref: 'notificacao_subscription_category'))}
   br
-  | #{ project.headline }
+  |#{project.headline}
   br
   br
-br /
-br /
-| A hug ,
-br /
-| #{ CatarseSettings [:company_name ] }
-br /
-br /
-| #{ Link_to ' Unsubscribe ' unsubscribe_category_url ( category ) , target: ' __ blank '} receipt of recent projects that category.
+br/
+br/
+|Um abraço,
+br/
+| #{CatarseSettings[:company_name]}
+br/
+br/
+| #{link_to 'Descadastrar', unsubscribe_category_url(category), target:'__blank'} o recebimento de projetos recentes dessa categoria.

@@ -1,19 +1,19 @@
 -contribution = @notification.contribution
-- company_name = CatarseSettings [:company_name ]
-- contact_email = CatarseSettings [:email_contact ]
-| Hello , < strong> #{ contribution.user.display_name } < / strong >
+- company_name = CatarseSettings[:company_name]
+- contact_email = CatarseSettings[:email_contact]
+|Olá, <strong>#{contribution.user.display_name}</strong>!
 br
 br
-| Repayment of his support for the project #{ link_to contribution.project.name , project_by_slug_url (permalink : contribution.project.permalink ) } in { # } company_name has just been completed! Effective credit should happen in the next bill , if it is still open, or the next , if that month has already been closed.
+| O reembolso do seu apoio para o projeto #{link_to contribution.project.name, project_by_slug_url(permalink: contribution.project.permalink)} no #{company_name} acabou de ser realizado! O crédito efetivo deverá acontecer na próxima fatura, caso ela ainda esteja em aberto, ou na próxima, caso a desse mês já tenha sido fechada.
 br
 br
-| The support of your identification key is: #{ contribution.payment_id }
-br /
-br /
-| If you have any questions or had any problems in this process , please contact us by answering
-' This message or by e -mail #{ mail_to contact_email } . To expedite service , please enter the Key.
+| A chave de identificação do seu apoio é: #{contribution.payment_id}
+br/
+br/
+| Se ficou com alguma dúvida ou teve algum problema nesse processo, entre em contato conosco respondendo a
+'  esta mensagem ou através do e-mail #{mail_to contact_email}. Para agilizar o atendimento, pedimos que indique a chave de identificação.
 br
 br
-| Kind Regards ,
+|Um abraço,
 br
-| #{ Company_name }
+| #{company_name}
