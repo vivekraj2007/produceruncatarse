@@ -75,7 +75,7 @@
           .fontsize-smaller.fontcolor-secondary.u-margintop-10
             /= link_to post.url, target: '__blank', class: 'fontsize-smaller fontcolor-secondary ' do
             /span.fontsize-smaller.fontcolor-secondary
-            = truncate(post.summary, length: 130).html_safe    
+            =raw post.summary
 
 
 = render 'shared/footer_big'
