@@ -27,6 +27,9 @@ You will also need to download and run redis server and sidekiq
     CatarseSettings[:sendgrid] = "change_this_directly_in_database"
     CatarseSettings[:aws_access_key] = "change_this_directly_in_database"
     CatarseSettings[:aws_secret_key] = "change_this_directly_in_database"
+    # https://producerun.zendesk.com/agent/admin/dropboxes
+    CatarseSettings[:zendesk_dropbox_id] = "20189915"
+    CatarseSettings[:zendesk_url] = "https://producerun.zendesk.com"
 
 # To test the code, switch back to :pt in config/initializers/locale.rb
 
