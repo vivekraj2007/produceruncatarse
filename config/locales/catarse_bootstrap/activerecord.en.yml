@@ -60,7 +60,7 @@ en:
         deliver_at: Estimated delivery
       project:
         channels: channels
-        category: category
+        category: Category
         expires_at: time Frame
         online_days: Deadline for collection
         headline: Catchphrase

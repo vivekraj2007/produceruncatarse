@@ -20,7 +20,7 @@
             .u-marginbottom-40
               = form.label :category, class: 'fontsize-large', required: false
               .fontsize-small.fontcolor-secondary.u-marginbottom-10= form.hint :category
-              = form.association :category, as: :select, collection: Category.order(:name_pt), prompt: t('simple_form.prompts.project.category'), class: 'medium', label: '', required: false, hint: ''
+              = form.association :category, as: :select, collection: Category.order(:name_en), prompt: t('simple_form.prompts.project.category'), class: 'medium', label: '', required: false, hint: ''
             .u-marginbottom-40
               = form.label :permalink, class: 'fontsize-large', required: false, as: :string
               .fontsize-small.fontcolor-secondary.u-marginbottom-10= form.hint :permalink
