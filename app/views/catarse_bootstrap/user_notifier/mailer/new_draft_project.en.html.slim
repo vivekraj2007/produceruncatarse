@@ -1,12 +1,12 @@
 - project = @notification.project
-| Project Review Request: #{project.name}
+| Campaign Review Request: #{project.name}
 br/
 | Effect Headline: #{project.headline}
 br/
 | Preparation time: #{distance_of_time_in_words(project.created_at, project.sent_to_analysis_at)}
 br/
 br/
-strong ABOUT THE PROJECT
+strong ABOUT THE CAMPAIGN
 br/
 br/
 | Link: #{link_to project_by_slug_url(project.permalink), project_by_slug_url(project.permalink)}
@@ -38,16 +38,16 @@ br/
 br/
 = project.user.other_link
 br/
-| Supported Projects: #{project.user.total_contributed_projects}
+| Supported Campaigns: #{project.user.total_contributed_projects}
 br/
-| Funded Projects: #{project.user.projects.with_state('successful').count}
+| Funded Campaigns: #{project.user.projects.with_state('successful').count}
 br/
-| Projects not funded: #{project.user.projects.with_state('failed').count}
+| Campaigns not funded: #{project.user.projects.with_state('failed').count}
 br/
-| Projects In Draft: #{project.user.projects.with_state('draft').count}
+| Campaigns In Draft: #{project.user.projects.with_state('draft').count}
 br/
-| Projects In Analysis: #{project.user.projects.with_state('in_analysis').count} 
+| Campaigns In Analysis: #{project.user.projects.with_state('in_analysis').count} 
 br/
-| Approved Projects: #{project.user.projects.with_state('approved').count}
+| Approved Campaigns: #{project.user.projects.with_state('approved').count}
 br/
-| Rejected Projects: #{project.user.projects.with_state('rejected').count} 
+| Rejected Campaigns: #{project.user.projects.with_state('rejected').count} 
