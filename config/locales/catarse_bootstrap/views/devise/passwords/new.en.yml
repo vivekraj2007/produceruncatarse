@@ -14,4 +14,4 @@ en:
             email: After entering your email address , we will send a notification
               with instructions on how to reset your password
           inputs:
-            submit: redefine
+            submit: Reset password

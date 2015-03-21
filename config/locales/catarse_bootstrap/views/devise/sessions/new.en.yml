@@ -15,6 +15,6 @@ en:
           labels:
             remember_me: Stay logged
           inputs:
-            submit: log in
-            password: password
+            submit: Log in
+            password: Password
             facebook: Login with Facebook
