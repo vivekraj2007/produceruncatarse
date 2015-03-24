@@ -53,5 +53,13 @@ module Catarse
     # TODO: remove
     config.active_record.whitelist_attributes = false
 
+    if Rails.env.production?
+      config.middleware.use ExceptionNotification::Rack,
+        :email => {
+          :sender_address => %{"Info" <info+system@producerun.com>},
+          :exception_recipients => "kulakajak@gmail.com,info+system@producerun.com",
+          :delivery_method => :smtp,
+        }
+    end
   end
 end

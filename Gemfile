@@ -30,6 +30,9 @@ gem 'catarse_settings_db', '>= 0.1.0'
 # Notifications
 gem 'user_notifier', '~> 0.0.5'
 
+# EXcpetion notifications
+gem 'exception_notification'
+
 # Mixpanel for backend tracking
 gem 'mixpanel-ruby'
 
