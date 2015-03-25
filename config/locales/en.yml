@@ -2,7 +2,7 @@
 en:
   not_filled: not Entered
   days: days
-  facebook_locale: pt_BR
+  facebook_locale: en
   failure_title: 'Please correct the following errors :'
   i_just_contributed: I just support the campaign %{name} in ProduceRun
   'no': Do Not
