@@ -22,5 +22,5 @@ en:
         other: "%{count} support in term of confirmation."
       edit_reward: edit reward
       new_reward: Sign reward
-      reward_deliver_time: "<b>Estimativa delivery: </b> %{estimate}"
+      reward_deliver_time: "<b>Delivery Estimates: </b> %{estimate}"
       reward_title: For %{minimum} or more

@@ -46,5 +46,5 @@
           |Não selecionou recompensa
       - if contribution.reward.try(:display_deliver_estimate).present?
         .fontsize-smallest.lineheight-looser
-          span.fontweight-semibold Estimativa de entrega:
+          span.fontweight-semibold Delivery Estimates:
           =< contribution.reward.try(:display_deliver_estimate)

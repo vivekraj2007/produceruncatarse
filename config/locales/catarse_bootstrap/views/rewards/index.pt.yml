@@ -21,5 +21,5 @@ pt:
         other: "%{count} apoios em prazo de confirmação."
       edit_reward: Editar recompensa
       new_reward: Cadastrar recompensa
-      reward_deliver_time: "<b>Estimativa de Entrega:</b> %{estimate}"
+      reward_deliver_time: "<b>Delivery Estimates:</b> %{estimate}"
       reward_title: Para %{minimum} ou mais
